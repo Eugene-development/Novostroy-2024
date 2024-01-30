@@ -1,0 +1,4 @@
+/.vscode
+.env
+# misc
+.DS_Store
