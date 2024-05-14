@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.0",
     "graphql": "^16.8.1",
@@ -19,8 +20,8 @@
     "react-dom": "^18.3.1",
     "sharp": "^0.32.6",
     "supports-color": "^8.1.1",
-    "zustand": "^4.5.2",
-    "@heroicons/react": "^2.0.16"
+    "tailwind-merge": "^2.3.0",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
