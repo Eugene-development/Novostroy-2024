@@ -15,30 +15,29 @@ export function NavbarDemo() {
 }
 
 export default function Navbar({ className }) {
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(null);
     return (
         <div
-            className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+            className={cn("fixed  inset-x-0 max-w-2xl mx-auto z-50 bg-slate-300", className)}
         >
             <Menu setActive={setActive}>
-                <MenuItem setActive={setActive} active={active} item="Services">
+                <MenuItem setActive={setActive} active={active} item="Услуги">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                        <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                        <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                        <HoveredLink href="/branding">Branding</HoveredLink>
+                        <HoveredLink href="/web-dev">Дизайнер</HoveredLink>
+                        <HoveredLink href="/interface-design">Доставка</HoveredLink>
+                        <HoveredLink href="/seo">Установка</HoveredLink>
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Products">
+                <MenuItem setActive={setActive} active={active} item="Каталог">
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
-                            title="Algochurn"
+                            title="Шкафы"
                             href="https://algochurn.com"
                             src="https://assets.aceternity.com/demos/algochurn.webp"
                             description="Prepare for tech interviews like never before."
                         />
                         <ProductItem
-                            title="Tailwind Master Kit"
+                            title="Кухни"
                             href="https://tailwindmasterkit.com"
                             src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
                             description="Production ready Tailwind css components for your next project"
@@ -57,7 +56,7 @@ export default function Navbar({ className }) {
                         />
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Pricing">
+                <MenuItem setActive={setActive} active={active} item="Партнёры">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/hobby">Hobby</HoveredLink>
                         <HoveredLink href="/individual">Individual</HoveredLink>
