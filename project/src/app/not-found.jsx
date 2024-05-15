@@ -26,7 +26,7 @@ export default function NotFound() {
           <p className="mb-4 text-gray-500 dark:text-gray-400">
             Этой страницы не существует. Вернитесь в нужный раздел.
           </p>
-          <ul className="flex justify-center items-center space-x-4 text-gray-500 dark:text-gray-400">
+          {/* <ul className="flex justify-center items-center space-x-4 text-gray-500 dark:text-gray-400">
             <li>
               <Link
                 href="/"
@@ -75,7 +75,7 @@ export default function NotFound() {
                 Салоны
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>
