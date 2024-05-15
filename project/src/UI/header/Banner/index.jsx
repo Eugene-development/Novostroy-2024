@@ -121,38 +121,40 @@ export default (props) => {
       </marquee> */}
 
 
-      <div className="hidden md:flex flex-1 justify-end divide-x">
+      <div className="hidden md:flex flex-1 justify-end ">
         <div className="hidden 2xl:flex 2xl:flex-1 ">
-          <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+          <div className="py-1 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end ">
             <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
               <PhoneIcon
-                className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
+                className="block size-4 xl:size-5 text-gray-950 animate-pulse"
                 aria-hidden="true"
               />
               <Link
                 href="tel:+79154000020"
-                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
+                className=" ml-2 text-sm font-bold text-gray-950"
               >
                 8 (915) 400-00-20
               </Link>
             </div>
-            <div className="bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+            <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
               <EnvelopeIcon
-                className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
+                className="block size-4 xl:size-5 text-gray-950 animate-pulse"
                 aria-hidden="true"
               />
               <div
-                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
+                className=" ml-2 text-sm font-bold text-gray-950"
               >
-                info@zov.top
+                info@novostroy.org
               </div>
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="flex divide-x-2">
         <Favorites />
         <Search />
       </div>
+
       <div className="md:hidden flex justify-end">
         <PhoneIcon className="h-5 w-5 text-indigo-100" aria-hidden="true" />
         <Link href="tel:+79154000020" className="ml-1 text-base text-gray-50">
