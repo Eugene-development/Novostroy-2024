@@ -1,24 +1,24 @@
 "use client";
-import SearchModal from './SearchModal';
-import { getAllProducts } from '@/app/server'
+// import SearchModal from './SearchModal';
+// import { getAllProducts } from '@/app/server'
 
-import { useStoreSearch } from '@/store/search'
-const { visibleSearch, products } = useStoreSearch
+// import { useStoreSearch } from '@/store/search'
+// const { visibleSearch, products } = useStoreSearch
 
 export default () => {
-  const { openVisibleSearch } = visibleSearch()
-  const { setAllProducts, allProducts } = products()
+  // const { openVisibleSearch } = visibleSearch()
+  // const { setAllProducts, allProducts } = products()
 
-  const handleSearch = async () => {
-    if (allProducts.length < 1) setAllProducts(await getAllProducts())
-    openVisibleSearch()
-  }
+  // const handleSearch = async () => {
+  //   if (allProducts.length < 1) setAllProducts(await getAllProducts())
+  //   openVisibleSearch()
+  // }
 
   return (
     <>
-      <SearchModal />
+      {/* <SearchModal /> */}
       <button
-        onClick={handleSearch}
+        // onClick={handleSearch}
         type="button"
         className="relative isolate px-3 focus-visible:outline-offset-[-4px] z-20"
       >

@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 
-// import Search from "./Search"
-// import Favorites from "./Favorites"
+import Search from "./Search"
+import Favorites from "./Favorites"
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 
 
@@ -70,8 +70,7 @@ export default (props) => {
       </div>
 
 
-      <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
-
+      {/* <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -119,12 +118,40 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
+      </marquee> */}
 
 
-      </marquee>
       <div className="hidden md:flex flex-1 justify-end divide-x">
-        {/* <Favorites />
-        <Search /> */}
+        <div className="hidden 2xl:flex 2xl:flex-1 ">
+          <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+            <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+              <PhoneIcon
+                className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
+                aria-hidden="true"
+              />
+              <Link
+                href="tel:+79154000020"
+                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
+              >
+                8 (915) 400-00-20
+              </Link>
+            </div>
+            <div className="bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+              <EnvelopeIcon
+                className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
+                aria-hidden="true"
+              />
+              <div
+                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
+              >
+                info@zov.top
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Favorites />
+        <Search />
       </div>
       <div className="md:hidden flex justify-end">
         <PhoneIcon className="h-5 w-5 text-indigo-100" aria-hidden="true" />

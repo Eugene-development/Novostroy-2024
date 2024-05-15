@@ -6,7 +6,7 @@ export default function index() {
     <div className="flex m-4 justify-between">
       <Logo />
       <NavBar />
-      <Logo />
+      <p>{''}</p>
     </div>
   );
 }
