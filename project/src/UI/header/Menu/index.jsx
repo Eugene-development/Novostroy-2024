@@ -1,7 +1,12 @@
-import NavBar from "./NavBar"
+import Logo from "./Logo";
+import NavBar from "./NavBar";
 
 export default function index() {
-    return (
-        <NavBar />
-    )
+  return (
+    <div className="flex m-4 justify-between">
+      <Logo />
+      <NavBar />
+      <Logo />
+    </div>
+  );
 }
