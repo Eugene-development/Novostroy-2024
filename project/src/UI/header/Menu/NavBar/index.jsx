@@ -19,6 +19,15 @@ export default function Navbar({ className }) {
   return (
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
+        <MenuItem setActive={setActive} active={active} item="Компания">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/hobby">Hobby</HoveredLink>
+            <HoveredLink href="/individual">Individual</HoveredLink>
+            <HoveredLink href="/team">Team</HoveredLink>
+            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+          </div>
+        </MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Консультация на адресе</HoveredLink>
@@ -56,13 +65,15 @@ export default function Navbar({ className }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Партнёры">
+        <MenuItem setActive={setActive} active={active} item="Партнёрство">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Отзывы">
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Акции">
           <div className="flex flex-col space-y-4 text-sm">

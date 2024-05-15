@@ -1,7 +1,10 @@
-import { Slider } from "@/UI";
+import { Slider, Parallax } from "@/UI";
 
 export default function Home() {
   return (
-    <Slider />
+    <>
+      <Slider />
+      <Parallax />
+    </>
   )
 }
