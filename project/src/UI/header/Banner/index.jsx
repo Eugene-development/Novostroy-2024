@@ -38,7 +38,35 @@ export default (props) => {
         </defs>
       </svg>
       <div className=" flex flex-1 justify-start">
-        <div className="hidden md:flex">
+        <div className="hidden md:flex space-x-4 items-center justify-center">
+
+          <Link href="/" className="ml-1 text-sm text-gray-50">О компании</Link>
+          <svg
+            viewBox="0 0 2 2"
+            className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+            aria-hidden="true"
+          >
+            <circle cx={1} cy={1} r={1} />
+          </svg>
+          <Link href="/" className="ml-1 text-sm text-gray-50">Партнёрство</Link>
+          <svg
+            viewBox="0 0 2 2"
+            className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+            aria-hidden="true"
+          >
+            <circle cx={1} cy={1} r={1} />
+          </svg>
+          <Link href="/" className="ml-1 text-sm text-gray-50">Отзывы</Link>
+          <svg
+            viewBox="0 0 2 2"
+            className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+            aria-hidden="true"
+          >
+            <circle cx={1} cy={1} r={1} />
+          </svg>
+          <Link href="/" className="ml-1 text-sm text-gray-50">Контакты</Link>
+        </div>
+        {/* <div className="hidden md:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -59,7 +87,8 @@ export default (props) => {
             />
           </svg>
           <span className="ml-1 text-sm text-gray-50">Москва</span>
-        </div>
+        </div> */}
+
         <div className="flex md:hidden">
           <EnvelopeIcon
             className="mt-0.5 h-5 w-5 text-indigo-100"

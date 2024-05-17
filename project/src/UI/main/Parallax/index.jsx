@@ -10,38 +10,38 @@ export const products = [
         title: "Moonbeam",
         link: "https://gomoonbeam.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
     {
         title: "Cursor",
         link: "https://cursor.so",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
     {
         title: "Rogue",
         link: "https://userogue.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
 
     {
         title: "Editorially",
         link: "https://editorially.org",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
     {
         title: "Editrix AI",
         link: "https://editrix.ai",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
     {
         title: "Pixel Perfect",
         link: "https://app.pixelperfect.quest",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png",
     },
 
     {
