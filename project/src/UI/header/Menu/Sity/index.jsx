@@ -29,7 +29,7 @@ export default function MovingBorderDemo() {
                     />
                 </svg>
 
-                Москва
+                г. Москва
             </Button>
         </div>
     );

@@ -20,7 +20,7 @@ export default function Navbar({ className }) {
   return (
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
-        <Link href="/" className="mx-2 cursor-pointer text-black hover:opacity-[0.9] dark:text-white">Главная</Link>
+        <Link href="/" className="mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className="flex flex-col space-y-4 text-sm">
