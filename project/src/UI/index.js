@@ -7,3 +7,5 @@ export { default as Footer } from "./footer";
 export { default as Slider } from "./main/Slider"
 export { default as Parallax } from "./main/Parallax"
 export { default as ThreeDCard } from "./main/ThreeDCard"
+export { default as Lamp } from "./main/Lamp"
+export { default as BGG } from "./main/BGG"
