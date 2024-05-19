@@ -7,7 +7,7 @@ export default function MovingBorderDemo() {
         <div>
             <Button
                 borderRadius="1.75rem"
-                className="bg-white dark:bg-slate-900 text-sky-800 dark:text-white text-base border-gray-200 dark:border-slate-800"
+                className="bg-white dark:bg-slate-900 text-sky-00 dark:text-white text-base border-gray-200 dark:border-slate-800"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -179,7 +179,7 @@ export default (props) => {
           </div>
         </div>
       </div>
-      <div className="flex divide-x-2 divide-sky-600">
+      <div className="flex divide-x-2 divide-sky-600 di">
         <Favorites />
         <Search />
       </div>
