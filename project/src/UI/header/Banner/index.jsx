@@ -40,7 +40,7 @@ export default (props) => {
       <div className=" flex flex-1 justify-start">
         <div className="hidden md:flex space-x-4 items-center justify-center">
 
-          <Link href="/" className="ml-1 text-sm text-gray-50">О компании</Link>
+          <Link href="/about" className="ml-1 text-sm text-gray-50">О компании</Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -48,7 +48,7 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/" className="ml-1 text-sm text-gray-50">Партнёрство</Link>
+          <Link href="/partnership" className="ml-1 text-sm text-gray-50">Партнёрство</Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -56,7 +56,7 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/" className="ml-1 text-sm text-gray-50">Отзывы</Link>
+          <Link href="/testimonials" className="ml-1 text-sm text-gray-50">Отзывы</Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -64,7 +64,7 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/" className="ml-1 text-sm text-gray-50">Контакты</Link>
+          <Link href="/contacts" className="ml-1 text-sm text-gray-50">Контакты</Link>
         </div>
         {/* <div className="hidden md:flex">
           <svg
