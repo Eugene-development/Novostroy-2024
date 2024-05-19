@@ -1,13 +1,13 @@
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-import Сity from "./Сity";
+import City from "./City";
 
-export default function index() {
+export default function Header() {
   return (
     <div className="flex mx-4 my-3 justify-between">
       <Logo />
       <NavBar />
-      <Сity />
+      <City />
     </div>
   );
 }

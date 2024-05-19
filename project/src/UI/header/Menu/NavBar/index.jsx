@@ -23,7 +23,7 @@ export default function Navbar({ className }) {
         <Link href="/" className="mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col mx-2 space-y-4 text-sm">
             <HoveredLink href="/web-dev">Консультация на адресе</HoveredLink>
             <HoveredLink href="/interface-design">
               Дизайн-проект мебели
@@ -32,12 +32,12 @@ export default function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm grid grid-cols-2 gap-10 p-6">
             <ProductItem
               title="Мебель"
               href="https://algochurn.com"
               src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
+              description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Бытовая Техника"
@@ -46,7 +46,7 @@ export default function Navbar({ className }) {
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="Аксессуары для дома"
+              title="Фурнитура"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
@@ -60,7 +60,7 @@ export default function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Акции">
-          <div className="flex flex-col space-y-4 text-sm">
+          <div className="flex flex-col mx-2 space-y-4 text-sm">
             <HoveredLink href="/hobby">Hobby</HoveredLink>
             <HoveredLink href="/individual">Individual</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
