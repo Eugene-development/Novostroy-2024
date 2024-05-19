@@ -153,25 +153,25 @@ export default (props) => {
       <div className="hidden md:flex flex-1 justify-end ">
         <div className="hidden 2xl:flex 2xl:flex-1 ">
           <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end ">
-            <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+            <div className="mr-4 bg-gray-950 flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10  ring-offset-2  ring-gray-200">
               <PhoneIcon
-                className="block size-4 xl:size-5 text-gray-950 animate-pulse"
+                className="block size-4 xl:size-5 text-gray-50 animate-pulse"
                 aria-hidden="true"
               />
               <Link
                 href="tel:+79154000020"
-                className=" ml-2 text-sm font-bold text-gray-900"
+                className=" ml-2 text-sm font-bold text-gray-50"
               >
                 8 (915) 400-00-20
               </Link>
             </div>
-            <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+            <div className="mr-4 bg-gray-950 flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10  ring-offset-2  ring-gray-200">
               <EnvelopeIcon
-                className="block size-4 xl:size-5 text-gray-900 animate-pulse"
+                className="block size-4 xl:size-5 text-gray-50 animate-pulse"
                 aria-hidden="true"
               />
               <div
-                className=" ml-2 text-sm font-bold text-gray-950"
+                className=" ml-2 text-sm font-bold text-gray-50"
               >
                 info@novostroy.org
               </div>
