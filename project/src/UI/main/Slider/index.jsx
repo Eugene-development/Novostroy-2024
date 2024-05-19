@@ -5,12 +5,11 @@ import { ImagesSlider } from "./components";
 
 export default function ImagesSliderDemo() {
     const images = [
-        "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://zovofficial.com/image/cache/catalog/products/kuhni/2024/norvud/cam-1-1600x1472.jpg",
+        "https://zovofficial.com/image/cache/catalog/products/korpusnaya-mebel/5-pemont/gostinaya/2-1600x942.jpg",
     ];
     return (
-        <ImagesSlider className="h-[40rem]" images={images}>
+        <ImagesSlider className="h-[50rem]" images={images}>
             <motion.div
                 initial={{
                     opacity: 0,
@@ -25,8 +24,8 @@ export default function ImagesSliderDemo() {
                 }}
                 className="z-50 flex flex-col justify-center items-center"
             >
-                <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                    Мы делаем  <br />ваш дом лучше
+                <motion.p className="font-bold text-xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+                    Мы делаем  <br />ваш дом немного лучше
                 </motion.p>
                 <button className="px-8 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
                     <span>Посмотреть каталог →</span>
