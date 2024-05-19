@@ -28,7 +28,7 @@ export default function ImagesSliderDemo() {
             >
                 <motion.p className="font-bold text-xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
                     {/* Мы делаем ваш дом <br /><FlipWords words={words} /> */}
-                    Мы делаем  <br />ваш дом немного лучше
+                    Мы делаем  <br />вашу жизнь уютнее
                 </motion.p>
                 <button className="px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative mt-4">
                     <span className="text-lg">  Узнать поподробнее →</span>

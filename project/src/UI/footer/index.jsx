@@ -2,28 +2,28 @@ import Link from "next/link";
 
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "О компании", href: "#" },
+    { name: "Партнёрство", href: "#" },
+    { name: "Отзывы", href: "#" },
+    { name: "Контакты", href: "#" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+    { name: "Услуги", href: "#" },
+    { name: "Каталог", href: "#" },
+    { name: "Акции", href: "#" },
+    { name: "Блог", href: "#" },
   ],
   company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Дизайнер", href: "#" },
+    { name: "Замерщик", href: "#" },
+    { name: "Сборщик", href: "#" },
+    { name: "Водитель", href: "#" },
   ],
   legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Избранное", href: "#" },
+    { name: "Поиск", href: "#" },
+    { name: "Заявка на замер", href: "#" },
+    { name: "Поддержка сайта", href: "#" },
   ],
   social: [
     {
@@ -110,7 +110,7 @@ export default () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Solutions
+                  Информация
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.solutions.map((item) => (
@@ -127,7 +127,7 @@ export default () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Support
+                  Меню
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
@@ -146,7 +146,7 @@ export default () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Company
+                  Вакансии
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
@@ -163,7 +163,7 @@ export default () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Legal
+                  Прочее
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
