@@ -27,9 +27,9 @@ export default function ImagesSliderDemo() {
                 <motion.p className="font-bold text-xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
                     Мы делаем  <br />ваш дом немного лучше
                 </motion.p>
-                <button className="px-8 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-                    <span> Подробнее →</span>
-                    <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+                <button className="px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+                    <span className="text-lg">  Узнать поподробнее →</span>
+                    <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
                 </button>
             </motion.div>
         </ImagesSlider>
