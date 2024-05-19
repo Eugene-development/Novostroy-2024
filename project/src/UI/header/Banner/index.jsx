@@ -10,9 +10,8 @@ export default (props) => {
 
   return (
 
-    <div className=" relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-950  justify-between">
-      {/* {props.children} */}
-      <svg
+    <div className=" relative isolate flex items-center py-2 px-4 sm:px-3.5 bg-gray-950  justify-between">
+      {/* <svg
         viewBox="0 0 577 310"
         aria-hidden="true"
         className="absolute top-1/2 left-[max(-7rem,calc(30%-12rem))] -z-10 w-[20rem] -translate-y-1/2 transform-gpu blur-2xl"
@@ -36,7 +35,7 @@ export default (props) => {
             <stop offset={1} stopColor="#FF80B5" />
           </linearGradient>
         </defs>
-      </svg>
+      </svg> */}
       <div className=" flex flex-1 justify-start">
         <div className="hidden md:flex space-x-4 items-center justify-center">
 
