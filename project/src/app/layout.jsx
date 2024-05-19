@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.svg" />
 
         {process.env.NODE_ENV === "production" && (

@@ -2,12 +2,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "./components";
+// import { FlipWords } from "./components/FlipWords"
 
 export default function ImagesSliderDemo() {
     const images = [
         "https://zovofficial.com/image/cache/catalog/products/kuhni/2024/norvud/cam-1-1600x1472.jpg",
         "https://zovofficial.com/image/cache/catalog/products/korpusnaya-mebel/5-pemont/gostinaya/2-1600x942.jpg",
     ];
+    const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
     return (
         <ImagesSlider className="h-[51rem]" images={images}>
             <motion.div
@@ -25,6 +27,7 @@ export default function ImagesSliderDemo() {
                 className="z-50 flex flex-col justify-center items-center"
             >
                 <motion.p className="font-bold text-xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
+                    {/* Мы делаем ваш дом <br /><FlipWords words={words} /> */}
                     Мы делаем  <br />ваш дом немного лучше
                 </motion.p>
                 <button className="px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative mt-4">
