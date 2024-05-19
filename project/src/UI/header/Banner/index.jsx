@@ -97,62 +97,10 @@ export default (props) => {
         </div>
       </div>
 
-
-      {/* <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-        <strong className="font-semibold">Бесплатный дизайн-проект</strong>
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-        <strong className="font-semibold">Сборка и установка за счёт компании</strong>
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-        <strong className="font-semibold">Замер помещения бесплатно</strong>
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-        <strong className="font-semibold">Пятая позиция техники в подарок</strong>
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-        <strong className="font-semibold">Рассрочка до 12 месяцев</strong>
-        <svg
-          viewBox="0 0 2 2"
-          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
-          aria-hidden="true"
-        >
-          <circle cx={1} cy={1} r={1} />
-        </svg>
-      </marquee> */}
-
-
       <div className="hidden md:flex flex-1 justify-end ">
         <div className="hidden 2xl:flex 2xl:flex-1 ">
           <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end ">
-            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-800  ring-offset-2  ring-gray-200">
+            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
               <PhoneIcon
                 className="block size-4 xl:size-5 text-gray-50 "
                 aria-hidden="true"
@@ -164,7 +112,7 @@ export default (props) => {
                 8 (915) 400-00-20
               </Link>
             </div>
-            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-800  ring-offset-2  ring-gray-200">
+            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
               <EnvelopeIcon
                 className="block size-4 xl:size-6 text-gray-50 "
                 aria-hidden="true"
