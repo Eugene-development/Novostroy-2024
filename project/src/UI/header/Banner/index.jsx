@@ -10,7 +10,7 @@ export default (props) => {
 
   return (
 
-    <div className=" relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-900  justify-between">
+    <div className=" relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-950  justify-between">
       {/* {props.children} */}
       <svg
         viewBox="0 0 577 310"
