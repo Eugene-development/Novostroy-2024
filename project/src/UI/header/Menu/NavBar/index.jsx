@@ -24,11 +24,9 @@ export default function Navbar({ className }) {
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className="flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Консультация на адресе</HoveredLink>
-            <HoveredLink href="/interface-design">
-              Дизайн-проект мебели
-            </HoveredLink>
-            {/* <HoveredLink href="/seo">Установка</HoveredLink> */}
+            <HoveredLink href="/">Консультация на адресе</HoveredLink>
+            <HoveredLink href="/"> Замер помещения</HoveredLink>
+            <HoveredLink href="/seo">Дизайн-проект мебели</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
@@ -67,14 +65,7 @@ export default function Navbar({ className }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Блог">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <Link href="/blog" className="mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Блог</Link>
       </Menu>
     </div>
   );
