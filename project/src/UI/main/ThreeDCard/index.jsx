@@ -21,7 +21,7 @@ export default function ThreeDCardDemo() {
                         translateZ="60"
                         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                     >
-                        Hover over this card to unleash the power of CSS perspective
+                        В пределах МКАД наш консультант даст вам консультацию по возможным решениям в проектировании мебели.
                     </CardItem>
                     <CardItem translateZ="100" className="w-full mt-8">
                         <Image
@@ -65,7 +65,7 @@ export default function ThreeDCardDemo() {
                         translateZ="60"
                         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                     >
-                        Hover over this card to unleash the power of CSS perspective
+                        Осуществим проектный замер помещения в проекции. Стоимость услуги компенсируется при оформлении договора.
                     </CardItem>
                     <CardItem translateZ="100" className="w-full mt-8">
                         <Image
@@ -109,7 +109,7 @@ export default function ThreeDCardDemo() {
                         translateZ="60"
                         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                     >
-                        Hover over this card to unleash the power of CSS perspective
+                        Дизайнер составит проект мебели с учётом ваших пожеланий, бюджета, размеров помещения и своего проектного опыта.
                     </CardItem>
                     <CardItem translateZ="100" className="w-full mt-8">
                         <Image

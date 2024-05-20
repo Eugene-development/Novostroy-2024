@@ -1,4 +1,4 @@
-import { Slider, BGG, ThreeDCard, Parallax, Testimonials, Brand } from "@/UI";
+import { Slider, BGG, ThreeDCard, Parallax, Brand } from "@/UI";
 
 export default function Home() {
   return (
@@ -7,7 +7,6 @@ export default function Home() {
       {/* <Brand /> */}
       <ThreeDCard />
       <Parallax />
-      <Testimonials />
       <BGG />
     </>
   )

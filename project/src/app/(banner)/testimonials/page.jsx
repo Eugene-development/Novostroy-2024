@@ -1,7 +1,8 @@
-import React from 'react'
-
+import { Testimonials } from '@/UI'
 export default function page() {
     return (
-        <div>page</div>
+        <>
+            <Testimonials />
+        </>
     )
 }
