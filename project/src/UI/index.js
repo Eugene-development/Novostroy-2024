@@ -11,6 +11,7 @@ export { default as BGG } from "./main/BGG"
 export { default as Testimonials } from "./main/Testimonials"
 export { default as Brand } from "./main/Brand"
 export { default as Incentives } from "./main/Incentives"
+export { default as Sparkles } from "./main/Sparkles"
 
 
 export { default as LayoutGrid } from "./main/LayoutGrid"
