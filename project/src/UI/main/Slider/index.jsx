@@ -11,7 +11,7 @@ export default function ImagesSliderDemo() {
     ];
     const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
     return (
-        <ImagesSlider className="h-[51rem]" images={images}>
+        <ImagesSlider className="h-[52rem]" images={images}>
             <motion.div
                 initial={{
                     opacity: 0,

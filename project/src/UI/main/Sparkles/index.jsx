@@ -4,7 +4,7 @@ import { SparklesCore } from "./components";
 
 export default function SparklesPreview() {
     return (
-        <div className="h-[52rem] w-full bg-gray-900 flex flex-col items-center justify-center overflow-hidden">
+        <div className="h-[52rem] w-full bg-gray-950 flex flex-col items-center justify-center overflow-hidden">
             {/* <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
                 Новострой
             </h1> */}
@@ -31,7 +31,7 @@ export default function SparklesPreview() {
                 />
 
                 {/* Radial Gradient to prevent sharp edges */}
-                <div className="absolute inset-0 w-full h-full bg-gray-900 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+                <div className="absolute inset-0 w-full h-full bg-gray-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
         </div>
     );
