@@ -1,4 +1,4 @@
-import { Slider, BGG, ThreeDCard, Parallax, Incentives, Sparkles } from "@/UI";
+import { Slider, BGG, ThreeDCard, Parallax, Service } from "@/UI";
 
 export default function Home() {
   return (
@@ -6,8 +6,8 @@ export default function Home() {
       <Slider />
       {/* <Incentives /> */}
       <ThreeDCard />
-      <Sparkles />
       <Parallax />
+      <Service />
       <BGG />
     </>
   )

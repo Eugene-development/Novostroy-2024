@@ -1,7 +1,10 @@
-import React from 'react'
+import { Sparkles } from "@/UI";
 
 export default function page() {
     return (
-        <div>page</div>
+        <>
+            <Sparkles />
+        </>
+
     )
 }
