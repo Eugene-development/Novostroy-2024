@@ -2,18 +2,18 @@ import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/20/soli
 
 const cards = [
     {
-        name: 'Sales',
-        description: 'Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.',
+        name: 'Консультация',
+        description: 'Наш консультант даст вам консультацию по материалам и по возможным решениям в проектировании мебели.',
         icon: PhoneIcon,
     },
     {
-        name: 'Technical Support',
-        description: 'Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.',
+        name: 'Замер',
+        description: 'Осуществим проектный замер помещения с обозначением углов и расоложением коммуникаций и розеток.',
         icon: LifebuoyIcon,
     },
     {
-        name: 'Media Inquiries',
-        description: 'Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.',
+        name: 'Проект',
+        description: 'Дизайнер составит проект мебели с учётом ваших пожеланий, размеров помещения и своего проектного опыта.',
         icon: NewspaperIcon,
     },
 ]
@@ -45,8 +45,8 @@ export default () => {
                 />
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Support center</h2>
+                <div className="mx-auto max-w-3xl lg:mx-0">
+                    <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">До заключения договора</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-300">
                         Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                         fugiat veniam occaecat fugiat aliqua.
@@ -56,9 +56,9 @@ export default () => {
                     {cards.map((card) => (
                         <div key={card.name} className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
                             <card.icon className="h-7 w-5 flex-none text-indigo-400" aria-hidden="true" />
-                            <div className="text-base leading-7">
-                                <h3 className="font-semibold text-white">{card.name}</h3>
-                                <p className="mt-2 text-gray-300">{card.description}</p>
+                            <div className="leading-7">
+                                <h3 className="text-base font-semibold text-white">{card.name}</h3>
+                                <p className="text-sm mt-2 text-gray-300">{card.description}</p>
                             </div>
                         </div>
                     ))}
