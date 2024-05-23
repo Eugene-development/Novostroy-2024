@@ -1,9 +1,10 @@
-import { Sparkles } from "@/UI";
+import { Sparkles, CompanyText } from "@/UI";
 
 export default function page() {
     return (
         <>
             <Sparkles />
+            <CompanyText />
         </>
 
     )

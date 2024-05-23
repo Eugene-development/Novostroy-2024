@@ -13,8 +13,11 @@ export { default as Brand } from "./main/Brand"
 export { default as Incentives } from "./main/Incentives"
 export { default as Service } from "./main/Service"
 
+// About
+export { default as Sparkles } from "./about/Sparkles"
+export { default as CompanyText } from "./about/CompanyText"
+
 // Others
-export { default as Sparkles } from "./main/Sparkles"
 export { default as Benefits } from "./OTHERS/Benefits"
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight"
 
