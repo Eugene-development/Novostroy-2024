@@ -1,7 +1,8 @@
-import React from 'react'
-
+import { Partnership } from '@/UI'
 export default function page() {
     return (
-        <div>page</div>
+        <>
+            <Partnership />
+        </>
     )
 }

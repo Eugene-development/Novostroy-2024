@@ -17,6 +17,9 @@ export { default as Service } from "./main/Service"
 export { default as Sparkles } from "./about/Sparkles"
 export { default as CompanyText } from "./about/CompanyText"
 
+// Partnership
+export { default as Partnership } from "./partnership"
+
 // Others
 export { default as Benefits } from "./OTHERS/Benefits"
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight"
