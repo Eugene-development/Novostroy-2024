@@ -66,9 +66,9 @@ export default function ThreeDCardDemo() {
                             <CardItem
                                 translateZ={20}
                                 as="button"
-                                className="px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
+                                className=" px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Консультация
+                                Консультация1
                             </CardItem>
                         </div>
                     </CardBody>
