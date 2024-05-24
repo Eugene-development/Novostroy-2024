@@ -20,10 +20,10 @@ export default function Navbar({ className }) {
   return (
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
-        <Link href="/" className="mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
+        <Link href="/" className=" hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
-          <div className="flex flex-col mx-2 space-y-4 text-sm">
+          <div className=" flex flex-col mx-2 space-y-4 text-sm">
             <HoveredLink href="/">Консультация на адресе</HoveredLink>
             <HoveredLink href="/"> Замер помещения</HoveredLink>
             <HoveredLink href="/seo">Дизайн-проект мебели</HoveredLink>
@@ -44,7 +44,7 @@ export default function Navbar({ className }) {
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="Фурнитура"
+              title="Столешницы"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
@@ -59,13 +59,11 @@ export default function Navbar({ className }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Акции">
           <div className="flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">Скидки</HoveredLink>
+            <HoveredLink href="/individual">Подарки</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/blog" className="mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Блог</Link>
+        <Link href="/blog" className="hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Блог</Link>
       </Menu>
     </div>
   );

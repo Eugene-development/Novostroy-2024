@@ -68,7 +68,7 @@ export default function ThreeDCardDemo() {
                                 as="button"
                                 className=" px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Консультация1
+                                Консультация
                             </CardItem>
                         </div>
                     </CardBody>

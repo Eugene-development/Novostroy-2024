@@ -3,7 +3,7 @@ import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/20/soli
 const cards = [
     {
         name: 'Консультация',
-        description: 'Наш консультант даст вам консультацию по материалам и по возможным решениям в проектировании мебели.',
+        description: 'Наш менеджер даст вам консультацию по материалам и по возможным решениям в проектировании мебели.',
         icon: PhoneIcon,
     },
     {

@@ -1,7 +1,9 @@
-import React from 'react'
+import { BlogList } from "@/UI"
 
 export default function page() {
     return (
-        <div>page</div>
+        <>
+            <BlogList />
+        </>
     )
 }

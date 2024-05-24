@@ -20,6 +20,13 @@ export { default as CompanyText } from "./about/CompanyText"
 // Partnership
 export { default as Partnership } from "./partnership"
 
+
+// Blog
+export { default as BlogList } from "./blog/blogList"
+export { default as BlogDetail } from "./blog/blogDetail"
+
+
+
 // Others
 export { default as Benefits } from "./OTHERS/Benefits"
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight"
