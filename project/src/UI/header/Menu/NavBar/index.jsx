@@ -30,7 +30,7 @@ export default function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
-          <div className="text-sm grid grid-cols-2 gap-10 p-6">
+          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
               title="Мебель"
               href="https://algochurn.com"
