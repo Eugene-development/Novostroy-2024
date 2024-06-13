@@ -19,7 +19,7 @@ export default function ThreeDCardDemo() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
                         Мебель для дома
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -30,12 +30,12 @@ export default function ThreeDCardDemo() {
 
             <div className="flex items-center justify-center space-x-8">
                 <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
+                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
                         <CardItem
                             translateZ="50"
-                            className="text-xl font-bold text-neutral-600 dark:text-white"
+                            className="text-2xl font-bold text-neutral-600 dark:text-white"
                         >
-                            Кухонные гарнитуры
+                            Кухни
                         </CardItem>
                         <CardItem
                             as="p"
@@ -49,7 +49,7 @@ export default function ThreeDCardDemo() {
                                 src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
                                 height="1000"
                                 width="1000"
-                                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
                                 alt="thumbnail"
                             />
                         </CardItem>
@@ -66,20 +66,20 @@ export default function ThreeDCardDemo() {
                             <CardItem
                                 translateZ={20}
                                 as="button"
-                                className=" px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
+                                className=" px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Консультация
+                                Бесплатная консультация
                             </CardItem>
                         </div>
                     </CardBody>
                 </CardContainer>
                 <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
+                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
                         <CardItem
                             translateZ="50"
-                            className="text-xl font-bold text-neutral-600 dark:text-white"
+                            className="text-2xl font-bold text-neutral-600 dark:text-white"
                         >
-                            Распашные шкафы
+                            Шкафы
                         </CardItem>
                         <CardItem
                             as="p"
@@ -110,20 +110,20 @@ export default function ThreeDCardDemo() {
                             <CardItem
                                 translateZ={20}
                                 as="button"
-                                className="px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
+                                className="px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Консультация
+                                Бесплатная консультация
                             </CardItem>
                         </div>
                     </CardBody>
                 </CardContainer>
                 <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
+                    <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
                         <CardItem
                             translateZ="50"
-                            className="text-xl font-bold text-neutral-600 dark:text-white"
+                            className="text-2xl font-bold text-neutral-600 dark:text-white"
                         >
-                            Шкафы купе
+                            Гардеробы
                         </CardItem>
                         <CardItem
                             as="p"
@@ -154,9 +154,9 @@ export default function ThreeDCardDemo() {
                             <CardItem
                                 translateZ={20}
                                 as="button"
-                                className="px-4 py-2 rounded-xl bg-sky-900 dark:bg-white dark:text-black text-white text-xs font-bold"
+                                className="px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Консультация
+                                Бесплатная консультация
                             </CardItem>
                         </div>
                     </CardBody>
