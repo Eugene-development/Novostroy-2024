@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function ThreeDCardDemo() {
     return (
         <>
-            <div className="mx-auto max-w-2xl pt-4 sm:pt-8 lg:pt-12">
+            <div className="mx-auto max-w-3xl pt-4 sm:pt-8 lg:pt-12">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                        Интересные статьи о нас и нашей мебели.{' '}
+                    <div className="relative rounded-full font-light tracking-wide px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        Все наши услуги абсолютно{' '}
                         <Link href="/blog" className="font-semibold text-sky-600">
                             <span className="absolute inset-0" aria-hidden="true" />
-                            Подробнее в блоге <span aria-hidden="true">&rarr;</span>
+                            бесплатны <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ export default function ThreeDCardDemo() {
                         Мебель для дома
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Наша компания предлагает вам мебель, спроектированную лучшими дизайнерами и сделанную лучшими фабриками.
+                        Наша компания предлагает вам мебель, спроектированную лучшими дизайнерами и сделанную лучшими фабриками от эконом сегмента до премиальных решений.
                     </p>
                 </div>
             </div>

@@ -10,7 +10,7 @@ export default (props) => {
 
   return (
 
-    <div className=" relative isolate flex items-center py-2 px-4 sm:px-3.5 bg-gray-950  justify-between">
+    <div className=" relative isolate flex items-center py-1 px-4 sm:px-3.5 bg-gray-950  justify-between">
       {/* <svg
         viewBox="0 0 577 310"
         aria-hidden="true"
@@ -56,6 +56,14 @@ export default (props) => {
             <circle cx={1} cy={1} r={1} />
           </svg>
           <Link href="/testimonials" className="ml-1 text-sm text-gray-50">Отзывы</Link>
+          <svg
+            viewBox="0 0 2 2"
+            className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+            aria-hidden="true"
+          >
+            <circle cx={1} cy={1} r={1} />
+          </svg>
+          <Link href="/testimonials" className="ml-1 text-sm text-gray-50">Рассрочка</Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
