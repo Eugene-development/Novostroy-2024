@@ -8,7 +8,6 @@ export { default as Slider } from "./main/Slider"
 export { default as Parallax } from "./main/Parallax"
 export { default as ThreeDCard } from "./main/ThreeDCard"
 export { default as BGG } from "./main/BGG"
-export { default as Testimonials } from "./main/Testimonials"
 export { default as Brand } from "./main/Brand"
 export { default as Incentives } from "./main/Incentives"
 export { default as Service } from "./main/Service"
@@ -19,6 +18,9 @@ export { default as CompanyText } from "./about/CompanyText"
 
 // Partnership
 export { default as Partnership } from "./partnership"
+
+// Testimonials
+export { default as Testimonials } from "./Testimonials"
 
 // Contacts
 export { default as Contacts } from "./contacts"

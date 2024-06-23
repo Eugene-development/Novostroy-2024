@@ -247,8 +247,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white" />
     </div>
   );
 }
@@ -258,18 +258,19 @@ export default function Reviews() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="pb-16 pt-12 sm:pb-24 sm:pt-32 z-50 bg-gray-50"
+      className="bg-white py-12 sm:py-24"
     >
       <Container>
-        <div className="mx-auto max-w-2xl text-center font-display">
-          <h2 className="tracking-wide mb-8 text-3xl md:text-7xl font-extrabold text-gray-800 dark:text-white">
-            Отзывы о нас
-          </h2>
-          <p className="mt-4 text-sm sm:text-xl tracking-tight text-gray-700">
-            Однажды, возможно, мы разместим и ваш положительный отзыв о нашей
-            компании. Мы будем очень стараться для этого.
-          </p>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl sm:text-center">
+            <h2 className="text-base font-semibold leading-7 text-sky-600">Отзывы</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Мнения о нас</p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Однажды, возможно, мы разместим и ваш положительный отзыв о нашей
+              компании. Мы будем очень стараться для этого.            </p>
+          </div>
         </div>
+
         <ReviewGrid />
       </Container>
     </section>
