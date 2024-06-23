@@ -1,13 +1,16 @@
 export default () => {
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="bg-[url('https://flowbite.s3.amazonaws.com/blocks/marketing-ui/contact/laptop-human.jpg')] bg-no-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply">
-                <div className="px-4 lg:pt-24 pt-8 pb-72 lg:pb-80 mx-auto max-w-screen-sm text-center lg:px-6 ">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Контакты</h2>
-                    <p className="mb-16 font-light text-gray-400 sm:text-xl">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+        <section className="bg-white py-12 sm:py-24">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl sm:text-center">
+                    <h2 className="text-base font-semibold leading-7 text-sky-600">Контакты</h2>
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Связь с нами</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                        Мы открыты для рассмотрения деловых предложений о взаимовыгодном сотрудничестве с мебельными компаниями
+                    </p>
                 </div>
             </div>
-            <div className="py-16 px-4 mx-auto -mt-96 max-w-screen-xl sm:py-24 lg:px-6 ">
+            <div className="py-16 px-4 mx-auto  max-w-screen-xl sm:py-24 lg:px-6 ">
                 <form action="#" className="grid grid-cols-1 gap-8 p-6 mx-auto mb-16 max-w-screen-lg bg-white rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700 sm:grid-cols-2">
                     <div>
                         <label htmlFor="first-name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First Name</label>

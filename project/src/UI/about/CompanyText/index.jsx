@@ -4,7 +4,7 @@ export default () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl sm:text-center">
                     <h2 className="text-base font-semibold leading-7 text-sky-600">О компании</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Приглашаем к сотрудничеству</p>
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Информация о нас</p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Мы открыты для рассмотрения деловых предложений о взаимовыгодном сотрудничестве с мебельными компаниями
                     </p>
