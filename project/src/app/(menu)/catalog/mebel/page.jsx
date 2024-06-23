@@ -416,7 +416,7 @@ export default function page() {
 
                 <main className="flex-1 pb-4 h-full overflow-y-auto lg:pl-4">
                     <div className="grid grid-cols-2 gap-4 mb-4">
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-48 lg:h-96"></div>
+                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-48 lg:h-96">111</div>
                         <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-48 lg:h-96"></div>
                     </div>
 

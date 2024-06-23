@@ -31,7 +31,7 @@ export default function Navbar({ className }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
-            <ProductItem
+            <ProductItem setActive={setActive}
               title="Мебель"
               href="/catalog/mebel"
               src="https://assets.aceternity.com/demos/algochurn.webp"
