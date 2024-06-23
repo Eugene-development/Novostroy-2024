@@ -267,7 +267,8 @@ export default function Reviews() {
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Мнения о нашей работе</p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Однажды, возможно, мы разместим и ваш положительный отзыв о нашей
-              компании. Мы будем очень стараться для этого.            </p>
+              компании. Мы будем очень стараться для этого.
+            </p>
           </div>
         </div>
 
