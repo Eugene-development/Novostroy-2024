@@ -22,6 +22,9 @@ export { default as Partnership } from "./partnership"
 // Testimonials
 export { default as Testimonials } from "./Testimonials"
 
+// Installment
+export { default as Installment } from "./Installment"
+
 // Contacts
 export { default as Contacts } from "./contacts"
 
