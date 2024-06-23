@@ -33,25 +33,25 @@ export default function Navbar({ className }) {
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
               title="Мебель"
-              href="/catalog"
+              href="/catalog/mebel"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Бытовая Техника"
-              href="/catalog"
+              href="/catalog/tehnika"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Столешницы"
-              href="/catalog"
+              href="/catalog/stoleshnica"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Мойки и смесители"
-              href="/catalog"
+              href="/catalog/moyki"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
