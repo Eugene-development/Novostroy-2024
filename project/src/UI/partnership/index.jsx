@@ -9,32 +9,32 @@ import {
 
 const features = [
     {
-        name: 'Push to deploy.',
+        name: 'Оперативность',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
         icon: CloudArrowUpIcon,
     },
     {
-        name: 'SSL certificates.',
+        name: 'Контроль',
         description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
         icon: LockClosedIcon,
     },
     {
-        name: 'Simple queues.',
+        name: 'Выгода',
         description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
         icon: ArrowPathIcon,
     },
     {
-        name: 'Advanced security.',
+        name: 'Постоянство',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
         icon: FingerPrintIcon,
     },
     {
-        name: 'Powerful API.',
+        name: 'Опыт',
         description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
         icon: Cog6ToothIcon,
     },
     {
-        name: 'Database backups.',
+        name: 'Лояльность',
         description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
         icon: ServerIcon,
     },
