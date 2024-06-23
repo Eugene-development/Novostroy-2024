@@ -101,36 +101,50 @@ export default (props) => {
             className="mt-0.5 h-5 w-5 text-indigo-100"
             aria-hidden="true"
           />
-          <span className="ml-2 text-base text-gray-50">info@zov.top</span>
+          <span className="ml-2 text-sm text-gray-50">info@zov.top</span>
         </div>
       </div>
 
       <div className="hidden md:flex flex-1 justify-end ">
         <div className="hidden 2xl:flex 2xl:flex-1 ">
-          <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end ">
-            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
+          <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end items-center">
+            <div className=" bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
               <PhoneIcon
-                className="block size-4 xl:size-5 text-gray-50 "
+                className="block size-3 xl:size-4 text-gray-50 "
                 aria-hidden="true"
               />
               <Link
                 href="tel:+79154000020"
-                className=" ml-3 text-base font-semibold text-gray-50"
+                className=" ml-2 text-sm font-normal text-gray-50"
               >
                 8 (915) 400-00-20
               </Link>
             </div>
-            <div className="mr-4 bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
+            <svg
+              viewBox="0 0 2 2"
+              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              aria-hidden="true"
+            >
+              <circle cx={1} cy={1} r={1} />
+            </svg>
+            <div className=" bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
               <EnvelopeIcon
-                className="block size-4 xl:size-6 text-gray-50 "
+                className="block size-3 xl:size-4 text-gray-50 "
                 aria-hidden="true"
               />
               <div
-                className=" ml-3 text-base font-semibold text-gray-50"
+                className="ml-2 text-sm font-normal text-gray-50"
               >
                 info@novostroy.org
               </div>
             </div>
+            <svg
+              viewBox="0 0 2 2"
+              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              aria-hidden="true"
+            >
+              <circle cx={1} cy={1} r={1} />
+            </svg>
           </div>
         </div>
       </div>
