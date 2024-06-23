@@ -44,12 +44,11 @@ export default () => {
     return (
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl sm:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</p>
+                <div className="mx-auto max-w-3xl sm:text-center">
+                    <h2 className="text-base font-semibold leading-7 text-sky-600">Everything you need</h2>
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Приглашаем к сотрудничеству</p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-                        dolor cupiditate blanditiis.
+                        Наша компания открыта для рассмотрения предложений о взаимовыгодном сотрудничестве с торговыми компаниями, поставщиками, дизайнерами и с мебельными фабриками
                     </p>
                 </div>
             </div>
