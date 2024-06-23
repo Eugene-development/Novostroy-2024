@@ -28,6 +28,8 @@ export { default as Contacts } from "./contacts"
 export { default as BlogList } from "./blog/blogList"
 export { default as BlogDetail } from "./blog/blogDetail"
 
+// Policy
+export { default as Policy } from "./Policy";
 
 
 // Others

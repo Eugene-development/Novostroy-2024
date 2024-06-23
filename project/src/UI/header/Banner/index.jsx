@@ -63,7 +63,7 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/testimonials" className="ml-1 text-sm text-gray-50">Рассрочка</Link>
+          <Link href="/installment" className="ml-1 text-sm text-gray-50">Рассрочка</Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
