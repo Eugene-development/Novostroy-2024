@@ -31,7 +31,7 @@ export default function ImagesSliderDemo() {
                     Мы делаем  <br />вашу жизнь уютнее
                 </motion.p>
                 <button className="scale110 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-                    <span className="text-lg">  Узнать подробнее →</span>
+                    <span className="text-lg">Бесплатная консультатция дизайнера →</span>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
                 </button>
             </motion.div>
