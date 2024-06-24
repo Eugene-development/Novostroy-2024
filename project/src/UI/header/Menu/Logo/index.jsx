@@ -1,11 +1,10 @@
 'use client'
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 export default function index() {
-  const router = useRouter();
-  console.log(router.pathname)
-  const isHomePage = router.pathname === "/";
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   return (
     <Link href="/">
       <span className="sr-only">Novostroy</span>
