@@ -28,13 +28,17 @@ export { default as Installment } from "./Installment"
 // Contacts
 export { default as Contacts } from "./contacts"
 
-
 // Blog
 export { default as BlogList } from "./blog/blogList"
 export { default as BlogDetail } from "./blog/blogDetail"
 
 // Policy
 export { default as Policy } from "./Policy";
+
+
+// Catalog
+export { default as Badge } from "./catalog/badge";
+
 
 
 // Others
