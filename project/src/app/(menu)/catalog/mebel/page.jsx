@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Image from "next/image"
 export default function page() {
     return (
         <div className=" dark:bg-gray-900 antialised">
@@ -31,10 +31,10 @@ export default function page() {
                     </form>
                 </div>
             </div> */}
-            {/* <header>
+            <header>
                 <nav
                     id="toggleMobileMenu"
-                    className="bg-gray-50 border-b border-gray-200 dark:bg-gray-700 dark:border-gray-800">
+                    className="bg-white border-b border-gray-200 dark:bg-gray-700 dark:border-gray-800">
                     <div className="px-4 py-2">
                         <div className="flex items-center">
                             <ul
@@ -43,43 +43,43 @@ export default function page() {
                                     className="block lg:inline">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Home</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Консультация</a>
                                 </li>
                                 <li
                                     className="block lg:inline">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Shop</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Замер</a>
                                 </li>
                                 <li
                                     className="block lg:inline">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Today's deals</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Салон</a>
                                 </li>
                                 <li
                                     className="md:block lg:inline hidden">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Blog</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Договор</a>
                                 </li>
                                 <li
                                     className="md:block lg:inline hidden">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Contact</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Предоплата</a>
                                 </li>
                                 <li
                                     className="md:block lg:inline hidden">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Forum</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Доставка</a>
                                 </li>
                                 <li
                                     className="md:block lg:inline hidden">
                                     <a
                                         href="#"
-                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Support</a>
+                                        className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white">Сборка</a>
                                 </li>
                                 <li
                                     className="block md:hidden">
@@ -155,8 +155,8 @@ export default function page() {
                         </div>
                     </div>
                 </nav>
-            </header> */}
-            <div className='space-x-4 py-2 max-w-full px-8'>
+            </header>
+            <div className='space-x-4 py-3 max-w-full px-8'>
                 <span className="inline-flex  items-center gap-x-0.5 rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
                     Badge
                     <button type="button" className="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-gray-500/20">
@@ -167,7 +167,7 @@ export default function page() {
                         <span className="absolute -inset-1" />
                     </button>
                 </span>
-                <span className="inline-flex items-center gap-x-0.5 rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                {/* <span className="inline-flex items-center gap-x-0.5 rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
                     Badge
                     <button type="button" className="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-red-600/20">
                         <span className="sr-only">Remove</span>
@@ -236,11 +236,11 @@ export default function page() {
                         </svg>
                         <span className="absolute -inset-1" />
                     </button>
-                </span>
+                </span> */}
 
 
             </div>
-            <div className="max-w-full mx-auto flex w-full h-full relative pt-4 xl:pt-8 px-4">
+            <div className="max-w-full mx-auto flex w-full h-full relative  px-4">
                 <div>
                     <aside id="sidebar" className="fixed top-0 left-0 z-40 lg:z-0 w-64 h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 lg:translate-x-0 dark:bg-gray-800 dark:border-gray-700 lg:block lg:relative lg:h-auto lg:rounded-lg lg:border-r-0" aria-label="Sidebar">
 
@@ -416,15 +416,55 @@ export default function page() {
 
                 <main className="flex-1 pb-4 h-full overflow-y-auto lg:pl-4">
                     <div className="grid grid-cols-2 gap-4 mb-4">
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-48 lg:h-96">111</div>
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-48 lg:h-96"></div>
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
                     </div>
 
                     <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-4">
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div>
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div>
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
+                        <Image
+                            src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                            height="1000"
+                            width="1000"
+                            className=" w-full object-contain rounded-xl group-hover/card:shadow-xl "
+                            alt="thumbnail"
+                        />
+
+                        {/* <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div>
                         <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl"></div>
-                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div>
+                        <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div> */}
                     </div>
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl h-32 lg:h-64"></div>
