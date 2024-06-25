@@ -226,7 +226,7 @@ function ReviewGrid() {
             reviewClassName={(reviewIndex) =>
               clsx(
                 reviewIndex >= column1.length + column3[0].length &&
-                "md:hidden",
+                  "md:hidden",
                 reviewIndex >= column1.length && "lg:hidden",
               )
             }
@@ -263,8 +263,12 @@ export default function Reviews() {
       <Container>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl sm:text-center">
-            <h2 className="text-base font-semibold leading-7 text-sky-600">Отзывы</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Мнения о нашей работе</p>
+            <h2 className="text-base font-semibold leading-7 text-sky-600">
+              Отзывы
+            </h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Мнения о нашей работе
+            </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Однажды, возможно, мы разместим и ваш положительный отзыв о нашей
               компании. Мы будем очень стараться для этого.

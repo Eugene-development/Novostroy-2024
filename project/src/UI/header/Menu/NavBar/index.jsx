@@ -20,7 +20,12 @@ export default function Navbar({ className }) {
   return (
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
-        <Link href="/" className=" hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
+        <Link
+          href="/"
+          className=" hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white"
+        >
+          Главная
+        </Link>
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className=" flex flex-col mx-2 space-y-4 text-sm">
@@ -31,7 +36,8 @@ export default function Navbar({ className }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
-            <ProductItem setActive={setActive}
+            <ProductItem
+              setActive={setActive}
               title="Мебель"
               href="/catalog/mebel"
               src="https://assets.aceternity.com/demos/algochurn.webp"
@@ -63,7 +69,12 @@ export default function Navbar({ className }) {
             <HoveredLink href="/individual">Подарки</HoveredLink>
           </div>
         </MenuItem>
-        <Link href="/blog" className="hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Блог</Link>
+        <Link
+          href="/blog"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white"
+        >
+          Блог
+        </Link>
       </Menu>
     </div>
   );

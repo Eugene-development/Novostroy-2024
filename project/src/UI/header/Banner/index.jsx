@@ -1,15 +1,12 @@
 "use client";
 import Link from "next/link";
 
-import Search from "./Search"
-import Favorites from "./Favorites"
+import Search from "./Search";
+import Favorites from "./Favorites";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 
-
 export default (props) => {
-
   return (
-
     <div className=" relative isolate flex items-center py-1 px-4 sm:px-3.5 bg-gray-950  justify-between">
       {/* <svg
         viewBox="0 0 577 310"
@@ -38,8 +35,9 @@ export default (props) => {
       </svg> */}
       <div className=" flex flex-1 justify-start">
         <div className="hidden md:flex space-x-4 items-center justify-center">
-
-          <Link href="/about" className="ml-1 text-sm text-gray-50">О компании</Link>
+          <Link href="/about" className="ml-1 text-sm text-gray-50">
+            О компании
+          </Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -47,7 +45,9 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/partnership" className="ml-1 text-sm text-gray-50">Партнёрство</Link>
+          <Link href="/partnership" className="ml-1 text-sm text-gray-50">
+            Партнёрство
+          </Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -55,7 +55,9 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/testimonials" className="ml-1 text-sm text-gray-50">Отзывы</Link>
+          <Link href="/testimonials" className="ml-1 text-sm text-gray-50">
+            Отзывы
+          </Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -63,7 +65,9 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/installment" className="ml-1 text-sm text-gray-50">Рассрочка</Link>
+          <Link href="/installment" className="ml-1 text-sm text-gray-50">
+            Рассрочка
+          </Link>
           <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
@@ -71,7 +75,9 @@ export default (props) => {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          <Link href="/contacts" className="ml-1 text-sm text-gray-50">Контакты</Link>
+          <Link href="/contacts" className="ml-1 text-sm text-gray-50">
+            Контакты
+          </Link>
         </div>
         {/* <div className="hidden md:flex">
           <svg
@@ -132,9 +138,7 @@ export default (props) => {
                 className="block size-3 xl:size-4 text-gray-50 "
                 aria-hidden="true"
               />
-              <div
-                className="ml-2 text-sm font-normal text-gray-50"
-              >
+              <div className="ml-2 text-sm font-normal text-gray-50">
                 info@novostroy.org
               </div>
             </div>
@@ -160,5 +164,5 @@ export default (props) => {
         </Link>
       </div>
     </div>
-  )
+  );
 };

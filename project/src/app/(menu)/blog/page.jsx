@@ -1,9 +1,9 @@
-import { BlogList } from "@/UI"
+import { BlogList } from "@/UI";
 
 export default function page() {
-    return (
-        <>
-            <BlogList />
-        </>
-    )
+  return (
+    <>
+      <BlogList />
+    </>
+  );
 }

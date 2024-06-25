@@ -1,6 +1,4 @@
-import { Installment } from "@/UI"
+import { Installment } from "@/UI";
 export default function page() {
-    return (
-        <Installment />
-    )
+  return <Installment />;
 }

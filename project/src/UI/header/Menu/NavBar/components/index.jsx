@@ -63,7 +63,11 @@ export const Menu = ({ setActive, children }) => {
 
 export const ProductItem = ({ title, description, href, src }) => {
   return (
-    <Link href={href} onClick={() => setActive(null)} className="flex space-x-2">
+    <Link
+      href={href}
+      onClick={() => setActive(null)}
+      className="flex space-x-2"
+    >
       <Image
         src={src}
         width={140}
