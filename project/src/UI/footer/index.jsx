@@ -8,10 +8,10 @@ const navigation = {
     { name: "Контакты", href: "/installment" },
   ],
   support: [
-    { name: "Услуги", href: "#" },
-    { name: "Каталог", href: "#" },
-    { name: "Акции", href: "#" },
-    { name: "Блог", href: "#" },
+    { name: "Мебель", href: "/catalog/mebel" },
+    { name: "Столешница", href: "/catalog/stoleshnica" },
+    { name: "Техника", href: "/catalog/tehnika" },
+    { name: "Мойки", href: "/catalog/moyki" },
   ],
   company: [
     { name: "Дизайнер", href: "#" },
@@ -192,7 +192,7 @@ export default () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Меню
+                  Каталог
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
