@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const navigation = {
   solutions: [
-    { name: "О компании", href: "#" },
-    { name: "Партнёрство", href: "#" },
-    { name: "Отзывы", href: "#" },
-    { name: "Контакты", href: "#" },
+    { name: "О компании", href: "/about" },
+    { name: "Партнёрство", href: "/partnership" },
+    { name: "Отзывы", href: "/testimonials" },
+    { name: "Контакты", href: "/installment" },
   ],
   support: [
     { name: "Услуги", href: "#" },
