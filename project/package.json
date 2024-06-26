@@ -17,7 +17,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.0",
     "graphql": "^16.8.1",
-    "graphql-request": "^7.0.1",
+    "graphql-request": "^7.1.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.3",
     "react": "^18.3.1",

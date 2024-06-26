@@ -61,7 +61,7 @@ export const Menu = ({ setActive, children }) => {
   );
 };
 
-export const ProductItem = ({ title, description, href, src }) => {
+export const ProductItem = ({ setActive, title, description, href, src }) => {
   return (
     <Link
       href={href}
