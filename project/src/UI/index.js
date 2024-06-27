@@ -36,7 +36,7 @@ export { default as BlogDetail } from "./blog/blogDetail";
 export { default as Policy } from "./Policy";
 
 // Catalog
-export { default as Badge } from "./catalog/badge";
+export { default as Catalog } from "./catalog";
 
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";

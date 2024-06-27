@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function index() {
+export default () => {
   return (
     <div className="space-x-4 py-3 max-w-full px-8">
       <span className="inline-flex  items-center gap-x-0.5 rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
