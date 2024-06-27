@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 // import { Badge } from "./badge";
 import Badge from "./Badge"
+import Designer from "./designer";
 import Call2Action from "./Call2Action";
 export default () => {
     return (
@@ -239,16 +240,8 @@ export default () => {
                         </form>
 
                         <div className="overflow-y-auto py-2 px-3 h-full bg-white dark:bg-gray-800 lg:rounded-lg">
-                            {/* <a href="#" className="flex justify-between items-center p-2 mb-5 w-full rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 dark:hover-bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700" type="button">
-                                <span className="sr-only">Open user menu</span>
-                                <div className="flex items-center">
-                                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" className="mr-3 w-8 h-8 rounded-full" alt="Bonnie avatar" />
-                                    <div className="text-left">
-                                        <div className="font-semibold leading-none text-gray-900 dark:text-white mb-0.5">Bonnie Green</div>
-                                        <div className="text-sm text-gray-500 dark:text-gray-400">bonnie@flowbite.com</div>
-                                    </div>
-                                </div>
-                            </a> */}
+
+                            <Designer />
 
                             <Call2Action />
 
