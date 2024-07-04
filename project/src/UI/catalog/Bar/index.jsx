@@ -244,10 +244,10 @@ export default function index() {
                 <li>
                     <Link
                         href="/"
-                        className="flex items-center p-1 text-sm font-normal text-red-600 rounded-lg dark:text-red-500 hover:bg-red-100 dark:hover:bg-gray-700 group"
+                        className="flex items-center p-1 text-sm font-normal text-red-800 rounded-lg dark:text-red-500 hover:bg-gray-100 dark:hover:bg-gray-700 group"
                     >
                         <svg
-                            className="flex-shrink-0 w-6 h-6 text-red-600 transition duration-75 dark:text-red-500"
+                            className="flex-shrink-0 w-6 h-6 text-red-800 transition duration-75 dark:text-red-500"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
