@@ -13,9 +13,7 @@ export default function BackgroundGradientDemo() {
             Выполненные проекты
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Ознакомьтесь с несколькими выполненными проектами за последнее время. Представлены варианты различных категорий и решений.
           </p>
         </div>
       </div>
