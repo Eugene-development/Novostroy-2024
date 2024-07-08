@@ -4,7 +4,6 @@ export default function page() {
   return (
     <>
       <CompanyText />
-
       <Sparkles />
     </>
   );
