@@ -4,6 +4,7 @@ import Designer from "./Designer";
 import Call2Action from "./Call2Action";
 import Bar from "./Bar";
 import Product from "./Product";
+
 export default () => {
   return (
     <div className=" dark:bg-gray-900 antialised">

@@ -1,4 +1,3 @@
-
 export default () => {
   return (
     <div className="space-x-4 py-3 max-w-full px-8">
@@ -164,4 +163,4 @@ export default () => {
       </span>
     </div>
   );
-}
+};

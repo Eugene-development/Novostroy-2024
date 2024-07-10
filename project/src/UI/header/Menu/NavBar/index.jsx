@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./components";
+import { HoveredLink, Menu, MenuItem, MenuItemCatalog, ProductItem } from "./components";
 import { cn } from "@/utils/cn";
 
 // export function NavbarDemo() {
@@ -22,7 +22,7 @@ export default function Navbar({ className }) {
       <Menu setActive={setActive}>
         <Link
           href="/"
-          className=" hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Главная
         </Link>
@@ -34,7 +34,7 @@ export default function Navbar({ className }) {
             <HoveredLink href="/seo">Дизайн-проект мебели</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Каталог">
+        <MenuItemCatalog setActive={setActive} active={active} item="Каталог">
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
               setActive={setActive}
@@ -65,7 +65,7 @@ export default function Navbar({ className }) {
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </MenuItem>
+        </MenuItemCatalog>
         <MenuItem setActive={setActive} active={active} item="Акции">
           <div className="flex flex-col mx-2 space-y-4 text-sm">
             <HoveredLink href="/hobby">Скидки</HoveredLink>
@@ -74,7 +74,7 @@ export default function Navbar({ className }) {
         </MenuItem>
         <Link
           href="/blog"
-          className="hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Блог
         </Link>
