@@ -9,9 +9,9 @@ export default function ImagesSliderDemo() {
     "https://zovofficial.com/image/cache/catalog/products/kuhni/2024/norvud/cam-1-1600x1472.jpg",
     "https://zovofficial.com/image/cache/catalog/products/korpusnaya-mebel/5-pemont/gostinaya/2-1600x942.jpg",
   ];
-  const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
+  // const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
   return (
-    <ImagesSlider className="h-[52rem]" images={images}>
+    <ImagesSlider className="h-[54rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,

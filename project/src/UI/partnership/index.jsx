@@ -48,7 +48,7 @@ const features = [
 
 export default () => {
   return (
-    <div className="bg-white py-12 sm:py-24">
+    <div className="bg-white py-12 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl sm:text-center">
           <h2 className="text-base font-semibold leading-7 text-sky-600">
@@ -63,14 +63,14 @@ export default () => {
           </p>
         </div>
       </div>
-      <div className="relative overflow-hidden pt-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative overflow-hidden pt-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <img
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-            alt="App screenshot"
+            src="https://balakovo24.ru/b24/uploads/2020/03/biznes-rukopozhatie-sdelka-scaled.jpg"
+            alt="Партнерство"
             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             width={2432}
-            height={1442}
+            height={1214}
           />
           <div className="relative" aria-hidden="true">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />

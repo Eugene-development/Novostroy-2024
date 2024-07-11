@@ -258,7 +258,7 @@ export default function Reviews() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="bg-white py-12 sm:py-24"
+      className="bg-white py-12 sm:py-20"
     >
       <Container>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

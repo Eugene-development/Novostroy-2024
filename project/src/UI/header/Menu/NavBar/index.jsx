@@ -18,7 +18,7 @@ import { cn } from "@/utils/cn";
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
+    <div className={cn(" inset-x-0 max-w-3xl z-50 bg-gray-50", className)}>
       <Menu setActive={setActive}>
         <Link
           href="/"
@@ -60,6 +60,20 @@ export default function Navbar({ className }) {
             <ProductItem
               setActive={setActive}
               title="Мойки и смесители"
+              href="/catalog/moyki"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              setActive={setActive}
+              title="Освещение"
+              href="/catalog/moyki"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              setActive={setActive}
+              title="Аксессуары"
               href="/catalog/moyki"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
