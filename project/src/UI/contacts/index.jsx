@@ -10,7 +10,7 @@ export default () => {
             Связь с нами
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Мы 
+            Мы будеем рады обсудить с вами ваши предложения или рабочие нюансы.
           </p>
         </div>
       </div>
