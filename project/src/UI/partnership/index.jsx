@@ -1,48 +1,43 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  Cog6ToothIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  ServerIcon,
+  BoltIcon
 } from "@heroicons/react/20/solid";
 
 const features = [
   {
     name: "Оперативность",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-    icon: CloudArrowUpIcon,
+      "Молниеносное реагирование на все ваши запросы.",
+    icon: BoltIcon,
   },
   {
     name: "Контроль",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Строгий контроль работ на каждом этапе проекта.",
+    icon: BoltIcon,
   },
   {
     name: "Выгода",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
-    icon: ArrowPathIcon,
+      "Выгодные решения для эффективности вашего бизнеса.",
+    icon: BoltIcon,
   },
   {
     name: "Постоянство",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-    icon: FingerPrintIcon,
+      "Стабильное предоставление услуг высокого уровня.",
+    icon: BoltIcon,
   },
   {
     name: "Опыт",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: Cog6ToothIcon,
+      "Более 20 лет успешной работы на мебельном рынке.",
+    icon: BoltIcon,
   },
   {
     name: "Лояльность",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
-    icon: ServerIcon,
+      "Индивидуальный подход и забота о каждом клиенте.",
+    icon: BoltIcon,
   },
 ];
 
@@ -66,7 +61,7 @@ export default () => {
       <div className="relative overflow-hidden pt-12">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <img
-            src="https://balakovo24.ru/b24/uploads/2020/03/biznes-rukopozhatie-sdelka-scaled.jpg"
+            src="https://storage.yandexcloud.net/mine2024/novostroy/site/partner.jpg"
             alt="Партнерство"
             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             width={2432}
@@ -83,10 +78,10 @@ export default () => {
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold text-gray-900">
                 <feature.icon
-                  className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                  className="absolute left-1 top-1 h-5 w-5 text-sky-600"
                   aria-hidden="true"
                 />
-                {feature.name}
+                {feature.name}.
               </dt>{" "}
               <dd className="inline">{feature.description}</dd>
             </div>
