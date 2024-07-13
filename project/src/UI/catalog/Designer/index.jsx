@@ -17,7 +17,7 @@ export default () => {
             Ваш дизайнер
           </div>
           <div className="text-sm text-gray-500 dark:text-gray-400">
-            Юрий Сергеенков
+            Евгений
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.0.16",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",

@@ -1,5 +1,52 @@
+'use client'
+
+import ModalInfo from "./modal"
+import { useInfoStore } from "@/stores/info";
+const { visibleInfo } = useInfoStore;
+
+const info = [
+  {
+    name: "Консультация",
+    description: "ывм"
+  },
+  {
+    name: "Замер",
+    description: "укйам"
+  },
+  {
+    name: "Салон",
+    description: "йуа"
+  },
+  {
+    name: "Договор",
+    description: "йуца"
+  },
+  {
+    name: "Предоплата",
+    description: "йуца"
+  },
+  {
+    name: "Доставка",
+    description: "йуца"
+  },
+  {
+    name: "Сборка",
+    description: "уйца"
+  },
+]
+
 export default () => {
+  const { openVisibleInfo, setCurrentInfo } = visibleInfo();
+  
+  const handleVisibleInfo = (item) => {
+    openVisibleInfo();
+    setCurrentInfo(item);
+  };
+
+
   return (
+    <>
+    <ModalInfo/>
     <div className="flex">
       <nav
         id="toggleMobileMenu"
@@ -8,62 +55,20 @@ export default () => {
         <div className="px-4 py-2">
           <div className="flex items-center">
             <ul className="flex items-center text-sm text-gray-900 font-normal">
-              <li className="block lg:inline">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Консультация
-                </a>
-              </li>
-              <li className="block lg:inline">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Замер
-                </a>
-              </li>
-              <li className="block lg:inline">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Салон
-                </a>
-              </li>
-              <li className="md:block lg:inline hidden">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Договор
-                </a>
-              </li>
-              <li className="md:block lg:inline hidden">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Предоплата
-                </a>
-              </li>
-              <li className="md:block lg:inline hidden">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Доставка
-                </a>
-              </li>
-              <li className="md:block lg:inline hidden">
-                <a
-                  href="#"
-                  className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-white"
-                >
-                  Сборка
-                </a>
-              </li>
+              {info.map((item) => (
+                <li key={item.name} className="block lg:inline">
+                    <button
+                      onClick={() => handleVisibleInfo(item)}
+                      className="inline-block px-3 py-2 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-white"
+                    >
+                      {item.name}
+                    </button>
+                  </li >
+              )) 
+                
+              }
+            
+              
               <li className="block md:hidden">
                 <button
                   id="navigationDropdownButton"
@@ -181,5 +186,8 @@ export default () => {
                 </div>
             </div> */}
     </div>
+
+    
+    </>
   );
 };

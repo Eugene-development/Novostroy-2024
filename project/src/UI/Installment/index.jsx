@@ -10,8 +10,7 @@ export default function index() {
             Рассрочка платежа
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Мы открыты для рассмотрения деловых предложений о взаимовыгодном
-            сотрудничестве с мебельными компаниями
+            Позвольте себе именно ту мебель, которую долго желали, воспользовавшись беспроцентной рассрочкой платежа до года.
           </p>
         </div>
       </div>
@@ -29,18 +28,18 @@ export default function index() {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Вы можете приобрести продукцию у наших партнеров на выгодных условиях в рассрочку.
                 </p>
-                <div className="mt-8">
+                {/* <div className="mt-8">
                   <a
                     href="#"
                     className="inline-flex rounded-md bg-sky-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                   >
                     Заполнить анкету
                   </a>
-                </div>
+                </div> */}
                 <figure className="mt-16 border-l border-gray-200 pl-8 text-gray-600">
                   <blockquote className="text-base leading-7">
                     <p>
-                      “Подать заявку очень просто. Заполните анкету и получите предварительное одобрение от наших банков партнёров. Все расходы по обслуживанию договора на себя возьмёт наша компания.”
+                      “Подать заявку очень просто. Заполните анкету в любом салоне наших партнеров и получите предварительное одобрение от наших банков партнёров. Все расходы по обслуживанию договора на себя возьмёт наша компания.”
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 flex gap-x-4 text-sm leading-6">
@@ -60,7 +59,7 @@ export default function index() {
               </div>
             </div>
             <img
-              src="https://sky-mebel.by/uploads/s/e/c/v/ecv6s1fwahmu/img/autocrop/899b8d04d487102d26aefb37fc0564be.png"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/installment.png"
               alt="рассрочка"
               className="w-[48rem] max-w-none -mt-32 sm:w-[36rem] md:-ml-4 lg:ml-0"
               width={2432}

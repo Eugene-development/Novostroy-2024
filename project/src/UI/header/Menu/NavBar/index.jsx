@@ -18,7 +18,7 @@ import { cn } from "@/utils/cn";
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn(" inset-x-0 max-w-3xl z-50 bg-gray-50", className)}>
+    <div className={cn(" inset-x-0 max-w-3xl z-50", className)}>
       <Menu setActive={setActive}>
         <Link
           href="/"
