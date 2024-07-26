@@ -18,7 +18,7 @@ import { cn } from "@/utils/cn";
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn(" inset-x-0 max-w-3xl z-50", className)}>
+    <div className={cn("inset-x-0 max-w-3xl z-50", className)}>
       <Menu setActive={setActive}>
         <Link
           href="/"
@@ -35,48 +35,48 @@ export default function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItemCatalog setActive={setActive} active={active} item="Каталог">
-          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
+          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-50 rounded-xl">
             <ProductItem
               setActive={setActive}
               title="Мебель"
               href="/catalog/mebel"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Production ready Tailwind css components for your next project"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/mebel.jpg"
+              description="Качественная и стильная мебель под любой ваш запрос и бюджет"
             />
             <ProductItem
               setActive={setActive}
               title="Бытовая Техника"
               href="/catalog/tehnika"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
+              description="Оптимально подобранная техника идеально впишется в проект мебели"
             />
             <ProductItem
               setActive={setActive}
               title="Столешницы"
               href="/catalog/stoleshnica"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg"
+              description="Рабочая зона из восокопрочных материалов и с красивыми рисунками"
             />
             <ProductItem
               setActive={setActive}
               title="Мойки и смесители"
               href="/catalog/moyki"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
+              description="Стальные и композитные мойки и смесители от мировых производителей"
             />
             <ProductItem
               setActive={setActive}
               title="Освещение"
               href="/catalog/moyki"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/svet.jpeg"
+              description="Яркий акцент в композицию проекта благодаря качественному свету"
             />
             <ProductItem
               setActive={setActive}
-              title="Аксессуары"
+              title="Фурнитура"
               href="/catalog/moyki"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              src="https://storage.yandexcloud.net/mine2024/novostroy/site/furnitura.jpg"
+              description="Фурнитура это важнейший элемент любой мебельной конструкции"
             />
           </div>
         </MenuItemCatalog>
