@@ -109,7 +109,7 @@ export const ProductItem = ({ setActive, title, description, href, src }) => {
         width={140}
         height={50}
         alt={title}
-        className="h-28 flex-shrink-0 rounded-md shadow-xl shadow-gray-500"
+        className="h-[7rem] flex-shrink-0 rounded-md shadow-xl shadow-gray-500"
       />
       <div className="pl-4">
         <h4 className="mt-1 text-xl font-semibold mb-1 text-gray-900 dark:text-white">
