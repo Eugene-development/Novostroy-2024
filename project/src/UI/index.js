@@ -10,7 +10,7 @@ export { default as ThreeDCard } from "./main/ThreeDCard";
 export { default as BGG } from "./main/BGG";
 export { default as Brand } from "./main/Brand";
 export { default as Incentives } from "./main/Incentives";
-export { default as Service } from "./main/Service";
+export { default as Stage } from "./main/Stage";
 
 // About
 export { default as Sparkles } from "./about/Sparkles";
@@ -38,6 +38,12 @@ export { default as Policy } from "./Policy";
 // Catalog
 export { default as Catalog } from "./catalog";
 
+// Service
+export { default as Service } from "./service";
+
+
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight";
+
+
