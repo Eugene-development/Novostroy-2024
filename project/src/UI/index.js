@@ -41,6 +41,9 @@ export { default as Catalog } from "./catalog";
 // Service
 export { default as Service } from "./service";
 
+// Action
+export { default as Action } from "./action"
+
 
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";

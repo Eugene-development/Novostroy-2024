@@ -82,8 +82,8 @@ export default function Navbar({ className }) {
         </MenuItemCatalog>
         <MenuItem setActive={setActive} active={active} item="Акции">
           <div className="flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/hobby">Скидки</HoveredLink>
-            <HoveredLink href="/individual">Подарки</HoveredLink>
+            <HoveredLink href="/action">Скидки</HoveredLink>
+            <HoveredLink href="/action">Подарки</HoveredLink>
           </div>
         </MenuItem>
         <Link
