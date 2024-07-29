@@ -1,7 +1,9 @@
 import { Service } from "@/UI"
 
+const data = []
+
 export default () => {
   return (
-    <Service />
+    <Service data={data} />
   )
 }
