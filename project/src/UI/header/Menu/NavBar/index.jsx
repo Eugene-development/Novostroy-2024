@@ -22,6 +22,7 @@ export default function Navbar({ className }) {
       <Menu setActive={setActive}>
         <Link
           href="/"
+          onClick={() => setActive(null)}
           className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Главная
@@ -80,14 +81,22 @@ export default function Navbar({ className }) {
             />
           </div>
         </MenuItemCatalog>
-        <MenuItem setActive={setActive} active={active} item="Акции">
+        {/* <MenuItem setActive={setActive} active={active} item="Акции">
           <div className="flex flex-col mx-2 space-y-4 text-sm">
             <HoveredLink href="/action">Скидки</HoveredLink>
             <HoveredLink href="/action">Подарки</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
+        <Link
+          href="/action"
+          onClick={() => setActive(null)}
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
+        >
+          Акции
+        </Link>
         <Link
           href="/blog"
+          onClick={() => setActive(null)}
           className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Блог
