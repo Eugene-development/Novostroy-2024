@@ -36,13 +36,13 @@ export default function Navbar({ className }) {
           </div>
         </MenuItem>
         <MenuItemCatalog setActive={setActive} active={active} item="Каталог">
-          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-50 rounded-xl">
+          <div className="text-sm grid grid-cols-2 gap-10 p-10 bg-gray-50 rounded-xl">
             <ProductItem
               setActive={setActive}
               title="Мебель"
               href="/catalog/mebel"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/mebel.jpg"
-              description="Качественная и стильная мебель под любой ваш запрос и бюджет"
+              description="Качественная и стильная мебель под любой запрос и бюджет"
             />
             <ProductItem
               setActive={setActive}

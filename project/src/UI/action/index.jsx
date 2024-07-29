@@ -42,25 +42,25 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-base font-semibold leading-7 text-sky-600">Everything you need</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</p>
+          <h2 className="text-base font-semibold leading-7 text-sky-600">Наши акции</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Акции и спецпредложения</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
             dolor cupiditate blanditiis.
           </p>
         </div>
       </div>
-      <div className="relative overflow-hidden pt-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative overflow-hidden pt-12">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <img
-            alt="App screenshot"
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+            alt="Акция"
+            src="https://storage.yandexcloud.net/mine2024/novostroy/site/actionfoto.png"
             width={2432}
             height={1442}
-            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+            className="h-[34rem] mb-[-8%] rounded-xl"
           />
           <div aria-hidden="true" className="relative">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
