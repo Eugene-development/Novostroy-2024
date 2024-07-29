@@ -102,7 +102,7 @@ export const ProductItem = ({ setActive, title, description, href, src }) => {
     <Link
       href={href}
       onClick={() => setActive(null)}
-      className="flex space-x-4 hover:scale110"
+      className="flex space-x-4 transition ease-in-out hover:scale-110"
     >
       <Image
         src={src}
