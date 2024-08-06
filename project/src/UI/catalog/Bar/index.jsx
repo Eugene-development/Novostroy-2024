@@ -13,7 +13,7 @@ export default function index() {
     useState(false);
 
   return (
-    <>
+    <Fragment>
       {/* <p>{currentVisibleMenu}</p> */}
       <ul className="space-y-2">
         {/* <li>
@@ -286,6 +286,6 @@ export default function index() {
           </Link>
         </li>
       </ul>
-    </>
+    </Fragment>
   );
 }
