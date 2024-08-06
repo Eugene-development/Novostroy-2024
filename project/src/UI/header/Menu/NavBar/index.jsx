@@ -68,14 +68,14 @@ export default function Navbar({ className }) {
             <ProductItem
               setActive={setActive}
               title="Освещение"
-              href="/catalog/moyki"
+              href="/catalog/osveshenie"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/svet.jpeg"
               description="Яркий акцент в композицию проекта благодаря качественному свету"
             />
             <ProductItem
               setActive={setActive}
               title="Фурнитура"
-              href="/catalog/moyki"
+              href="/catalog/furnitura"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/furnitura.jpg"
               description="Фурнитура это важнейший элемент любой мебельной конструкции"
             />
