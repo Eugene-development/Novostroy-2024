@@ -11,13 +11,23 @@ const rubric = [
       },
       {
         name: "test888",
-        count: 5,
+        count: 89,
       },
     ],
   },
   {
     name: "test2",
     count: 5,
+    category: [
+      {
+        name: "test333",
+        count: 5,
+      },
+      {
+        name: "test444",
+        count: 89,
+      },
+    ],
   },
 ];
 
