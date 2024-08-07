@@ -2,30 +2,33 @@ import { Catalog } from "@/UI";
 
 const rubric = [
   {
-    name: "test1",
-    count: 5,
+    name: "Кухонные гарнитуры",
     category: [
       {
-        name: "test777",
-        count: 5,
+        name: "Термопластик",
       },
       {
-        name: "test888",
-        count: 89,
+        name: "Эмаль (краска)",
+      },
+      {
+        name: "Пластики",
+      },
+      {
+        name: "Шпон",
+      },
+      {
+        name: "Массив",
       },
     ],
   },
   {
-    name: "test2",
-    count: 5,
+    name: "Шкафы",
     category: [
       {
-        name: "test333",
-        count: 5,
+        name: "Распашные",
       },
       {
-        name: "test444",
-        count: 89,
+        name: "Купе",
       },
     ],
   },
