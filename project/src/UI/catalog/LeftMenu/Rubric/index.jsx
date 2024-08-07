@@ -2,16 +2,23 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
 
-export default function index({ rubric }) {
-  const [currentVisibleSubMenu, setCurrentVisibleSubMenu] = useState(false);
+export default function Index({ rubric }) {
+  const [currentVisibleSubMenus, setCurrentVisibleSubMenus] = useState({});
+
+  const toggleSubMenu = (itemName) => {
+    setCurrentVisibleSubMenus((prev) => ({
+      ...prev,
+      [itemName]: !prev[itemName],
+    }));
+  };
 
   return (
     <Fragment>
       <ul className="space-y-2">
         {rubric.map((item) => (
-          <li>
+          <li key={item.name}>
             <button
-              onClick={() => setCurrentVisibleSubMenu(!currentVisibleSubMenu)}
+              onClick={() => toggleSubMenu(item.name)}
               type="button"
               className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-orders"
@@ -22,7 +29,7 @@ export default function index({ rubric }) {
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 transform transition-transform ${currentVisibleSubMenu ? "rotate-0" : "-rotate-90"}`}
+                className={`size-6 transform transition-transform ${currentVisibleSubMenus[item.name] ? "rotate-0" : "-rotate-90"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +42,9 @@ export default function index({ rubric }) {
               </svg>
             </button>
 
-            {currentVisibleSubMenu &&
+            {currentVisibleSubMenus[item.name] &&
               item.category?.map((subitem) => (
-                <ul id="dropdown-orders" className=" py-2 space-y-2">
+                <ul id="dropdown-orders" className=" py-2 space-y-2" key={subitem.name}>
                   <li className="flex items-center">
                     <a
                       href="#"
