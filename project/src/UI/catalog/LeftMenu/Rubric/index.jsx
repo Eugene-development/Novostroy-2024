@@ -2,61 +2,53 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
 
-export default function index({rubric}) {
-
-  const [currentVisibleSubMenu, setCurrentVisibleSubMenu] =
-    useState(false);
+export default function index({ rubric }) {
+  const [currentVisibleSubMenu, setCurrentVisibleSubMenu] = useState(false);
 
   return (
     <Fragment>
       <ul className="space-y-2">
-      {rubric.map((item) => (
-        <li>
-          <button
-            onClick={() =>
-              setCurrentVisibleSubMenu(!currentVisibleSubMenu)
-            }
-            type="button"
-            className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
-            aria-controls="dropdown-orders"
-            data-collapse-toggle="dropdown-orders"
-          >
-            <span className="flex-1 ml-3 text-left whitespace-nowrap">
-              {item.name}
-            </span>
-            <svg
-              aria-hidden="true"
-              className={`size-6 transform transition-transform ${currentVisibleSubMenu ? "rotate-0" : "-rotate-90"}`}
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+        {rubric.map((item) => (
+          <li>
+            <button
+              onClick={() => setCurrentVisibleSubMenu(!currentVisibleSubMenu)}
+              type="button"
+              className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-orders"
+              data-collapse-toggle="dropdown-orders"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
+              <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                {item.name}
+              </span>
+              <svg
+                aria-hidden="true"
+                className={`size-6 transform transition-transform ${currentVisibleSubMenu ? "rotate-0" : "-rotate-90"}`}
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
 
-          {currentVisibleSubMenu && (
-            item.category?.map((subitem) => (
-              <ul id="dropdown-orders" className=" py-2 space-y-2">
-                <li className="flex items-center">
-                  <a
-                    href="#"
-                    className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
-                  >
-                    {subitem.name}
-                  </a>
-                </li>
-              </ul>))
-          )}
-          
-          
-          
-        </li>
-
+            {currentVisibleSubMenu &&
+              item.category?.map((subitem) => (
+                <ul id="dropdown-orders" className=" py-2 space-y-2">
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+                    >
+                      {subitem.name}
+                    </a>
+                  </li>
+                </ul>
+              ))}
+          </li>
         ))}
       </ul>
 

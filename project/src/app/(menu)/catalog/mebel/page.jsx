@@ -32,5 +32,5 @@ const rubric = [
 ];
 
 export default function page() {
-  return <Catalog rubric={ rubric } />;
+  return <Catalog rubric={rubric} />;
 }
