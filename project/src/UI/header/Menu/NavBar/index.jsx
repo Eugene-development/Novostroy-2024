@@ -1,7 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, MenuItemCatalog, ProductItem } from "./components";
+import {
+  HoveredLink,
+  Menu,
+  MenuItem,
+  MenuItemCatalog,
+  ProductItem,
+} from "./components";
 import { cn } from "@/utils/cn";
 
 // export function NavbarDemo() {
@@ -30,9 +36,16 @@ export default function Navbar({ className }) {
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className=" flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/service/consultation">Консультация на адресе</HoveredLink>
-            <HoveredLink href="/service/measuring"> Замер помещения</HoveredLink>
-            <HoveredLink href="/service/desing">Дизайн-проект мебели</HoveredLink>
+            <HoveredLink href="/service/consultation">
+              Консультация на адресе
+            </HoveredLink>
+            <HoveredLink href="/service/measuring">
+              {" "}
+              Замер помещения
+            </HoveredLink>
+            <HoveredLink href="/service/desing">
+              Дизайн-проект мебели
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItemCatalog setActive={setActive} active={active} item="Каталог">

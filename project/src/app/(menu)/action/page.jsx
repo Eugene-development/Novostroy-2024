@@ -1,7 +1,5 @@
-import { Action } from "@/UI"
+import { Action } from "@/UI";
 
 export default () => {
-  return (
-    <Action />
-  )
-}
+  return <Action />;
+};

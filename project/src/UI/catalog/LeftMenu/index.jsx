@@ -3,7 +3,7 @@ import Designer from "./Designer";
 import Call2Action from "./Call2Action";
 import Rubric from "./Rubric";
 
-export default () => {
+export default ( {rubric} ) => {
   return (
     <div>
       <aside
@@ -18,7 +18,7 @@ export default () => {
 
           <Call2Action />
 
-          <Rubric />
+          <Rubric rubric={ rubric }/>
         </div>
       </aside>
     </div>

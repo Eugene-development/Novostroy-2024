@@ -5,8 +5,7 @@ const visibleInfo = create((set) => ({
   currentInfo: null,
   openVisibleInfo: () => set(() => ({ currentVisibleInfo: true })),
   closeVisibleInfo: () => set(() => ({ currentVisibleInfo: false })),
-  setCurrentInfo: (item) =>
-      set(() => ({ currentInfo: item })),
+  setCurrentInfo: (item) => set(() => ({ currentInfo: item })),
 }));
 
 export const useInfoStore = {

@@ -1,42 +1,34 @@
-import {
-  BoltIcon
-} from "@heroicons/react/20/solid";
+import { BoltIcon } from "@heroicons/react/20/solid";
 
 const features = [
   {
     name: "Оперативность",
-    description:
-      "Молниеносное реагирование на все ваши запросы.",
+    description: "Молниеносное реагирование на все ваши запросы.",
     icon: BoltIcon,
   },
   {
     name: "Контроль",
-    description:
-      "Строгий контроль работ на каждом этапе проекта.",
+    description: "Строгий контроль работ на каждом этапе проекта.",
     icon: BoltIcon,
   },
   {
     name: "Выгода",
-    description:
-      "Выгодные решения для эффективности вашего бизнеса.",
+    description: "Выгодные решения для эффективности вашего бизнеса.",
     icon: BoltIcon,
   },
   {
     name: "Постоянство",
-    description:
-      "Стабильное предоставление услуг высокого уровня.",
+    description: "Стабильное предоставление услуг высокого уровня.",
     icon: BoltIcon,
   },
   {
     name: "Опыт",
-    description:
-      "Более 20 лет успешной работы на мебельном рынке.",
+    description: "Более 20 лет успешной работы на мебельном рынке.",
     icon: BoltIcon,
   },
   {
     name: "Лояльность",
-    description:
-      "Индивидуальный подход и забота о каждом клиенте.",
+    description: "Индивидуальный подход и забота о каждом клиенте.",
     icon: BoltIcon,
   },
 ];

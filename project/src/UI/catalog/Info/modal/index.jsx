@@ -1,15 +1,24 @@
-'use client'
+"use client";
 
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/24/outline'
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/24/outline";
 import { useInfoStore } from "@/stores/info";
 const { visibleInfo } = useInfoStore;
 
-export default () =>  {
+export default () => {
   const { currentVisibleInfo, currentInfo, closeVisibleInfo } = visibleInfo();
 
   return (
-    <Dialog open={currentVisibleInfo} onClose={closeVisibleInfo} className="relative z-10">
+    <Dialog
+      open={currentVisibleInfo}
+      onClose={closeVisibleInfo}
+      className="relative z-10"
+    >
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -23,10 +32,16 @@ export default () =>  {
           >
             <div>
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-sky-100">
-                <CheckIcon aria-hidden="true" className="h-6 w-6 text-sky-600" />
+                <CheckIcon
+                  aria-hidden="true"
+                  className="h-6 w-6 text-sky-600"
+                />
               </div>
               <div className="mt-3 text-center sm:mt-5">
-                <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900">
+                <DialogTitle
+                  as="h3"
+                  className="text-base font-semibold leading-6 text-gray-900"
+                >
                   {currentInfo?.name}
                 </DialogTitle>
                 <div className="mt-2">
@@ -49,5 +64,5 @@ export default () =>  {
         </div>
       </div>
     </Dialog>
-  )
-}
+  );
+};

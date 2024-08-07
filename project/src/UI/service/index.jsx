@@ -1,18 +1,18 @@
-
-
-export default ({data}) => {
+export default ({ data }) => {
   return (
     <div className="bg-white py-20 sm:py-24">
-   
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <p className="text-base font-semibold leading-7 text-sky-600">Услуга компании</p>
+          <p className="text-base font-semibold leading-7 text-sky-600">
+            Услуга компании
+          </p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {data.name}
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+            In mi viverra elit nunc.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -21,16 +21,21 @@ export default ({data}) => {
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-sky-600">
-                    <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
+                    <feature.icon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-white"
+                    />
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  {feature.description}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
