@@ -1,26 +1,21 @@
 const rubric = [
   {
-    name: "Кухонные гарнитуры",
+    name: "Korting",
     category: [
       {
         name: "Термопластик",
-        href:"/x",
       },
       {
         name: "Эмаль (краска)",
-        href:"#",
       },
       {
         name: "Пластики",
-        href:"#",
       },
       {
         name: "Шпон",
-        href:"#",
       },
       {
         name: "Массив",
-        href:"#",
       },
     ],
   },
@@ -29,11 +24,9 @@ const rubric = [
     category: [
       {
         name: "Распашные",
-        href:"#",
       },
       {
         name: "Купе",
-        href:"#",
       },
     ],
   },

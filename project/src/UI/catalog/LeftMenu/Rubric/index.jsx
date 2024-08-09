@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 
@@ -17,7 +18,7 @@ export default function Index({ rubric }) {
       <ul className="space-y-2">
         {rubric.map((item) => (
           <li key={item.name}>
-            <button
+            <Button
               onClick={() => toggleSubMenu(item.name)}
               type="button"
               className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
@@ -40,18 +41,18 @@ export default function Index({ rubric }) {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </Button>
 
             {currentVisibleSubMenus[item.name] &&
               item.category?.map((subitem) => (
                 <ul id="dropdown-orders" className=" py-2 space-y-2" key={subitem.name}>
                   <li className="flex items-center">
-                    <a
-                      href="#"
+                    <Link
+                      href={subitem.href}
                       className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
                     >
                       {subitem.name}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               ))}
