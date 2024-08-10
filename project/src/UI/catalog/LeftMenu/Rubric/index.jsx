@@ -16,23 +16,22 @@ export default function Index({ rubric }) {
 
   return (
     <Fragment>
-      <p>{rubric}</p>
-      {/* <ul className="space-y-2">
-        {rubric.map((item) => (
-          <li key={item.name}>
+      <ul className="space-y-2">
+        {rubric?.rubric.map((item) => (
+          <li key={item.value}>
             <Button
-              onClick={() => toggleSubMenu(item.name)}
+              onClick={() => toggleSubMenu(item.value)}
               type="button"
               className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-orders"
               data-collapse-toggle="dropdown-orders"
             >
               <span className="flex-1 ml-3 text-left whitespace-nowrap">
-                {item.name}
+                {item.value}
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 transform transition-transform ${currentVisibleSubMenus[item.name] ? "rotate-0" : "-rotate-90"}`}
+                className={`size-6 transform transition-transform ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,22 +44,29 @@ export default function Index({ rubric }) {
               </svg>
             </Button>
 
-            {currentVisibleSubMenus[item.name] &&
-              item.category?.map((subitem) => (
-                <ul id="dropdown-orders" className=" py-2 space-y-2" key={subitem.name}>
-                  <li className="flex items-center">
-                    <Link
-                      href={subitem.href}
-                      className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+            {currentVisibleSubMenus[item.value] &&
+              item.category?.map(
+                (subitem) =>
+                  subitem.is_active && (
+                    <ul
+                      id="dropdown-orders"
+                      className=" py-2 space-y-2"
+                      key={subitem.value}
                     >
-                      {subitem.name}
-                    </Link>
-                  </li>
-                </ul>
-              ))}
+                      <li className="flex items-center">
+                        <Link
+                          href={subitem.slug}
+                          className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+                        >
+                          {subitem.value}
+                        </Link>
+                      </li>
+                    </ul>
+                  ),
+              )}
           </li>
         ))}
-      </ul> */}
+      </ul>
 
       <ul className="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
         <li>

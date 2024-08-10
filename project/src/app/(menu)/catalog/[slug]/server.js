@@ -10,7 +10,9 @@ const CATALOG = gql`
       rubric {
         value
         category {
+          is_active
           value
+          slug
         }
       }
     }
