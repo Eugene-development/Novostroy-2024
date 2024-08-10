@@ -3,7 +3,7 @@ import Info from "./Info";
 import Product from "./Product";
 import LeftMenu from "./LeftMenu";
 
-export default ({ rubric }) => {
+export default ({rubric}) => {
   return (
     <div className="antialised">
       <Info />

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 
 export default function Index({ rubric }) {
+  
+  console.log(rubric)
   const [currentVisibleSubMenus, setCurrentVisibleSubMenus] = useState({});
 
   const toggleSubMenu = (itemName) => {
@@ -15,7 +17,8 @@ export default function Index({ rubric }) {
 
   return (
     <Fragment>
-      <ul className="space-y-2">
+      <p>{ rubric }</p>
+      {/* <ul className="space-y-2">
         {rubric.map((item) => (
           <li key={item.name}>
             <Button
@@ -58,7 +61,7 @@ export default function Index({ rubric }) {
               ))}
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       <ul className="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
         <li>
