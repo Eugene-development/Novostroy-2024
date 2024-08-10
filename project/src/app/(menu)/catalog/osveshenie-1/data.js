@@ -1,11 +1,10 @@
 const rubric = [
   {
     name: "Duslar",
-    href:"#",
+    href: "#",
   },
-  
 ];
 
 export const staticData = {
-  rubric
-}
+  rubric,
+};

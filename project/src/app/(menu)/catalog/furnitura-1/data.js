@@ -1,15 +1,14 @@
 const rubric = [
   {
     name: "МДМ",
-    href:"#",
+    href: "#",
   },
   {
     name: "Макмарт",
-    href:"#",
+    href: "#",
   },
 ];
 
 export const staticData = {
-  rubric
-}
-  
+  rubric,
+};

@@ -4,8 +4,7 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 
 export default function Index({ rubric }) {
-  
-  console.log(rubric)
+  // console.log(rubric)
   const [currentVisibleSubMenus, setCurrentVisibleSubMenus] = useState({});
 
   const toggleSubMenu = (itemName) => {
@@ -17,7 +16,7 @@ export default function Index({ rubric }) {
 
   return (
     <Fragment>
-      <p>{ rubric }</p>
+      <p>{rubric}</p>
       {/* <ul className="space-y-2">
         {rubric.map((item) => (
           <li key={item.name}>

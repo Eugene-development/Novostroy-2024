@@ -34,5 +34,5 @@ export default async ({ params }) => {
   //     product: filteredProducts,
   //   };
 
-  return <Catalog  rubric={data.catalog.value}/>;
+  return <Catalog rubric={data.catalog.value} />;
 };

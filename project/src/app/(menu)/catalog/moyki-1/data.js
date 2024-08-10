@@ -1,7 +1,7 @@
 const rubric = [
   {
     name: "Omoikiry",
-    href:"#",
+    href: "#",
     category: [
       {
         name: "Мойки",
@@ -13,14 +13,14 @@ const rubric = [
   },
   {
     name: "Emar",
-    href:"#",
+    href: "#",
   },
   {
     name: "Poulmark",
-    href:"#",
+    href: "#",
   },
 ];
 
 export const staticData = {
-  rubric
-}
+  rubric,
+};

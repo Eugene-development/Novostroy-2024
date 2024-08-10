@@ -4,23 +4,23 @@ const rubric = [
     category: [
       {
         name: "Термопластик",
-        href:"/x",
+        href: "/x",
       },
       {
         name: "Эмаль (краска)",
-        href:"#",
+        href: "#",
       },
       {
         name: "Пластики",
-        href:"#",
+        href: "#",
       },
       {
         name: "Шпон",
-        href:"#",
+        href: "#",
       },
       {
         name: "Массив",
-        href:"#",
+        href: "#",
       },
     ],
   },
@@ -29,16 +29,16 @@ const rubric = [
     category: [
       {
         name: "Распашные",
-        href:"#",
+        href: "#",
       },
       {
         name: "Купе",
-        href:"#",
+        href: "#",
       },
     ],
   },
 ];
 
 export const staticData = {
-  rubric
-}
+  rubric,
+};

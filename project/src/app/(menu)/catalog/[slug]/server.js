@@ -1,19 +1,21 @@
 "use server";
 import { gql, request } from "graphql-request";
 
-const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } =
-  process.env;
-
+const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } = process.env;
 
 const CATALOG = gql`
   query category($slug: String!, $key: UUID!) {
-      catalog(slug: $slug, key: $key) {
+    catalog(slug: $slug, key: $key) {
+      value
+      rubric {
         value
-        
+        category {
+          value
+        }
       }
     }
+  }
 `;
-
 
 export async function getCatalog({ params }) {
   const variables = {
@@ -27,4 +29,3 @@ export async function getCatalog({ params }) {
     throw error;
   }
 }
-

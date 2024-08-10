@@ -33,5 +33,5 @@ const rubric = [
 ];
 
 export const staticData = {
-  rubric
-}
+  rubric,
+};
