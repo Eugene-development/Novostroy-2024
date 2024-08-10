@@ -16,13 +16,13 @@ export default function Index({ rubric }) {
 
   return (
     <Fragment>
-      <ul className="space-y-2">
+      <ul className="space-y-3 my-6">
         {rubric?.rubric.map((item) => (
           <li key={item.value}>
             <Button
               onClick={() => toggleSubMenu(item.value)}
               type="button"
-              className="flex items-center py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+              className="flex items-center py-2 w-full text-base font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-orders"
               data-collapse-toggle="dropdown-orders"
             >
@@ -31,7 +31,7 @@ export default function Index({ rubric }) {
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 transform transition-transform ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
+                className={`size-6 text-red-800 transform transition-transform ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function Index({ rubric }) {
                       <li className="flex items-center">
                         <Link
                           href={subitem.slug}
-                          className="flex items-center p-1 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+                          className="flex items-center p-1 pl-11 w-full text-sm font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
                         >
                           {subitem.value}
                         </Link>
