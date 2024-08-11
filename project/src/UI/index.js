@@ -37,6 +37,9 @@ export { default as Policy } from "./Policy";
 
 // Catalog
 export { default as Catalog } from "./catalog";
+export { default as Info } from "./catalog/Info";
+export { default as SideBar } from "./catalog/SideBar";
+export { default as Product } from "./catalog/Product";
 
 // Service
 export { default as Service } from "./service";

@@ -1,4 +1,4 @@
-import { Catalog } from "@/UI";
+import { Product } from "@/UI";
 import { getCatalog } from "./server";
 
 // export async function generateMetadata({ params }) {
@@ -16,5 +16,5 @@ import { getCatalog } from "./server";
 export default async ({ params }) => {
   const data = await getCatalog({ params });
 
-  return <Catalog rubric={data.catalog} />;
+  return <Product rubric={data.catalog} />;
 };

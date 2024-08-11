@@ -1,8 +1,10 @@
 import Image from "next/image";
 
-export default () => {
+export default ({rubric}) => {
+  // console.log (rubric.value)
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
+    {rubric.value}
       <div className="grid grid-cols-2 gap-4 mb-4">
         <Image
           src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
