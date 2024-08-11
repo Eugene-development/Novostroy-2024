@@ -3,7 +3,7 @@ import { Button } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 
-export default function Index({ rubric }) {
+export default function Index({ dataCatalog }) {
   // console.log(rubric)
   const [currentVisibleSubMenus, setCurrentVisibleSubMenus] = useState({});
 
@@ -17,7 +17,7 @@ export default function Index({ rubric }) {
   return (
     <Fragment>
       <ul className="space-y-3 my-6">
-        {rubric?.rubric.map((item) => (
+        {dataCatalog?.rubric.map((item) => (
           <li key={item.value}>
             <Button
               onClick={() => toggleSubMenu(item.value)}
@@ -55,7 +55,7 @@ export default function Index({ rubric }) {
                     >
                       <li className="flex items-center">
                         <Link
-                          href={`category/${item.slug}/${subitem.slug}`}
+                          href={`/${dataCatalog.slug}/${item.slug}/${subitem.slug}`}
                           className="flex items-center p-1 pl-11 w-full text-sm font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
                         >
                           {subitem.value}

@@ -1,5 +1,5 @@
 import { Product } from "@/UI";
-import { getCatalog } from "./server";
+import { getCategory } from "./server";
 
 // export async function generateMetadata({ params }) {
 //   const meta = await getCatalog({ params });
@@ -14,7 +14,11 @@ import { getCatalog } from "./server";
 // }
 
 export default async ({ params }) => {
-  const data = await getCatalog({ params });
+  // Последний элемент
+  const slug = params.slug[params.slug.length - 1]
+  const data = await getCategory(slug);
+  // const lastElement = params.slug[params.slug.length - 1];
 
-  return <Product rubric={data.catalog} />;
+  return <p>{slug}</p>;
+  // return <Product rubric={data.catalog} />;
 };

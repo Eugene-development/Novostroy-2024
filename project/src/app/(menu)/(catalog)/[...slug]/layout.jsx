@@ -12,7 +12,7 @@ export default async ({ children, params }) => {
       {/* <Badge /> */}
 
       <div className="max-w-full mx-auto flex w-full h-full relative  px-4">
-        <SideBar rubric={data.catalog}/>
+        <SideBar dataCatalog={data.catalog}/>
         { children }
       </div>
     </div>

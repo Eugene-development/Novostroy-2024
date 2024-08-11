@@ -7,6 +7,7 @@ const CATALOG = gql`
   query category($slug: String!, $key: UUID!) {
     catalog(slug: $slug, key: $key) {
       value
+      slug
       rubric {
         value
         slug
@@ -23,10 +24,26 @@ const CATALOG = gql`
 export async function getCatalog({ params }) {
   const variables = {
     key: NEXT_PUBLIC_KEY,
-    slug: params.slug,
+    slug: params.slug[0],
   };
   try {
     return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
+  } catch (error) {
+    console.error("Error occurred while fetching category:", error);
+    throw error;
+  }
+}
+
+
+// --- //
+export async function getCategory(slug) {
+  const variables = {
+    key: NEXT_PUBLIC_KEY,
+    slug,
+  };
+  try {
+    return console.log(variables.slug);
+    // return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
   } catch (error) {
     console.error("Error occurred while fetching category:", error);
     throw error;
