@@ -55,7 +55,7 @@ export default function Index({ rubric }) {
                     >
                       <li className="flex items-center">
                         <Link
-                          href={subitem.slug}
+                          href={`category/${item.slug}/${subitem.slug}`}
                           className="flex items-center p-1 pl-11 w-full text-sm font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
                         >
                           {subitem.value}

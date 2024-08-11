@@ -53,42 +53,42 @@ export default function Navbar({ className }) {
             <ProductItem
               setActive={setActive}
               title="Мебель"
-              href="/catalog/mebel"
+              href="/mebel"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/mebel.jpg"
               description="Качественная и стильная мебель под любой запрос и бюджет"
             />
             <ProductItem
               setActive={setActive}
               title="Бытовая Техника"
-              href="/catalog/tehnika"
+              href="/tehnika"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
               description="Оптимально подобранная техника идеально впишется в проект мебели"
             />
             <ProductItem
               setActive={setActive}
               title="Столешницы"
-              href="/catalog/stoleshnica"
+              href="/stoleshnica"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg"
               description="Рабочая зона из восокопрочных материалов и с красивыми рисунками"
             />
             <ProductItem
               setActive={setActive}
               title="Мойки и смесители"
-              href="/catalog/moyki"
+              href="/moyki"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
               description="Стальные и композитные мойки и смесители от мировых производителей"
             />
             <ProductItem
               setActive={setActive}
               title="Освещение"
-              href="/catalog/osveshenie"
+              href="/osveshenie"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/svet.jpeg"
               description="Яркий акцент в композицию проекта благодаря качественному свету"
             />
             <ProductItem
               setActive={setActive}
               title="Фурнитура"
-              href="/catalog/furnitura"
+              href="/furnitura"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/furnitura.jpg"
               description="Фурнитура это важнейший элемент любой мебельной конструкции"
             />
