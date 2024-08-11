@@ -15,24 +15,6 @@ import { getCatalog } from "./server";
 
 export default async ({ params }) => {
   const data = await getCatalog({ params });
-  // console.log(data);
-
-  // const breadCrumbs = [
-  //   { name: "Раздел", value: "Каталог" },
-  //   {
-  //     name: "Категория",
-  //     value: data.category_one.value,
-  //     count: data.category_one.product.length,
-  //     unit: "поз.",
-  //   },
-  // ];
-  //   const filteredProducts = products.product.filter(
-  //     (product) => product.parent.value.toLowerCase() === "кухня",
-  //   );
-
-  //   const newJsonData = {
-  //     product: filteredProducts,
-  //   };
 
   return <Catalog rubric={data.catalog} />;
 };

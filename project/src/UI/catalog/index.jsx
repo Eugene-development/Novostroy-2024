@@ -1,7 +1,7 @@
 import Info from "./Info";
 // import Badge from "./Badge";
 import Product from "./Product";
-import LeftMenu from "./LeftMenu";
+import SideBar from "./SideBar";
 
 export default ({ rubric }) => {
   return (
@@ -11,7 +11,7 @@ export default ({ rubric }) => {
       {/* <Badge /> */}
 
       <div className="max-w-full mx-auto flex w-full h-full relative  px-4">
-        <LeftMenu rubric={rubric} />
+        <SideBar rubric={rubric} />
         <Product />
       </div>
     </div>
