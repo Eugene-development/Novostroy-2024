@@ -37,6 +37,7 @@ export { default as Policy } from "./Policy";
 
 // Catalog
 export { default as Info } from "./catalog/Info";
+export { default as Badge } from "./catalog/Badge";
 export { default as SideBar } from "./catalog/SideBar";
 export { default as Rubric } from "./catalog/Rubric";
 export { default as Category } from "./catalog/Category";

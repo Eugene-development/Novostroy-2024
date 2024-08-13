@@ -1,4 +1,4 @@
-import { SideBar, Info } from "@/UI"
+import { SideBar, Info, Badge } from "@/UI"
 import { getCatalog } from "./server";
 
 export default async ({ children, params }) => {
@@ -13,7 +13,7 @@ export default async ({ children, params }) => {
 
       {/* <Badge /> */}
 
-      <div className="max-w-full mx-auto flex w-full h-full relative  px-4">
+      <div className="max-w-full mx-auto flex w-full h-full relative py-4 px-4">
         <SideBar dataCatalog={data.catalog}/>
         { children }
       </div>
