@@ -3,7 +3,7 @@
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
-export default function Example() {
+export default ({dataCatalog}) => {
   return (
     <div className="relative isolate overflow-hidden ">
       {/* <svg
@@ -29,11 +29,11 @@ export default function Example() {
           
           <div className="mt-3 sm:mt-3 lg:mt-3">
             <a href="#" className="inline-flex space-x-6">
-              <span className="rounded-full bg-gray-600/10 px-3 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-600/10">
+              <span className="rounded-full bg-gray-600/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-600/10">
                 Рубрика каталога
               </span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                <span>Мебель</span>
+                <span>{ dataCatalog.value }</span>
                 <ChevronRightIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
               </span>
             </a>

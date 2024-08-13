@@ -1,5 +1,5 @@
 import { Rubric, Category } from "@/UI";
-import { getCategory, getRubric } from "./server";
+import { getCatalog, getCategory } from "./server";
 
 // export async function generateMetadata({ params }) {
 //   const meta = await getCatalog({ params });
@@ -18,10 +18,10 @@ export default async ({ params }) => {
   const slug = params.slug[params.slug.length - 1]
 
   if (params.slug.length == 1) {
-    const data = await getCategory(slug);
-      return <Rubric slug={ slug } />
+    const data = await getCatalog(slug);
+      return <Rubric dataCatalog={data.catalog} />
   } else if (params.slug.length == 3){
-    const data = await getRubric(slug);
+    const data = await getCategory(slug);
     return <Category slug={ slug }/>
   }
   

@@ -23,10 +23,10 @@ const CATALOG = gql`
 
 
 // --- //
-export async function getCatalog({ params }) {
+export async function getCatalog(slug) {
   const variables = {
     key: NEXT_PUBLIC_KEY,
-    slug: params.slug[0],
+    slug,
   };
   try {
     return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);

@@ -2,7 +2,9 @@ import { SideBar, Info } from "@/UI"
 import { getCatalog } from "./server";
 
 export default async ({ children, params }) => {
-  const data = await getCatalog({ params });
+  
+  const slug = params.slug[0]
+  const data = await getCatalog(slug);
 
   return (
     <div className="antialised">
