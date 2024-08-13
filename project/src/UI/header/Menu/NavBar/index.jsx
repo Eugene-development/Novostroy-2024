@@ -74,7 +74,7 @@ export default function Navbar({ className }) {
             <ProductItem
               setActive={setActive}
               title="Мойки и смесители"
-              href="/moyki"
+              href="/mojki-i-smesiteli"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
               description="Стальные и композитные мойки и смесители от мировых производителей"
             />

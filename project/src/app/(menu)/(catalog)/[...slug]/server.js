@@ -21,6 +21,8 @@ const CATALOG = gql`
   }
 `;
 
+
+// --- //
 export async function getCatalog({ params }) {
   const variables = {
     key: NEXT_PUBLIC_KEY,
@@ -28,6 +30,22 @@ export async function getCatalog({ params }) {
   };
   try {
     return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
+  } catch (error) {
+    console.error("Error occurred while fetching category:", error);
+    throw error;
+  }
+}
+
+
+// --- //
+export async function getRubric(slug) {
+  const variables = {
+    key: NEXT_PUBLIC_KEY,
+    slug,
+  };
+  try {
+    return console.log(variables.slug);
+    // return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
   } catch (error) {
     console.error("Error occurred while fetching category:", error);
     throw error;
