@@ -1,7 +1,5 @@
-// 
-
-
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import FlipWordsDemo from './FlipWordsDemo'
 
 export default ({dataCatalog}) => {
   return (
@@ -24,6 +22,7 @@ export default ({dataCatalog}) => {
         </defs>
         <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" strokeWidth={0} />
       </svg> */}
+      <FlipWordsDemo/>
       <div className="mx-auto max-w-full px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 ">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
           
@@ -38,9 +37,9 @@ export default ({dataCatalog}) => {
               </span>
             </a>
           </div>
-          <h1 className="mt-16 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="mt-16 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Кухонные гарнитуры
-          </h1>
+          </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
             fugiat veniam occaecat fugiat aliqua.
