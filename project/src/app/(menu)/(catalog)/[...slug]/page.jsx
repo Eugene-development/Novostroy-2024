@@ -1,4 +1,4 @@
-import { Product } from "@/UI";
+import { Rubric, Category } from "@/UI";
 import { getCategory, getRubric } from "./server";
 
 // export async function generateMetadata({ params }) {
@@ -17,12 +17,12 @@ export default async ({ params }) => {
   // Последний элемент
   const slug = params.slug[params.slug.length - 1]
 
-  if (params.slug.length == 3) {
+  if (params.slug.length == 1) {
     const data = await getCategory(slug);
-    return <p>{params.slug[params.slug.length - 1]}</p>
-  } else if (params.slug.length == 1){
+      return <Rubric slug={ slug } />
+  } else if (params.slug.length == 3){
     const data = await getRubric(slug);
-    return <p>{params.slug[params.slug.length - 1]}</p>
+    return <Category slug={ slug }/>
   }
   
 };

@@ -36,10 +36,10 @@ export { default as BlogDetail } from "./blog/blogDetail";
 export { default as Policy } from "./Policy";
 
 // Catalog
-export { default as Catalog } from "./catalog";
 export { default as Info } from "./catalog/Info";
 export { default as SideBar } from "./catalog/SideBar";
-export { default as Product } from "./catalog/Product";
+export { default as Rubric } from "./catalog/Rubric";
+export { default as Category } from "./catalog/Category";
 
 // Service
 export { default as Service } from "./service";
