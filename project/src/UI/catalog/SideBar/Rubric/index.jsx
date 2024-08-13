@@ -16,7 +16,7 @@ export default function Index({ dataCatalog }) {
 
   return (
     <Fragment>
-      <ul className="space-y-3 my-6">
+      <ul className="space-y-3 py-6 px-1 bg-gray-50/40 rounded-xl">
         {dataCatalog?.rubric.map((item) => (
           <li key={item.value}>
             <Button
@@ -31,7 +31,7 @@ export default function Index({ dataCatalog }) {
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 text-red-800 transform transition-transform ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
+                className={`size-6 text-red-800 transform transition-transform animate-pulse ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
