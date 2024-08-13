@@ -29,7 +29,7 @@ export default function Navbar({ className }) {
         <Link
           href="/"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Главная
         </Link>
@@ -103,14 +103,14 @@ export default function Navbar({ className }) {
         <Link
           href="/action"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Акции
         </Link>
         <Link
           href="/blog"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Блог
         </Link>

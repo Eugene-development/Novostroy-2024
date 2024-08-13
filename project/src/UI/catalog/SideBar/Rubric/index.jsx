@@ -22,7 +22,7 @@ export default function Index({ dataCatalog }) {
             <Button
               onClick={() => toggleSubMenu(item.value)}
               type="button"
-              className="flex items-center py-2 w-full text-base font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+              className="flex items-center py-2 w-full text-base font-medium tracking-wide text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-orders"
               data-collapse-toggle="dropdown-orders"
             >
@@ -56,7 +56,7 @@ export default function Index({ dataCatalog }) {
                       <li className="flex items-center">
                         <Link
                           href={`/${dataCatalog.slug}/${item.slug}/${subitem.slug}`}
-                          className="flex items-center p-1 pl-11 w-full text-sm font-semibold text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
+                          className="flex items-center p-1 pl-11 w-full text-sm font-medium tracking-wide text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-50 dark:text-white dark:hover:bg-gray-700"
                         >
                           {subitem.value}
                         </Link>
@@ -72,10 +72,10 @@ export default function Index({ dataCatalog }) {
         <li>
           <a
             href="#"
-            className="flex items-center p-1 text-sm font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
+            className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
           >
             <svg
-              className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+              className="flex-shrink-0 w-6 h-6 text-gray-400  transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function Index({ dataCatalog }) {
         <li>
           <a
             href="#"
-            className="flex items-center p-1 text-sm font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
+            className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
           >
             <svg
               className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -116,7 +116,7 @@ export default function Index({ dataCatalog }) {
         <li>
           <a
             href="#"
-            className="flex items-center p-1 text-sm font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
+            className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
           >
             <svg
               className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
