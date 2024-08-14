@@ -78,7 +78,7 @@ export default function Navbar({ className }) {
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
               description="Стальные и композитные мойки и смесители от мировых производителей"
             />
-            <ProductItem
+            {/* <ProductItem
               setActive={setActive}
               title="Освещение"
               href="/osveshenie"
@@ -91,7 +91,7 @@ export default function Navbar({ className }) {
               href="/furnitura"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/furnitura.jpg"
               description="Фурнитура это важнейший элемент любой мебельной конструкции"
-            />
+            /> */}
           </div>
         </MenuItemCatalog>
         {/* <MenuItem setActive={setActive} active={active} item="Акции">

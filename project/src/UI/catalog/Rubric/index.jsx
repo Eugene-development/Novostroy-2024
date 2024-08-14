@@ -26,7 +26,7 @@ export default ({dataCatalog}) => {
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
           
           <div className="mt-3 sm:mt-3 lg:mt-3">
-            <a href="#" className="inline-flex space-x-6">
+            <div className="inline-flex space-x-6">
               <span className="rounded-full bg-gray-600/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-600/10">
                 Рубрика каталога
               </span>
@@ -34,25 +34,18 @@ export default ({dataCatalog}) => {
                 <span>{ dataCatalog.value }</span>
                 <ChevronRightIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
               </span>
-            </a>
+            </div>
           </div>
           <h1 className="mt-14 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           { dataCatalog.value }
           {/* <FlipWordsDemo/> */}
           </h1>
-          <div className="mt-6 text-lg leading-8 text-gray-600 space-y-4" >
-            <p>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
-            </p>
-            <p>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
-            </p>
-            <p>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
-            </p>
+          <div className="mt-6 text-lg leading-8 text-gray-600 space-y-4" 
+            dangerouslySetInnerHTML={{
+										__html: dataCatalog.text?.value || ''
+									}}
+          >
+            
           </div >
           
         </div>

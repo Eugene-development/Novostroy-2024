@@ -17,6 +17,9 @@ const CATALOG = gql`
           slug
         }
       }
+      text {
+            value
+          }
     }
   }
 `;
