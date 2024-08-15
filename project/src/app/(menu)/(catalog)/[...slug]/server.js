@@ -18,12 +18,11 @@ const CATALOG = gql`
         }
       }
       text {
-            value
-          }
+        value
+      }
     }
   }
 `;
-
 
 // --- //
 export async function getCatalog(slug) {
@@ -39,7 +38,6 @@ export async function getCatalog(slug) {
   }
 }
 
-
 // --- //
 export async function getRubric(slug) {
   const variables = {
@@ -54,7 +52,6 @@ export async function getRubric(slug) {
     throw error;
   }
 }
-
 
 // --- //
 export async function getCategory(slug) {

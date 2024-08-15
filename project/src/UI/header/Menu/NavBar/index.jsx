@@ -36,9 +36,7 @@ export default function Navbar({ className }) {
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className=" flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/service/consultation">
-              Консультация
-            </HoveredLink>
+            <HoveredLink href="/service/consultation">Консультация</HoveredLink>
             <HoveredLink href="/service/measuring">
               {" "}
               Замер помещения

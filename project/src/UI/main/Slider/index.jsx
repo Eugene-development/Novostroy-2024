@@ -31,9 +31,16 @@ export default function ImagesSliderDemo() {
           Мы делаем <br />
           вашу жизнь уютнее
         </motion.p>
-        <p className="max-w-4xl text-center font-extralight text-lg text-gray-100 tracking-wide">Наша команда это профессиональные дизайнеры мебели, работающие в лучших мебельных компаниях. Мы предложим лучшие варианты вашего мебельного проекта с оптимальной ценой и отличным качеством исполнения. Наши услуги бесплатны.</p>
+        <p className="max-w-4xl text-center font-extralight text-lg text-gray-100 tracking-wide">
+          Наша команда это профессиональные дизайнеры мебели, работающие в
+          лучших мебельных компаниях. Мы предложим лучшие варианты вашего
+          мебельного проекта с оптимальной ценой и отличным качеством
+          исполнения. Наши услуги бесплатны.
+        </p>
         <button className="scale110 mt-6 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative">
-          <span className="text-lg mt-6">Бесплатная консультация дизайнера →</span>
+          <span className="text-lg mt-6">
+            Бесплатная консультация дизайнера →
+          </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
         </button>
       </motion.div>

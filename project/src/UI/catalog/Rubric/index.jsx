@@ -1,7 +1,7 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import FlipWordsDemo from './FlipWordsDemo'
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import FlipWordsDemo from "./FlipWordsDemo";
 
-export default ({dataCatalog}) => {
+export default ({ dataCatalog }) => {
   return (
     <div className="relative isolate overflow-hidden ">
       {/* <svg
@@ -24,30 +24,30 @@ export default ({dataCatalog}) => {
       </svg> */}
       <div className="mx-auto max-w-full px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 ">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-          
           <div className="mt-3 sm:mt-3 lg:mt-3">
             <div className="inline-flex space-x-6">
-              <span className="rounded-full bg-gray-600/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-600/10">
+              <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
                 Рубрика каталога
               </span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                <span>{ dataCatalog.value }</span>
-                <ChevronRightIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
+                <span>{dataCatalog.value}</span>
+                <ChevronRightIcon
+                  aria-hidden="true"
+                  className="h-5 w-5 text-gray-400"
+                />
               </span>
             </div>
           </div>
           <h1 className="mt-14 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          { dataCatalog.value }
-          {/* <FlipWordsDemo/> */}
+            {dataCatalog.value}
+            {/* <FlipWordsDemo/> */}
           </h1>
-          <div className="mt-6 text-lg leading-8 text-gray-600 space-y-4" 
+          <div
+            className="mt-6 text-lg leading-8 text-gray-600 space-y-4"
             dangerouslySetInnerHTML={{
-										__html: dataCatalog.text?.value || ''
-									}}
-          >
-            
-          </div >
-          
+              __html: dataCatalog.text?.value || "",
+            }}
+          ></div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
@@ -64,5 +64,5 @@ export default ({dataCatalog}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

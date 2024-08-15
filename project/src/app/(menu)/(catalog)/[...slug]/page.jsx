@@ -15,14 +15,13 @@ import { getCatalog, getCategory } from "./server";
 
 export default async ({ params }) => {
   // Последний элемент
-  const slug = params.slug[params.slug.length - 1]
+  const slug = params.slug[params.slug.length - 1];
 
   if (params.slug.length == 1) {
     const data = await getCatalog(slug);
-      return <Rubric dataCatalog={data.catalog} />
-  } else if (params.slug.length == 3){
+    return <Rubric dataCatalog={data.catalog} />;
+  } else if (params.slug.length == 3) {
     const data = await getCategory(slug);
-    return <Category slug={ slug }/>
+    return <Category slug={slug} />;
   }
-  
 };

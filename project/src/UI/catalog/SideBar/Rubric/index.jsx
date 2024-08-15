@@ -69,76 +69,68 @@ export default function Index({ dataCatalog }) {
       </ul>
 
       <ul className="py-6 space-y-2 border-t border-gray-200 dark:border-gray-700">
-      <li>
-        <Link
-          href="/action"
-          className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
-        >
-          <svg
-            className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
+        <li>
+          <Link
+            href="/action"
+            className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
           >
-            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
-            <path
-              clipRule="evenodd"
-              fillRule="evenodd"
-              d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
-            ></path>
-          </svg>
-          <span className="flex-1 ml-3 whitespace-nowrap">Акции</span>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/contacts"
-          className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
-        >
-          <svg
-            className="flex-shrink-0 w-6 h-6 text-gray-400  transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              clipRule="evenodd"
-              fillRule="evenodd"
-              d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-            ></path>
-          </svg>
-          <span className="flex-1 ml-3 whitespace-nowrap">
-            Контакты
-          </span>
-        </Link>
-      </li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                clip-rule="evenodd"
+              />
+            </svg>
 
-      <li>
+            <span className="flex-1 ml-3 whitespace-nowrap">Акции</span>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/contacts"
+            className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span className="flex-1 ml-3 whitespace-nowrap">Контакты</span>
+          </Link>
+        </li>
+
+        <li>
           <Link
             href="/favorites"
             className="flex items-center p-1 text-sm font-normal tracking-wide text-gray-900 rounded-lg dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 group"
           >
             <svg
-              className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
             >
-              <path
-                clipRule="evenodd"
-                fillRule="evenodd"
-                d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z"
-              ></path>
+              <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
             </svg>
+
             <span className="flex-1 ml-3 whitespace-nowrap">Избранное</span>
           </Link>
         </li>
-
       </ul>
-      
+
       <div className="py-6 border-t border-gray-200">
         <Link
           href="/"
@@ -160,7 +152,6 @@ export default function Index({ dataCatalog }) {
           <span className="flex-1 ml-3 whitespace-nowrap">На главную</span>
         </Link>
       </div>
-
     </Fragment>
   );
 }

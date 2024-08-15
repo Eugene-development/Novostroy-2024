@@ -3,11 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 import { cn } from "@/utils/cn";
 
-export const FlipWords = ({
-  words,
-  duration = 3000,
-  className,
-}) => {
+export const FlipWords = ({ words, duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -55,7 +51,7 @@ export const FlipWords = ({
         }}
         className={cn(
           "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2",
-          className
+          className,
         )}
         key={currentWord}
       >
