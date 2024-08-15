@@ -49,7 +49,7 @@ export default function index() {
               </svg>
             </span>
             <span className="text-xs text-purple-600 dark:text-purple-300 font-normal">
-              Подарок
+              Салоны
             </span>
           </a>
         </li>

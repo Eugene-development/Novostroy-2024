@@ -23,6 +23,24 @@ const cards = [
       "Дизайнер составит проект мебели с учётом ваших пожеланий, размеров помещения и своего проектного опыта.",
     icon: NewspaperIcon,
   },
+  {
+    name: "Договор",
+    description:
+      "Наш менеджер даст вам консультацию по материалам и по возможным решениям в проектировании мебели.",
+    icon: PhoneIcon,
+  },
+  {
+    name: "Изготовление",
+    description:
+      "Осуществим проектный замер помещения с обозначением углов и расположением коммуникаций и розеток.",
+    icon: LifebuoyIcon,
+  },
+  {
+    name: "Сборка",
+    description:
+      "Дизайнер составит проект мебели с учётом ваших пожеланий, размеров помещения и своего проектного опыта.",
+    icon: NewspaperIcon,
+  },
 ];
 
 export default () => {
@@ -54,11 +72,10 @@ export default () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            До заключения договора
+            Наша работа
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Мы поможем вам пройти все этапы до договорных отношений с
-            исполнителем заказа. От консультации до проекта.
+            Мы будем вас сопровождать на всех этапах проектирования и изготовления мебели. От первой консультации до дня сборки проекта.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
