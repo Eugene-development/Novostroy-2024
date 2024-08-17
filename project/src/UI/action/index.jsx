@@ -58,9 +58,7 @@ export default function Example() {
             Акции и спецпредложения
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate
-            blanditiis.
+           Мы рады предложить вам специальные акции и скидки на наши товары и услуги. Следите за обновлениями, чтобы не упустить выгодные предложения и сэкономить на покупках.
           </p>
         </div>
       </div>
