@@ -3,6 +3,11 @@ export { default as Banner } from "./header/Banner";
 export { default as Menu } from "./header/Menu";
 export { default as Footer } from "./footer";
 
+// Modal
+export { default as DesignerForm } from "./modals/forms/designer";
+export { default as SalonForm } from "./modals/forms/salon";
+export { default as MeasuringForm } from "./modals/forms/measuring";
+
 // Main
 export { default as Slider } from "./main/Slider";
 export { default as Parallax } from "./main/Parallax";
