@@ -15,9 +15,7 @@ export default () => {
   const { currentVisibleFormDesigner, closeVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
 
   const [name, setName] = useState("");
-
   const [phone, setPhone] = useState("");
-
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
   const [project, setProject] = useState("");
@@ -45,7 +43,7 @@ export default () => {
       <Dialog
         as="div"
         className="relative z-50"
-        onClose={()=> {}}
+        onClose={closeVisibleFormDesigner}
       >
         <Transition.Child
           as={Fragment}

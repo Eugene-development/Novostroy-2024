@@ -1,10 +1,18 @@
+"use client"
+import { useFormsStore } from "@/stores/forms";
+
 export default function index() {
+  
+  const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
+  const { openVisibleFormSalon } = useFormsStore.visibleFormSalon();
+  const { openVisibleFormMeasuring } = useFormsStore.visibleFormMeasuring();
+
   return (
     <div className="mb-3 ">
       <ul className="grid grid-cols-3 gap-2">
         <li>
-          <a
-            href="#"
+          <div
+            onClick={openVisibleFormDesigner}
             className="rounded-xl bg-primary-50 hover:bg-primary-100 dark:bg-primary-900 dark:hover:bg-primary-800 p-2.5 flex flex-col items-center justify-center group"
           >
             <span className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-800 flex items-center justify-center mb-1 group-hover:bg-primary-200  dark:group-hover:bg-primary-700">
@@ -25,11 +33,11 @@ export default function index() {
             <span className="text-xs text-primary-600 dark:text-primary-300 font-normal">
               Дизайнер
             </span>
-          </a>
+          </ div>
         </li>
         <li>
-          <a
-            href="#"
+          <div
+            onClick={openVisibleFormSalon}
             className="rounded-xl bg-purple-50 hover:bg-purple-100 dark:bg-purple-900 dark:hover:bg-purple-800 p-2.5 flex flex-col items-center justify-center group"
           >
             <span className="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-800 flex items-center justify-center mb-1 group-hover:bg-purple-200  dark:group-hover:bg-purple-700">
@@ -49,13 +57,13 @@ export default function index() {
               </svg>
             </span>
             <span className="text-xs text-purple-600 dark:text-purple-300 font-normal">
-              Салоны
+              Салон
             </span>
-          </a>
+          </div>
         </li>
         <li>
-          <a
-            href="#"
+          <div
+            onClick={openVisibleFormMeasuring}
             className="rounded-xl bg-teal-50 hover:bg-teal-100 dark:bg-teal-900 dark:hover:bg-teal-800 p-2.5 flex flex-col items-center justify-center group"
           >
             <span className="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-800 flex items-center justify-center mb-1 group-hover:bg-teal-200  dark:group-hover:bg-teal-700">
@@ -76,7 +84,7 @@ export default function index() {
             <span className="text-xs text-teal-600 dark:text-teal-300 font-normal">
               Замер
             </span>
-          </a>
+          </div>
         </li>
       </ul>
     </div>

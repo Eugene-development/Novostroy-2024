@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "../css/globals.css";
-import { Banner, Menu, Footer, DesignerForm } from "@/UI";
+import { Banner, Menu, Footer, DesignerForm, SalonForm, MeasuringForm } from "@/UI";
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
@@ -41,6 +41,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <DesignerForm />
+        <SalonForm />
+        <MeasuringForm />
         <Banner />
         <Menu />
         {children}
