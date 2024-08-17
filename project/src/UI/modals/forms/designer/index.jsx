@@ -6,6 +6,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import { useFormsStore } from "@/stores/forms";
+import { frameData } from "framer-motion";
 
 // import { send } from "@/serverActions/sendFormRequestPrice";
 
@@ -14,28 +15,31 @@ export default () => {
   const { currentVisibleFormDesigner, closeVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
 
   const [name, setName] = useState("");
+
   const [phone, setPhone] = useState("");
+
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
   const [project, setProject] = useState("");
 
 
+
   const handleSendFormDesigner = (e) => {
     e.preventDefault();
 
-    const data = { name, phone, email, comment };
+    const data = { name, phone, email, comment, project };
+    console.log(data)
     // send(data);
 
     setName("");
     setPhone("");
     setEmail("");
     setComment("");
-    setContainer("");
-    setBrand("");
-    setVolume("");
+    setProject("");
 
-    push("/spasibo");
+    // push("/spasibo");
   };
+  
   return (
     <Transition.Root show={currentVisibleFormDesigner} as={Fragment}>
       <Dialog
@@ -154,7 +158,7 @@ export default () => {
                               <div className="mt-2">
                                 <input
                                   onChange={(e) => setEmail(e.target.value)}
-                                  type="email"
+                                  type="text"
                                   name="email"
                                   id="email"
                                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"

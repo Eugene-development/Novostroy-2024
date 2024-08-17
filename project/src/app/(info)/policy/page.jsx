@@ -1,7 +1,7 @@
 import { Policy } from "@/UI";
 
 export const metadata = {
-  title: "Белорусская фабрика мебели ЗОВ | Политика",
+  title: "Политика конфиденциальности",
   description: "Политика конфиденциальности нашей компании",
   content: "noindex",
 };
