@@ -16,8 +16,8 @@ export default () => {
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
   const [metro, setMetro] = useState("");
+  const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
 
 
@@ -25,14 +25,14 @@ export default () => {
   const handleSendFormSalon = (e) => {
     e.preventDefault();
 
-    const data = { name, phone, email, metro, comment };
+    const data = { name, phone, metro, email, comment };
     console.log(data)
     // send(data);
 
     setName("");
     setPhone("");
-    setEmail("");
     setMetro("");
+    setEmail("");
     setComment("");
 
     push("/spasibo");
@@ -147,23 +147,6 @@ export default () => {
 
                             <div>
                               <label
-                                htmlFor="email"
-                                className="block text-base font-medium leading-6 text-gray-900"
-                              >
-                                Почта{" "}(необязательно)
-                              </label>
-                              <div className="mt-2">
-                                <input
-                                  onChange={(e) => setEmail(e.target.value)}
-                                  type="text"
-                                  name="email"
-                                  id="email"
-                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                                />
-                              </div>
-                            </div>
-                            <div>
-                              <label
                                 htmlFor="metro"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
@@ -175,6 +158,24 @@ export default () => {
                                   type="text"
                                   name="metro"
                                   id="metro"
+                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                                />
+                              </div>
+                            </div>
+
+                            <div>
+                              <label
+                                htmlFor="email"
+                                className="block text-base font-medium leading-6 text-gray-900"
+                              >
+                                Почта{" "}(необязательно)
+                              </label>
+                              <div className="mt-2">
+                                <input
+                                  onChange={(e) => setEmail(e.target.value)}
+                                  type="text"
+                                  name="email"
+                                  id="email"
                                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
