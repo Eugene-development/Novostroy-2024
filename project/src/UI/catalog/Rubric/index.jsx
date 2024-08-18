@@ -30,7 +30,7 @@ export default ({ dataCatalog }) => {
                 Рубрика каталога
               </span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                <span>{dataCatalog.value}</span>
+                <span>{dataCatalog?.value}</span>
                 <ChevronRightIcon
                   aria-hidden="true"
                   className="h-5 w-5 text-gray-400"
@@ -39,13 +39,13 @@ export default ({ dataCatalog }) => {
             </div>
           </div>
           <h1 className="mt-14 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            {dataCatalog.value}
+            {dataCatalog?.value}
             {/* <FlipWordsDemo/> */}
           </h1>
           <div
             className="mt-6 text-lg leading-8 text-gray-600 space-y-4"
             dangerouslySetInnerHTML={{
-              __html: dataCatalog.text?.value || "",
+              __html: dataCatalog?.text?.value || "",
             }}
           ></div>
         </div>

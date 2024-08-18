@@ -35,7 +35,7 @@ export default () => {
     setAddress("");
     setComment("");
 
-    // push("/spasibo");
+    push("/spasibo");
   };
   
   return (

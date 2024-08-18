@@ -35,7 +35,7 @@ export default () => {
     setMetro("");
     setComment("");
 
-    // push("/spasibo");
+    push("/spasibo");
   };
   
   return (

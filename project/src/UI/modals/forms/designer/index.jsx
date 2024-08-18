@@ -35,7 +35,7 @@ export default () => {
     setComment("");
     setProject("");
 
-    // push("/spasibo");
+    push("/spasibo");
   };
   
   return (
