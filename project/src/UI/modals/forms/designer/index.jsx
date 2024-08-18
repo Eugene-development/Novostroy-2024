@@ -77,29 +77,28 @@ export default () => {
                     <div className="h-0 flex-1 overflow-y-auto">
                       <div className="bg-gray-800 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
-                          <Dialog.Title className="text-base font-semibold leading-6 text-white">
+                          <Dialog.Title className="text-lg font-semibold leading-6 text-white">
                             Бесплатная консультация дизайнера
                           </Dialog.Title>
-                          <div className="ml-3 flex h-7 items-center">
+                          {/* <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-gray-800 text-cyan-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                              className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
                               onClick={() => closeVisibleFormDesigner()}
                             >
                               <span className="sr-only">Закрыть панель</span>
                               <XMarkIcon
-                                className="h-6 w-6"
+                                className="size-5"
                                 aria-hidden="true"
                               />
                             </button>
-                          </div>
+                          </div> */}
                         </div>
-                        {/* <div className="mt-1">
+                        <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Цена будет актуальна на день получения ответа в
-                            соответствии с текущим курсом
+                            Наш дизайнер подскажет вам оптимальные решения с учётом своего опыта, размеров помещения и ваших пожеланий.
                           </p>
-                        </div> */}
+                        </div>
                       </div>
                       <div className="flex flex-1 flex-col justify-between">
                         <div className=" px-4 sm:px-6">
@@ -109,7 +108,7 @@ export default () => {
                                 htmlFor="name"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Имя{" "}
+                                Ваше имя{" "}
                                 <sup className="text-red-700 w-4 h-4">
                                   &#x2736;
                                 </sup>
@@ -169,7 +168,7 @@ export default () => {
                                 htmlFor="description"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Ваш комментарий
+                                Комментарий
                               </label>
                               <div className="mt-2">
                                 <textarea

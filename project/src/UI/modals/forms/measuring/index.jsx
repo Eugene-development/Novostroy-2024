@@ -17,23 +17,23 @@ export default () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
   const [comment, setComment] = useState("");
-  const [project, setProject] = useState("");
 
 
 
   const handleSendFormMeasuring = (e) => {
     e.preventDefault();
 
-    const data = { name, phone, email, comment, project };
+    const data = { name, phone, email, address, comment };
     console.log(data)
     // send(data);
 
     setName("");
     setPhone("");
     setEmail("");
+    setAddress("");
     setComment("");
-    setProject("");
 
     // push("/spasibo");
   };
@@ -77,29 +77,28 @@ export default () => {
                     <div className="h-0 flex-1 overflow-y-auto">
                       <div className="bg-gray-800 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
-                          <Dialog.Title className="text-base font-semibold leading-6 text-white">
+                          <Dialog.Title className="text-lg font-semibold leading-6 text-white">
                             Запись на замер
                           </Dialog.Title>
-                          <div className="ml-3 flex h-7 items-center">
+                          {/* <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-gray-800 text-cyan-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                              className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
                               onClick={() => closeVisibleFormMeasuring()}
                             >
                               <span className="sr-only">Закрыть панель</span>
                               <XMarkIcon
-                                className="h-6 w-6"
+                                className="size-5"
                                 aria-hidden="true"
                               />
                             </button>
-                          </div>
+                          </div> */}
                         </div>
-                        {/* <div className="mt-1">
+                        <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Цена будет актуальна на день получения ответа в
-                            соответствии с текущим курсом
+                            Замер помещения с указанием розеток, водной точки и углов дас возможность сделать более точный проект.
                           </p>
-                        </div> */}
+                        </div>
                       </div>
                       <div className="flex flex-1 flex-col justify-between">
                         <div className=" px-4 sm:px-6">
@@ -109,7 +108,7 @@ export default () => {
                                 htmlFor="name"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Имя{" "}
+                                Ваше имя{" "}
                                 <sup className="text-red-700 w-4 h-4">
                                   &#x2736;
                                 </sup>
@@ -138,6 +137,7 @@ export default () => {
                               <div className="mt-2">
                                 <input
                                   onChange={(e) => setPhone(e.target.value)}
+                                  required
                                   type="text"
                                   name="phone"
                                   id="phone"
@@ -163,6 +163,27 @@ export default () => {
                                 />
                               </div>
                             </div>
+                            <div>
+                              <label
+                                htmlFor="address"
+                                className="block text-base font-medium leading-6 text-gray-900"
+                              >
+                                Адрес объекта{" "}
+                                <sup className="text-red-700 w-4 h-4">
+                                  &#x2736;
+                                </sup>
+                              </label>
+                              <div className="mt-2">
+                                <input
+                                  onChange={(e) => setAddress(e.target.value)}
+                                  required
+                                  type="text"
+                                  name="address"
+                                  id="address"
+                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                                />
+                              </div>
+                            </div>
 
                             <div>
                               <label
@@ -182,73 +203,12 @@ export default () => {
                                 />
                               </div>
                             </div>
-                             <fieldset>
-                              <legend className="text-sm font-medium leading-6 text-gray-900">
-                                У вас есть готовый проект?{" "}
-                                <sup className="text-red-700 w-4 h-4">
-                                  &#x2736;
-                                </sup>
-                              </legend>
-                              <div className="mt-2 space-y-4">
-                                <div className="relative flex items-start">
-                                  <div className="absolute flex h-6 items-center">
-                                    <input
-                                      onChange={(e) =>
-                                        setProject(e.target.value)
-                                      }
-                                      id="privacy-public"
-                                      name="project"
-                                      value="да"
-                                      checked={project === "да"}
-                                      aria-describedby="privacy-public-description"
-                                      type="radio"
-                                      className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-600"
-                                    />
-                                  </div>
-                                  <div className="pl-7 text-sm leading-6">
-                                    <label
-                                      htmlFor="privacy-public"
-                                      className="font-medium text-gray-900"
-                                    >
-                                      Да
-                                    </label>
-                                  </div>
-                                </div>
-
-                                <div>
-                                  <div className="relative flex items-start">
-                                    <div className="absolute flex h-6 items-center">
-                                      <input
-                                        onChange={(e) =>
-                                          setProject(e.target.value)
-                                        }
-                                        id="privacy-private-to-project"
-                                        name="project"
-                                        value="нет"
-                                        checked={project === "нет"}
-                                        aria-describedby="privacy-private-to-project-description"
-                                        type="radio"
-                                        className="h-4 w-4 border-gray-300 text-cyan-600 focus:ring-cyan-600"
-                                      />
-                                    </div>
-                                    <div className="pl-7 text-sm leading-6">
-                                      <label
-                                        htmlFor="privacy-private-to-project"
-                                        className="font-medium text-gray-900"
-                                      >
-                                        Нет
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </fieldset> 
                           </div>
                           <div className="mt-8 pb-6 pt-2 border-t-2">
                             <div className=" flex text-sm">
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
-                                  После отправки формы с Вами свяжется наш дизайнер.
+                                  После отправки формы с Вами свяжется специалист.
                                 </span>
                               </p>
                             </div>
@@ -264,7 +224,7 @@ export default () => {
                       >
                         Закрыть
                       </button>
-                      {name && phone && project && (
+                      {name && phone && address && (
                         <button
                           onClick={() => closeVisibleFormMeasuring()}
                           type="submit"
