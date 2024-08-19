@@ -8,7 +8,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useFormsStore } from "@/stores/forms";
 import { frameData } from "framer-motion";
 
-// import { send } from "@/serverActions/sendFormRequestPrice";
+import { send } from "./server-actions.js";
 
 export default () => {
   const { push } = useRouter();
@@ -26,8 +26,8 @@ export default () => {
     e.preventDefault();
 
     const data = { name, phone, email, comment, project };
-    console.log(data)
-    // send(data);
+    // console.log(data)
+    send(data);
 
     setName("");
     setPhone("");
