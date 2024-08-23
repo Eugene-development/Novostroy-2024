@@ -1,18 +1,34 @@
+
+
 "use client";
+
 import { Button } from "@headlessui/react";
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
+
+// Zustand store для управления состоянием подменю
+const useSidebarStore = create(
+  persist(
+    (set) => ({
+      currentVisibleSubMenus: {},
+      toggleSubMenu: (itemName) =>
+        set((state) => ({
+          currentVisibleSubMenus: {
+            ...state.currentVisibleSubMenus,
+            [itemName]: !state.currentVisibleSubMenus[itemName],
+          },
+        })),
+    }),
+    {
+      name: "sidebar-store", // Имя для LocalStorage
+    }
+  )
+);
 
 export default function Index({ dataCatalog }) {
-  // console.log(rubric)
-  const [currentVisibleSubMenus, setCurrentVisibleSubMenus] = useState({});
-
-  const toggleSubMenu = (itemName) => {
-    setCurrentVisibleSubMenus((prev) => ({
-      ...prev,
-      [itemName]: !prev[itemName],
-    }));
-  };
+  const { currentVisibleSubMenus, toggleSubMenu } = useSidebarStore();
 
   return (
     <Fragment>
@@ -31,7 +47,9 @@ export default function Index({ dataCatalog }) {
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 text-red-800 transform transition-transform animate-pulse ${currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"}`}
+                className={`size-6 text-red-800 transform transition-transform animate-pulse ${
+                  currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"
+                }`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +85,7 @@ export default function Index({ dataCatalog }) {
           </li>
         ))}
       </ul>
-
+      
       <ul className="py-6 space-y-2 border-t border-gray-200 dark:border-gray-700">
         <li>
           <Link
