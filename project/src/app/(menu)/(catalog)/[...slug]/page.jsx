@@ -22,6 +22,6 @@ export default async ({ params }) => {
     return <Rubric dataCatalog={data.catalog} />;
   } else if (params.slug.length == 3) {
     const data = await getCategory(slug);
-    return <Category slug={slug} />;
+    return <Category dataCategory={data.category} />;
   }
 };

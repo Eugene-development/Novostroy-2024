@@ -1,11 +1,11 @@
 import Image from "next/image";
 import HeaderSection from "./HeaderSection";
 
-export default ({ slug }) => {
+export default ({ dataCategory }) => {
   // console.log (rubric.value)
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-      <HeaderSection data={slug} />
+      <HeaderSection data={dataCategory.value} />
 
       <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 mb-4">
         <Image

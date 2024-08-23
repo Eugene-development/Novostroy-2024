@@ -4,7 +4,7 @@ import { gql, request } from "graphql-request";
 const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } = process.env;
 
 const CATALOG = gql`
-  query category($slug: String!, $key: UUID!) {
+  query catalog($slug: String!, $key: UUID!) {
     catalog(slug: $slug, key: $key) {
       value
       slug
@@ -23,6 +23,15 @@ const CATALOG = gql`
     }
   }
 `;
+
+const CATEGORY = gql`
+  query category ($slug: String!, $key: UUID!) {
+    category (slug: $slug, key: $key){
+       value
+    }
+    
+  }
+  `
 
 // --- //
 export async function getCatalog(slug) {
@@ -60,8 +69,8 @@ export async function getCategory(slug) {
     slug,
   };
   try {
-    return console.log(variables.slug);
-    // return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
+    // return console.log(variables.slug);
+    return await request(NEXT_PUBLIC_GRAPHQL, CATEGORY, variables);
   } catch (error) {
     console.error("Error occurred while fetching category:", error);
     throw error;
