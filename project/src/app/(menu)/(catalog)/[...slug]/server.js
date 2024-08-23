@@ -15,6 +15,7 @@ const CATALOG = gql`
           is_active
           value
           slug
+          product_count
         }
       }
       text {
