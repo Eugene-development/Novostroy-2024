@@ -9,44 +9,45 @@ import {
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Бесплатная консультация.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+      "Наш специалист бесплатно приедет к вам на объект и даст подробную консультацию.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Установка бытовой техники.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+      "При приобретении у нас бытовой техники мы пподключим её за счёт компании. ",
+    icon: ServerIcon,
+  },
+  {
+    name: "Бесплатный замер помещения.",
+    description:
+      "Осуществим проектный замер помещения с указанием углов, розеток и вывода воды.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues.",
+    name: "Бесплатный дизайн-проект.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
+      "Дизайнер составит предварительный проект мебели в соответствии с замером.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security.",
+    name: "Техника в подарок.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+      "Предложим вам в подарок каждую пятую позицию бытовой техники, приобретённую у нас.",
     icon: FingerPrintIcon,
   },
   {
-    name: "Powerful API.",
+    name: "Сборка за счёт компании.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+      "Осуществим сборку нашими квалифицированными специалистами и оплатим их работу.",
     icon: Cog6ToothIcon,
   },
-  {
-    name: "Database backups.",
-    description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
-    icon: ServerIcon,
-  },
+  
 ];
 
-export default function Example() {
+export default () => {
   return (
     <div className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -76,15 +77,16 @@ export default function Example() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <div className="mx-auto mt-16 max-w-7xl px-4 sm:mt-20 md:mt-24 lg:px-6">
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold text-gray-900">
-                <feature.icon
-                  aria-hidden="true"
-                  className="absolute left-1 top-1 h-5 w-5 text-sky-600"
-                />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="absolute left-1 top-1 size-6 text-red-800">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                </svg>
+
                 {feature.name}
               </dt>{" "}
               <dd className="inline">{feature.description}</dd>
