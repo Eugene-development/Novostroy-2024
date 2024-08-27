@@ -14,24 +14,25 @@ import { getCatalog, getCategory } from "./server";
 // }
 
 export default async ({ params }) => {
-  // Последний элемент
   const slug = params.slug[params.slug.length - 1];
+  let data, isCatalog;
 
-  if (params.slug.length == 1) {
-    const data = await getCatalog(slug);
-    return (
-      <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-        <BreadCrumbs data={data.catalog} />
-        <Rubric dataCatalog={data.catalog} />;
-      </main>
-    );
-  } else if (params.slug.length == 3) {
-    const data = await getCategory(slug);
-    return (
-      <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-        <BreadCrumbs data={data.category} />
-        <Category dataCategory={data.category} />;
-      </main>
-    );
+  if (params.slug.length === 1) {
+    data = await getCatalog(slug);
+    isCatalog = true;
+  } else if (params.slug.length === 3) {
+    data = await getCategory(slug);
+    isCatalog = false;
   }
+
+  return (
+    <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
+      <BreadCrumbs data={isCatalog ? data.catalog : data.category} />
+      {isCatalog ? (
+        <Rubric dataCatalog={data.catalog} />
+      ) : (
+        <Category dataCategory={data.category} />
+      )}
+    </main>
+  );
 };
