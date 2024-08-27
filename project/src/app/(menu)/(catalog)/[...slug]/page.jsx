@@ -27,7 +27,8 @@ export default async ({ params }) => {
 
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-      <BreadCrumbs data={isCatalog ? data.catalog : data.category} />
+    <BreadCrumbs data={isCatalog ? data.catalog : data.category}/>
+        
       {isCatalog ? (
         <Rubric dataCatalog={data.catalog} />
       ) : (

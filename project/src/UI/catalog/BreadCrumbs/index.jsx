@@ -1,10 +1,10 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-export default ({ data }) => {
+export default ({ data, mainName }) => {
   return (
-    <div className="mt-3 sm:mt-3 lg:mt-3">
+    <div className="mb-3">
       <div className="inline-flex space-x-6 whitespace-pre">
-        <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
+        <span className="rounded-full bg-gray-400/10 -mr-2 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
           Категория каталога
         </span>
 
