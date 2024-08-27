@@ -10,10 +10,8 @@ const visibleFormDesigner = create((set) => ({
 
 const visibleFormSalon = create((set) => ({
   currentVisibleFormSalon: false,
-  openVisibleFormSalon: () =>
-    set(() => ({ currentVisibleFormSalon: true })),
-  closeVisibleFormSalon: () =>
-    set(() => ({ currentVisibleFormSalon: false })),
+  openVisibleFormSalon: () => set(() => ({ currentVisibleFormSalon: true })),
+  closeVisibleFormSalon: () => set(() => ({ currentVisibleFormSalon: false })),
 }));
 
 const visibleFormMeasuring = create((set) => ({

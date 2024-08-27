@@ -20,8 +20,8 @@ const visibleSidebar = create(
     }),
     {
       name: "sidebar-store", // Имя для LocalStorage
-    }
-  )
+    },
+  ),
 );
 
 export const useSidebarStore = {

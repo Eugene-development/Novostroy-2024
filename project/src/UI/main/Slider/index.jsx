@@ -6,7 +6,6 @@ import { ImagesSlider } from "./components";
 import { useFormsStore } from "@/stores/forms";
 
 export default function ImagesSliderDemo() {
-  
   const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
 
   const images = [
@@ -41,8 +40,11 @@ export default function ImagesSliderDemo() {
           мебельного проекта с оптимальной ценой и отличным качеством
           исполнения. Наши услуги бесплатны.
         </p>
-        <button onClick={openVisibleFormDesigner} className="scale110 mt-6 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative">
-          <span  className="text-lg mt-6">
+        <button
+          onClick={openVisibleFormDesigner}
+          className="scale110 mt-6 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative"
+        >
+          <span className="text-lg mt-6">
             Бесплатная консультация дизайнера →
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />

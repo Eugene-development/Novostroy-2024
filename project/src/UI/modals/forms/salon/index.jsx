@@ -12,15 +12,14 @@ import { send } from "./server-actions";
 
 export default () => {
   const { push } = useRouter();
-  const { currentVisibleFormSalon, closeVisibleFormSalon } = useFormsStore.visibleFormSalon();
+  const { currentVisibleFormSalon, closeVisibleFormSalon } =
+    useFormsStore.visibleFormSalon();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [metro, setMetro] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
-
-
 
   const handleSendFormSalon = (e) => {
     e.preventDefault();
@@ -36,7 +35,7 @@ export default () => {
 
     push("/spasibo");
   };
-  
+
   return (
     <Transition.Root show={currentVisibleFormSalon} as={Fragment}>
       <Dialog
@@ -95,7 +94,8 @@ export default () => {
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Мы подберём самый удобный по расположению к вам салон для визита по предварительной записи.
+                            Мы подберём самый удобный по расположению к вам
+                            салон для визита по предварительной записи.
                           </p>
                         </div>
                       </div>
@@ -128,7 +128,7 @@ export default () => {
                                 htmlFor="phone"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Телефон {" "}
+                                Телефон{" "}
                                 <sup className="text-red-700 w-4 h-4">
                                   &#x2736;
                                 </sup>
@@ -167,7 +167,7 @@ export default () => {
                                 htmlFor="email"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Почта{" "}(необязательно)
+                                Почта (необязательно)
                               </label>
                               <div className="mt-2">
                                 <input
@@ -203,7 +203,8 @@ export default () => {
                             <div className=" flex text-sm">
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
-                                  После отправки формы с Вами свяжется наш консультант.
+                                  После отправки формы с Вами свяжется наш
+                                  консультант.
                                 </span>
                               </p>
                             </div>

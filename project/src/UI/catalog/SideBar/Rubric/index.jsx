@@ -7,8 +7,12 @@ import { Fragment } from "react";
 import { useSidebarStore } from "@/stores/sidebar";
 
 export default function Index({ dataCatalog }) {
-  const { currentVisibleSubMenus, toggleSubMenu, selectedItem, setSelectedItem } =
-    useSidebarStore.visibleSidebar();
+  const {
+    currentVisibleSubMenus,
+    toggleSubMenu,
+    selectedItem,
+    setSelectedItem,
+  } = useSidebarStore.visibleSidebar();
 
   return (
     <Fragment>
@@ -28,21 +32,21 @@ export default function Index({ dataCatalog }) {
                 {item.value}
               </span>
               {/* {item.category.length > 0 &&  */}
-                <svg
-                  aria-hidden="true"
-                  className={`size-6 text-red-800 transform transition-transform animate-pulse ${
-                    currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"
-                  }`}
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+              <svg
+                aria-hidden="true"
+                className={`size-6 text-red-800 transform transition-transform animate-pulse ${
+                  currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"
+                }`}
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
               {/* } */}
             </Button>
 
@@ -57,7 +61,9 @@ export default function Index({ dataCatalog }) {
                     >
                       <li
                         className={`flex items-center ${
-                          selectedItem === subitem.value ? "bg-gray-100 rounded-lg" : ""
+                          selectedItem === subitem.value
+                            ? "bg-gray-100 rounded-lg"
+                            : ""
                         }`}
                       >
                         <Link
@@ -70,7 +76,6 @@ export default function Index({ dataCatalog }) {
                         <span className="mr-4 inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-50 dark:bg-primary-200 dark:text-primary-800">
                           {subitem.product_count}
                         </span>
-
                       </li>
                     </ul>
                   ),
@@ -78,7 +83,7 @@ export default function Index({ dataCatalog }) {
           </li>
         ))}
       </ul>
-      
+
       <ul className="py-6 space-y-2 border-t border-gray-200 dark:border-gray-700">
         {[
           { href: "/action", label: "Акции" },

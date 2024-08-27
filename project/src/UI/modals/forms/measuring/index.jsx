@@ -12,15 +12,14 @@ import { send } from "./server-actions";
 
 export default () => {
   const { push } = useRouter();
-  const { currentVisibleFormMeasuring, closeVisibleFormMeasuring } = useFormsStore.visibleFormMeasuring();
+  const { currentVisibleFormMeasuring, closeVisibleFormMeasuring } =
+    useFormsStore.visibleFormMeasuring();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
-
-
 
   const handleSendFormMeasuring = (e) => {
     e.preventDefault();
@@ -36,7 +35,7 @@ export default () => {
 
     push("/spasibo");
   };
-  
+
   return (
     <Transition.Root show={currentVisibleFormMeasuring} as={Fragment}>
       <Dialog
@@ -95,7 +94,8 @@ export default () => {
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Замер помещения с указанием розеток, водной точки и углов дас возможность сделать более точный проект.
+                            Замер помещения с указанием розеток, водной точки и
+                            углов дас возможность сделать более точный проект.
                           </p>
                         </div>
                       </div>
@@ -128,7 +128,7 @@ export default () => {
                                 htmlFor="phone"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Телефон {" "}
+                                Телефон{" "}
                                 <sup className="text-red-700 w-4 h-4">
                                   &#x2736;
                                 </sup>
@@ -172,7 +172,7 @@ export default () => {
                                 htmlFor="email"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Почта{" "}(необязательно)
+                                Почта (необязательно)
                               </label>
                               <div className="mt-2">
                                 <input
@@ -208,7 +208,8 @@ export default () => {
                             <div className=" flex text-sm">
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
-                                  После отправки формы с Вами свяжется специалист.
+                                  После отправки формы с Вами свяжется
+                                  специалист.
                                 </span>
                               </p>
                             </div>

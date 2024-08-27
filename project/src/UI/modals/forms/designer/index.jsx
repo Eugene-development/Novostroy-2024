@@ -12,15 +12,14 @@ import { send } from "./server-actions.js";
 
 export default () => {
   const { push } = useRouter();
-  const { currentVisibleFormDesigner, closeVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
+  const { currentVisibleFormDesigner, closeVisibleFormDesigner } =
+    useFormsStore.visibleFormDesigner();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
   const [project, setProject] = useState("");
-
-
 
   const handleSendFormDesigner = (e) => {
     e.preventDefault();
@@ -37,7 +36,7 @@ export default () => {
 
     push("/spasibo");
   };
-  
+
   return (
     <Transition.Root show={currentVisibleFormDesigner} as={Fragment}>
       <Dialog
@@ -96,7 +95,9 @@ export default () => {
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Наш дизайнер подскажет вам оптимальные решения с учётом своего опыта, размеров помещения и ваших пожеланий.
+                            Наш дизайнер подскажет вам оптимальные решения с
+                            учётом своего опыта, размеров помещения и ваших
+                            пожеланий.
                           </p>
                         </div>
                       </div>
@@ -129,7 +130,7 @@ export default () => {
                                 htmlFor="phone"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Телефон {" "}
+                                Телефон{" "}
                                 <sup className="text-red-700 w-4 h-4">
                                   &#x2736;
                                 </sup>
@@ -150,7 +151,7 @@ export default () => {
                                 htmlFor="email"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Почта{" "}(необязательно)
+                                Почта (необязательно)
                               </label>
                               <div className="mt-2">
                                 <input
@@ -181,7 +182,7 @@ export default () => {
                                 />
                               </div>
                             </div>
-                             <fieldset>
+                            <fieldset>
                               <legend className="text-sm font-medium leading-6 text-gray-900">
                                 У вас есть готовый проект?{" "}
                                 <sup className="text-red-700 w-4 h-4">
@@ -241,13 +242,14 @@ export default () => {
                                   </div>
                                 </div>
                               </div>
-                            </fieldset> 
+                            </fieldset>
                           </div>
                           <div className="mt-8 pb-6 pt-2 border-t-2">
                             <div className=" flex text-sm">
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
-                                  После отправки формы с Вами свяжется наш дизайнер.
+                                  После отправки формы с Вами свяжется наш
+                                  дизайнер.
                                 </span>
                               </p>
                             </div>

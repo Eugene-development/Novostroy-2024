@@ -44,7 +44,6 @@ const features = [
       "Осуществим сборку нашими квалифицированными специалистами и оплатим их работу.",
     icon: Cog6ToothIcon,
   },
-  
 ];
 
 export default () => {
@@ -55,11 +54,12 @@ export default () => {
           <h2 className="text-base font-semibold leading-7 text-sky-600">
             Наши акции
           </h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Акции и спецпредложения
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-           Мы рады предложить вам специальные акции и скидки на наши товары и услуги, чтобы вы могли сэкономить на покупках.
+            Мы рады предложить вам специальные акции и скидки на наши товары и
+            услуги, чтобы вы могли сэкономить на покупках.
           </p>
         </div>
       </div>
@@ -82,9 +82,24 @@ export default () => {
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold text-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="absolute left-1 top-1 size-6 text-red-800">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="absolute left-1 top-1 size-6 text-red-800"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"
+                  />
                 </svg>
 
                 {feature.name}
@@ -96,4 +111,4 @@ export default () => {
       </div>
     </div>
   );
-}
+};

@@ -39,7 +39,7 @@ const CATEGORY = gql`
       }
     }
   }
-  `
+`;
 
 // --- //
 export async function getCatalog(slug) {

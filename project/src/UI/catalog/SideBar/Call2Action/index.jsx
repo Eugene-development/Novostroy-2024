@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import { useFormsStore } from "@/stores/forms";
 
 export default function index() {
-  
   const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
   const { openVisibleFormSalon } = useFormsStore.visibleFormSalon();
   const { openVisibleFormMeasuring } = useFormsStore.visibleFormMeasuring();
@@ -33,7 +32,7 @@ export default function index() {
             <span className="text-xs text-primary-600 dark:text-primary-300 font-normal">
               Дизайнер
             </span>
-          </ div>
+          </div>
         </li>
         <li>
           <div
