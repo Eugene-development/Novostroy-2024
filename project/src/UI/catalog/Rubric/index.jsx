@@ -7,28 +7,27 @@ export default ({ dataCatalog }) => {
       <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
       <BreadCrumbs data={dataCatalog} />
 
-        <div className="bg-white pb-2 sm:pb-8">
           <div className=" max-w-7xl ">
             <div className="mx-auto max-w-2xl lg:mx-0">
 
               {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}
           </h2> */}
+            
               {/* <p className="mt-6 text-lg leading-8 text-gray-600">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
             fugiat veniam occaecat fugiat aliqua.
           </p> */}
             </div>
           </div>
-        </div>
 
         <div className="relative isolate overflow-hidden ">
           
 
   
-          <div className="mx-auto max-w-full px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 ">
-            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-              <h1 className="mt-14 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <div className="mx-auto max-w-full px-6 pb-24 pt-14 sm:pb-32 lg:flex lg:px-8 ">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
+              <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                 {dataCatalog?.value}
                 {/* <FlipWordsDemo/> */}
               </h1>
