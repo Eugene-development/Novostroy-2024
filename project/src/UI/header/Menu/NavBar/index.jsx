@@ -58,7 +58,7 @@ export default function Navbar({ className }) {
             <ProductItem
               setActive={setActive}
               title="Бытовая Техника"
-              href="/tehnika"
+              href="/bitovaia-tehnika"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
               description="Оптимально подобранная техника идеально впишется в проект мебели"
             />

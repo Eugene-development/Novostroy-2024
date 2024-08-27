@@ -5,8 +5,10 @@ export default ({ data }) => {
     <div className="bg-white pb-2 sm:pb-7">
       <div className=" max-w-7xl ">
         <div className="mx-auto max-w-2xl lg:mx-0">
+          
+          
           <div className="mt-3 sm:mt-3 lg:mt-3">
-            <div className="inline-flex space-x-6">
+            <div className="inline-flex space-x-6 whitespace-pre">
               <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
                 Категория каталога
               </span>
@@ -26,6 +28,9 @@ export default ({ data }) => {
               </span>
             </div>
           </div>
+            
+            
+            
           {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}
           </h2> */}
