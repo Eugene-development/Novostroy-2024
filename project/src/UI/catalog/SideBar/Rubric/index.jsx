@@ -16,7 +16,7 @@ export default function Index({ dataCatalog }) {
 
   return (
     <Fragment>
-      <ul className="space-y-3 py-6 px-1 bg-gray-50/40 rounded-xl">
+      <ul className="space-y-3 mb-6 py-6 px-1 bg-gray-100/40 rounded-xl">
         {dataCatalog?.rubric.map((item) => (
           <li key={item.value}>
             <Button
@@ -73,8 +73,8 @@ export default function Index({ dataCatalog }) {
                         >
                           {subitem.value}
                         </Link>
-                        <span className="mr-4 inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-50 dark:bg-primary-200 dark:text-primary-800">
-                          {subitem.product_count}
+                        <span className="mr-4 inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-gray-800 bg-gray-50 dark:bg-primary-200 dark:text-primary-800">
+                        {subitem.product_count}
                         </span>
                       </li>
                     </ul>
