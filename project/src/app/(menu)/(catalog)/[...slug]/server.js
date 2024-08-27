@@ -26,11 +26,18 @@ const CATALOG = gql`
 `;
 
 const CATEGORY = gql`
-  query category ($slug: String!, $key: UUID!) {
-    category (slug: $slug, key: $key){
-       value
+  query category($slug: String!, $key: UUID!) {
+    category(slug: $slug, key: $key) {
+      value
+      product {
+        value
+      }
+      parentable {
+        ... on Rubric {
+          value
+        }
+      }
     }
-    
   }
   `
 

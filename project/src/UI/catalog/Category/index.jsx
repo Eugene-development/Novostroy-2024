@@ -5,7 +5,7 @@ export default ({ dataCategory }) => {
   // console.log (rubric.value)
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-      <HeaderSection data={dataCategory.value} />
+      <HeaderSection data={dataCategory} />
 
       <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 mb-4">
         <Image

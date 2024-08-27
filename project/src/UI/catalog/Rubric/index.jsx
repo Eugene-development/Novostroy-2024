@@ -3,7 +3,52 @@ import FlipWordsDemo from "./FlipWordsDemo";
 
 export default ({ dataCatalog }) => {
   return (
+    <>
+    <div className="bg-white pb-2 sm:pb-8">
+      <div className=" max-w-7xl ">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mt-3 sm:mt-3 lg:mt-3">
+            <div className="inline-flex space-x-6">
+              <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
+                Категория
+              </span>
+              <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+              <ChevronRightIcon
+                aria-hidden="true"
+                className="h-5 w-5 text-gray-400"
+              />  
+              <span>{dataCatalog?.value}</span>
+                
+              </span>
+            </div>
+          </div>
+          {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            {data}
+          </h2> */}
+          {/* <p className="mt-6 text-lg leading-8 text-gray-600">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+            fugiat veniam occaecat fugiat aliqua.
+          </p> */}
+        </div>
+      </div>
+    </div>
+    
     <div className="relative isolate overflow-hidden ">
+    {/* <div className="mt-3 sm:mt-3 lg:mt-3">
+      <div className="inline-flex space-x-6">
+        <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
+          Рубрика
+        </span>
+        <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+          <span>{dataCatalog?.value}</span>
+          <ChevronRightIcon
+            aria-hidden="true"
+            className="h-5 w-5 text-gray-400"
+          />
+        </span>
+      </div>
+    </div> */}
+
       {/* <svg
         aria-hidden="true"
         className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -24,20 +69,6 @@ export default ({ dataCatalog }) => {
       </svg> */}
       <div className="mx-auto max-w-full px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 ">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
-          <div className="mt-3 sm:mt-3 lg:mt-3">
-            <div className="inline-flex space-x-6">
-              <span className="rounded-full bg-gray-500/10 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-500/10">
-                Рубрика каталога
-              </span>
-              <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                <span>{dataCatalog?.value}</span>
-                <ChevronRightIcon
-                  aria-hidden="true"
-                  className="h-5 w-5 text-gray-400"
-                />
-              </span>
-            </div>
-          </div>
           <h1 className="mt-14 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {dataCatalog?.value}
             {/* <FlipWordsDemo/> */}
@@ -64,5 +95,8 @@ export default ({ dataCatalog }) => {
         </div>
       </div>
     </div>
+
+    
+    </>
   );
 };
