@@ -31,7 +31,6 @@ export default function Index({ dataCatalog }) {
               <span className="flex-1 ml-3 text-left whitespace-nowrap">
                 {item.value}
               </span>
-              {/* {item.category.length > 0 &&  */}
               <svg
                 aria-hidden="true"
                 className={`size-6 text-red-800 transform transition-transform animate-pulse ${
@@ -47,7 +46,6 @@ export default function Index({ dataCatalog }) {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              {/* } */}
             </Button>
 
             {currentVisibleSubMenus[item.value] &&
@@ -68,7 +66,7 @@ export default function Index({ dataCatalog }) {
                       >
                         <Link
                           href={`/${dataCatalog.slug}/${item.slug}/${subitem.slug}`}
-                          className="flex items-center p-1 pl-11 w-full text-sm font-semibold tracking-wide text-gray-700 hover:text-gray-950 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="flex items-center p-1 pl-11 w-full text-sm font-medium tracking-wide text-gray-700 hover:text-gray-950 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                           onClick={() => setSelectedItem(subitem.value)}
                         >
                           {subitem.value}
