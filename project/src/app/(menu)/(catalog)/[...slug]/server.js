@@ -31,6 +31,18 @@ const CATEGORY = gql`
       value
       product {
         value
+        unit {
+          value
+        }
+        price {
+          value
+        }
+        metaDescription {
+          value
+        }
+        image {
+          hash
+        }
       }
       parentable {
         ... on Rubric {

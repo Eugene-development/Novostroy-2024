@@ -54,7 +54,7 @@ export default function Index({ dataCatalog }) {
                   subitem.is_active && (
                     <ul
                       id="dropdown-orders"
-                      className="py-2 space-y-2"
+                      className="p-2 space-y-2"
                       key={subitem.value}
                     >
                       <li
