@@ -59,7 +59,9 @@ export default function Index({ dataCatalog }) {
                     >
                       <li
                         className={`flex items-center ${
-                          selectedItem === subitem.value ? "bg-gray-100 rounded-lg" : ""
+                          selectedItem === subitem.value
+                            ? "bg-gray-100 rounded-lg"
+                            : ""
                         }`}
                       >
                         <Link
