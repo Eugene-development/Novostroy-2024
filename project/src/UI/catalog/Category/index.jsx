@@ -6,11 +6,6 @@ import { BreadCrumbs, Search } from "@/UI";
 export default ({ dataCategory }) => {
   return (
     <Fragment>
-      
-      
-    
-    
-    
       <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-10">
         <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
           {/* <!-- TOP BAR --> */}
