@@ -2,7 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default ({ data, mainName }) => {
   return (
-    <div className="mb-3">
+    <div className="">
       <div className="inline-flex space-x-6 whitespace-pre">
         <span className="rounded-full bg-gray-400/10 -mr-2 px-4 py-1 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
           Категория каталога

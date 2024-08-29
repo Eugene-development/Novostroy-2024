@@ -1,4 +1,4 @@
-import Search from "./Search";
+import { Search } from "@/UI";
 import Designer from "./Designer";
 import Call2Action from "./Call2Action";
 import Rubric from "./Rubric";
