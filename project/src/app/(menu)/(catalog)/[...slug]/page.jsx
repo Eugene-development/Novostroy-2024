@@ -1,17 +1,32 @@
 import { Rubric, Category, BreadCrumbs } from "@/UI";
 import { getCatalog, getCategory } from "./server";
 
-// export async function generateMetadata({ params }) {
-//   const meta = await getCatalog({ params });
+export async function generateMetadata({ params }) {
+  const slug = params.slug[params.slug.length - 1];
+  let data, isCatalog, metaTitle, metaDescription;
 
-//   return {
-//     title: "Фабрика мебели ЗОВ | " + meta.category_one.value,
-//     description:
-//       "Если Вас интересуют " +
-//       meta.category_one.value +
-//       " с нашей фабрики ЗОВ, то ознакомьтесь с нашими предложениями вариантов мебели на нашем сайте.",
-//   };
-// }
+  if (params.slug.length === 1) {
+    data = await getCatalog(slug);
+
+    metaTitle = data.catalog?.metaTitle?.value;
+    metaDescription = data.catalog?.metaDescription?.value;
+
+    isCatalog = true;
+  } else if (params.slug.length === 3) {
+    data = await getCategory(slug);
+    metaTitle = data.category?.metaTitle?.value;
+    metaDescription = data.category?.metaDescription?.value;
+
+    isCatalog = false;
+  }
+
+
+  return {
+    title: isCatalog ? "Каталог " : metaTitle,
+    description: isCatalog ? "Каталог" : metaDescription,
+  };
+}
+
 
 export default async ({ params }) => {
   const slug = params.slug[params.slug.length - 1];

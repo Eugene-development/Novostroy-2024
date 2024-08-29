@@ -29,15 +29,18 @@ const CATEGORY = gql`
   query category($slug: String!, $key: UUID!) {
     category(slug: $slug, key: $key) {
       value
+      metaTitle {
+        value
+      }
+      metaDescription {
+        value
+      }
       product {
         value
         unit {
           value
         }
         price {
-          value
-        }
-        metaDescription {
           value
         }
         image {
@@ -51,7 +54,7 @@ const CATEGORY = gql`
       }
     }
   }
-`;
+  `;
 
 // --- //
 export async function getCatalog(slug) {
