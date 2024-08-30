@@ -28,7 +28,7 @@ export default () => {
         </svg>
         Как заказать мебель
       </button>
-      
+
       {/* <!-- Info modal --> */}
       <div
         id="infoModal"
@@ -75,49 +75,45 @@ export default () => {
                 <span className="font-medium text-gray-900 dark:text-white">
                   Most Popular:
                 </span>{" "}
-                This is a prediction of how often each result will be
-                purchased or viewed based on previous product
-                interactions.
+                This is a prediction of how often each result will be purchased
+                or viewed based on previous product interactions.
               </li>
               <li>
                 <span className="font-medium text-gray-900 dark:text-white">
                   Ascending Price:
                 </span>{" "}
-                Sort products by price. The item with the lowest price
-                is at the top and the item with the lowest price is at
-                the bottom.
+                Sort products by price. The item with the lowest price is at the
+                top and the item with the lowest price is at the bottom.
               </li>
               <li>
                 <span className="font-medium text-gray-900 dark:text-white">
                   Descending Price:
                 </span>{" "}
-                Sort products by price. The item with the highest price
-                is at the top and the item with the lowest price is at
-                the bottom.
+                Sort products by price. The item with the highest price is at
+                the top and the item with the lowest price is at the bottom.
               </li>
               <li>
                 <span className="font-medium text-gray-900 dark:text-white">
                   No. Reviews:
                 </span>{" "}
-                This includes the total number of reviews for each
-                result, the products with the highest number of reviews
-                are displayed first.
+                This includes the total number of reviews for each result, the
+                products with the highest number of reviews are displayed first.
               </li>
               <li>
                 <span className="font-medium text-gray-900 dark:text-white">
                   Discount%:
                 </span>{" "}
-                Sorts the list of products based on the discount
-                percentage. The product with the highest percentage
-                discount is at the top, and the product with the lowest
-                percentage discount is at the bottom.
+                Sorts the list of products based on the discount percentage. The
+                product with the highest percentage discount is at the top, and
+                the product with the lowest percentage discount is at the
+                bottom.
               </li>
               <li>
                 <span className="font-medium text-gray-900 dark:text-white">
                   Newest:
                 </span>{" "}
-                The newest products based on the day they were first
-                available on Flowbite Shop.
+                The newest products based on the day they were first available
+                on Flowbite Shop.
               </li>
             </ul>
             <div className="mt-4 flex items-center gap-4 border-t border-gray-200 pt-4 dark:border-gray-700 sm:mt-5 sm:pt-5">
@@ -132,10 +128,6 @@ export default () => {
           </div>
         </div>
       </div>
-    
     </>
-    
-    
-    
   );
 };
