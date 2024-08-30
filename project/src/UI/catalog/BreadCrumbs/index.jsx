@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-export default ({ data, mainName }) => {
+export default ({ data }) => {
   return (
     <div className="">
       <div className="inline-flex space-x-6 whitespace-pre">

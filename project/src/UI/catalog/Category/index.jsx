@@ -1,7 +1,4 @@
-"use client";
-import Image from "next/image";
-import { Fragment } from "react";
-import { BreadCrumbs, Search } from "@/UI";
+import { BreadCrumbs } from "@/UI";
 
 import OrderInfo from "./OrderInfo";
 import Filter from "./Filter";
@@ -15,15 +12,13 @@ export default ({ dataCategory }) => {
           <div className="items-center justify-between md:flex">
             <div className="mb-4 text-xl flex items-center justify-center font-semibold text-gray-900 dark:text-white md:mb-0">
               <BreadCrumbs data={dataCategory} />
-
               {/* <span className="ms-2 text-lg font-medium text-gray-500 dark:text-gray-400">298 products</span>*/}
             </div>
             <OrderInfo />
           </div>
           <Filter />
         </div>
-        <Card />
-
+        <Card dataCategory={dataCategory} />
         <Pagination />
       </div>
     </section>
