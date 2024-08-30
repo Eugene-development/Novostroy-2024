@@ -16,17 +16,15 @@ export async function generateMetadata({ params }) {
     data = await getCategory(slug);
     metaTitle = data.category?.metaTitle?.value;
     metaDescription = data.category?.metaDescription?.value;
-
+    console.log(metaDescription);
     isCatalog = false;
   }
-
 
   return {
     title: isCatalog ? "Каталог " : metaTitle,
     description: isCatalog ? "Каталог" : metaDescription,
   };
 }
-
 
 export default async ({ params }) => {
   const slug = params.slug[params.slug.length - 1];
@@ -42,7 +40,7 @@ export default async ({ params }) => {
 
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-        {/* <BreadCrumbs data={isCatalog ? data.catalog : data.category} /> */} 
+      {/* <BreadCrumbs data={isCatalog ? data.catalog : data.category} /> */}
 
       {isCatalog ? (
         <Rubric dataCatalog={data.catalog} />
