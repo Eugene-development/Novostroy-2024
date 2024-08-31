@@ -50,7 +50,7 @@ export default () => {
           <a
             href="#"
             aria-current="page"
-            className="z-10 flex h-8 items-center justify-center border border-primary-300 bg-primary-50 px-3 leading-tight text-primary-600 hover:bg-primary-100 hover:text-primary-700 dark:border-gray-700 dark:bg-gray-700 dark:hover:bg-gray-700 dark:text-white dark:hover:text-white"
+            className="z-10 flex h-8 items-center justify-center border border-sky-300 bg-sky-50 px-3 leading-tight text-sky-600 hover:bg-sky-100 hover:text-sky-700 dark:border-gray-700 dark:bg-gray-700 dark:hover:bg-gray-700 dark:text-white dark:hover:text-white"
           >
             3
           </a>

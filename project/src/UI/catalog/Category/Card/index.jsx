@@ -1,11 +1,11 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default ({ dataCategory }) => {
   console.log(dataCategory);
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {dataCategory.product.map(() => (
+        {dataCategory.product.map((item) => (
           <div className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
             <div
               id="controls-carousel"
@@ -18,7 +18,7 @@ export default ({ dataCategory }) => {
                 {/* <!-- Item 1 --> */}
                 <div className=" duration-1000 ease-in-out" data-carousel-item>
                   <Image
-                    src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                    src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
                     className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
                     alt="..."
                     width={640}
@@ -92,10 +92,10 @@ export default ({ dataCategory }) => {
           <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p>
         </div> */}
 
-            <a
+            <Link
               href="#"
               title=""
-              className="inline-flex items-center gap-2 text-sm font-medium text-primary-700 hover:underline dark:text-primary-600"
+              className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline dark:text-sky-600"
             >
               <svg
                 className="h-4 w-4"
@@ -115,7 +115,7 @@ export default ({ dataCategory }) => {
                 />
               </svg>
               Узнать актуальную цену проекта
-            </a>
+            </Link>
             {/*
         <div className="flex items-center justify-between gap-4">
           <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1199</p>
@@ -127,10 +127,10 @@ export default ({ dataCategory }) => {
               <span aria-hidden="true" className="h-7 w-7 rounded-full border border-gray-900 border-opacity-10 bg-gray-900"></span>
             </label>
   
-            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-primary-700 focus:outline-none has-[:checked]:ring-2">
+            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-sky-700 focus:outline-none has-[:checked]:ring-2">
               <input type="radio" name="color-choice" value="Blue" className="sr-only" />
               <span id="color-choice-2-label" className="sr-only"> Blue </span>
-              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-primary-700 border-opacity-10 bg-primary-700"></span>
+              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-sky-700 border-opacity-10 bg-sky-700"></span>
             </label>
   
             <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-pink-600 focus:outline-none has-[:checked]:ring-2">
@@ -150,7 +150,7 @@ export default ({ dataCategory }) => {
             <div className="flex items-center gap-4">
               <button
                 type="button"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-sky-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
               >
                 <svg
                   className="h-5 w-5"
@@ -172,7 +172,7 @@ export default ({ dataCategory }) => {
 
               <button
                 type="button"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
               >
                 <svg
                   className="-ms-2 me-2 h-5 w-5"

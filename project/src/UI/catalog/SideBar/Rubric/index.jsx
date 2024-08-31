@@ -33,7 +33,7 @@ export default function Index({ dataCatalog }) {
               </span>
               <svg
                 aria-hidden="true"
-                className={`size-6 text-red-800 transform transition-transform animate-pulse ${
+                className={`size-6 text-sky-800 transform transition-transform animate-pulse ${
                   currentVisibleSubMenus[item.value] ? "rotate-0" : "-rotate-90"
                 }`}
                 fill="currentColor"
@@ -102,10 +102,10 @@ export default function Index({ dataCatalog }) {
       <div className="py-6 border-t border-gray-200">
         <Link
           href="/"
-          className="flex items-center p-1 text-sm font-normal text-red-800 rounded-lg dark:text-red-500 hover:bg-gray-50 dark:hover:bg-gray-700 group"
+          className="flex items-center p-1 text-sm font-normal text-sky-800 rounded-lg dark:text-sky-500 hover:bg-gray-50 dark:hover:bg-gray-700 group"
         >
           <svg
-            className="flex-shrink-0 w-6 h-6 text-red-800 transition duration-75 dark:text-red-500"
+            className="flex-shrink-0 w-6 h-6 text-sky-800 transition duration-75 dark:text-sky-500"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"

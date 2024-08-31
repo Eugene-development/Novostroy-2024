@@ -48,6 +48,7 @@ export { default as Rubric } from "./catalog/Rubric";
 export { default as Category } from "./catalog/Category";
 export { default as BreadCrumbs } from "./catalog/BreadCrumbs";
 export { default as Search } from "./catalog/Search";
+export { default as ProductDetail } from "./catalog/ProductDetail";
 
 // Service
 export { default as Service } from "./service";
