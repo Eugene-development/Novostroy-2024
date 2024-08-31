@@ -38,6 +38,7 @@ const CATEGORY = gql`
       }
       product {
         value
+        slug
         unit {
           value
         }
@@ -47,6 +48,9 @@ const CATEGORY = gql`
         image {
           hash
         }
+        tag {
+          value
+        }
       }
       parentable {
         ... on Rubric {
@@ -54,8 +58,7 @@ const CATEGORY = gql`
         }
       }
     }
-  }
-`;
+  }`;
 
 // --- //
 export async function getCatalog(slug) {

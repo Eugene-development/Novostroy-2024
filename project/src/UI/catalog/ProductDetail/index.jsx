@@ -104,7 +104,7 @@ return (
               <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
                 <span>Product Details</span>
                 <svg data-accordion-icon className="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/>
                 </svg>
               </button>
             </h2>
@@ -118,7 +118,7 @@ return (
               <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                 <span>Specifications</span>
                 <svg data-accordion-icon className="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/>
                 </svg>
               </button>
             </h2>
@@ -132,7 +132,7 @@ return (
               <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                 <span>Warranty</span>
                 <svg data-accordion-icon className="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/>
                 </svg>
               </button>
             </h2>
@@ -246,16 +246,16 @@ return (
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
                 />
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"
                 />
               </svg>
@@ -280,7 +280,7 @@ return (
               <form className="flex items-center gap-2 mt-0">
                 <div className="flex items-center gap-1">
                   <label
-                    for="quantity"
+                    htmlFor="quantity"
                     className="text-sm font-medium text-gray-900 dark:text-white"
                     >Quantity</label
                   >
@@ -346,9 +346,9 @@ return (
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
                   />
                 </svg>
@@ -372,9 +372,9 @@ return (
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"
                   />
                 </svg>
@@ -396,7 +396,7 @@ return (
                 </p>
   
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <label for="green2" className="relative block">
+                  <label htmlFor="green2" className="relative block">
                     <input
                       type="radio"
                       name="colour2"
@@ -410,7 +410,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="pink2" className="relative block">
+                  <label htmlFor="pink2" className="relative block">
                     <input
                       type="radio"
                       name="colour2"
@@ -424,7 +424,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="silver2" className="relative block">
+                  <label htmlFor="silver2" className="relative block">
                     <input
                       type="radio"
                       name="colour2"
@@ -438,7 +438,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="blue2" className="relative block">
+                  <label htmlFor="blue2" className="relative block">
                     <input
                       type="radio"
                       name="colour2"
@@ -460,7 +460,7 @@ return (
                 </p>
   
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <label for="256gb2" className="relative block">
+                  <label htmlFor="256gb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"
@@ -474,7 +474,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="512gb2" className="relative block">
+                  <label htmlFor="512gb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"
@@ -488,7 +488,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="1tb2" className="relative block">
+                  <label htmlFor="1tb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"
@@ -509,7 +509,7 @@ return (
                 </p>
   
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                  <label for="256gb2" className="relative block">
+                  <label htmlFor="256gb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"
@@ -523,7 +523,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="512gb2" className="relative block">
+                  <label htmlFor="512gb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"
@@ -537,7 +537,7 @@ return (
                     </div>
                   </label>
   
-                  <label for="1tb2" className="relative block">
+                  <label htmlFor="1tb2" className="relative block">
                     <input
                       type="radio"
                       name="capacity2"

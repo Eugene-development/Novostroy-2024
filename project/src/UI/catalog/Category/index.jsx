@@ -6,7 +6,7 @@ import Card from "./Card";
 import Pagination from "./Pagination";
 export default ({ dataCategory }) => {
   return (
-    <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-10">
+    <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-10 rounded-xl">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="mb-4 divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800 md:p-6">
           <div className="items-center justify-between md:flex">
@@ -19,7 +19,7 @@ export default ({ dataCategory }) => {
           <Filter />
         </div>
         <Card dataCategory={dataCategory} />
-        <Pagination />
+        {/* <Pagination />*/}
       </div>
     </section>
   );

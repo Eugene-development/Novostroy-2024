@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 export default ({ dataCategory }) => {
-  console.log(dataCategory);
+  // console.log(dataCategory);
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -170,8 +170,9 @@ export default ({ dataCategory }) => {
                 В избранное
               </button>
 
-              <button
-                type="button"
+              <Link
+                href={`/product/${item.slug}`}
+                target="_blank"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
               >
                 <svg
@@ -192,7 +193,7 @@ export default ({ dataCategory }) => {
                   />
                 </svg>
                 Подробнее
-              </button>
+              </Link>
             </div>
           </div>
         ))}
