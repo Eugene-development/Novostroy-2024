@@ -1,4 +1,6 @@
-export default () => {
+export default ({dataProduct}) => {
+  
+  console.log(dataProduct)
 return (
   <section className="py-8 bg-white md:py-16 xl:py-24 dark:bg-gray-900 antialiased">
     <div className="max-w-screen-xl mx-auto">
@@ -151,7 +153,7 @@ return (
             className="p-4 border border-gray-200 rounded-lg sm:p-6 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
           >
             <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Кухонный гарнитур 83147
+          {dataProduct.product.value}
             </h1>
   
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex">

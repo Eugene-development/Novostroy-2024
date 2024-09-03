@@ -69,7 +69,7 @@ export async function getCatalog(slug) {
   try {
     return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
   } catch (error) {
-    console.error("Error occurred while fetching category:", error);
+    console.error("Error occurred while fetching catalog:", error);
     throw error;
   }
 }
@@ -84,7 +84,7 @@ export async function getRubric(slug) {
     return console.log(variables.slug);
     // return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
   } catch (error) {
-    console.error("Error occurred while fetching category:", error);
+    console.error("Error occurred while fetching rubric:", error);
     throw error;
   }
 }

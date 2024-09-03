@@ -1,10 +1,11 @@
 import { ProductDetail } from "@/UI";
+import {getProduct} from "./server"
 
-export default ({params}) => {
+export default async ({params}) => {
   const slug = params.slug;
-  console.log(slug)
+  const data = await getProduct(slug);
 
 return (
-  <ProductDetail/>
+  <ProductDetail dataProduct={ data } />
 )
 }
