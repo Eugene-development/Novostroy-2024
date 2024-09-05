@@ -4,9 +4,12 @@ import { gql, request } from "graphql-request";
 const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } = process.env;
 
 const PRODUCT = gql`
-  query product ($slug: String!, $key: UUID!) {
+  query product($slug: String!, $key: UUID!) {
     product(slug: $slug, key: $key) {
       value
+      tag {
+        value
+      }
     }
   }
   `
