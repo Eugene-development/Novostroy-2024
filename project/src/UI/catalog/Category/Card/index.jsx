@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 export default ({ dataCategory }) => {
-  // console.log(dataCategory);
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

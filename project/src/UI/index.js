@@ -49,6 +49,8 @@ export { default as Category } from "./catalog/Category";
 export { default as BreadCrumbs } from "./catalog/BreadCrumbs";
 export { default as Search } from "./catalog/Search";
 export { default as ProductDetail } from "./catalog/ProductDetail";
+export { default as OrderInfo } from "./catalog/OrderInfo";
+export { default as Filter } from "./catalog/Filter";
 
 // Service
 export { default as Service } from "./service";
