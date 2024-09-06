@@ -7,7 +7,7 @@ export default ({ dataProduct }) => {
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <BreadCrumbs data={dataProduct} />
 
-        <section className="py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased">
+        <section className="py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased rounded-lg">
           <div className="max-w-screen-xl mx-auto">
             <div className="lg:flex justify-between">
               <div className="px-4">
@@ -355,7 +355,7 @@ export default ({ dataProduct }) => {
                       />
                     </svg>
                     <p className="text-sm font-medium text-sky-700 dark:text-sky-500">
-                      Запрос актуальной цены проекта
+                      Запрос актуальной цены
                     </p>
                   </div>
 
@@ -475,15 +475,13 @@ export default ({ dataProduct }) => {
                   </div>
 
                   <p className="mt-4 md:mt-6 text-sm font-normal text-gray-500 dark:text-gray-400">
-                    Данный проект можно изменить под габаритные размеры вашего
-                    помещения или в соответствии с Вашими индивидуальными
-                    пожеланиями.
+                    Наш дизайнер совершенно бесплатно даст вам общую консультацию по интересующим вас вопросам, связанным с проектированием мебели и условиям нашей работы.
                   </p>
 
                   <div className="pt-8 mt-8 space-y-6 border-t border-gray-200 dark:border-gray-700">
                     <div>
                       <p className="text-base font-medium text-gray-900 dark:text-white">
-                        Материал
+                        Материалы
                       </p>
 
                       <div className="flex flex-wrap items-center gap-2 mt-2">
@@ -562,49 +560,6 @@ export default ({ dataProduct }) => {
                             </div>
                           </label>
                         ))}
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-base font-medium text-gray-900 dark:text-white">
-                        Размеры
-                      </p>
-
-                      <div className="flex flex-wrap items-center gap-2 mt-2">
-                        <label htmlFor="256gb2" className="relative block">
-                          <input
-                            type="radio"
-                            name="capacity2"
-                            id="256gb2"
-                            className="absolute appearance-none top-2 left-2 peer"
-                          />
-                          <div className="relative flex items-center justify-center gap-4 px-2 py-1 overflow-hidden text-gray-500 hover:bg-gray-100 border border-gray-300 rounded-lg cursor-pointer bg-white peer-checked:bg-sky-50 peer-checked:text-sky-700 peer-checked:border-sky-700 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 dark:peer-checked:bg-sky-900 dark:peer-checked:border-sky-600 dark:peer-checked:text-sky-300 dark:hover:bg-gray-600">
-                            <p className="text-sm font-medium">256GB</p>
-                          </div>
-                        </label>
-
-                        <label htmlFor="512gb2" className="relative block">
-                          <input
-                            type="radio"
-                            name="capacity2"
-                            id="512gb2"
-                            className="absolute appearance-none top-2 left-2 peer"
-                          />
-                          <div className="relative flex items-center justify-center gap-4 px-2 py-1 overflow-hidden text-gray-500 hover:bg-gray-100 border border-gray-300 rounded-lg cursor-pointer bg-white peer-checked:bg-sky-50 peer-checked:text-sky-700 peer-checked:border-sky-700 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 dark:peer-checked:bg-sky-900 dark:peer-checked:border-sky-600 dark:peer-checked:text-sky-300 dark:hover:bg-gray-600">
-                            <p className="text-sm font-medium">512GB</p>
-                          </div>
-                        </label>
-
-                        <label htmlFor="1tb2" className="relative block">
-                          <input
-                            type="radio"
-                            name="capacity2"
-                            id="1tb2"
-                            className="absolute appearance-none top-2 left-2 peer"
-                          />
-                          <div className="relative flex items-center justify-center gap-4 px-2 py-1 overflow-hidden text-gray-500 hover:bg-gray-100 border border-gray-300 rounded-lg cursor-pointer bg-white peer-checked:bg-sky-50 peer-checked:text-sky-700 peer-checked:border-sky-700 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 dark:peer-checked:bg-sky-900 dark:peer-checked:border-sky-600 dark:peer-checked:text-sky-300 dark:hover:bg-gray-600">
-                            <p className="text-sm font-medium">1TB</p>
-                          </div>
-                        </label>
                       </div>
                     </div>
                   </div>
