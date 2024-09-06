@@ -45,15 +45,9 @@ export default async function PageComponent({ params }) {
 
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
-      {/* Условие для отображения компонента Rubric */}
       {isCatalog && <Rubric dataCatalog={data.catalog} />}
-      
-      {/* Условие для отображения компонента Product */}
       {isProduct && <ProductDetail dataProduct={data.product} />}
-      
-      {/* Условие для отображения компонента Category */}
-      {isCategory && <Category dataCategory={data.category} />}
-      
-      </main>
+      {isCategory && <Category dataCategory={data.category} />} 
+    </main>
   );
 }
