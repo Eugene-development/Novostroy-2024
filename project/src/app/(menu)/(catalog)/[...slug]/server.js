@@ -58,7 +58,8 @@ const CATEGORY = gql`
         }
       }
     }
-  }`;
+  }
+`;
 
 const PRODUCT = gql`
   query product($slug: String!, $key: UUID!) {
@@ -69,7 +70,7 @@ const PRODUCT = gql`
       }
     }
   }
-  `
+`;
 
 // --- //
 export async function getCatalog(slug) {

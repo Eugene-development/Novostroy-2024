@@ -5,7 +5,10 @@ export default ({ dataCategory }) => {
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {dataCategory.product.map((item) => (
-          <div key={item.slug} className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+          <div
+            key={item.slug}
+            className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+          >
             <div
               id="controls-carousel"
               className="relative w-full"
@@ -85,11 +88,15 @@ export default ({ dataCategory }) => {
               </div>
             </div>
 
-            
-        <div>
-              <Link href={`/product/${item.slug}`} className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">{ item.value }</Link>
-              {/* <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p> */ }
-        </div> 
+            <div>
+              <Link
+                href={`/product/${item.slug}`}
+                className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+              >
+                {item.value}
+              </Link>
+              {/* <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p> */}
+            </div>
 
             <Link
               href="#"

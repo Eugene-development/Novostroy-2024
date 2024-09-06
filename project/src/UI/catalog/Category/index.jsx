@@ -4,9 +4,8 @@ export default ({ dataCategory }) => {
   return (
     <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-        
-              <BreadCrumbs data={dataCategory} />
-              
+        <BreadCrumbs data={dataCategory} />
+
         <Card dataCategory={dataCategory} />
         {/* <Pagination />*/}
       </div>

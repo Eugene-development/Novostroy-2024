@@ -12,8 +12,8 @@ export async function generateMetadata({ params }) {
     isCatalog = true;
   } else if (params.slug.length === 2) {
     data = await getProduct(slug);
-    metaTitle = "kjnkjnjk"
-    metaDescription = "jnmkjmkl"
+    metaTitle = "kjnkjnjk";
+    metaDescription = "jnmkjmkl";
     isProduct = true;
   } else if (params.slug.length === 3) {
     data = await getCategory(slug);
@@ -46,7 +46,7 @@ export default async function PageComponent({ params }) {
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
       {isCatalog && <Rubric dataCatalog={data.catalog} />}
-      {isCategory && <Category dataCategory={data.category} />} 
+      {isCategory && <Category dataCategory={data.category} />}
       {isProduct && <ProductDetail dataProduct={data.product} />}
     </main>
   );
