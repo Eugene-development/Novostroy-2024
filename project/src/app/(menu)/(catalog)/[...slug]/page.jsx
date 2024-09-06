@@ -46,8 +46,8 @@ export default async function PageComponent({ params }) {
   return (
     <main className="flex-1 py-3 h-full overflow-y-auto lg:pl-4">
       {isCatalog && <Rubric dataCatalog={data.catalog} />}
-      {isProduct && <ProductDetail dataProduct={data.product} />}
       {isCategory && <Category dataCategory={data.category} />} 
+      {isProduct && <ProductDetail dataProduct={data.product} />}
     </main>
   );
 }
