@@ -20,7 +20,7 @@ export default ({ dataCategory }) => {
                   <Image
                     src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
                     className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
-                    alt="..."
+                    alt={item.value}
                     width={640}
                     height={640}
                   />
@@ -86,11 +86,11 @@ export default ({ dataCategory }) => {
               </div>
             </div>
 
-            {/* 
+            
         <div>
-          <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">Apple iMac 27"</a>
-          <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p>
-        </div> */}
+              <Link href={`/product/${item.slug}`} className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">{ item.value }</Link>
+              {/* <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p> */ }
+        </div> 
 
             <Link
               href="#"
