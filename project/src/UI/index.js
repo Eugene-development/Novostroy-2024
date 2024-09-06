@@ -51,6 +51,8 @@ export { default as Search } from "./catalog/Search";
 export { default as ProductDetail } from "./catalog/ProductDetail";
 export { default as OrderInfo } from "./catalog/OrderInfo";
 export { default as Filter } from "./catalog/Filter";
+export { default as Pagination } from "./catalog/Pagination";
+export { default as Card } from "./catalog/Card";
 
 // Service
 export { default as Service } from "./service";
