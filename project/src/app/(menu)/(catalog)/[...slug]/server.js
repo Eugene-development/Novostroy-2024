@@ -60,6 +60,17 @@ const CATEGORY = gql`
     }
   }`;
 
+const PRODUCT = gql`
+  query product($slug: String!, $key: UUID!) {
+    product(slug: $slug, key: $key) {
+      value
+      tag {
+        value
+      }
+    }
+  }
+  `
+
 // --- //
 export async function getCatalog(slug) {
   const variables = {
@@ -75,21 +86,6 @@ export async function getCatalog(slug) {
 }
 
 // --- //
-export async function getRubric(slug) {
-  const variables = {
-    key: NEXT_PUBLIC_KEY,
-    slug,
-  };
-  try {
-    return console.log(variables.slug);
-    // return await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
-  } catch (error) {
-    console.error("Error occurred while fetching rubric:", error);
-    throw error;
-  }
-}
-
-// --- //
 export async function getCategory(slug) {
   const variables = {
     key: NEXT_PUBLIC_KEY,
@@ -100,6 +96,20 @@ export async function getCategory(slug) {
     return await request(NEXT_PUBLIC_GRAPHQL, CATEGORY, variables);
   } catch (error) {
     console.error("Error occurred while fetching category:", error);
+    throw error;
+  }
+}
+
+// --- //
+export async function getProduct(slug) {
+  const variables = {
+    key: NEXT_PUBLIC_KEY,
+    slug,
+  };
+  try {
+    return await request(NEXT_PUBLIC_GRAPHQL, PRODUCT, variables);
+  } catch (error) {
+    console.error("Error occurred while fetching product:", error);
     throw error;
   }
 }

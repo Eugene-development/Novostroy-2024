@@ -153,7 +153,7 @@ return (
             className="p-4 border border-gray-200 rounded-lg sm:p-6 lg:p-8 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
           >
             <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
-          {dataProduct.product?.value}
+          {dataProduct?.value}
             </h1>
   
             <div className="mt-4 sm:gap-4 sm:items-center sm:flex">
@@ -462,8 +462,8 @@ return (
                 </p>
   
                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                {dataProduct.product?.tag.map((item) => (
-                  <label htmlFor={item.value} className="relative block">
+                {dataProduct?.tag.map((item) => (
+                  <label key={item.slug} htmlFor={item.value} className="relative block">
                     <input
                       type="radio"
                       name="capacity2"

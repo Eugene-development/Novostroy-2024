@@ -6,7 +6,7 @@ export default ({ dataCategory }) => {
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {dataCategory.product.map((item) => (
-          <div className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+          <div key={item.slug} className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
             <div
               id="controls-carousel"
               className="relative w-full"
@@ -172,7 +172,6 @@ export default ({ dataCategory }) => {
 
               <Link
                 href={`/product/${item.slug}`}
-                target="_blank"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
               >
                 <svg
