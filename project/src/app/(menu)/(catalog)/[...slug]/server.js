@@ -73,6 +73,9 @@ const PRODUCT = gql`
     product(slug: $slug, key: $key) {
       id
       value
+      image {
+          hash
+        }
       tag {
         value
       }

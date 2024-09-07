@@ -1,5 +1,7 @@
-import React from "react";
+import { Favorites } from "@/UI";
 
 export default function page() {
-  return <div>page</div>;
+  return <Favorites />
 }
+
+

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BreadCrumbs } from "@/UI";
 
 export default ({ dataProduct }) => {
@@ -108,28 +109,6 @@ export default ({ dataProduct }) => {
                         />
                       </button>
                     </li>
-                    <li className="me-2" role="presentation">
-                      <button
-                        className="h-20 w-20 overflow-hidden border-2 rounded-lg sm:h-20 sm:w-20 md:h-24 md:w-24 p-2 cursor-pointer mx-auto"
-                        id="product-2-image-4-tab"
-                        data-tabs-target="#product-2-image-4"
-                        type="button"
-                        role="tab"
-                        aria-controls="product-2-image-4"
-                        aria-selected="false"
-                      >
-                        <img
-                          className="object-contain w-full h-full dark:hidden"
-                          src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side.svg"
-                          alt=""
-                        />
-                        <img
-                          className="object-contain w-full h-full hidden dark:block"
-                          src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side-dark.svg"
-                          alt=""
-                        />
-                      </button>
-                    </li>
                   </ul>
 
                   <div
@@ -142,16 +121,14 @@ export default ({ dataProduct }) => {
                       role="tabpanel"
                       aria-labelledby="product-2-image-1-tab"
                     >
-                      <img
-                        className="w-full mx-auto dark:hidden"
-                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg"
-                        alt=""
-                      />
-                      <img
-                        className="w-full mx-auto hidden dark:block"
-                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
-                        alt=""
-                      />
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_S3}/${dataProduct?.image[0]?.hash}`}
+                      className="w-full mx-auto rounded-lg"
+                      alt={dataProduct?.value}
+                      width={640}
+                      height={840}
+                    />
+                      
                     </div>
                     <div
                       className="hidden px-4 rounded-lg bg-white dark:bg-gray-900"
