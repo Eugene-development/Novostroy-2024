@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { OrderInfo, Filter } from "@/UI";
 
@@ -18,13 +19,16 @@ export default ({ data }) => {
                   className="h-5 w-5 text-gray-400"
                 />
                 {data.parentable.parentable?.parentable && (
-                  <>
+                  <Link
+                    href={`/${data.parentable.parentable.parentable.slug}`}
+                    className="flex items-center hover:text-sky-700"
+                  >
                     <span>{data.parentable.parentable.parentable.value}</span>
                     <ChevronRightIcon
                       aria-hidden="true"
-                      className="h-5 w-5 text-gray-400"
+                      className="h-5 w-5 ml-2 text-gray-400"
                     />
-                  </>
+                  </Link>
                 )}
                 {data.parentable?.parentable && (
                   <>
@@ -35,18 +39,24 @@ export default ({ data }) => {
                     />
                   </>
                 )}
-                {data.parentable && (
-                  <>
+
+                {data.parentable?.slug ? (
+                  <Link
+                    href={`/${data.parentable.parentable.parentable?.slug}/${data.parentable.parentable.slug}/${data.parentable.slug}`}
+                    className="flex items-center hover:text-sky-700"
+                  >
                     <span>{data.parentable.value}</span>
-                    <ChevronRightIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 text-gray-400"
-                    />
-                  </>
+                  </Link>
+                ) : (
+                  <span>{data.parentable.value}</span>
                 )}
 
-                
-          <span>{data.value}</span>
+                <ChevronRightIcon
+                  aria-hidden="true"
+                  className="h-5 w-5 ml-2 text-gray-400"
+                />
+
+                <span>{data.value}</span>
               </span>
             </div>
 
