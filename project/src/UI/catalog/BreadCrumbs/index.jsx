@@ -17,7 +17,7 @@ export default ({ data }) => {
                   aria-hidden="true"
                   className="h-5 w-5 text-gray-400"
                 />
-                {data.parentable && (
+                {data.parentable.parentable && (
                   <>
                     <span>{data.parentable.parentable.value}</span>
                     <ChevronRightIcon
@@ -26,9 +26,18 @@ export default ({ data }) => {
                     />
                   </>
                 )}
+                {data.parentable && (
+                  <>
+                    <span>{data.parentable.value}</span>
+                    <ChevronRightIcon
+                      aria-hidden="true"
+                      className="h-5 w-5 text-gray-400"
+                    />
+                  </>
+                )}
 
-                {/*
-          <span>{data.value}</span>*/}
+                
+          <span>{data.value}</span>
               </span>
             </div>
 
