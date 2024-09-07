@@ -18,6 +18,8 @@ export default ({ data }) => {
                   aria-hidden="true"
                   className="h-5 w-5 text-gray-400"
                 />
+                  
+                  {/* ПраПраРодитель */}
                 {data.parentable.parentable?.parentable && (
                   <Link
                     href={`/${data.parentable.parentable.parentable.slug}`}
@@ -30,16 +32,36 @@ export default ({ data }) => {
                     />
                   </Link>
                 )}
-                {data.parentable?.parentable && (
-                  <>
-                    <span>{data.parentable.parentable.value}</span>
+                  
+                  {/* ПраРодитель */}
+                {data.parentable?.parentable.slug && (
+                  data.parentable?.parentable?.parentable ? (
+                    <>
+                    <span>{data.parentable.parentable.value}</span> 
                     <ChevronRightIcon
                       aria-hidden="true"
-                      className="h-5 w-5 text-gray-400"
+                      className="h-5 w-5 ml-2 text-gray-400"
                     />
-                  </>
-                )}
+                    </>
+                  )
+                  : (
+                    <Link
+                      href={`/${data.parentable.parentable.slug}`}
+                      className="flex items-center hover:text-sky-700"
+                    >
+                      <span>{data.parentable.parentable.value}</span>
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 ml-2 text-gray-400"
+                      />
+                    </Link>
+                  )
+                  
+                ) }
+                
+                
 
+                  {/* Родитель */}
                 {data.parentable?.slug ? (
                   <Link
                     href={`/${data.parentable.parentable.parentable?.slug}/${data.parentable.parentable.slug}/${data.parentable.slug}`}
@@ -56,6 +78,7 @@ export default ({ data }) => {
                   className="h-5 w-5 ml-2 text-gray-400"
                 />
 
+                  {/* Значение */}
                 <span>{data.value}</span>
               </span>
             </div>
