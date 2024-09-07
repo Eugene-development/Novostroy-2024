@@ -71,9 +71,28 @@ const CATEGORY = gql`
 const PRODUCT = gql`
   query product($slug: String!, $key: UUID!) {
     product(slug: $slug, key: $key) {
+      id
       value
       tag {
         value
+      }
+      parentable {
+        ... on Category {
+          value
+          slug
+          parentable {
+            ... on Rubric {
+              value
+              slug
+              parentable {
+                ... on Catalog {
+                  value
+                  slug
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

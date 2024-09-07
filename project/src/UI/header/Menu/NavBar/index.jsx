@@ -57,8 +57,8 @@ export default function Navbar({ className }) {
             />
             <ProductItem
               setActive={setActive}
-              title="Бытовая Техника"
-              href="/bitovaia-tehnika"
+              title="Техника"
+              href="/tehnika"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
               description="Встраиваемая, отдельностоящая и мелкобытовая техника"
             />
@@ -71,8 +71,8 @@ export default function Navbar({ className }) {
             />
             <ProductItem
               setActive={setActive}
-              title="Мойки и смесители"
-              href="/mojki-i-smesiteli"
+              title="Сантехника"
+              href="/santehnika"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
               description="Стальные и композитные мойки, а также сопутствующие товары"
             />

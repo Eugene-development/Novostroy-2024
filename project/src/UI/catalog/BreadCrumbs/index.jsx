@@ -9,7 +9,7 @@ export default ({ data }) => {
           <div className="mb-4 text-xl flex items-center justify-center font-semibold text-gray-900 dark:text-white md:mb-0">
             <div className="inline-flex space-x-6 whitespace-pre">
               <span className="rounded-full bg-gray-400/10 -mr-2 px-4 py-0.5 text-sm font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
-                Категория каталога
+                Каталог
               </span>
 
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
@@ -17,7 +17,16 @@ export default ({ data }) => {
                   aria-hidden="true"
                   className="h-5 w-5 text-gray-400"
                 />
-                {data.parentable.parentable && (
+                {data.parentable.parentable?.parentable && (
+                  <>
+                    <span>{data.parentable.parentable.parentable.value}</span>
+                    <ChevronRightIcon
+                      aria-hidden="true"
+                      className="h-5 w-5 text-gray-400"
+                    />
+                  </>
+                )}
+                {data.parentable?.parentable && (
                   <>
                     <span>{data.parentable.parentable.value}</span>
                     <ChevronRightIcon
