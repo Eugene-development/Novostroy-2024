@@ -55,7 +55,15 @@ const CATEGORY = gql`
       parentable {
         ... on Rubric {
           value
+          slug
+          parentable {
+            ... on Catalog {
+              value
+              slug
+            }
+          }
         }
+        
       }
     }
   }

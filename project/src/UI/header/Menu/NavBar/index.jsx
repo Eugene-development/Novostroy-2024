@@ -60,21 +60,21 @@ export default function Navbar({ className }) {
               title="Бытовая Техника"
               href="/bitovaia-tehnika"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
-              description="Оптимально подобранная техника идеально впишется в проект мебели"
+              description="Встраиваемая, отдельностоящая и мелкобытовая техника"
             />
             <ProductItem
               setActive={setActive}
               title="Столешницы"
               href="/stoleshnica"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg"
-              description="Рабочая зона из восокопрочных материалов и с красивыми рисунками"
+              description="Рабочая зона из высокопрочных материалов с различными декорами"
             />
             <ProductItem
               setActive={setActive}
               title="Мойки и смесители"
               href="/mojki-i-smesiteli"
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
-              description="Стальные и композитные мойки и смесители от мировых производителей"
+              description="Стальные и композитные мойки, а также сопутствующие товары"
             />
             {/* <ProductItem
               setActive={setActive}

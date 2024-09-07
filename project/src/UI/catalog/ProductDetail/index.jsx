@@ -1,7 +1,7 @@
 import { BreadCrumbs } from "@/UI";
 
 export default ({ dataProduct }) => {
-  console.log(dataProduct);
+  // console.log(dataProduct);
   return (
     <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
@@ -543,7 +543,7 @@ export default ({ dataProduct }) => {
                       <div className="flex flex-wrap items-center gap-2 mt-2">
                         {dataProduct?.tag.map((item) => (
                           <label
-                            key={item.slug}
+                            key={item.value}
                             htmlFor={item.value}
                             className="relative block"
                           >
