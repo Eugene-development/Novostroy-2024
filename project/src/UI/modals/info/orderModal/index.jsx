@@ -63,37 +63,57 @@ export default () => {
                           </dl>
                           <dl className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 sm:mb-5">
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Sold by</dt>
-                                  <dd className="text-gray-500 dark:text-gray-400">Flowbite</dd>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Консультация</dt>
+                                    <dd className="text-gray-500 dark:text-gray-400">
+                                        <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
+                                            <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            Бесплатно
+                                        </span>
+                                    </dd>
                               </div>
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Ships from</dt>
-                                  <dd className="text-gray-500 dark:text-gray-400">Flowbite</dd>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Замер</dt>
+                                    <dd className="text-gray-500 dark:text-gray-400">
+                                        <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
+                                            <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            Профессионально
+                                        </span>
+                                    </dd>
                               </div>
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Product State</dt>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Проект</dt>
                                   <dd className="text-gray-500 dark:text-gray-400">
                                       <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
                                           <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                          New
+                                          Красиво
                                       </span>
                                   </dd>
                               </div>
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Shipping</dt>
-                                  <dd className="flex items-center text-gray-500 dark:text-gray-400">
-                                      <svg className="w-4 h-4 mr-1.5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                                      Worldwide
-                                  </dd>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Договор</dt>
+                                    <dd className="text-gray-500 dark:text-gray-400">
+                                        <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
+                                            <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            Надёжно
+                                        </span>
+                                    </dd>
                               </div>
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Dimensions (cm)</dt>
-                                  <dd className="text-gray-500 dark:text-gray-400">105 x 15 x 23</dd>
-                              </div>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Изготовление</dt>
+                                    <dd className="text-gray-500 dark:text-gray-400">
+                                        <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
+                                            <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            Быстро
+                                        </span>
+                                    </dd>                              </div>
                               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
-                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Item weight</dt>
-                                  <dd className="text-gray-500 dark:text-gray-400">12kg</dd>
-                              </div>
+                                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Сборка</dt>
+                                    <dd className="text-gray-500 dark:text-gray-400">
+                                        <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
+                                            <svg aria-hidden="true" className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            Качественно
+                                        </span>
+                                    </dd>                              </div>
                           </dl>
                           <div className="flex pt-4 justify-between items-center">
                               <div className="flex items-center space-x-3 sm:space-x-4">
