@@ -2,10 +2,15 @@ import { Fragment } from "react";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import FlipWordsDemo from "./FlipWordsDemo";
 
+import { BreadCrumbs } from "@/UI";
+
 export default ({ dataCatalog }) => {
   return (
-    <div className="bg-gray-50">
-      <div className=" max-w-7xl ">
+    <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
+      <div className="mx-auto max-w-screen-xl">
+    <BreadCrumbs data={dataCatalog} />
+
+        
         <div className="mx-auto max-w-2xl lg:mx-0">
           {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}
@@ -19,7 +24,7 @@ export default ({ dataCatalog }) => {
       </div>
 
       <div className="relative isolate overflow-hidden ">
-        <div className="mx-auto max-w-full px-6 pb-24 pt-14 sm:pb-32 lg:flex lg:px-8 ">
+        <div className="mx-auto max-w-full px-6 pb-24 pt-14 sm:pb-32 lg:flex lg:px-16 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
             <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               {dataCatalog?.value}
@@ -47,6 +52,6 @@ export default ({ dataCatalog }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

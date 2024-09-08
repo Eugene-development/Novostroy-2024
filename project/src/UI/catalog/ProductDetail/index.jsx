@@ -5,7 +5,7 @@ export default ({ dataProduct }) => {
   // console.log(dataProduct);
   return (
     <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
-      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+      <div className="mx-auto max-w-screen-xl">
         <BreadCrumbs data={dataProduct} />
 
         <section className="py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased rounded-lg">
