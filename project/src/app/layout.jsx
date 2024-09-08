@@ -7,6 +7,7 @@ import {
   DesignerForm,
   SalonForm,
   MeasuringForm,
+  OrderModal
 } from "@/UI";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
         <MeasuringForm />
         <Banner />
         <Menu />
+        <OrderModal />
         {children}
         <Footer />
       </body>
