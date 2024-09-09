@@ -8,9 +8,8 @@ export default ({ dataCatalog }) => {
   return (
     <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
       <div className="mx-auto max-w-screen-xl">
-    <BreadCrumbs data={dataCatalog} />
+        <BreadCrumbs data={dataCatalog} />
 
-        
         <div className="mx-auto max-w-2xl lg:mx-0">
           {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}

@@ -74,8 +74,8 @@ const PRODUCT = gql`
       id
       value
       image {
-          hash
-        }
+        hash
+      }
       tag {
         value
       }

@@ -1,14 +1,13 @@
-"use client"
+"use client";
 import { useOrderInfoStore } from "@/stores/orderInfo";
 
 export default () => {
-  
   const { openVisibleOrderInfo } = useOrderInfoStore.visibleOrderInfo();
 
   return (
     <>
       <button
-      onClick={() => openVisibleOrderInfo()}
+        onClick={() => openVisibleOrderInfo()}
         id="infoButton"
         data-modal-target="infoModal"
         data-modal-toggle="infoModal"
@@ -35,7 +34,6 @@ export default () => {
         </svg>
         Как заказать мебель
       </button>
-
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Rubric, Category, ProductDetail} from "@/UI";
+import { Rubric, Category, ProductDetail } from "@/UI";
 import { getCatalog, getCategory, getProduct } from "./server";
 
 export async function generateMetadata({ params }) {

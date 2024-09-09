@@ -121,14 +121,13 @@ export default ({ dataProduct }) => {
                       role="tabpanel"
                       aria-labelledby="product-2-image-1-tab"
                     >
-                    <Image
-                      src={`${process.env.NEXT_PUBLIC_S3}/${dataProduct?.image[0]?.hash}`}
-                      className="w-full mx-auto rounded-lg"
-                      alt={dataProduct?.value}
-                      width={640}
-                      height={840}
-                    />
-                      
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_S3}/${dataProduct?.image[0]?.hash}`}
+                        className="w-full mx-auto rounded-lg"
+                        alt={dataProduct?.value}
+                        width={640}
+                        height={840}
+                      />
                     </div>
                     <div
                       className="hidden px-4 rounded-lg bg-white dark:bg-gray-900"

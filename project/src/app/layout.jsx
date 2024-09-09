@@ -7,7 +7,7 @@ import {
   DesignerForm,
   SalonForm,
   MeasuringForm,
-  OrderInfoModal
+  OrderInfoModal,
 } from "@/UI";
 const inter = Inter({ subsets: ["latin"] });
 

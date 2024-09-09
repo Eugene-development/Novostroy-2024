@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { OrderInfo, Filter } from "@/UI";
 
-
 const BreadcrumbLink = ({ href, text }) => (
   <Link href={href} className="flex items-center hover:text-sky-700">
     <span>{text}</span>
@@ -18,7 +17,6 @@ const ChevronIcon = () => (
 );
 
 export default ({ data }) => {
-
   const parentable = data.parentable || {};
   const grandParent = parentable.parentable?.parentable;
   const parent = parentable.parentable;
