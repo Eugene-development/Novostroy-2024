@@ -7,7 +7,7 @@ export { default as Footer } from "./footer";
 export { default as DesignerForm } from "./modals/forms/designer";
 export { default as SalonForm } from "./modals/forms/salon";
 export { default as MeasuringForm } from "./modals/forms/measuring";
-export { default as OrderModal } from "./modals/info/orderModal";
+export { default as OrderInfoModal } from "./modals/info/orderInfoModal";
 
 // Main
 export { default as Slider } from "./main/Slider";
