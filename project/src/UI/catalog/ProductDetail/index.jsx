@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BreadCrumbs } from "@/UI";
+import FavoriteButton from "./FavoriteButton";
 
 export default ({ dataProduct }) => {
   // console.log(dataProduct);
@@ -396,60 +397,8 @@ export default ({ dataProduct }) => {
               </form>
             </div>*/}
 
-                  <div className="gap-4 mt-4 md:mt-6 sm:flex sm:items-center lg:flex-col">
-                    <a
-                      href="#"
-                      title=""
-                      className="flex items-center w-full justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-sky-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      role="button"
-                    >
-                      <svg
-                        className="w-5 h-5 -ms-2 me-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
-                        />
-                      </svg>
-                      Добавить в избранное
-                    </a>
-
-                    <a
-                      href="#"
-                      title=""
-                      className="text-white w-full mt-4 sm:mt-0 bg-sky-700 hover:bg-sky-800 focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-sky-600 dark:hover:bg-sky-700 focus:outline-none dark:focus:ring-sky-800 flex items-center justify-center"
-                      role="button"
-                    >
-                      <svg
-                        className="w-5 h-5 -ms-2 me-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"
-                        />
-                      </svg>
-                      Консультация дизайнера
-                    </a>
-                  </div>
-
+                  <FavoriteButton product={dataProduct} />
+      
                   <p className="mt-4 md:mt-6 text-sm font-normal text-gray-500 dark:text-gray-400">
                     Наш дизайнер совершенно бесплатно даст вам общую
                     консультацию по интересующим вас вопросам, связанным с

@@ -1,5 +1,32 @@
+"use client";
+import { useState, useEffect } from "react";
+
 import { Favorites } from "@/UI";
 
-export default function page() {
-  return <Favorites />;
-}
+import { useFavoritesProductsStore } from "@/stores/favorites";
+const { favoritesProducts } = useFavoritesProductsStore;
+
+
+export const metadata = {
+    title: "",
+    description:
+        "",
+};
+
+export default () => {
+  const { currentFavoritesProducts } = favoritesProducts();
+
+  // Решаем ошибку гидратации
+  const [domLoaded, setDomLoaded] = useState(false);
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
+
+  return (
+    domLoaded && (
+      <>
+        <Favorites products={currentFavoritesProducts} />
+      </>
+    )
+  );
+};
