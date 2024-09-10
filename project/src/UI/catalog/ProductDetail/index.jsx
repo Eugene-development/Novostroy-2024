@@ -398,7 +398,7 @@ export default ({ dataProduct }) => {
             </div>*/}
 
                   <FavoriteButton product={dataProduct} />
-      
+
                   <p className="mt-4 md:mt-6 text-sm font-normal text-gray-500 dark:text-gray-400">
                     Наш дизайнер совершенно бесплатно даст вам общую
                     консультацию по интересующим вас вопросам, связанным с
