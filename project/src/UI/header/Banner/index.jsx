@@ -107,7 +107,7 @@ export default (props) => {
             className="mt-0.5 h-5 w-5 text-indigo-100"
             aria-hidden="true"
           />
-          <span className="ml-2 text-sm text-gray-50">info@zov.top</span>
+          <span className="ml-2 text-sm text-gray-50">info@novostroy.org</span>
         </div>
       </div>
 
@@ -154,7 +154,6 @@ export default (props) => {
       </div>
       <div className="flex divide-x-2 divide-sky-800">
         <Favorites />
-        <Search />
       </div>
 
       <div className="md:hidden flex justify-end">

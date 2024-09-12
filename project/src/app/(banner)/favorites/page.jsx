@@ -6,10 +6,10 @@ import { Favorites } from "@/UI";
 import { useFavoritesProductsStore } from "@/stores/favorites";
 const { favoritesProducts } = useFavoritesProductsStore;
 
-export const metadata = {
-  title: "Избранное",
-  description: "Избранные товары",
-};
+// export const metadata = {
+//   title: "Избранное",
+//   description: "Избранные товары",
+// };
 
 export default () => {
   const { currentFavoritesProducts } = favoritesProducts();
