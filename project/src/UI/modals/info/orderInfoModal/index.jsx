@@ -110,7 +110,7 @@ export default () => {
                   <dl className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 sm:mb-5">
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Консультация
+                        1. Консультация
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -129,7 +129,7 @@ export default () => {
                     </div>
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Замер
+                        2. Замер
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -148,7 +148,7 @@ export default () => {
                     </div>
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Проект
+                        3. Проект
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -167,7 +167,7 @@ export default () => {
                     </div>
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Договор
+                        4. Договор
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -186,7 +186,7 @@ export default () => {
                     </div>
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Изготовление
+                        5. Изготовление
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -205,7 +205,7 @@ export default () => {
                     </div>
                     <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                        Сборка
+                        6. Сборка
                       </dt>
                       <dd className="text-gray-500 dark:text-gray-400">
                         <span className="bg-sky-100 text-sky-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-sky-200 dark:text-sky-800">
@@ -244,14 +244,14 @@ export default () => {
                             clip-rule="evenodd"
                           ></path>
                         </svg>
-                        Консультация
+                        Начать с консультация
                       </button>
                       <button
                         onClick={() => openVisibleFormMeasuring()}
                         type="button"
                         className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-sky-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        Замер помещения
+                        Начать с замера помещения
                       </button>
                     </div>
                     <button
