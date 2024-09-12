@@ -52,6 +52,18 @@ const CATEGORY = gql`
         tag {
           value
         }
+        
+        parentable {
+          ... on Category {
+            value
+            slug
+            parentable {
+              ... on Rubric {
+                value
+                slug
+              }
+            }
+          }}
       }
       parentable {
         ... on Rubric {
