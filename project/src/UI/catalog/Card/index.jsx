@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+
+import FavoriteButton from "./FavoriteButton";
+
 export default ({ dataCategory }) => {
-  console.log(dataCategory.parentable.parentable.slug);
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -123,59 +125,11 @@ export default ({ dataCategory }) => {
               </svg>
               Узнать актуальную цену
             </Link>
-            {/*
-        <div className="flex items-center justify-between gap-4">
-          <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">$1199</p>
   
-          <div className="flex items-center justify-end gap-2">
-            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-900 focus:outline-none has-[:checked]:ring-2">
-              <input type="radio" name="color-choice" value="Black" className="sr-only" checked />
-              <span id="color-choice-1-label" className="sr-only"> Black </span>
-              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-gray-900 border-opacity-10 bg-gray-900"></span>
-            </label>
-  
-            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-sky-700 focus:outline-none has-[:checked]:ring-2">
-              <input type="radio" name="color-choice" value="Blue" className="sr-only" />
-              <span id="color-choice-2-label" className="sr-only"> Blue </span>
-              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-sky-700 border-opacity-10 bg-sky-700"></span>
-            </label>
-  
-            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-pink-600 focus:outline-none has-[:checked]:ring-2">
-              <input type="radio" name="color-choice" value="Gray" className="sr-only" />
-              <span id="color-choice-3-label" className="sr-only"> Pink </span>
-              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-pink-600 border-opacity-10 bg-pink-600"></span>
-            </label>
-  
-            <label className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-teal-500 focus:outline-none has-[:checked]:ring-2">
-              <input type="radio" name="color-choice" value="Gray" className="sr-only" />
-              <span id="color-choice-4-label" className="sr-only"> Teal </span>
-              <span aria-hidden="true" className="h-7 w-7 rounded-full border border-teal-500 border-opacity-10 bg-teal-500"></span>
-            </label>
-          </div>
-        </div>  */}
 
             <div className="flex items-center gap-4">
-              <button
-                type="button"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-sky-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
-              >
-                <svg
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"
-                  />
-                </svg>
-                В избранное
-              </button>
+        <FavoriteButton product={item} />
+
 
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}

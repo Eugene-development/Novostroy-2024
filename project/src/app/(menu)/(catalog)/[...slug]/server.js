@@ -37,6 +37,7 @@ const CATEGORY = gql`
         value
       }
       product {
+        id
         value
         slug
         unit {
