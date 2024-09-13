@@ -1,7 +1,17 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
 
 export default ({ products }) => {
+  
+  const router = useRouter();
+  
+    const handleBack = () => {
+      router.back();
+    };
+    
   return (
     <>
       <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-16">
@@ -11,14 +21,13 @@ export default ({ products }) => {
               Избранное
             </h2>
 
-            <a
-              href="#"
-              title=""
-              class="text-base font-medium text-gray-900 dark:text-white"
+            <button
+              onClick={handleBack}
+              class="text-base font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 px-4 py-1 ring-2 ring-gray-200 rounded-lg"
             >
               {" "}
-              Вернуться
-            </a>
+              Вернуться 
+            </button>
           </div>
 
           <div class="grid grid-cols-1 gap-4 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
@@ -33,27 +42,13 @@ export default ({ products }) => {
                   />
                   
   
-                <span class="inline-flex items-center bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                  <svg
-                    class="me-1.5 h-3 w-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8.9 15.1 15 9m-5-.6h0m3.1 7.2h0M14 4a2.8 2.8 0 0 0 2.3.9 2.8 2.8 0 0 1 2.9 3 2.8 2.8 0 0 0 .9 2.1 2.8 2.8 0 0 1 0 4.2 2.8 2.8 0 0 0-.9 2.2 2.8 2.8 0 0 1-3 2.9 2.8 2.8 0 0 0-2.1.9 2.8 2.8 0 0 1-4.2 0 2.8 2.8 0 0 0-2.2-.9 2.8 2.8 0 0 1-2.9-3 2.8 2.8 0 0 0-.9-2.1 2.8 2.8 0 0 1 0-4.2 2.8 2.8 0 0 0 .9-2.2 2.8 2.8 0 0 1 3-2.9A2.8 2.8 0 0 0 9.9 4a2.8 2.8 0 0 1 4.2 0Z"
-                    ></path>
-                  </svg>
-                    {item.parentable.value}
-                </span>
+                <Link href={`/${item.parentable.parentable.parentable.slug}/${item.parentable.parentable.slug}/${item.parentable.slug}`} class="inline-flex items-center bg-gray-50 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                  
+                  Категория - {item.parentable.value}
+                </Link>
   
                 <span
-                  class="mt-4 block font-medium text-gray-900 hover:underline dark:text-white"
+                  class="mt-4 block font-medium text-gray-900  dark:text-white"
                 >
                   {item.value}
                 </span>

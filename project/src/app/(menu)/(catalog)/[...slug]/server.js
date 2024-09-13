@@ -51,8 +51,7 @@ const CATEGORY = gql`
         }
         tag {
           value
-        }
-        
+        }  
         parentable {
           ... on Category {
             value
