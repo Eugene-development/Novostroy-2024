@@ -14,10 +14,10 @@ export default ({ products }) => {
             <a
               href="#"
               title=""
-              class="text-base font-medium text-gray-900 underline hover:no-underline dark:text-white"
+              class="text-base font-medium text-gray-900 dark:text-white"
             >
               {" "}
-              See all categories
+              Вернуться
             </a>
           </div>
 
@@ -59,7 +59,7 @@ export default ({ products }) => {
                 </span>
   
                 <Link
-                  href="#"
+                  href={`/${item.parentable.parentable.parentable.slug}/${item.slug}`}
                   title=""
                   class="mt-4 inline-flex items-center gap-1.5 font-medium text-sky-700 hover:text-sky-600 dark:text-sky-500 dark:hover:text-sky-400"
                 >

@@ -128,7 +128,8 @@ export default ({ dataCategory }) => {
   
 
             <div className="flex items-center gap-4">
-        <FavoriteButton product={item} />
+        
+              <FavoriteButton product={item} />
 
 
               <Link

@@ -61,6 +61,12 @@ const CATEGORY = gql`
               ... on Rubric {
                 value
                 slug
+                parentable {
+                  ... on Catalog {
+                    value
+                    slug
+                  }
+                }
               }
             }
           }}
@@ -86,6 +92,7 @@ const PRODUCT = gql`
     product(slug: $slug, key: $key) {
       id
       value
+      slug
       image {
         hash
       }
