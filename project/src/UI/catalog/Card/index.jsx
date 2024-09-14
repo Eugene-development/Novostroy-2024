@@ -4,7 +4,6 @@ import Link from "next/link";
 import SwiperSlider from "./SwiperSlider";
 import FavoriteButton from "./FavoriteButton";
 
-
 export default ({ dataCategory }) => {
   return (
     <>
@@ -22,7 +21,7 @@ export default ({ dataCategory }) => {
               {/* <!-- Carousel wrapper --> */}
 
               <div className="relative mb-4 min-h-72  rounded-lg">
-                        <SwiperSlider images={item?.image} />
+                <SwiperSlider images={item?.image} />
                 {/* <!-- Item 1 --> 
                 <div className=" duration-1000 ease-in-out" data-carousel-item>
                   <Image
@@ -34,8 +33,8 @@ export default ({ dataCategory }) => {
                   />
                 </div>*/}
               </div>
-               
-                  {/* 
+
+              {/* 
                   <div className="flex items-center justify-center gap-4">
 
                   <button
@@ -100,7 +99,6 @@ export default ({ dataCategory }) => {
 
                   
                   */}
-                
             </div>
 
             <div>
@@ -137,12 +135,9 @@ export default ({ dataCategory }) => {
               </svg>
               Узнать актуальную цену
             </Link>
-  
 
             <div className="flex items-center gap-4">
-        
               <FavoriteButton product={item} />
-
 
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}

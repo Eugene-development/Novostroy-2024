@@ -51,7 +51,7 @@ const CATEGORY = gql`
         }
         tag {
           value
-        }  
+        }
         parentable {
           ... on Category {
             value
@@ -68,7 +68,8 @@ const CATEGORY = gql`
                 }
               }
             }
-          }}
+          }
+        }
       }
       parentable {
         ... on Rubric {

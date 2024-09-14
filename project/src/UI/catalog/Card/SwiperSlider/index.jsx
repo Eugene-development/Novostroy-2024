@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default ({images}) => {
+export default ({ images }) => {
   return (
     <section className="py-2">
       <div className="container">
@@ -22,7 +22,7 @@ export default ({images}) => {
           className=" w-full rounded-lg"
         >
           {images.map((item) => (
-            <SwiperSlide >
+            <SwiperSlide>
               {/* <div className='flex h-full w-full items-center justify-center'>
                                   <Image
                                       src={image.src}
@@ -30,17 +30,15 @@ export default ({images}) => {
                                       className='block h-full w-full object-cover'
                                   />
                               </div> */}
-              
-            <Image
-              src={`${process.env.NEXT_PUBLIC_S3}/${item.hash}`}
-              className="items-center justify-center object-contain"
-              width={640}
-              height={320}
-            />
+
+              <Image
+                src={`${process.env.NEXT_PUBLIC_S3}/${item.hash}`}
+                className="items-center justify-center object-contain"
+                width={640}
+                height={320}
+              />
             </SwiperSlide>
           ))}
-          
-         
         </Swiper>
       </div>
     </section>

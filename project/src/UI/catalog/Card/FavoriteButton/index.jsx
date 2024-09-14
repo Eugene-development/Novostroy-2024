@@ -3,7 +3,6 @@
 import { useFavoritesProductsStore } from "@/stores/favorites";
 const { favoritesProducts } = useFavoritesProductsStore;
 
-
 export default function FavoriteButton({ product }) {
   const {
     addToFavoritesProducts,
@@ -13,7 +12,7 @@ export default function FavoriteButton({ product }) {
 
   // Проверяем, является ли продукт избранным
   const isFavoriteProduct = currentFavoritesProducts.some(
-    (item) => item.id === product.id
+    (item) => item.id === product.id,
   );
 
   // Обработчик нажатия

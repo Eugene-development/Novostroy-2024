@@ -8,10 +8,10 @@ const navigation = {
     { name: "Контакты", href: "/installment" },
   ],
   support: [
-    { name: "Мебель", href: "/catalog/mebel" },
-    { name: "Столешница", href: "/catalog/stoleshnica" },
-    { name: "Техника", href: "/catalog/tehnika" },
-    { name: "Мойки", href: "/catalog/moyki" },
+    { name: "Мебель", href: "/mebel" },
+    { name: "Столешница", href: "/stoleshnica" },
+    { name: "Техника", href: "/tehnika" },
+    { name: "Сантехника", href: "/santehnika" },
   ],
   company: [
     { name: "Дизайнер", href: "#" },
@@ -20,8 +20,8 @@ const navigation = {
     { name: "Водитель", href: "#" },
   ],
   legal: [
-    { name: "Избранное", href: "#" },
-    { name: "Поиск", href: "#" },
+    { name: "Избранное", href: "/favorites" },
+    { name: "Акции", href: "/action" },
     { name: "Заявка на замер", href: "#" },
     { name: "Поддержка сайта", href: "#" },
   ],
@@ -304,8 +304,7 @@ export default () => {
             ))}
           </div>
           */}
-          
-            
+
           <p className="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
             &copy; 2024 "Новострой". Все права защищены.
           </p>

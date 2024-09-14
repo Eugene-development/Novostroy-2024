@@ -406,7 +406,6 @@ export default ({ dataProduct }) => {
                   </p>
 
                   <div className="pt-8 mt-8 space-y-6 border-t border-gray-200 dark:border-gray-700">
-                    
                     <div>
                       <p className="text-base font-medium text-gray-900 dark:text-white">
                         Тэги
