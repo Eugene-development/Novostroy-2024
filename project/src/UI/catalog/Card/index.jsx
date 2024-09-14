@@ -22,7 +22,7 @@ export default ({ dataCategory }) => {
               {/* <!-- Carousel wrapper --> */}
 
               <div className="relative mb-4 min-h-72  rounded-lg">
-              <SwiperSlider />
+                        <SwiperSlider images={item?.image} />
                 {/* <!-- Item 1 --> 
                 <div className=" duration-1000 ease-in-out" data-carousel-item>
                   <Image

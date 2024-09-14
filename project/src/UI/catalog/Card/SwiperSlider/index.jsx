@@ -10,63 +10,37 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default () => {
+export default ({images}) => {
   return (
-    <section className="py-12">
+    <section className="py-2">
       <div className="container">
         <Swiper
           navigation
           pagination={{ type: "fraction" }}
           modules={[Navigation, Pagination]}
           // onSwiper={swiper => console.log(swiper)}
-          className="h-96 w-full rounded-lg"
+          className=" w-full rounded-lg"
         >
-          <SwiperSlide>
-            {/* <div className='flex h-full w-full items-center justify-center'>
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className='block h-full w-full object-cover'
-                                />
-                            </div> */}
-            
-          <Image
-            src="https://storage.yandexcloud.net/zovrus/site/1-1600x1573.jpg"
-            className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
-            width={640}
-            height={640}
-          />
-          </SwiperSlide>
-          <SwiperSlide>
-            {/* <div className='flex h-full w-full items-center justify-center'>
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className='block h-full w-full object-cover'
-                                />
-                            </div> */}
-          <Image
-            src="https://storage.yandexcloud.net/zovrus/site/1-1600x1573.jpg"
-            className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
-            width={640}
-            height={640}
-          />
-          </SwiperSlide>
-          <SwiperSlide>
-            {/* <div className='flex h-full w-full items-center justify-center'>
-                                <Image
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className='block h-full w-full object-cover'
-                                />
-                            </div> */}
-          <Image
-            src="https://storage.yandexcloud.net/zovrus/site/1-1600x1573.jpg"
-            className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
-            width={640}
-            height={640}
-          />
-          </SwiperSlide>
+          {images.map((item) => (
+            <SwiperSlide >
+              {/* <div className='flex h-full w-full items-center justify-center'>
+                                  <Image
+                                      src={image.src}
+                                      alt={image.alt}
+                                      className='block h-full w-full object-cover'
+                                  />
+                              </div> */}
+              
+            <Image
+              src={`${process.env.NEXT_PUBLIC_S3}/${item.hash}`}
+              className="items-center justify-center object-contain"
+              width={640}
+              height={320}
+            />
+            </SwiperSlide>
+          ))}
+          
+         
         </Swiper>
       </div>
     </section>
