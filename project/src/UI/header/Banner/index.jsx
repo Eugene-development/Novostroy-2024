@@ -60,7 +60,7 @@ export default () => {
         <div className="hidden md:flex flex-1 justify-between ">
           <div className="hidden 2xl:flex 2xl:flex-1 ">
             <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end items-center">
-              <div className=" bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
+              <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6">
                 {/*<PhoneIcon
                   className="block size-3 xl:size-4 text-gray-50 "
                   aria-hidden="true"
@@ -79,7 +79,7 @@ export default () => {
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              <div className=" bg-gray-950 flex items-center justify-center rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-sky-950/50  ring-offset-2  ring-gray-200">
+              <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6 ">
                 <div className=" text-sm font-normal text-gray-50">
                   info@novostroy.org
                 </div>
@@ -97,12 +97,22 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex justify-between bg-gray-900">
-        <Favorites />
+      <div className="md:hidden flex px-3 py-2 justify-between bg-gray-900">
+        
+        <Link href="/">
+          <span className="sr-only">Novostroy</span>
+          <img
+            className="h-8 px-3 sm:px-0 w-auto "
+            src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
+            alt="logo"
+          />
+        </Link>
 
-        <Link href="tel:+79154000020" className="ml-1 text-base text-gray-50">
+        <Link href="tel:+79154000020" className="ml-1 text-lg text-gray-50">
           8 (915) 400-00-20
         </Link>
+        
+        <Favorites />
       </div>
     </>
   );
