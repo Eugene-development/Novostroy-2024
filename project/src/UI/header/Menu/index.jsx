@@ -4,7 +4,7 @@ import City from "./City";
 
 export default function Header() {
   return (
-    <div className="flex px-4 py-1 bg-gray-50/40 justify-between z-50 items-center">
+    <div className="hidden md:flex px-4 py-1 bg-gray-50/40 justify-between z-50 items-center">
       <Logo />
       <NavBar />
       <City />
