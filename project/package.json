@@ -11,7 +11,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.2",
+    "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.0.16",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
@@ -19,7 +19,7 @@
     "axios": "^1.7.4",
     "caniuse-lite": "^1.0.30001651",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.0",
+    "framer-motion": "^11.5.4",
     "graphql": "^16.8.1",
     "graphql-request": "^7.1.0",
     "mini-svg-data-uri": "^1.4.4",

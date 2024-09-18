@@ -7,15 +7,15 @@ import Link from "next/link";
 
 const data = [
   {
-    name: "Кухни"
+    name: "Кухни",
   },
   {
-    name: "Шкафы"
+    name: "Шкафы",
   },
   {
-    name: "Гардеробы"
+    name: "Гардеробы",
   },
-]
+];
 
 export default function ThreeDCardDemo() {
   return (
@@ -43,55 +43,53 @@ export default function ThreeDCardDemo() {
       </div>
 
       <div className="md:flex items-center justify-center">
-      {data.map((item) => (
-        <CardContainer key={item.name} className="mx-4">
-          <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
-            <CardItem
-              translateZ="50"
-              className="text-2xl font-bold text-neutral-600 dark:text-white"
-            >
-              {item.name}
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-            >
-              В пределах МКАД наш консультант даст вам консультацию по возможным
-              решениям в проектировании мебели.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-8">
-              <Image
-                src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
-                alt="thumbnail"
-              />
-            </CardItem>
-            <div className="flex justify-between items-center mt-20">
+        {data.map((item) => (
+          <CardContainer key={item.name} className="mx-4">
+            <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
               <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://twitter.com/mannupaaji"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                translateZ="50"
+                className="text-2xl font-bold text-neutral-600 dark:text-white"
               >
-                Подробнее →
+                {item.name}
               </CardItem>
               <CardItem
-                translateZ={20}
-                as="button"
-                className=" px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
+                as="p"
+                translateZ="60"
+                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
-                Консультация
+                В пределах МКАД наш консультант даст вам консультацию по
+                возможным решениям в проектировании мебели.
               </CardItem>
-            </div>
-          </CardBody>
-        </CardContainer>
-
-        
-      ))}
+              <CardItem translateZ="100" className="w-full mt-8">
+                <Image
+                  src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                  height="1000"
+                  width="1000"
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
+                  alt="thumbnail"
+                />
+              </CardItem>
+              <div className="flex justify-between items-center mt-20">
+                <CardItem
+                  translateZ={20}
+                  as={Link}
+                  href="https://twitter.com/mannupaaji"
+                  target="__blank"
+                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                >
+                  Подробнее →
+                </CardItem>
+                <CardItem
+                  translateZ={20}
+                  as="button"
+                  className=" px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
+                >
+                  Консультация
+                </CardItem>
+              </div>
+            </CardBody>
+          </CardContainer>
+        ))}
       </div>
     </>
   );

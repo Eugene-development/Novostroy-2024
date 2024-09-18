@@ -65,3 +65,4 @@ export { default as Action } from "./action";
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight";
+export { default as Tab } from "./OTHERS/Tab";

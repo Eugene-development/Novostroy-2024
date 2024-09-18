@@ -98,7 +98,6 @@ export default () => {
         </div>
       </div>
       <div className="md:hidden flex px-3 py-2 justify-between bg-gray-900 items-center">
-        
         <Link href="/">
           <span className="sr-only">Novostroy</span>
           <img
@@ -111,7 +110,7 @@ export default () => {
         <Link href="tel:+79154000020" className="text-xl text-gray-50">
           8 (915) 400-00-20
         </Link>
-        
+
         <Favorites />
       </div>
     </>
