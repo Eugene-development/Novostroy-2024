@@ -22,8 +22,15 @@ const visibleFormMeasuring = create((set) => ({
     set(() => ({ currentVisibleFormMeasuring: false })),
 }));
 
+const visibleFormPrice = create((set) => ({
+  currentVisibleFormPrice: false,
+  openVisibleFormPrice: () => set(() => ({ currentVisibleFormPrice: true })),
+  closeVisibleFormPrice: () => set(() => ({ currentVisibleFormPrice: false })),
+}));
+
 export const useFormsStore = {
   visibleFormDesigner,
   visibleFormSalon,
   visibleFormMeasuring,
+  visibleFormPrice,
 };

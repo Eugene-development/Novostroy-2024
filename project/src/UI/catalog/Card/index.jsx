@@ -1,3 +1,6 @@
+"use client";
+import { useFormsStore } from "@/stores/forms";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,6 +8,8 @@ import SwiperSlider from "./SwiperSlider";
 import FavoriteButton from "./FavoriteButton";
 
 export default ({ dataCategory }) => {
+  const { openVisibleFormPrice } = useFormsStore.visibleFormPrice();
+
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -111,9 +116,8 @@ export default ({ dataCategory }) => {
               {/* <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p> */}
             </div>
 
-            <Link
-              href="#"
-              title=""
+            <button
+              onClick={openVisibleFormPrice}
               className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline dark:text-sky-600"
             >
               <svg
@@ -133,8 +137,8 @@ export default ({ dataCategory }) => {
                   d="M17 8H5m12 0a1 1 0 0 1 1 1v2.6M17 8l-4-4M5 8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.6M5 8l4-4 4 4m6 4h-4a2 2 0 1 0 0 4h4a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1Z"
                 />
               </svg>
-              Узнать актуальную цену
-            </Link>
+              Узнать актуальную цену проекта
+            </button>
 
             <div className="flex items-center gap-4">
               <FavoriteButton product={item} />
