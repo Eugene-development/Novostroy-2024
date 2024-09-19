@@ -107,7 +107,10 @@ export default () => {
           />
         </Link>
 
-        <Link href="tel:+79154000020" className="text-xl text-gray-50 font-display">
+        <Link
+          href="tel:+79154000020"
+          className="text-xl text-gray-50 font-display"
+        >
           +7 (915) 400-00-20
         </Link>
 
