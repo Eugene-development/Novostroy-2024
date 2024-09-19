@@ -59,8 +59,8 @@ export default () => {
 
         <div className="hidden md:flex flex-1 justify-between ">
           <div className="hidden 2xl:flex 2xl:flex-1 ">
-            <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end items-center">
-              <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6">
+            <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end items-center ">
+              <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6 ">
                 {/*<PhoneIcon
                   className="block size-3 xl:size-4 text-gray-50 "
                   aria-hidden="true"
@@ -107,8 +107,8 @@ export default () => {
           />
         </Link>
 
-        <Link href="tel:+79154000020" className="text-xl text-gray-50">
-          8 (915) 400-00-20
+        <Link href="tel:+79154000020" className="text-xl text-gray-50 font-display">
+          +7 (915) 400-00-20
         </Link>
 
         <Favorites />
