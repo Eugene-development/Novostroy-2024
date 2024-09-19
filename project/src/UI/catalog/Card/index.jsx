@@ -26,84 +26,8 @@ export default ({ dataCategory }) => {
               {/* <!-- Carousel wrapper --> */}
 
               <div className="relative mb-4 min-h-72  rounded-lg">
-                <SwiperSlider images={item?.image} />
-                {/* <!-- Item 1 --> 
-                <div className=" duration-1000 ease-in-out" data-carousel-item>
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
-                    className="absolute left-1/2 top-1/2 block h-full -translate-x-1/2 -translate-y-1/2 dark:hidden"
-                    alt={item.value}
-                    width={640}
-                    height={640}
-                  />
-                </div>*/}
+                <SwiperSlider images={item?.image} />             
               </div>
-
-              {/* 
-                  <div className="flex items-center justify-center gap-4">
-
-                  <button
-                    type="button"
-                    className="group flex h-full cursor-pointer items-center justify-center rounded-lg p-1.5 hover:bg-gray-50 focus:outline-none dark:hover:bg-gray-800"
-                    data-carousel-prev
-                  >
-                    <span className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                      <svg
-                        className="h-7 w-7"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 12h14M5 12l4-4m-4 4 4 4"
-                        />
-                      </svg>
-                      <span className="hidden">Previous</span>
-                    </span>
-                  </button>
-                  
-                  <span className="text-base font-medium text-gray-500 dark:text-gray-400">
-                    <span id="carousel-current-item">1</span> of{" "}
-                    <span id="carousel-total-items">4</span>
-                  </span>
-                  <button
-                    type="button"
-                    className="group flex h-full cursor-pointer items-center justify-center rounded-lg p-1.5 hover:bg-gray-50 focus:outline-none dark:hover:bg-gray-800"
-                    data-carousel-next
-                  >
-                    <span className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                      <svg
-                        className="h-7 w-7"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M19 12H5m14 0-4 4m4-4-4-4"
-                        />
-                      </svg>
-                      <span className="hidden">Next</span>
-                    </span>
-                  </button>
-
-                  </div>
-
-                  
-                  */}
             </div>
 
             <div>
@@ -117,7 +41,7 @@ export default ({ dataCategory }) => {
             </div>
 
             <button
-              onClick={openVisibleFormPrice}
+              onClick={() => openVisibleFormPrice(item)}
               className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline dark:text-sky-600"
             >
               <svg

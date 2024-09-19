@@ -22,7 +22,7 @@ export default ({ images }) => {
           className=" w-full rounded-lg"
         >
           {images.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item.hash}>
               {/* <div className='flex h-full w-full items-center justify-center'>
                                   <Image
                                       src={image.src}
@@ -34,6 +34,7 @@ export default ({ images }) => {
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/${item.hash}`}
                 className="items-center justify-center object-contain"
+                alt="image"
                 width={640}
                 height={320}
               />

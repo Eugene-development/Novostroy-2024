@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 import { Dialog, Transition } from "@headlessui/react";
@@ -12,25 +12,35 @@ import { send } from "./server-actions";
 
 export default () => {
   const { push } = useRouter();
-  const { currentVisibleFormPrice, closeVisibleFormPrice } =
+  const { currentVisibleFormPrice, closeVisibleFormPrice, selectedProject } =
     useFormsStore.visibleFormPrice();
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [metro, setMetro] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
+  
+  // Локальное состояние для проекта, используем значение selectedProject, если оно доступно
+    const [project, setProject] = useState(selectedProject ? selectedProject.value : "");
+  
+    // Эффект для синхронизации состояния project с изменениями selectedProject
+    useEffect(() => {
+      if (selectedProject) {
+        setProject(selectedProject.value);
+      }
+    }, [selectedProject]);
 
   const handleSendFormPrice = (e) => {
     e.preventDefault();
-
-    const data = { name, phone, metro, email, comment };
+    
+  const data = { name, phone, email, project, comment };
+    
     send(data);
 
     setName("");
     setPhone("");
-    setMetro("");
     setEmail("");
+    setProject("");
     setComment("");
 
     push("/spasibo");
@@ -78,7 +88,7 @@ export default () => {
                           <Dialog.Title className="text-lg font-semibold leading-6 text-white">
                             Запрос цены проекта
                           </Dialog.Title>
-                          {/* <div className="ml-3 flex h-7 items-center">
+                          <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
                               className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -90,12 +100,11 @@ export default () => {
                                 aria-hidden="true"
                               />
                             </button>
-                          </div> */}
+                          </div>
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Мы подберём самый удобный по расположению к вам
-                            салон для визита по предварительной записи.
+                            Просчитаем актуальную цену проекта на день подачи заявки.
                           </p>
                         </div>
                       </div>
@@ -144,23 +153,6 @@ export default () => {
                               </div>
                             </div>
 
-                            <div>
-                              <label
-                                htmlFor="metro"
-                                className="block text-base font-medium leading-6 text-gray-900"
-                              >
-                                Ближайшее удобное метро
-                              </label>
-                              <div className="mt-2">
-                                <input
-                                  onChange={(e) => setMetro(e.target.value)}
-                                  type="text"
-                                  name="metro"
-                                  id="metro"
-                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                                />
-                              </div>
-                            </div>
 
                             <div>
                               <label
@@ -179,6 +171,19 @@ export default () => {
                                 />
                               </div>
                             </div>
+                              
+                              <div>
+                                <label
+                                  htmlFor="project"
+                                  className="block text-base font-medium leading-6 text-gray-900"
+                                >
+                                  Посчитать проект:
+                                </label>
+                                <div className="mt-2">
+                                  <span>{selectedProject ? selectedProject.value : "Проект не выбран"}</span>
+                                </div>
+                              </div>
+
 
                             <div>
                               <label

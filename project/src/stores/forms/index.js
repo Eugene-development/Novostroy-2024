@@ -24,9 +24,17 @@ const visibleFormMeasuring = create((set) => ({
 
 const visibleFormPrice = create((set) => ({
   currentVisibleFormPrice: false,
-  openVisibleFormPrice: () => set(() => ({ currentVisibleFormPrice: true })),
-  closeVisibleFormPrice: () => set(() => ({ currentVisibleFormPrice: false })),
+  selectedProject: null, // новое состояние для выбранного проекта
+  openVisibleFormPrice: (project) => set(() => ({
+    currentVisibleFormPrice: true, 
+    selectedProject: project // сохраняем проект при открытии формы
+  })),
+  closeVisibleFormPrice: () => set(() => ({
+    currentVisibleFormPrice: false,
+    selectedProject: null // сброс данных при закрытии формы
+  })),
 }));
+
 
 export const useFormsStore = {
   visibleFormDesigner,
