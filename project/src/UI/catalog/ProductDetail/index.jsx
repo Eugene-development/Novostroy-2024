@@ -312,7 +312,7 @@ export default ({ dataProduct }) => {
                   </div>
 
                   <div
-                    onClick={openVisibleFormPrice}
+                  onClick={() => openVisibleFormPrice(dataProduct)}
                     className="flex items-center gap-1 mt-4"
                   >
                     <svg
