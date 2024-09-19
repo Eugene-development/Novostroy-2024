@@ -32,7 +32,7 @@ export default () => {
   const handleSendFormPrice = (e) => {
     e.preventDefault();
     
-  const data = { name, phone, email, project, comment };
+  const data = { name, phone, email, selectedProject: project, comment };
     
     send(data);
 
