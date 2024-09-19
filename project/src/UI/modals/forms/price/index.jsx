@@ -18,10 +18,9 @@ export default () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [project, setProject] = useState(selectedProject ? selectedProject.value : "");
   const [comment, setComment] = useState("");
   
-  // Локальное состояние для проекта, используем значение selectedProject, если оно доступно
-    const [project, setProject] = useState(selectedProject ? selectedProject.value : "");
   
     // Эффект для синхронизации состояния project с изменениями selectedProject
     useEffect(() => {
