@@ -18,14 +18,14 @@ export default () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [project, setProject] = useState(selectedProject ? selectedProject.value : "");
+  const [project, setProject] = useState(selectedProject || "");
   const [comment, setComment] = useState("");
   
   
     // Эффект для синхронизации состояния project с изменениями selectedProject
     useEffect(() => {
       if (selectedProject) {
-        setProject(selectedProject.value);
+        setProject(selectedProject);
       }
     }, [selectedProject]);
 
@@ -179,7 +179,7 @@ export default () => {
                                   Посчитать проект:
                                 </label>
                                 <div className="mt-2">
-                                  <span>{selectedProject ? selectedProject.value : "Проект не выбран"}</span>
+                                  <span>{selectedProject || "Проект не выбран"}</span>
                                 </div>
                               </div>
 

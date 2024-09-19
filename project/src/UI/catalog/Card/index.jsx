@@ -41,7 +41,7 @@ export default ({ dataCategory }) => {
             </div>
 
             <button
-              onClick={() => openVisibleFormPrice(item)}
+              onClick={() => openVisibleFormPrice(item.value)}
               className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline dark:text-sky-600"
             >
               <svg
