@@ -24,7 +24,7 @@ import { cn } from "@/utils/cn";
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn("*:px-4 max-w-3xl z-50", className)}>
+    <div className={cn("ml-8 max-w-3xl z-50", className)}>
       <Menu setActive={setActive}>
         <Link
           href="/"

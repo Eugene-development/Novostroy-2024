@@ -54,7 +54,7 @@ export const MenuItemCatalog = ({ setActive, active, item, children }) => {
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-xl font-medium tracking-wide text-gray-800 hover:text-sky-900 hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-xl font-semibold tracking-wide text-gray-800 hover:text-sky-900 hover:opacity-[0.9] dark:text-white"
       >
         {item}
       </motion.p>

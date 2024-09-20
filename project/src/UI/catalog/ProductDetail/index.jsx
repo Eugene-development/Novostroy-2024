@@ -1,29 +1,21 @@
-"use client";
-
 import { BreadCrumbs, Tab } from "@/UI";
 import Accordion from "./Accordion";
 import ImageProduct from "./ImageProduct";
 import Product from "./Product";
 
 export default ({ dataProduct }) => {
-
-
   return (
     <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
       <div className="mx-auto max-w-screen-xl">
         <BreadCrumbs data={dataProduct} />
-
         <section className="py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased rounded-lg">
           <div className="max-w-screen-xl mx-auto">
             <div className="lg:flex justify-between">
               <div className="px-4">
                 <ImageProduct dataProduct={dataProduct} />
-
-                <Accordion />
+                {/* <Accordion /> */}
               </div>
-              
-              <Product dataProduct={ dataProduct }/>
-
+              <Product dataProduct={dataProduct} />
             </div>
           </div>
         </section>

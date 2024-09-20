@@ -22,7 +22,7 @@ export default () => {
         className={`icon icon-tabler icons-tabler-outline icon-tabler-heart size-7 
           ${
             currentFavoritesProducts.length > 0
-              ? "text-red-700 fill-red-500"
+              ? "text-red-700 fill-red-500 animate-pulse"
               : "text-gray-50"
           }`}
       >
