@@ -24,18 +24,18 @@ import { cn } from "@/utils/cn";
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn("inset-x-0 max-w-3xl z-50", className)}>
+    <div className={cn("*:px-4 max-w-3xl z-50", className)}>
       <Menu setActive={setActive}>
         <Link
           href="/"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900  cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Главная
         </Link>
 
         <MenuItem setActive={setActive} active={active} item="Услуги">
-          <div className=" flex flex-col mx-2 space-y-4 text-sm">
+          <div className=" flex flex-col mx-auto space-y-4 text-sm">
             <HoveredLink href="/service/consultation">Консультация</HoveredLink>
             <HoveredLink href="/service/measuring">
               {" "}
@@ -101,14 +101,14 @@ export default function Navbar({ className }) {
         <Link
           href="/action"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900  cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Акции
         </Link>
         <Link
           href="/blog"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900 mx-2 cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900  cursor-pointer text-gray-800 text-lg font-normal tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Блог
         </Link>
