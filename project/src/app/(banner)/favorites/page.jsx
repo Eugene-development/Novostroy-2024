@@ -5,7 +5,7 @@ import { Favorites } from "@/UI";
 
 export const metadata = {
   title: "Избранное",
-  description: "Избранные товары"
+  description: "Избранные товары",
 };
 
 export default () => {

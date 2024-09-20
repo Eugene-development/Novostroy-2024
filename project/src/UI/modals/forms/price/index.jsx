@@ -20,20 +20,19 @@ export default () => {
   const [email, setEmail] = useState("");
   const [project, setProject] = useState(selectedProject || "");
   const [comment, setComment] = useState("");
-  
-  
-    // Эффект для синхронизации состояния project с изменениями selectedProject
-    useEffect(() => {
-      if (selectedProject) {
-        setProject(selectedProject);
-      }
-    }, [selectedProject]);
+
+  // Эффект для синхронизации состояния project с изменениями selectedProject
+  useEffect(() => {
+    if (selectedProject) {
+      setProject(selectedProject);
+    }
+  }, [selectedProject]);
 
   const handleSendFormPrice = (e) => {
     e.preventDefault();
-    
-  const data = { name, phone, email, selectedProject: project, comment };
-    
+
+    const data = { name, phone, email, selectedProject: project, comment };
+
     send(data);
 
     setName("");
@@ -103,7 +102,8 @@ export default () => {
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">
-                            Просчитаем актуальную цену проекта на день подачи заявки.
+                            Просчитаем актуальную цену проекта на день подачи
+                            заявки.
                           </p>
                         </div>
                       </div>
@@ -152,7 +152,6 @@ export default () => {
                               </div>
                             </div>
 
-
                             <div>
                               <label
                                 htmlFor="email"
@@ -170,19 +169,20 @@ export default () => {
                                 />
                               </div>
                             </div>
-                              
-                              <div>
-                                <label
-                                  htmlFor="project"
-                                  className="block text-base font-medium leading-6 text-gray-900"
-                                >
-                                  Посчитать проект:
-                                </label>
-                                <div className="mt-2">
-                                  <span>{selectedProject || "Проект не выбран"}</span>
-                                </div>
-                              </div>
 
+                            <div>
+                              <label
+                                htmlFor="project"
+                                className="block text-base font-medium leading-6 text-gray-900"
+                              >
+                                Посчитать проект:
+                              </label>
+                              <div className="mt-2">
+                                <span>
+                                  {selectedProject || "Проект не выбран"}
+                                </span>
+                              </div>
+                            </div>
 
                             <div>
                               <label
