@@ -1,4 +1,4 @@
-import { BreadCrumbs, Tab } from "@/UI";
+import { BreadCrumbs } from "@/UI";
 import Accordion from "./Accordion";
 import ImageProduct from "./ImageProduct";
 import Product from "./Product";
@@ -20,7 +20,6 @@ export default ({ dataProduct }) => {
           </div>
         </section>
       </div>
-      <Tab />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-git add . && git commit -m "c" && git push
+git add . && git commit -m "description" && git push
 
 docker build -t larux/novostroy:280724 . && docker push larux/novostroy:280724
 

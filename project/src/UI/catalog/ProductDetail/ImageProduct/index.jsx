@@ -1,175 +1,141 @@
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+*/
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { StarIcon } from "@heroicons/react/20/solid";
+import { HeartIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+
+const product = {
+  name: "Zip Tote Basket",
+  price: "$140",
+  rating: 4,
+  images: [
+    {
+      id: 1,
+      name: "Angled view",
+      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      alt: "Angled front view with bag zipped and handles upright.",
+    },
+    {
+      id: 1,
+      name: "Angled view",
+      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      alt: "Angled front view with bag zipped and handles upright.",
+    },
+    {
+      id: 1,
+      name: "Angled view",
+      src: "https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-back.svg",
+      alt: "Angled front view with bag zipped and handles upright.",
+    },
+    {
+      id: 1,
+      name: "Angled view",
+      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      alt: "Angled front view with bag zipped and handles upright.",
+    },
+    // More images...
+  ],
+  colors: [
+    {
+      name: "Washed Black",
+      bgColor: "bg-gray-700",
+      selectedColor: "ring-gray-700",
+    },
+    { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+    {
+      name: "Washed Gray",
+      bgColor: "bg-gray-500",
+      selectedColor: "ring-gray-500",
+    },
+  ],
+  description: `
+    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+  `,
+  details: [
+    {
+      name: "Features",
+      items: [
+        "Multiple strap configurations",
+        "Spacious interior with top zip",
+        "Leather handle and tabs",
+        "Interior dividers",
+        "Stainless strap loops",
+        "Double stitched construction",
+        "Water-resistant",
+      ],
+    },
+    // More sections...
+  ],
+};
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default ({ dataProduct }) => {
-  const parentable = dataProduct.parentable || {};
-  const grandParent = parentable.parentable?.parentable;
-  const parent = parentable.parentable;
-  return (
-    <div className="max-w-md lg:max-w-none mx-auto flex flex-col lg:flex-row justify-center mb-4">
-      <ul
-        className="grid grid-cols-4 lg:block gap-4 order-2 lg:order-1 lg:space-y-4 mt-8 lg:mt-0"
-        id="product-2-tab"
-        data-tabs-toggle="#product-2-tab-content"
-        data-tabs-active-classes="border-gray-200 dark:border-gray-700"
-        data-tabs-inactive-classes="border-transparent hover:border-gray-200 dark:hover:dark:border-gray-700 dark:border-transparent"
-        role="tablist"
-      >
-        <li className="me-2" role="presentation">
-          <button
-            className="h-20 w-20 overflow-hidden border-2 rounded-lg sm:h-20 sm:w-20 md:h-24 md:w-24 p-2 cursor-pointer mx-auto"
-            id="product-2-image-1-tab"
-            data-tabs-target="#product-2-image-1"
-            type="button"
-            role="tab"
-            aria-controls="product-2-image-1"
-            aria-selected="false"
-          >
-            <img
-              className="object-contain w-full h-full dark:hidden"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg"
-              alt=""
-            />
-            <img
-              className="object-contain w-full h-full hidden dark:block"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
-              alt=""
-            />
-          </button>
-        </li>
-        <li className="me-2" role="presentation">
-          <button
-            className="h-20 w-20 overflow-hidden border-2 rounded-lg sm:h-20 sm:w-20 md:h-24 md:w-24 p-2 cursor-pointer mx-auto"
-            id="product-2-image-2-tab"
-            data-tabs-target="#product-2-image-2"
-            type="button"
-            role="tab"
-            aria-controls="product-2-image-2"
-            aria-selected="false"
-          >
-            <img
-              className="object-contain w-full h-full dark:hidden"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-back.svg"
-              alt=""
-            />
-            <img
-              className="object-contain w-full h-full hidden dark:block"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-back-dark.svg"
-              alt=""
-            />
-          </button>
-        </li>
-        <li className="me-2" role="presentation">
-          <button
-            className="h-20 w-20 overflow-hidden border-2 rounded-lg sm:h-20 sm:w-20 md:h-24 md:w-24 p-2 cursor-pointer mx-auto"
-            id="product-2-image-3-tab"
-            data-tabs-target="#product-2-image-3"
-            type="button"
-            role="tab"
-            aria-controls="product-2-image-3"
-            aria-selected="false"
-          >
-            <img
-              className="object-contain w-full h-full dark:hidden"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-components.svg"
-              alt=""
-            />
-            <img
-              className="object-contain w-full h-full hidden dark:block"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-components-dark.svg"
-              alt=""
-            />
-          </button>
-        </li>
-        <li className="me-2" role="presentation">
-          <button
-            className="h-20 w-20 overflow-hidden border-2 rounded-lg sm:h-20 sm:w-20 md:h-24 md:w-24 p-2 cursor-pointer mx-auto"
-            id="product-2-image-4-tab"
-            data-tabs-target="#product-2-image-4"
-            type="button"
-            role="tab"
-            aria-controls="product-2-image-4"
-            aria-selected="false"
-          >
-            <img
-              className="object-contain w-full h-full dark:hidden"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side.svg"
-              alt=""
-            />
-            <img
-              className="object-contain w-full h-full hidden dark:block"
-              src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side-dark.svg"
-              alt=""
-            />
-          </button>
-        </li>
-      </ul>
+  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
 
-      <div id="product-2-tab-content" className="order-1 lg:order-2">
-        <div
-          className="px-4 rounded-lg bg-white dark:bg-gray-900"
-          id="product-2-image-1"
-          role="tabpanel"
-          aria-labelledby="product-2-image-1-tab"
-        >
-          <Image
-            src={`${process.env.NEXT_PUBLIC_S3}/${dataProduct?.image[0]?.hash}`}
-            className="w-full mx-auto rounded-lg"
-            alt={dataProduct?.value}
-            width={640}
-            height={840}
-          />
-        </div>
-        <div
-          className="hidden px-4 rounded-lg bg-white dark:bg-gray-900"
-          id="product-2-image-2"
-          role="tabpanel"
-          aria-labelledby="product-2-image-2-tab"
-        >
-          <img
-            className="w-full mx-auto dark:hidden"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-back.svg"
-            alt=""
-          />
-          <img
-            className="w-full mx-auto hidden dark:block"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-back-dark.svg"
-            alt=""
-          />
-        </div>
-        <div
-          className="hidden px-4 rounded-lg bg-white dark:bg-gray-900"
-          id="product-2-image-3"
-          role="tabpanel"
-          aria-labelledby="product-2-image-3-tab"
-        >
-          <img
-            className="w-full mx-auto dark:hidden"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-components.svg"
-            alt=""
-          />
-          <img
-            className="w-full mx-auto hidden dark:block"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-components-dark.svg"
-            alt=""
-          />
-        </div>
-        <div
-          className="hidden px-4 rounded-lg bg-white dark:bg-gray-900"
-          id="product-2-image-4"
-          role="tabpanel"
-          aria-labelledby="product-2-image-4-tab"
-        >
-          <img
-            className="w-full mx-auto dark:hidden"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side.svg"
-            alt=""
-          />
-          <img
-            className="w-full mx-auto hidden dark:block"
-            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-side-dark.svg"
-            alt=""
-          />
-        </div>
+  return (
+    <div className="mx-auto max-w-2xl px-1  sm:px-2  lg:max-w-7xl lg:px-8">
+      <div className=" lg:items-start ">
+        {/* Image gallery */}
+        <TabGroup className="flex flex-col-reverse">
+          {/* Image selector */}
+          <div className="mx-auto mt-6 hidden w-[40rem] max-w-7xl sm:block ">
+            <TabList className="grid grid-cols-4 gap-6">
+              {dataProduct.image.map(({ hash }) => (
+                <Tab
+                  key={hash}
+                  className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+                >
+                  <span className="absolute inset-0 overflow-hidden rounded-md">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
+                      className="h-full w-full object-cover object-center"
+                      alt="image"
+                      width={640}
+                      height={320}
+                    />
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 group-data-[selected]:ring-sky-500"
+                  />
+                </Tab>
+              ))}
+            </TabList>
+          </div>
+
+          <TabPanels className=" w-full">
+            {dataProduct.image.map(({ hash }) => (
+              <TabPanel key={hash}>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
+                  className="h-full w-full object-contain object-center sm:rounded-lg"
+                  alt="image"
+                  width={640}
+                  height={320}
+                />
+              </TabPanel>
+            ))}
+          </TabPanels>
+        </TabGroup>
       </div>
     </div>
   );
