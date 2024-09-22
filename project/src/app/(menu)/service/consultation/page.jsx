@@ -1,3 +1,6 @@
+// React Server Components
+import * as motion from "framer-motion/client";
+
 import { Service } from "@/UI";
 import {
   ArrowPathIcon,
@@ -37,5 +40,9 @@ const data = {
 };
 
 export default () => {
-  return <Service data={data} />;
+  return (
+    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
+      <Service data={data} />;
+    </motion.main>
+  );
 };
