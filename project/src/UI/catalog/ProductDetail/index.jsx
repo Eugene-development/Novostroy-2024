@@ -11,7 +11,7 @@ export default ({ dataProduct }) => {
         <section className="py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased rounded-lg">
           <div className="max-w-screen-xl mx-auto">
             <div className="lg:flex justify-between">
-              <div className="px-4">
+              <div className="px-8">
                 <ImageProduct dataProduct={dataProduct} />
                 {/* <Accordion /> */}
               </div>

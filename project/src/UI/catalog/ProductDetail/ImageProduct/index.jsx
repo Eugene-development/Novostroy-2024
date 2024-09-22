@@ -4,7 +4,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
 export default ({ dataProduct }) => {
   return (
-    <div className="mx-auto max-w-2xl px-1  sm:px-2  lg:max-w-7xl lg:px-8">
+    <div className="mx-auto max-w-2xl px-1    lg:max-w-8xl ">
       <div className=" lg:items-start ">
         {/* Image gallery */}
         <TabGroup className="flex flex-col-reverse">
@@ -14,9 +14,9 @@ export default ({ dataProduct }) => {
               {dataProduct.image.map(({ hash }) => (
                 <Tab
                   key={hash}
-                  className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+                  className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4  mt-2"
                 >
-                  <span className="absolute inset-0 overflow-hidden rounded-md">
+                  <span className="absolute inset-0 overflow-hidden rounded-md ">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
                       className="h-full w-full object-cover object-center"
@@ -39,7 +39,7 @@ export default ({ dataProduct }) => {
               <TabPanel key={hash}>
                 <Image
                   src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
-                  className="h-full w-full object-contain object-center sm:rounded-lg"
+                  className="h-full w-full object-contain object-center sm:rounded-lg "
                   alt="image"
                   width={640}
                   height={320}
