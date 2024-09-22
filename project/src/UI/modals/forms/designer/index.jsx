@@ -79,7 +79,7 @@ export default () => {
                           <Dialog.Title className="text-lg font-semibold leading-6 text-white">
                             Бесплатная консультация дизайнера
                           </Dialog.Title>
-                          {/* <div className="ml-3 flex h-7 items-center">
+                          <div className="ml-3 -mt-5 flex h-7 items-center">
                             <button
                               type="button"
                               className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -91,7 +91,7 @@ export default () => {
                                 aria-hidden="true"
                               />
                             </button>
-                          </div> */}
+                          </div>
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-cyan-50">

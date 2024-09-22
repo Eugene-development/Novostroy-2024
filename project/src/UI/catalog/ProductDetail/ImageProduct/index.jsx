@@ -14,7 +14,7 @@ export default ({ dataProduct }) => {
               {dataProduct.image.map(({ hash }) => (
                 <Tab
                   key={hash}
-                  className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4  mt-2"
+                  className="group relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                 >
                   <span className="absolute inset-0 overflow-hidden rounded-md ">
                     <Image
@@ -34,12 +34,12 @@ export default ({ dataProduct }) => {
             </TabList>
           </div>
 
-          <TabPanels className=" w-full">
+          <TabPanels className=" w-full aspect-w-16 aspect-h-12">
             {dataProduct.image.map(({ hash }) => (
               <TabPanel key={hash}>
                 <Image
                   src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
-                  className="h-full w-full object-contain object-center sm:rounded-lg "
+                  className="h-full w-full  object-cover object-center sm:rounded-lg "
                   alt="image"
                   width={640}
                   height={320}

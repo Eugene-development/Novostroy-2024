@@ -1,3 +1,6 @@
+"use client";
+import { useFormsStore } from "@/stores/forms";
+
 import Link from "next/link";
 
 const navigation = {
@@ -20,10 +23,10 @@ const navigation = {
     { name: "Водитель", href: "#" },
   ],
   legal: [
-    { name: "Избранное", href: "/favorites" },
-    { name: "Акции", href: "/action" },
-    { name: "Заявка на замер", href: "#" },
-    { name: "Поддержка сайта", href: "#" },
+    { name: "Запись в салон", method: "openVisibleFormSalon" },
+    { name: "Консультация дизайнера", method: "openVisibleFormDesigner" },
+    { name: "Заявка на замер", method: "openVisibleFormMeasuring" },
+    { name: "Просчёт проекта", method: "openVisibleFormPrice" },
   ],
   social: [
     // {
@@ -166,6 +169,23 @@ const navigation = {
 };
 
 export default () => {
+  const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
+  const { openVisibleFormSalon } = useFormsStore.visibleFormSalon();
+  const { openVisibleFormMeasuring } = useFormsStore.visibleFormMeasuring();
+  const { openVisibleFormPrice } = useFormsStore.visibleFormPrice();
+
+  const handleButtonClick = (method) => {
+    if (typeof method === "function") {
+      method();
+    }
+  };
+  const methods = {
+    openVisibleFormDesigner,
+    openVisibleFormSalon,
+    openVisibleFormMeasuring,
+    openVisibleFormPrice,
+  };
+
   return (
     <footer className="bg-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -238,17 +258,18 @@ export default () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Прочее
+                  Услуги
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <button
+                        onClick={() => handleButtonClick(methods[item.method])}
+                        type="button"
                         className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>
