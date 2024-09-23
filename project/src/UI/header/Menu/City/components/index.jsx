@@ -89,6 +89,9 @@ export const MovingBorder = ({
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
 
+  // Формирование пути для прямоугольника
+  const pathData = `M 0,0 H 100 V 100 H 0 Z`; // замените эти координаты для создания желаемой формы
+
   return (
     <>
       <svg
@@ -99,14 +102,8 @@ export const MovingBorder = ({
         height="100%"
         {...otherProps}
       >
-        <rect
-          fill="none"
-          width="100%"
-          height="100%"
-          rx={rx}
-          ry={ry}
-          ref={pathRef}
-        />
+        {/* Используем <path> вместо <rect> */}
+        <path d={pathData} fill="none" rx={rx} ry={ry} ref={pathRef} />
       </svg>
       <motion.div
         style={{

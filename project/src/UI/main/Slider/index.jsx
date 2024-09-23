@@ -29,11 +29,10 @@ export default function ImagesSliderDemo() {
         }}
         className=" z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          {/* Мы делаем ваш дом <br /><FlipWords words={words} /> */}
+        <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           Мы делаем <br />
           вашу жизнь уютнее
-        </motion.p>
+        </p>
         <p className="max-w-4xl text-center font-extralight text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры, работающие в лучших
           мебельных компаниях. Мы предложим Вам различные варианты вашего

@@ -4,7 +4,7 @@ import { Button } from "./components";
 
 export default function MovingBorderDemo() {
   return (
-    <div className="">
+    <div className="hidden lg:block">
       <Button
         borderRadius="1.75rem"
         className="px-2 bg-gray-50/80 dark:bg-slate-900 text-gray-800 dark:text-white text-sm border-gray-200 dark:border-slate-800"
