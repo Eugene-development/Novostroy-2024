@@ -7,45 +7,50 @@ import Link from "next/link";
 
 const data = [
   {
-    name: "Кухни",
+    name: "Мебель",
   },
   {
-    name: "Шкафы",
+    name: "Техника",
   },
   {
-    name: "Гардеробы",
+    name: "Столешницы",
+  },
+  {
+    name: "Сантехника",
   },
 ];
 
 export default function ThreeDCardDemo() {
   return (
     <>
-      <div className="mx-auto max-w-3xl pt-4 sm:pt-8 lg:pt-12">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full font-light tracking-wide px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Все наши услуги абсолютно{" "}
+      <div className="mx-auto max-w-6xl pt-4 sm:pt-8 lg:pt-12">
+        <div className="hidden sm:flex sm:mb-8 sm:justify-center">
+          <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Для Вас все наши услуги{" "}
             <Link href="/blog" className="font-semibold text-sky-600">
               <span className="absolute inset-0" aria-hidden="true" />
               бесплатны <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </div>
-        <div className="text-center">
+        <div className="mt-8 px-4  text-center">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            Мебель для дома
+            Мебель для дома и офиса
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Наша компания предлагает вам мебель, спроектированную лучшими
-            дизайнерами и сделанную лучшими фабриками от эконом сегмента до
-            премиальных решений.
+          <p className="md:hidden mt-6 texy-sm sm:text-lg leading-8 text-gray-600">
+            Мы предлагаем мебель, созданную нашими дизайнерами.
+          </p>
+          <p className="hidden md:block max-w-3xl mx-auto mt-6 texy-sm sm:text-lg leading-8 text-gray-600">
+            Мы предлагаем мебель, созданную нашими лучшими дизайнерами и
+            изготовленную лучшими мебельными фабриками.
           </p>
         </div>
       </div>
 
-      <div className="md:flex items-center justify-center">
+      <div className="md:flex mt-4 items-center justify-center">
         {data.map((item) => (
           <CardContainer key={item.name} className="mx-4">
-            <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
+            <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-7 border  ">
               <CardItem
                 translateZ="50"
                 className="text-2xl font-bold text-neutral-600 dark:text-white"
@@ -69,7 +74,7 @@ export default function ThreeDCardDemo() {
                   alt="thumbnail"
                 />
               </CardItem>
-              <div className="flex justify-between items-center mt-20">
+              <div className="flex justify-between items-center mt-10">
                 <CardItem
                   translateZ={20}
                   as={Link}
