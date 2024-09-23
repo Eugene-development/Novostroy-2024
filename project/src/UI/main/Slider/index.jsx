@@ -30,7 +30,7 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          Мы делаем <br />
+          <span className="text-4xl md:text-8xl">Мы делаем</span> <br />
           вашу жизнь уютнее
         </p>
         <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
@@ -44,7 +44,7 @@ export default function ImagesSliderDemo() {
         </p>
         <button
           onClick={openVisibleFormDesigner}
-          className="scale110 mt-6 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative"
+          className="scale110 mt-8 px-8 py-2 sm:py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative"
         >
           <span className="text-sm sm:text-lg mt-6">
             Бесплатная консультация дизайнера →

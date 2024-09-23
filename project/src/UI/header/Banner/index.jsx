@@ -4,11 +4,12 @@ import Link from "next/link";
 import Search from "./Search";
 import Favorites from "./Favorites";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import MobileButton from "./MobileButton";
 
 export default () => {
   return (
     <>
-      <div className="  hidden md:flex items-center py-1 px-4 sm:px-3.5 bg-gray-900 ">
+      <div className="  hidden md:flex items-center py-3 px-4 sm:px-3.5 bg-gray-900 ">
         <div className=" flex flex-1 justify-start">
           <div className="flex space-x-4 items-center justify-center">
             <Link href="/about" className="ml-1 text-sm text-gray-50">
@@ -97,7 +98,7 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex px-3 py-2 justify-between bg-gray-900 items-center">
+      <div className="md:hidden flex px-1 py-2 justify-between bg-gray-900 items-center">
         <Link href="/">
           <span className="sr-only">Novostroy</span>
           <img
@@ -109,12 +110,15 @@ export default () => {
 
         <Link
           href="tel:+79154000020"
-          className="text-xl text-gray-50 font-display"
+          className="text-base text-gray-50 font-display"
         >
           +7 (915) 400-00-20
         </Link>
 
-        <Favorites />
+        <div className="flex divide-x">
+          <Favorites />
+          <MobileButton />
+        </div>
       </div>
     </>
   );
