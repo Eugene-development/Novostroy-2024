@@ -14,7 +14,7 @@ export default function ImagesSliderDemo() {
   ];
   // const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
   return (
-    <ImagesSlider className="h-[54rem]" images={images}>
+    <ImagesSlider className="h-[44rem] md:h-[54rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -27,13 +27,16 @@ export default function ImagesSliderDemo() {
         transition={{
           duration: 0.6,
         }}
-        className=" z-50 flex flex-col justify-center items-center"
+        className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           Мы делаем <br />
           вашу жизнь уютнее
         </p>
-        <p className="max-w-4xl text-center font-extralight text-lg text-gray-100 tracking-wide">
+        <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+          Мебель высокого качества от лучших производителей.
+        </p>
+        <p className="hidden md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры, работающие в лучших
           мебельных компаниях. Мы предложим Вам различные варианты вашего
           мебельного проекта с оптимальной ценой и отличным качеством
@@ -43,7 +46,7 @@ export default function ImagesSliderDemo() {
           onClick={openVisibleFormDesigner}
           className="scale110 mt-6 px-8 py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white mx-auto text-center rounded-full relative"
         >
-          <span className="text-lg mt-6">
+          <span className="text-sm sm:text-lg mt-6">
             Бесплатная консультация дизайнера →
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
