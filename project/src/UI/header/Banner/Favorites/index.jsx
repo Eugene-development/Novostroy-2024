@@ -8,7 +8,7 @@ export default () => {
   return (
     <Link
       href="/favorites"
-      className="relative isolate px-1 focus-visible:outline-offset-[-4px] z-20"
+      className="relative isolate px-2 focus-visible:outline-offset-[-4px] z-20"
     >
       <span className="sr-only">Избранное</span>
       <svg
@@ -19,7 +19,7 @@ export default () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className={`icon icon-tabler icons-tabler-outline icon-tabler-heart size-6 
+        className={`icon icon-tabler icons-tabler-outline icon-tabler-heart size-5 
           ${
             currentFavoritesProducts.length > 0
               ? "text-red-700 fill-red-500 animate-pulse"

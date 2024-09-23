@@ -8,7 +8,7 @@ export default () => {
   return (
     <Link
       href="/favorites"
-      className="relative isolate px-1 focus-visible:outline-offset-[-4px] z-20"
+      className="relative isolate px-2 focus-visible:outline-offset-[-4px] z-20"
     >
       <span className="sr-only">Мен</span>
       <svg
@@ -17,7 +17,7 @@ export default () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-6 text-gray-50"
+        className="size-5 text-gray-50"
       >
         <path
           strokeLinecap="round"

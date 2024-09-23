@@ -9,7 +9,7 @@ import MobileButton from "./MobileButton";
 export default () => {
   return (
     <>
-      <div className="  hidden md:flex items-center py-3 px-4 sm:px-3.5 bg-gray-900 ">
+      <div className="  hidden md:flex items-center py-2 px-4 sm:px-3.5 bg-gray-900 ">
         <div className=" flex flex-1 justify-start">
           <div className="flex space-x-4 items-center justify-center">
             <Link href="/about" className="ml-1 text-sm text-gray-50">
@@ -102,7 +102,7 @@ export default () => {
         <Link href="/">
           <span className="sr-only">Novostroy</span>
           <img
-            className="h-8 px-3 sm:px-0 w-auto "
+            className="h-6 px-3 sm:px-0 w-auto "
             src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
             alt="logo"
           />

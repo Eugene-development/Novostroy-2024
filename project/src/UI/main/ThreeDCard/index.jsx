@@ -23,7 +23,7 @@ const data = [
 export default function ThreeDCardDemo() {
   return (
     <>
-      <div className="mx-auto max-w-6xl pt-4 sm:pt-8 lg:pt-12">
+      <div className="mx-auto max-w-6xl pt-4 sm:pt-8 lg:pt-20">
         <div className="hidden sm:flex sm:mb-8 sm:justify-center">
           <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Для Вас все наши услуги{" "}
