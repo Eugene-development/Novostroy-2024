@@ -23,8 +23,8 @@ const navigation = {
     { name: "Водитель", href: "#" },
   ],
   legal: [
+    { name: "Консультация", method: "openVisibleFormDesigner" },
     { name: "Запись в салон", method: "openVisibleFormSalon" },
-    { name: "Консультация дизайнера", method: "openVisibleFormDesigner" },
     { name: "Заявка на замер", method: "openVisibleFormMeasuring" },
     { name: "Просчёт проекта", method: "openVisibleFormPrice" },
   ],

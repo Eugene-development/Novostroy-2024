@@ -1,15 +1,12 @@
 "use client";
 import Link from "next/link";
-
-import Search from "./Search";
 import Favorites from "./Favorites";
-import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 import MobileButton from "./MobileButton";
 
 export default () => {
   return (
     <>
-      <div className="  hidden md:flex items-center py-2 px-4 sm:px-3.5 bg-gray-900 ">
+      <div className="hidden md:flex items-center py-1 px-4 sm:px-3.5 bg-gray-900 ">
         <div className=" flex flex-1 justify-start">
           <div className="flex space-x-4 items-center justify-center">
             <Link href="/about" className="ml-1 text-sm text-gray-50">

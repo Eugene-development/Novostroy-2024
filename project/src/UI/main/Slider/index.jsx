@@ -34,7 +34,8 @@ export default function ImagesSliderDemo() {
           вашу жизнь уютнее
         </p>
         <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Дизайнерская мебель высокого качества от лучших производителей по комфортной цене.
+          Дизайнерская мебель высокого качества от лучших производителей по
+          комфортной цене.
         </p>
         <p className="hidden md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры, работающие в лучших
