@@ -7,19 +7,19 @@ import Image from "next/image";
 export default function BackgroundGradientDemo() {
   return (
     <>
-      <div className="bg-white px-6 py-12 sm:py-24 lg:px-8">
+      <div className="bg-white px-4 py-12 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Выполненные проекты
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="hidden sm:block mt-6 text-base sm:text-lg leading-8 text-gray-600">
             Ознакомьтесь с несколькими выполненными проектами за последнее
             время. Представлены варианты различных категорий и решений.
           </p>
         </div>
       </div>
 
-      <div className="flex p-12 mx-auto space-x-16 ">
+      <div className="flex p-8 mx-auto space-x-16 ">
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
           <Image
             src="https://zovrus.ru/files/_cache/product/chr-4479_1.resize1200x1200w.jpg?ec09a444e7bdbea9d295f840415fb01d"

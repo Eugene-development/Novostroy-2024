@@ -95,24 +95,24 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-24 px-4 w-full left-0 top-0">
-      <h2 className="text-2xl md:text-8xl font-bold dark:text-white">
+    <div className="max-w-7xl relative mx-auto pt-20 md:pt-24 px-4 w-full left-0 top-0">
+      <h2 className="text-3xl md:text-8xl font-bold dark:text-white">
         Лучшие мебельные
         <br /> дизайнерские решения
       </h2>
-      <p className="max-w-5xl text-base md:text-xl font-medium text-gray-900 mt-8 ">
+      <p className="max-w-5xl text-sm md:text-xl font-semibold text-gray-950 mt-8">
         Наши проекты сочетают в себе функциональность и эстетичность, создавая
         уют и комфорт в любом интерьере. Современные коллекции мебели предлагают
         стильные и практичные элементы, подходящие для разных вкусов и
         индивидуальных потребностей.
       </p>
-      <p className="max-w-5xl text-base md:text-xl font-medium text-gray-900 mt-6 dark:text-neutral-200">
+      <p className="max-w-5xl text-sm md:text-xl font-semibold text-gray-950 mt-6">
         Использование качественных материалов обеспечивает долговечность и
         привлекательный внешний вид мебели. Всё продумано до мелочей, чтобы
         радовать самых требовательных клиентов и создать гармоничное
         пространство у вас дома.
       </p>
-      <p className="max-w-5xl text-base md:text-xl font-medium text-gray-900 mt-6 dark:text-neutral-200">
+      <p className="max-w-5xl text-sm md:text-xl font-semibold text-gray-950 mt-6">
         Особое внимание нами уделяется индивидуальному подходу к каждому
         клиенту. Наши дизайнеры работают над уникальными проектами, которые
         идеально вписываются в интерьер, делая каждое изделие эксклюзивным и
