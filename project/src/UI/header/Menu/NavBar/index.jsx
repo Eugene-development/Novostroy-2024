@@ -41,9 +41,7 @@ export default function Navbar({ className }) {
               {" "}
               Замер помещения
             </HoveredLink>
-            <HoveredLink href="/service/desing">
-              Дизайн-проект мебели
-            </HoveredLink>
+            <HoveredLink href="/service/desing">Проект мебели</HoveredLink>
           </div>
         </MenuItem>
         <MenuItemCatalog setActive={setActive} active={active} item="Каталог">

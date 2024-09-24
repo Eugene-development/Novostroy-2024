@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { PhoneIcon } from "@heroicons/react/24/outline";
 import Favorites from "./Favorites";
 import MobileButton from "./MobileButton";
 
@@ -105,12 +106,15 @@ export default () => {
           />
         </Link>
 
-        <Link
-          href="tel:+79154000020"
-          className="text-base text-gray-50 font-display"
-        >
-          +7 (915) 400-00-20
-        </Link>
+        <div className="flex items-center pt-1">
+          <PhoneIcon className="size-6 text-gray-50 pr-2" />
+          <Link
+            href="tel:+79154000020"
+            className="text-base text-gray-50  font-display"
+          >
+            8 915 400-00-20
+          </Link>
+        </div>
 
         <div className="flex divide-x">
           <Favorites />

@@ -53,7 +53,7 @@ export default () => {
   return (
     <>
       <ModalInfo />
-      <div className="flex">
+      <div className="hidden md:flex">
         <nav
           id="toggleMobileMenu"
           className="bg-white border-b border-gray-200 dark:bg-gray-700 dark:border-gray-800"
