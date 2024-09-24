@@ -71,12 +71,12 @@ export default () => {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <h2 className="text-3xl md:text-7xl font-bold text-gray-50">
             Наша работа
           </h2>
-          <p className="mt-6 text-base sm:text-lg leading-8 text-gray-300">
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-300">
             Мы будем вас сопровождать на всех этапах проектирования и
-            изготовления мебели. От первой консультации до дня сборки проекта.
+            изготовления мебели. От консультации до дня сборки проекта.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">

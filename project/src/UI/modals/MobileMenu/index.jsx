@@ -77,7 +77,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">

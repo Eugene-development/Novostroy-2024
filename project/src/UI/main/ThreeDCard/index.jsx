@@ -23,7 +23,7 @@ const data = [
 export default function ThreeDCardDemo() {
   return (
     <>
-      <div className="mx-auto max-w-6xl pt-4 sm:pt-8 lg:pt-20">
+      <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
         <div className="hidden sm:flex sm:mb-8 sm:justify-center">
           <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Для Вас все наши услуги{" "}
@@ -33,16 +33,13 @@ export default function ThreeDCardDemo() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 px-4  text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            Мебель для дома и офиса
+        <div className="mt-8 px-4 sm:text-center">
+          <h2 className="text-3xl md:text-7xl font-bold text-gray-900">
+            Мебель для вашего дома и офиса
           </h2>
-          <p className="md:hidden mt-6 texy-sm sm:text-lg leading-8 text-gray-600">
-            Мы предлагаем мебель, созданную нашими дизайнерами.
-          </p>
-          <p className="hidden md:block max-w-3xl mx-auto mt-6 texy-sm sm:text-lg leading-8 text-gray-600">
-            Мы предлагаем мебель, созданную нашими лучшими дизайнерами и
-            изготовленную лучшими мебельными фабриками.
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
+            Мы предлагаем мебель, созданную нашими дизайнерами и изготовленную
+            лучшими мебельными фабриками.
           </p>
         </div>
       </div>

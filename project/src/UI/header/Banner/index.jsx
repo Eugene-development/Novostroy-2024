@@ -96,6 +96,7 @@ export default () => {
           </div>
         </div>
       </div>
+
       <div className="md:hidden flex px-1 py-2 justify-between bg-gray-900 items-center">
         <Link href="/">
           <span className="sr-only">Novostroy</span>
@@ -106,11 +107,11 @@ export default () => {
           />
         </Link>
 
-        <div className="flex items-center pt-1">
-          <PhoneIcon className="size-6 text-gray-50 pr-2" />
+        <div className="flex">
+          <PhoneIcon className="size-7  text-gray-50 pr-2" />
           <Link
             href="tel:+79154000020"
-            className="text-base text-gray-50  font-display"
+            className="text-lg text-gray-50 font-light font-display"
           >
             8 915 400-00-20
           </Link>

@@ -8,13 +8,13 @@ export default function BackgroundGradientDemo() {
   return (
     <>
       <div className="bg-white px-4 py-12 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        <div className="mx-auto max-w-3xl sm:text-center">
+          <h2 className="text-3xl md:text-7xl font-bold text-gray-900">
             Выполненные проекты
           </h2>
-          <p className="hidden sm:block mt-6 text-base sm:text-lg leading-8 text-gray-600">
-            Ознакомьтесь с несколькими выполненными проектами за последнее
-            время. Представлены варианты различных категорий и решений.
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
+            Ознакомьтесь с выполненными проектами за последнее время.
+            Представлены варианты различных категорий и решений.
           </p>
         </div>
       </div>

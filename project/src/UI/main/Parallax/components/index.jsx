@@ -96,7 +96,7 @@ export const HeroParallax = ({ products }) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto pt-20 md:pt-24 px-4 w-full left-0 top-0">
-      <h2 className="text-3xl md:text-8xl font-bold dark:text-white">
+      <h2 className="text-3xl md:text-8xl font-bold">
         Лучшие мебельные
         <br /> дизайнерские решения
       </h2>
