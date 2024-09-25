@@ -1,16 +1,15 @@
 import Link from "next/link";
-import { useFavoritesProductsStore } from "@/stores/favorites";
-const { favoritesProducts } = useFavoritesProductsStore;
+import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 export default () => {
-  const { currentFavoritesProducts } = favoritesProducts();
-
+  const { openVisibleMobileMenu } = useMobileMenuStore.visibleMobileMenu();
   return (
-    <Link
-      href="/favorites"
+    <button
+      type="button"
+      onClick={openVisibleMobileMenu}
       className="relative isolate px-2 focus-visible:outline-offset-[-4px] z-20"
     >
-      <span className="sr-only">Мен</span>
+      <span className="sr-only">Меню</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -25,6 +24,6 @@ export default () => {
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
         />
       </svg>
-    </Link>
+    </button>
   );
 };

@@ -14,6 +14,8 @@ import {
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 
+import { useMobileMenuStore } from "@/stores/MobileMenu";
+
 const tabs = [
   { name: "Меню", href: "#", current: true },
   { name: "Информация", href: "#", current: false },
@@ -76,11 +78,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
-  const [open, setOpen] = useState(false);
+export default () => {
+  const {
+    currentVisibleMobileMenu,
+    openVisibleMobileMenu,
+    closeVisibleMobileMenu,
+  } = useMobileMenuStore.visibleMobileMenu();
 
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog
+      open={currentVisibleMobileMenu}
+      onClose={() => closeVisibleMobileMenu}
+      className="relative z-40"
+    >
       <div className="fixed inset-0" />
 
       <div className="fixed inset-0 overflow-hidden">
@@ -106,7 +116,7 @@ export default function Example() {
                     <div className="ml-3 flex h-7 items-center">
                       <button
                         type="button"
-                        onClick={() => setOpen(false)}
+                        onClick={closeVisibleMobileMenu}
                         className="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-sky-500"
                       >
                         <span className="absolute -inset-2.5" />
@@ -221,4 +231,4 @@ export default function Example() {
       </div>
     </Dialog>
   );
-}
+};
