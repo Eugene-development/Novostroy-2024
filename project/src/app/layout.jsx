@@ -1,4 +1,8 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto, Abel } from "next/font/google";
+const abel = Abel({ subsets: ["latin"], weight: ["400"] });
+const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
+
 import "../css/globals.css";
 import {
   Banner,
@@ -11,7 +15,6 @@ import {
   OrderInfoModal,
   MobileMenu,
 } from "@/UI";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
@@ -44,7 +47,7 @@ export default function RootLayout({ children }) {
           </>
         )}
       </head>
-      <body className={inter.className}>
+      <body className="font-display">
         <MobileMenu />
 
         <DesignerForm />

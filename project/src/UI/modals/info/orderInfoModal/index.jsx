@@ -20,7 +20,7 @@ export default () => {
     <Dialog
       open={currentVisibleOrderInfo}
       onClose={closeVisibleOrderInfo}
-      className="relative z-10"
+      className="relative z-50"
     >
       <DialogBackdrop
         transition

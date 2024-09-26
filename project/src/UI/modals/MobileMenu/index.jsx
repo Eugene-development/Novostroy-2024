@@ -79,17 +79,14 @@ function classNames(...classes) {
 }
 
 export default () => {
-  const {
-    currentVisibleMobileMenu,
-    openVisibleMobileMenu,
-    closeVisibleMobileMenu,
-  } = useMobileMenuStore.visibleMobileMenu();
+  const { currentVisibleMobileMenu, closeVisibleMobileMenu } =
+    useMobileMenuStore.visibleMobileMenu();
 
   return (
     <Dialog
       open={currentVisibleMobileMenu}
       onClose={() => closeVisibleMobileMenu}
-      className="relative z-40"
+      className="relative  z-40"
     >
       <div className="fixed inset-0" />
 
@@ -100,7 +97,7 @@ export default () => {
               transition
               className="pointer-events-auto w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
             >
-              <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+              <div className="flex mt-10 h-full flex-col overflow-y-scroll bg-white shadow-xl">
                 <div className="p-6">
                   <div className="flex items-start justify-between">
                     <DialogTitle className="text-base font-semibold leading-6 text-gray-900">
@@ -156,6 +153,7 @@ export default () => {
                         {item.href ? (
                           <Link
                             href={item.href}
+                            onClick={closeVisibleMobileMenu}
                             className="-m-1 block flex-1 p-1"
                           >
                             <div
@@ -210,6 +208,7 @@ export default () => {
                                   <MenuItem key={subitem.name}>
                                     <Link
                                       href={subitem.href}
+                                      onClick={closeVisibleMobileMenu}
                                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                                     >
                                       {subitem.name}
