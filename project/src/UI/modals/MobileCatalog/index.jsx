@@ -122,7 +122,7 @@ export default () => {
                     </div>
                   </div>
                 </div>
-                  <span>КАТАЛОГ</span>
+                <span>КАТАЛОГ</span>
                 <div className="border-b border-gray-200">
                   <div className="px-6">
                     <nav className="-mb-px flex space-x-6">
