@@ -62,6 +62,9 @@ export { default as Favorites } from "./catalog/Favorites";
 
 // Service
 export { default as Service } from "./service";
+export { default as CallToActionConsultation } from "./service/CallToActionConsultation";
+export { default as CallToActionPrice } from "./service/CallToActionPrice";
+export { default as CallToActionMeasuring } from "./service/CallToActionMeasuring";
 
 // Action
 export { default as Action } from "./action";

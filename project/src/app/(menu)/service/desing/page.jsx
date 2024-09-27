@@ -1,7 +1,7 @@
 // React Server Components
 import * as motion from "framer-motion/client";
 
-import { Service } from "@/UI";
+import { Service, CallToActionPrice } from "@/UI";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -43,6 +43,7 @@ export default () => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
       <Service data={data} />;
+      <CallToActionPrice />
     </motion.main>
   );
 };
