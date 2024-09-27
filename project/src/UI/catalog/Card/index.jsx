@@ -25,7 +25,7 @@ export default ({ dataCategory }) => {
             >
               {/* <!-- Carousel wrapper --> */}
 
-              <div className="relative mb-4 min-h-72  rounded-lg">
+              <div className="relative mb-4   rounded-lg">
                 <SwiperSlider images={item?.image} />
               </div>
             </div>
@@ -62,12 +62,12 @@ export default ({ dataCategory }) => {
               Узнать актуальную цену проекта
             </button>
 
-            <div className="flex items-center gap-4">
+            <div className="gap-4 mt-4 md:mt-6 sm:flex sm:items-center lg:flex-col max-w-sm">
               <FavoriteButton product={item} />
 
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+                className="inline-flex mt-4 w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
               >
                 <svg
                   className="-ms-2 me-2 h-5 w-5"

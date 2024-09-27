@@ -12,14 +12,14 @@ import "swiper/css/pagination";
 
 export default ({ images }) => {
   return (
-    <section className="py-2">
+    <section className="py-2 w-72 sm:w-full">
       <div className="container">
         <Swiper
           navigation
           pagination={{ type: "fraction" }}
           modules={[Navigation, Pagination]}
           // onSwiper={swiper => console.log(swiper)}
-          className=" w-full rounded-lg"
+          className="rounded-lg"
         >
           {images.map((item) => (
             <SwiperSlide key={item.hash}>
