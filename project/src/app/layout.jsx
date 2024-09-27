@@ -14,6 +14,7 @@ import {
   PriceForm,
   OrderInfoModal,
   MobileMenu,
+  MobileCatalog,
 } from "@/UI";
 
 export default function RootLayout({ children }) {
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-display">
         <MobileMenu />
+        <MobileCatalog />
 
         <DesignerForm />
         <SalonForm />

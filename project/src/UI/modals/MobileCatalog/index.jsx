@@ -13,7 +13,7 @@ import {
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 
-import { useMobileMenuStore } from "@/stores/MobileMenu";
+import { useMobileCatalogStore } from "@/stores/mobileCatalog";
 
 const tabs = [
   { name: "Меню", href: "#", current: true },
@@ -78,13 +78,13 @@ function classNames(...classes) {
 }
 
 export default () => {
-  const { currentVisibleMobileMenu, closeVisibleMobileMenu } =
-    useMobileMenuStore.visibleMobileMenu();
+  const { currentVisibleMobileCatalog, closeVisibleMobileCatalog } =
+    useMobileCatalogStore.visibleMobileCatalog();
 
   return (
     <Dialog
-      open={currentVisibleMobileMenu}
-      onClose={() => closeVisibleMobileMenu}
+      open={currentVisibleMobileCatalog}
+      onClose={() => closeVisibleMobileCatalog}
       className="relative  z-40"
     >
       <div className="fixed inset-0" />
@@ -112,7 +112,7 @@ export default () => {
                     <div className="ml-3 flex h-7 items-center">
                       <button
                         type="button"
-                        onClick={closeVisibleMobileMenu}
+                        onClick={closeVisibleMobileCatalog}
                         className="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-sky-500"
                       >
                         <span className="absolute -inset-2.5" />
@@ -122,6 +122,7 @@ export default () => {
                     </div>
                   </div>
                 </div>
+                  <span>КАТАЛОГ</span>
                 <div className="border-b border-gray-200">
                   <div className="px-6">
                     <nav className="-mb-px flex space-x-6">
@@ -152,7 +153,7 @@ export default () => {
                         {item.href ? (
                           <Link
                             href={item.href}
-                            onClick={closeVisibleMobileMenu}
+                            onClick={closeVisibleMobileCatalog}
                             className="-m-1 block flex-1 p-1"
                           >
                             <div
@@ -207,7 +208,7 @@ export default () => {
                                   <MenuItem key={subitem.name}>
                                     <Link
                                       href={subitem.href}
-                                      onClick={closeVisibleMobileMenu}
+                                      onClick={closeVisibleMobileCatalog}
                                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                                     >
                                       {subitem.name}

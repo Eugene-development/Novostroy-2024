@@ -5,6 +5,7 @@ export { default as Footer } from "./footer";
 
 // Modal
 export { default as MobileMenu } from "./modals/MobileMenu";
+export { default as MobileCatalog } from "./modals/MobileCatalog";
 
 export { default as DesignerForm } from "./modals/forms/designer";
 export { default as SalonForm } from "./modals/forms/salon";

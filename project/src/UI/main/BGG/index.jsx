@@ -4,7 +4,7 @@ import { BackgroundGradient } from "./components";
 // import { IconAppWindow } from "@tabler/icons-react";
 import Image from "next/image";
 
-export default function BackgroundGradientDemo() {
+export default () => {
   return (
     <>
       <div className="bg-white px-4 py-12 sm:py-24 lg:px-8">
