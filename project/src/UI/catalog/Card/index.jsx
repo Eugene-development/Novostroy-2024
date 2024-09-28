@@ -62,7 +62,7 @@ export default ({ dataCategory }) => {
               Узнать актуальную цену проекта
             </button>
 
-            <div className="gap-4 mt-4 md:mt-6 sm:flex sm:items-center lg:flex-col max-w-sm">
+            <div className="mt-4 md:mt-6 sm:flex sm:items-center lg:flex-col max-w-sm">
               <FavoriteButton product={item} />
 
               <Link

@@ -3,17 +3,14 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { OrderInfo, Filter } from "@/UI";
 
 const BreadcrumbLink = ({ href, text }) => (
-  <Link href={href} className="flex items-center hover:text-sky-700">
+  <Link href={href} className="flex hover:text-sky-700">
     <span>{text}</span>
-    <ChevronRightIcon
-      aria-hidden="true"
-      className="h-5 w-5 ml-2 text-gray-400"
-    />
+    <ChevronRightIcon aria-hidden="true" className="size-6 text-gray-400" />
   </Link>
 );
 
 const ChevronIcon = () => (
-  <ChevronRightIcon aria-hidden="true" className="h-5 w-5 ml-2 text-gray-400" />
+  <ChevronRightIcon aria-hidden="true" className="size-6 text-gray-400" />
 );
 
 export default ({ data }) => {
@@ -22,15 +19,15 @@ export default ({ data }) => {
   const parent = parentable.parentable;
 
   return (
-    <div className="hidden lg:block">
-      <div className="mb-4 divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white px-4 py-3 md:px-4 md:py-3 shadow-sm dark:divide-gray-700 dark:border-gray-700 dark:bg-gray-800">
+    <div className="">
+      <div className="mb-4 divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white px-4 py-3 md:px-4 md:py-3 shadow-sm">
         <div className="items-center justify-between md:flex">
-          <div className="inline-flex space-x-6 whitespace-pre">
-            <span className="rounded-full bg-gray-400/10 -mr-2 px-4 py-0.5 text-xs font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
+          <div className="inline-flex space-x-0 whitespace-pre">
+            <span className="hidden sm:block rounded-full bg-gray-400/10 mr-2 px-4 py-0.5 text-xs font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
               Каталог
             </span>
 
-            <span className="inline-flex items-center space-x-2 text-xs font-medium leading-6 text-gray-600">
+            <span className="inline-flex items-center space-x-0 text-xs font-medium leading-6 text-gray-600">
               {/* ПраПраРодитель */}
               {grandParent && (
                 <BreadcrumbLink
@@ -62,12 +59,12 @@ export default ({ data }) => {
               ) : (
                 <>
                   <span>{parentable.value}</span>
-                  <ChevronIcon />
+                  {parent && <ChevronIcon />}
                 </>
               )}
 
               {/* Значение */}
-              <span>{data.value}</span>
+              {!grandParent && <span>{data.value}</span>}
             </span>
           </div>
 
