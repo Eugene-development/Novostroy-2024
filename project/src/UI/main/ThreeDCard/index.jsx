@@ -4,23 +4,31 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./components";
 import Link from "next/link";
+import { useFormsStore } from "@/stores/forms";
 
 const data = [
   {
     name: "Мебель",
+    href: "/mebel"
   },
   {
     name: "Техника",
+    href: "/tehnika"
   },
   {
     name: "Столешницы",
+    href: "/stoleshnica"
   },
   {
     name: "Сантехника",
+    href: "/santehnika"
   },
 ];
 
 export default function ThreeDCardDemo() {
+  
+  const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
+
   return (
     <>
       <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
@@ -62,7 +70,7 @@ export default function ThreeDCardDemo() {
                 В пределах МКАД наш консультант даст вам консультацию по
                 возможным решениям в проектировании мебели.
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-8">
+              <CardItem translateZ="100" className="w-full mt-8 ">
                 <Image
                   src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
                   height="1000"
@@ -75,8 +83,7 @@ export default function ThreeDCardDemo() {
                 <CardItem
                   translateZ={20}
                   as={Link}
-                  href="https://twitter.com/mannupaaji"
-                  target="__blank"
+                  href={item.href}
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
                   Подробнее →
@@ -84,6 +91,7 @@ export default function ThreeDCardDemo() {
                 <CardItem
                   translateZ={20}
                   as="button"
+                  onClick={openVisibleFormDesigner}
                   className=" px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
                   Консультация
