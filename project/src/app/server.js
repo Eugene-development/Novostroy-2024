@@ -7,8 +7,10 @@ const FULLCATALOG = gql`
   query FullCatalog {
     fullcatalog {
       value
+      slug
       rubric {
         value
+        slug
         category {
           value
           slug

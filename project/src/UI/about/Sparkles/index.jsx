@@ -4,10 +4,7 @@ import { SparklesCore } from "./components";
 
 export default function SparklesPreview() {
   return (
-    <div className="h-[28rem] sm:h-[52-rem] w-full bg-gray-950 flex flex-col items-center justify-center overflow-hidden">
-      {/* <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-                Новострой
-            </h1> */}
+    <div className="pt-8 h-[56-rem] w-full bg-gray-950 flex flex-col items-center justify-center overflow-hidden">
       <img
         className="h-[10rem] w-auto sm:h-[32rem] transition"
         src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
