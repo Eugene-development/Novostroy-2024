@@ -4,7 +4,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
 export default ({ dataProduct }) => {
   return (
-    <div className="mx-auto max-w-2xl px-1 lg:max-w-8xl">
+    <div className="mx-auto max-w-2xl px-1 pt-6 lg:max-w-8xl">
       <div className=" lg:items-start ">
         {/* Image gallery */}
         <TabGroup className="flex flex-col-reverse">

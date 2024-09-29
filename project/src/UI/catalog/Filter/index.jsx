@@ -1,7 +1,7 @@
 export default () => {
   return (
     <>
-      {/* 
+       
     <div className="items-center justify-between space-y-4 py-4 lg:flex lg:space-y-0">
     <div className="grid grid-cols-2 items-center gap-4 md:flex ">
       <button id="brandsDropdownButton" data-dropdown-toggle="dropdownBrands" type="button" className="flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-sky-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 sm:w-auto">
@@ -335,7 +335,7 @@ export default () => {
         </div>
       </div>
     </div>
-    </div>*/}
+    </div>
       {/* 
     <div className="pt-4">
     <div className="mb-4 items-center md:flex md:justify-between">

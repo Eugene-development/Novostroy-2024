@@ -70,7 +70,7 @@ export default () => {
             src="https://storage.yandexcloud.net/mine2024/novostroy/site/actionfoto.png"
             width={2432}
             height={1442}
-            className="h-[34rem] mb-[-8%] rounded-xl"
+            className="h-[12rem] md:h-[34rem] mb-[-8%] rounded-xl"
           />
           <div aria-hidden="true" className="relative">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />

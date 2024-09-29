@@ -26,7 +26,7 @@ export default ({ dataCatalog }) => {
         </div>
 
         <div className="relative isolate overflow-hidden ">
-          <div className="mx-auto max-w-full px-6 pb-24 pt-14 sm:pb-32 lg:flex lg:px-16 ">
+          <div className="mx-auto max-w-full px-6 pb-24 pt-8 sm:pb-32 lg:flex lg:px-16 ">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
               <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                 {dataCatalog?.value}

@@ -69,6 +69,10 @@ export { default as CallToActionMeasuring } from "./service/CallToActionMeasurin
 // Action
 export { default as Action } from "./action";
 
+// KIT
+export { default as Button } from "./Kit/Button";
+
+
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";
 export { default as HeroHighlight } from "./OTHERS/HeroHighlight";
