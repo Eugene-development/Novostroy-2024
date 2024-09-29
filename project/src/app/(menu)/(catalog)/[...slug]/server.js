@@ -8,7 +8,6 @@ const CATALOG = gql`
     catalog(slug: $slug, key: $key) {
       value
       slug
-
       rubric {
         value
         slug

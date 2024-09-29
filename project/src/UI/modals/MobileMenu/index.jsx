@@ -17,7 +17,7 @@ import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 const tabs = [
   { name: "Меню", href: "#", current: true },
-  { name: "Информация", href: "#", current: false },
+  { name: "Инфоблок", href: "#", current: false },
   { name: "Условия", href: "#", current: false },
 ];
 const menu = [

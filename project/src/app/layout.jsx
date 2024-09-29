@@ -17,7 +17,13 @@ import {
   MobileCatalog,
 } from "@/UI";
 
-export default function RootLayout({ children }) {
+import { getFullCatalog } from "./server";
+
+
+export default async function RootLayout({ children }) {
+  
+  const data = await getFullCatalog();
+
   return (
     <html lang="ru">
       <head>
@@ -50,7 +56,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-display">
         <MobileMenu />
-        <MobileCatalog />
+        <MobileCatalog dataFullCatalog={data.fullcatalog}/>
 
         <DesignerForm />
         <SalonForm />

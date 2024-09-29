@@ -16,9 +16,10 @@ import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 import { useMobileCatalogStore } from "@/stores/mobileCatalog";
 
 const tabs = [
-  { name: "Меню", href: "#", current: true },
-  { name: "Информация", href: "#", current: false },
-  { name: "Условия", href: "#", current: false },
+  { name: "Мебель", href: "#", current: true },
+  { name: "Техника", href: "#", current: false },
+  { name: "Столешницы", href: "#", current: false },
+  { name: "Мойки", href: "#", current: false },
 ];
 const menu = [
   {
@@ -77,10 +78,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default () => {
+export default ({dataFullCatalog}) => {
   const { currentVisibleMobileCatalog, closeVisibleMobileCatalog } =
     useMobileCatalogStore.visibleMobileCatalog();
 
+  console.log(dataFullCatalog[0].value)
   return (
     <Dialog
       open={currentVisibleMobileCatalog}
@@ -122,10 +124,10 @@ export default () => {
                     </div>
                   </div>
                 </div>
-                <span>КАТАЛОГ</span>
                 <div className="border-b border-gray-200">
-                  <div className="px-6">
-                    <nav className="-mb-px flex space-x-6">
+                  <div className="px-3">
+                    {dataFullCatalog[0].value}
+                    <nav className="-mb-px flex space-x-2">
                       {tabs.map((tab) => (
                         <a
                           key={tab.name}
@@ -134,7 +136,7 @@ export default () => {
                             tab.current
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1 pb-4 text-sm font-medium",
+                            "whitespace-nowrap border-b-2 px-1 pb-4 text-xs font-medium",
                           )}
                         >
                           {tab.name}

@@ -12,7 +12,7 @@ export default ({ dataProduct }) => {
           <div className="mx-auto mt-6 w-[20rem] sm:w-[40rem] max-w-7xl sm:block ">
             <TabList className="grid grid-cols-4 gap-2 sm:gap-6">
               {dataProduct.image.map(({ hash }) => (
-                <Tab
+                <Tab 
                   key={hash}
                   className="group relative flex h-12 sm:h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                 >
