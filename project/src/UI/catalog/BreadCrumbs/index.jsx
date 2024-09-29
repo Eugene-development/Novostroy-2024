@@ -69,10 +69,9 @@ export default ({ data }) => {
             </span>
           </div>
 
-             <OrderInfo />
+          <OrderInfo />
         </div>
-          {/* <Filter /> */}
-       
+        {/* <Filter /> */}
       </div>
     </div>
   );

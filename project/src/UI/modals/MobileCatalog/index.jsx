@@ -78,25 +78,25 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default ({dataFullCatalog}) => {
+export default ({ dataFullCatalog }) => {
   const { currentVisibleMobileCatalog, closeVisibleMobileCatalog } =
     useMobileCatalogStore.visibleMobileCatalog();
 
-  console.log(dataFullCatalog[0].value)
+  console.log(dataFullCatalog[0].value);
   return (
     <Dialog
       open={currentVisibleMobileCatalog}
       onClose={() => closeVisibleMobileCatalog}
-      className="relative  z-40"
+      className="relative z-40"
     >
       <div className="fixed inset-0" />
 
       <div className="fixed inset-0 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 sm:pl-16">
+          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full ">
             <DialogPanel
               transition
-              className="pointer-events-auto w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
+              className="pointer-events-auto w-screen max-w-lg transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
             >
               <div className="flex mt-10 h-full flex-col overflow-y-scroll bg-white shadow-xl">
                 <div className="p-6">
@@ -124,23 +124,22 @@ export default ({dataFullCatalog}) => {
                     </div>
                   </div>
                 </div>
-                <div className="border-b border-gray-200">
+                <div className="">
                   <div className="px-3">
-                    {dataFullCatalog[0].value}
                     <nav className="-mb-px flex space-x-2">
-                      {tabs.map((tab) => (
-                        <a
-                          key={tab.name}
-                          href={tab.href}
+                      {dataFullCatalog.map((tab) => (
+                        <button
+                          key={tab.value}
+                          type="button"
                           className={classNames(
                             tab.current
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1 pb-4 text-xs font-medium",
+                            "whitespace-nowrap border-b-2 px-1.5 py-1 m-1 text-xs font-medium bg-gray-100 justify-center rounded-lg",
                           )}
                         >
-                          {tab.name}
-                        </a>
+                          {tab.value}
+                        </button>
                       ))}
                     </nav>
                   </div>
@@ -149,12 +148,12 @@ export default ({dataFullCatalog}) => {
                   role="list"
                   className="flex-1 divide-y divide-gray-200 overflow-y-auto "
                 >
-                  {menu.map((item) => (
-                    <li key={item.name} className="*:h-20">
+                  {dataFullCatalog[0].rubric.map((item) => (
+                    <li key={item.value} className="*:h-20">
                       <div className="group relative flex items-center px-5 py-6">
                         {item.href ? (
                           <Link
-                            href={item.href}
+                            href={item.value}
                             onClick={closeVisibleMobileCatalog}
                             className="-m-1 block flex-1 p-1"
                           >
@@ -165,7 +164,7 @@ export default ({dataFullCatalog}) => {
                             <div className="relative flex min-w-0 flex-1 items-center">
                               <div className="ml-4 truncate">
                                 <p className="truncate text-sm font-medium text-gray-900">
-                                  {item.name}
+                                  {item.value}
                                 </p>
                               </div>
                             </div>
@@ -179,7 +178,7 @@ export default ({dataFullCatalog}) => {
                             <div className="relative flex min-w-0 flex-1 items-center">
                               <div className="ml-4 truncate">
                                 <p className="truncate text-sm font-medium text-gray-900">
-                                  {item.name}
+                                  {item.value}
                                 </p>
                               </div>
                             </div>

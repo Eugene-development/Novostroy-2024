@@ -16,13 +16,12 @@ const FULLCATALOG = gql`
       }
     }
   }
-  `
-
+`;
 
 // --- //
 export async function getFullCatalog() {
   const variables = {
-    key: NEXT_PUBLIC_KEY
+    key: NEXT_PUBLIC_KEY,
   };
   try {
     return await request(NEXT_PUBLIC_GRAPHQL, FULLCATALOG, variables);

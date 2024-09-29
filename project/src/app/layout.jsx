@@ -19,9 +19,7 @@ import {
 
 import { getFullCatalog } from "./server";
 
-
 export default async function RootLayout({ children }) {
-  
   const data = await getFullCatalog();
 
   return (
@@ -56,7 +54,7 @@ export default async function RootLayout({ children }) {
       </head>
       <body className="font-display">
         <MobileMenu />
-        <MobileCatalog dataFullCatalog={data.fullcatalog}/>
+        <MobileCatalog dataFullCatalog={data.fullcatalog} />
 
         <DesignerForm />
         <SalonForm />

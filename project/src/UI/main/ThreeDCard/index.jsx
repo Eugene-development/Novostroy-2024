@@ -9,24 +9,23 @@ import { useFormsStore } from "@/stores/forms";
 const data = [
   {
     name: "Мебель",
-    href: "/mebel"
+    href: "/mebel",
   },
   {
     name: "Техника",
-    href: "/tehnika"
+    href: "/tehnika",
   },
   {
     name: "Столешницы",
-    href: "/stoleshnica"
+    href: "/stoleshnica",
   },
   {
     name: "Сантехника",
-    href: "/santehnika"
+    href: "/santehnika",
   },
 ];
 
 export default function ThreeDCardDemo() {
-  
   const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
 
   return (
