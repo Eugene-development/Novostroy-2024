@@ -17,9 +17,9 @@ import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 const tabs = [
   { name: "Меню", href: "#", current: true },
-  { name: "Инфоблок", href: "#", current: false },
-  { name: "Условия", href: "#", current: false },
+  { name: "Информация", href: "#", current: false },
 ];
+
 const menu = [
   {
     name: "Главная",
@@ -72,6 +72,29 @@ const menu = [
     href: "/blog",
   },
 ];
+
+const information = [
+  {
+    name: "О компании",
+    href: "/about"
+  },
+  {
+    name: "Партнёрство",
+    href: "/partnership"
+  },
+  {
+    name: "Отзывы",
+    href: "/testimonials"
+  },
+  {
+    name: "Рассрочка",
+    href: "/installment"
+  },
+  {
+    name: "Контакты",
+    href: "/contacts"
+  },
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
