@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 
 import {
   Dialog,
@@ -16,8 +17,8 @@ import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 const tabs = [
-  { name: "Меню", href: "#", current: true },
-  { name: "Информация", href: "#", current: false },
+  { name: "Главное меню", key: "menu" },
+  { name: "Информация", key: "information" },
 ];
 
 const menu = [
@@ -76,25 +77,25 @@ const menu = [
 const information = [
   {
     name: "О компании",
-    href: "/about"
+    href: "/about",
   },
   {
     name: "Партнёрство",
-    href: "/partnership"
+    href: "/partnership",
   },
   {
     name: "Отзывы",
-    href: "/testimonials"
+    href: "/testimonials",
   },
   {
     name: "Рассрочка",
-    href: "/installment"
+    href: "/installment",
   },
   {
     name: "Контакты",
-    href: "/contacts"
+    href: "/contacts",
   },
-]
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -104,11 +105,17 @@ export default () => {
   const { currentVisibleMobileMenu, closeVisibleMobileMenu } =
     useMobileMenuStore.visibleMobileMenu();
 
+  // Состояние для активной вкладки
+  const [activeTab, setActiveTab] = useState("menu");
+
+  // Определяем, какой массив отображать
+  const itemsToRender = activeTab === "menu" ? menu : information;
+
   return (
     <Dialog
       open={currentVisibleMobileMenu}
       onClose={() => closeVisibleMobileMenu}
-      className="relative  z-40"
+      className="relative z-40"
     >
       <div className="fixed inset-0" />
 
@@ -150,13 +157,14 @@ export default () => {
                     <nav className="-mb-px flex space-x-6">
                       {tabs.map((tab) => (
                         <a
-                          key={tab.name}
-                          href={tab.href}
+                          key={tab.key}
+                          href="#"
+                          onClick={() => setActiveTab(tab.key)}
                           className={classNames(
-                            tab.current
+                            activeTab === tab.key
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1 pb-4 text-sm font-medium",
+                            "whitespace-nowrap border-b-2 px-1 pb-4 text-sm font-medium"
                           )}
                         >
                           {tab.name}
@@ -167,9 +175,9 @@ export default () => {
                 </div>
                 <ul
                   role="list"
-                  className="flex-1 divide-y divide-gray-200 overflow-y-auto "
+                  className="flex-1 divide-y divide-gray-200 overflow-y-auto"
                 >
-                  {menu.map((item) => (
+                  {itemsToRender.map((item) => (
                     <li key={item.name} className="*:h-20">
                       <div className="group relative flex items-center px-5 py-6">
                         {item.href ? (
