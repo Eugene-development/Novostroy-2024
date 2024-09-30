@@ -156,19 +156,19 @@ export default () => {
                   <div className="px-6">
                     <nav className="-mb-px flex space-x-6">
                       {tabs.map((tab) => (
-                        <a
+                        <button
                           key={tab.key}
-                          href="#"
+                          type="button"
                           onClick={() => setActiveTab(tab.key)}
                           className={classNames(
                             activeTab === tab.key
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1 pb-4 text-sm font-medium"
+                            "whitespace-nowrap border-b-2 px-1 pb-4 text-sm font-medium",
                           )}
                         >
                           {tab.name}
-                        </a>
+                        </button>
                       ))}
                     </nav>
                   </div>
