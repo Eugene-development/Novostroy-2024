@@ -9,6 +9,8 @@ import { useFavoritesProductsStore } from "@/stores/favorites";
 const { favoritesProducts } = useFavoritesProductsStore;
 
 export default () => {
+  const { removeFromFavoritesProducts } = favoritesProducts();
+
   const router = useRouter();
 
   const { currentFavoritesProducts } = favoritesProducts();
@@ -70,7 +72,7 @@ export default () => {
 
               <Link
                 href={`/${item.parentable.parentable.parentable.slug}/${item.parentable.parentable.slug}/${item.parentable.slug}`}
-                className="inline-flex items-center bg-gray-50 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                className="inline-flex items-center bg-gray-50 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
               >
                 Категория - {item.parentable.value}
               </Link>
@@ -79,28 +81,57 @@ export default () => {
                 {item.value}
               </span>
 
-              <Link
-                href={`/${item.parentable.parentable.parentable.slug}/${item.slug}`}
-                title=""
-                className="mt-4 inline-flex items-center gap-1.5 font-medium text-sky-700 hover:text-sky-600 dark:text-sky-500 dark:hover:text-sky-400"
-              >
-                Подробнее
-                <svg
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
+              <div className="flex mt-4 justify-between space-x-12">
+                <Link
+                  href={`/${item.parentable.parentable.parentable.slug}/${item.slug}`}
+                  title=""
+                  className=" inline-flex items-center gap-1.5 font-medium text-sky-700 hover:text-sky-600 dark:text-sky-500 dark:hover:text-sky-400"
                 >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 12H5m14 0-4 4m4-4-4-4"
-                  ></path>
-                </svg>
-              </Link>
+                  Подробнее
+                  <svg
+                    className="h-5 w-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 12H5m14 0-4 4m4-4-4-4"
+                    ></path>
+                  </svg>
+                </Link>
+
+                <button
+                  type="button"
+                  onClick={() => removeFromFavoritesProducts(item.id)}
+                  role="button"
+                  className="flex items-center w-full justify-center py-2 px-5 text-sm font-medium focus:outline-none focus:z-10 focus:ring-4 rounded-lg border  text-gray-900  bg-white  border-gray-700 hover:bg-gray-100 hover:text-gray-700  focus:ring-gray-300"
+                >
+                  <svg
+                    className="w-5 h-5 -ms-2 me-2 fill-red-700"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+                    />
+                  </svg>
+
+                  <span>Убрать</span>
+                </button>
+              </div>
             </div>
           ))}
         </div>
