@@ -93,7 +93,9 @@ export default () => {
                 <h3 className="text-base font-semibold text-white">
                   {card.name}
                 </h3>
-                <p className="text-sm mt-2 text-gray-300 text-pretty">{card.description}</p>
+                <p className="text-sm mt-2 text-gray-300 text-pretty">
+                  {card.description}
+                </p>
               </div>
             </div>
           ))}

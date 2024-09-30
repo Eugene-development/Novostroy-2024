@@ -9,18 +9,26 @@ import { useFormsStore } from "@/stores/forms";
 const data = [
   {
     name: "Мебель",
+    description:
+      "Качественная и стильная мебель от ведущих производств России и Беларуси.",
     href: "/mebel",
   },
   {
     name: "Техника",
+    description:
+      "Бытовая техника от передовых брендов Европейских и азиатских стран.",
     href: "/tehnika",
   },
   {
     name: "Столешницы",
+    description:
+      "Столешницы и фартуки из акрила, кварца и массива под любой стиль и бюджет.",
     href: "/stoleshnica",
   },
   {
     name: "Сантехника",
+    description:
+      "Стальные и композитные мойки и смесители, а также комплектующие к ним.",
     href: "/santehnika",
   },
 ];
@@ -40,11 +48,11 @@ export default function ThreeDCardDemo() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 px-4 sm:text-center">
+        <div className="mt-8 px-6 sm:text-center">
           <h2 className="text-3xl md:text-7xl font-bold text-gray-900">
             Мебель для вашего дома и офиса
           </h2>
-          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-6 text-gray-600 font-semibold">
             Мы предлагаем мебель, созданную нашими дизайнерами и изготовленную
             лучшими мебельными фабриками.
           </p>
@@ -64,10 +72,9 @@ export default function ThreeDCardDemo() {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-neutral-500 text-sm max-w-sm mt-2"
               >
-                В пределах МКАД наш консультант даст вам консультацию по
-                возможным решениям в проектировании мебели.
+                {item.description}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-8 ">
                 <Image
