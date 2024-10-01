@@ -1,11 +1,17 @@
 "use client";
 import { Button } from "@headlessui/react";
-import { useMobileCatalogStore } from "@/stores/mobileCatalog";
+import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 export default ({ value }) => {
   const { openVisibleMobileCatalog } =
-    useMobileCatalogStore.visibleMobileCatalog();
+    useMobileMenuStore.visibleMobileCatalog();
+  
+  const { closeVisibleMobileMenu } = useMobileMenuStore.visibleMobileMenu();
 
+  const handleClick = () => {
+    closeVisibleMobileMenu();
+    openVisibleMobileCatalog();
+  }
   return (
     <Button
       onClick={openVisibleMobileCatalog}

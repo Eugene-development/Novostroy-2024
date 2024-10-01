@@ -14,7 +14,7 @@ import {
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 
-import { useMobileCatalogStore } from "@/stores/mobileCatalog";
+import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -22,7 +22,7 @@ function classNames(...classes) {
 
 export default ({ dataFullCatalog }) => {
   const { currentVisibleMobileCatalog, closeVisibleMobileCatalog } =
-    useMobileCatalogStore.visibleMobileCatalog();
+    useMobileMenuStore.visibleMobileCatalog();
 
   const [selectedIndex, setSelectedIndex] = useState(0); // Состояние для выбранного индекса
 

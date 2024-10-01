@@ -3,10 +3,19 @@ import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 export default () => {
   const { openVisibleMobileMenu } = useMobileMenuStore.visibleMobileMenu();
+  
+  const { closeVisibleMobileCatalog } =
+    useMobileMenuStore.visibleMobileCatalog();
+  
+  const handleClick = () => {
+    closeVisibleMobileCatalog();
+    openVisibleMobileMenu();
+  }
+  
   return (
     <button
       type="button"
-      onClick={openVisibleMobileMenu}
+      onClick={handleClick}
       className="relative isolate px-2 focus-visible:outline-offset-[-4px] z-20"
     >
       <span className="sr-only">Меню</span>

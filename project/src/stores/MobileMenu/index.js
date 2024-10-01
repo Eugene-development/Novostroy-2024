@@ -7,6 +7,15 @@ const visibleMobileMenu = create((set) => ({
     set(() => ({ currentVisibleMobileMenu: false })),
 }));
 
+const visibleMobileCatalog = create((set) => ({
+  currentVisibleMobileCatalog: false,
+  openVisibleMobileCatalog: () =>
+    set(() => ({ currentVisibleMobileCatalog: true })),
+  closeVisibleMobileCatalog: () =>
+    set(() => ({ currentVisibleMobileCatalog: false })),
+}));
+
 export const useMobileMenuStore = {
   visibleMobileMenu,
+  visibleMobileCatalog,
 };

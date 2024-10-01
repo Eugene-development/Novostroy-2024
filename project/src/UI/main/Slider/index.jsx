@@ -9,8 +9,9 @@ export default function ImagesSliderDemo() {
   const { openVisibleFormDesigner } = useFormsStore.visibleFormDesigner();
 
   const images = [
-    "https://zovofficial.com/image/cache/catalog/products/kuhni/2024/norvud/cam-1-1600x1472.jpg",
-    "https://zovofficial.com/image/cache/catalog/products/korpusnaya-mebel/5-pemont/gostinaya/2-1600x942.jpg",
+    "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/cam-1-1600x1472.jpg",
+    "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/cam-2-1763x1600.jpg",
+    "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/2-1600x942.jpg",
   ];
   // const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
   return (
@@ -30,12 +31,15 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
+           Тест! Сайт в разработке!
+        </p>
+        <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           <span className="text-4xl md:text-8xl">Мы делаем</span> <br />
           вашу жизнь уютнее
         </p>
         <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Дизайнерская мебель высокого качества от лучших производителей по
-          комфортной цене.
+        Наша команда это профессиональные дизайнеры, работающие в лучших
+        мебельных компаниях.
         </p>
         <p className="hidden md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры, работающие в лучших

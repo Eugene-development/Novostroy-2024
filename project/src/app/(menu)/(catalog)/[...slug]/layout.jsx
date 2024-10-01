@@ -11,8 +11,8 @@ export default async ({ children, params }) => {
     <MobileCatalog />
       <div className="antialised">
         <Info />
-  
-        {/* <Badge /> */}
+          {/*  <Badge />  */}
+       
   
         <div className="max-w-full mx-auto flex w-full h-full relative py-4 px-4">
           <SideBar dataCatalog={data.catalog} />

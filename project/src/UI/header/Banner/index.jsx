@@ -97,11 +97,11 @@ export default () => {
         </div>
       </div>
 
-      <div className="md:hidden flex px-1 py-2 justify-between bg-gray-900 items-center sticky top-0 z-50 opacity-95">
+      <div className="md:hidden flex px-1.5 py-2 justify-between bg-gray-900 items-center sticky top-0 z-50 opacity-95">
         <Link href="/">
           <span className="sr-only">Novostroy</span>
           <img
-            className="h-6 px-2 sm:px-0 w-auto"
+            className="size-7 px-1 sm:px-0 w-auto"
             src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
             alt="logo"
           />
