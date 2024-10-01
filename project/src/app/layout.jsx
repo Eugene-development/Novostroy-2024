@@ -1,3 +1,9 @@
+// import dynamic from "next/dynamic";
+
+// const MobileCatalog = dynamic(() => import("@/UI/modals/MobileCatalog"), {
+//   ssr: false, // отключить серверную отрисовку
+// });
+
 import "../css/globals.css";
 import {
   Banner,
@@ -9,10 +15,10 @@ import {
   PriceForm,
   OrderInfoModal,
   MobileMenu,
-  MobileCatalog,
+  
 } from "@/UI";
 
-export default async function RootLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
@@ -45,7 +51,6 @@ export default async function RootLayout({ children }) {
       </head>
       <body className="font-display">
         <MobileMenu />
-        <MobileCatalog />
 
         <DesignerForm />
         <SalonForm />

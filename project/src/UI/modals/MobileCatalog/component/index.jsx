@@ -33,7 +33,7 @@ export default ({ dataFullCatalog }) => {
       className="relative z-40"
     >
       <div className="fixed inset-0" />
-
+      
       <div className="fixed inset-0 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full ">
@@ -90,7 +90,7 @@ export default ({ dataFullCatalog }) => {
                     </nav>
                   </div>
                 </div>
-
+                
                 {/* Список элементов, соответствующий выбранному табу */}
                 <ul
                   role="list"
@@ -161,7 +161,7 @@ export default ({ dataFullCatalog }) => {
                                   {item.category.map((subitem) => (
                                     <MenuItem key={subitem.value}>
                                       <Link
-                                        href={`/${dataFullCatalog.slug}/${item.slug}/${subitem.slug}`}
+                                        href={`/${item.parentable.slug}/${item.slug}/${subitem.slug}`}
                                         onClick={closeVisibleMobileCatalog}
                                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                                       >
