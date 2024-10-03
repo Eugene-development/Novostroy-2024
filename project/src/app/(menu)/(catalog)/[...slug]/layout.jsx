@@ -1,3 +1,6 @@
+import { notFound } from 'next/navigation';
+
+
 import { SideBar, Info, Badge, MobileCatalog } from "@/UI";
 import { getCatalog } from "./server";
 
@@ -5,7 +8,11 @@ import { getCatalog } from "./server";
 export default async ({ children, params }) => {
   const slug = params.slug[0];
   const data = await getCatalog(slug);
-
+  
+  if (!data.catalog) {
+      notFound();  // Эта функция перенаправит пользователя на страницу 404
+    }
+  
   return (
     <>
     <MobileCatalog />

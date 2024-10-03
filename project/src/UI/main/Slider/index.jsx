@@ -33,7 +33,7 @@ export default function ImagesSliderDemo() {
         
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           <span className="text-4xl md:text-8xl">Мы делаем</span> <br />
-          вашу жизнь уютнее
+          ваш дом уютнее
         </p>
         <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
         Наша команда это профессиональные дизайнеры, работающие в лучших известных

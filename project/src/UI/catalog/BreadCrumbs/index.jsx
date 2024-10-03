@@ -14,9 +14,9 @@ const ChevronIcon = () => (
 );
 
 export default ({ data }) => {
-  const parentable = data.parentable || {};
+  const parentable = data?.parentable || {};
   const grandParent = parentable.parentable?.parentable;
-  const parent = parentable.parentable;
+  const parent = parentable?.parentable;
 
   return (
     <div className="">
@@ -65,7 +65,7 @@ export default ({ data }) => {
               )}
 
               {/* Значение */}
-              {!grandParent && <span>{data.value}</span>}
+              {!grandParent && <span>{data?.value}</span>}
             </span>
           </div>
 

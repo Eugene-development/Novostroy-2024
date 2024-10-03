@@ -13,7 +13,7 @@ export default ({ dataCategory }) => {
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {dataCategory.product.map((item) => (
+        {dataCategory?.product.map((item) => (
           <div
             key={item.slug}
             className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"

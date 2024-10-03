@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+
 import { Rubric, Category, ProductDetail } from "@/UI";
 import { getCatalog, getCategory, getProduct } from "./server";
 
@@ -10,14 +12,23 @@ export async function generateMetadata({ params }) {
 
   if (params.slug.length === 1) {
     data = await getCatalog(slug);
+    if (!data.catalog) {
+        notFound();  // Эта функция перенаправит пользователя на страницу 404
+      }
     metaTitle = data.catalog?.metaTitle?.value;
     metaDescription = data.catalog?.metaDescription?.value;
   } else if (params.slug.length === 2) {
     data = await getProduct(slug);
+    if (!data.product) {
+        notFound();  // Эта функция перенаправит пользователя на страницу 404
+      }
     metaTitle = "kjnkjnjk";
     metaDescription = "jnmkjmkl";
   } else if (params.slug.length === 3) {
     data = await getCategory(slug);
+    if (!data.category) {
+        notFound();  // Эта функция перенаправит пользователя на страницу 404
+      }
     metaTitle = data.category?.metaTitle?.value;
     metaDescription = data.category?.metaDescription?.value;
   }
