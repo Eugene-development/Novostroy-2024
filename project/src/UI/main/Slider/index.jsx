@@ -35,15 +35,15 @@ export default function ImagesSliderDemo() {
           <span className="text-4xl md:text-8xl">Мы делаем</span> <br />
           ваш дом уютнее
         </p>
-        <p className="md:hidden px-4 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-        Наша команда это профессиональные дизайнеры, работающие в лучших известных
-        мебельных компаниях. <br /> Наши услуги бесплатны.
+        <p className="md:hidden px-2 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        Наша команда это профессиональные дизайнеры, работающие в лучших
+        мебельных компаниях страны. <br /> Наши услуги бесплатны.
         </p>
-        <p className="hidden md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        <p className="hidden px-1 md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры, работающие в лучших
           мебельных компаниях. Мы предложим Вам различные варианты вашего
           мебельного проекта с оптимальной ценой и отличным качеством
-          исполнения. <br /> Наши услуги бесплатны.
+          исполнения фабрикой. <br /> Наши услуги бесплатны.
         </p>
         <button
           onClick={openVisibleFormDesigner}
