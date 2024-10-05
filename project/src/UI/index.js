@@ -71,6 +71,7 @@ export { default as Action } from "./action";
 
 // KIT
 export { default as Button } from "./Kit/Button";
+export { default as ButtonBack } from "./Kit/ButtonBack";
 
 // Others
 export { default as Benefits } from "./OTHERS/Benefits";

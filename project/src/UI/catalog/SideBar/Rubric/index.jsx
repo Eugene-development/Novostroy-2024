@@ -16,7 +16,7 @@ export default function Index({ dataCatalog }) {
 
   return (
     <Fragment>
-      <ul className="space-y-3 mb-6 py-6 px-1 bg-gray-100/30 rounded-xl ">
+      <ul className="space-y-3 mb-6 py-6 px-3 bg-gray-50/50 rounded-xl ">
         {dataCatalog?.rubric.map((item) => (
           <li key={item.value}>
             <Button
@@ -66,7 +66,7 @@ export default function Index({ dataCatalog }) {
                       >
                         <Link
                           href={`/${dataCatalog.slug}/${item.slug}/${subitem.slug}`}
-                          className="flex items-center justify-between p-1 pl-11 w-full text-sm font-medium tracking-wide text-gray-700 hover:text-gray-950 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                          className="flex items-center justify-between p-1 pl-4 w-full text-sm font-medium tracking-wide text-gray-700 hover:text-gray-950 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                           onClick={() => setSelectedItem(subitem.value)}
                         >
                           {subitem.value}

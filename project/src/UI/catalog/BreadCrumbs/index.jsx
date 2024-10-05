@@ -20,10 +20,10 @@ export default ({ data }) => {
 
   return (
     <div className="">
-      <div className="hidden md:block divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white px-4 py-3 md:px-4 md:py-3 shadow-sm">
+      <div className="hidden md:block divide-y divide-gray-200 rounded-lg border border-gray-100 bg-white px-4 py-3 md:px-4 md:py-3 shadow-sm">
         <div className="items-center justify-between md:flex">
           <div className="inline-flex space-x-0 whitespace-pre">
-            <span className="hidden sm:block rounded-full bg-gray-400/10 mr-2 px-4 py-0.5 text-xs font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
+            <span className="hidden sm:block rounded-full bg-gray-50/50 mr-2 px-4 py-0.5 text-xs font-semibold leading-6 text-gray-600 ring-1 ring-inset ring-sky-400/10">
               Каталог
             </span>
 

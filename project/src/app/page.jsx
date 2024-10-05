@@ -2,9 +2,9 @@
 import { Slider, BGG, ThreeDCard, Parallax, Stage } from "@/UI";
 
 export const metadata = {
-  title: "Новострой | Мебель на заказ",
+  title: "Новострой | Купите мебель с нашим дизайном",
   description:
-    "Изготовление корпусной мебели на заказ из материалов высокого качества.",
+    "Благодаря нам вы сможете купить мебель с дизайнерским решением и с доступной ценой.",
 };
 
 export default function Home() {

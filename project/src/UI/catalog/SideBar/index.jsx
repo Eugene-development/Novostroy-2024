@@ -13,7 +13,7 @@ export default ({ dataCatalog }) => {
       >
         {/*<Search /> */}
 
-        <div className="overflow-y-auto py-2 px-3 h-full bg-white dark:bg-gray-800 lg:rounded-lg">
+        <div className="overflow-y-auto py-2 px-3 h-full bg-white  lg:rounded-lg">
           <Designer />
 
           <Call2Action />

@@ -12,7 +12,7 @@ export default ({ dataProduct }) => {
   
   
   return (
-    <section className="sm:bg-gray-50 py-2 sm:px-0 antialiased md:py-4 rounded-xl">
+    <section className="sm:bg-gray-50/50 py-2 sm:px-0 antialiased md:py-4 rounded-xl">
       <div className="mx-auto max-w-screen-xl">
       <Button value={"Категории каталога"} />
 
