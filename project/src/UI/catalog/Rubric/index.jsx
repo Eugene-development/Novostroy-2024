@@ -16,9 +16,9 @@ export default ({ dataCatalog }) => {
 
         
           <BreadCrumbs data={dataCatalog} />
-          <OrderInfo />
+          <div className="sm:hidden"><OrderInfo /></div>
 
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mt:4 mx-auto max-w-2xl lg:mx-0">
             {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}
           </h2> */}

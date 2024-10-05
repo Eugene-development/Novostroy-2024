@@ -8,7 +8,7 @@ export default ({ dataCategory }) => {
 
         <BreadCrumbs data={dataCategory} />
         
-        <OrderInfo />
+        <div className="sm:hidden"><OrderInfo /></div>
 
         <Card dataCategory={dataCategory} />
         {/* <Pagination />*/}

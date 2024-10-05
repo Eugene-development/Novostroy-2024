@@ -12,7 +12,7 @@ export default () => {
         data-modal-target="infoModal"
         data-modal-toggle="infoModal"
         type="button"
-        className="my-4 inline-flex items-center justify-center rounded-lg p-2 text-sm text-center font-medium leading-none text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+        className="my-4 sm:my-0 inline-flex items-center justify-center rounded-lg p-2 text-sm text-center font-medium leading-none text-gray-500 hover:bg-gray-100 hover:text-gray-900"
       >
         <span className="sr-only"> Info </span>
         <svg
@@ -32,7 +32,7 @@ export default () => {
             d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
         </svg>
-        Как заказать мебель
+        Как мы помогаем
       </button>
     </>
   );

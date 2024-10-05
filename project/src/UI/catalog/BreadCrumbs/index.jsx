@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { OrderInfo } from "@/UI";
 
 const BreadcrumbLink = ({ href, text }) => (
   <Link href={href} className="flex hover:text-sky-700">
@@ -66,10 +67,12 @@ export default ({ data }) => {
               {!grandParent && <span>{data?.value}</span>}
             </span>
           </div>
+          <OrderInfo />
 
         </div>
         {/* <Filter /> */}
       </div>
+
 
     </div>
   );
