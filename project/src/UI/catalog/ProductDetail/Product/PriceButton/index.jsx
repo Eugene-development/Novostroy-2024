@@ -16,7 +16,7 @@ export default ({ dataProduct }) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-5 h-5 text-sky-700 dark:text-sky-500"
+        className="w-5 h-5 text-sky-700"
       >
         <path
           strokeLinecap="round"
@@ -25,7 +25,7 @@ export default ({ dataProduct }) => {
         />
       </svg>
 
-      <p className="text-sm font-medium text-sky-700 dark:text-sky-500">
+      <p className="text-sm font-medium text-sky-700">
         Запрос актуальной цены проекта
       </p>
     </button>
