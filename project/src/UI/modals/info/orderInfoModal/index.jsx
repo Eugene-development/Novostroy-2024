@@ -43,7 +43,7 @@ export default () => {
                 <div className="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
                   <div className="flex justify-between mb-4 rounded-t sm:mb-5">
                     <div className="text-lg text-gray-900 md:text-xl dark:text-white">
-                      <h3 className="font-semibold ">Как заказать мебель</h3>
+                      <h3 className="font-semibold ">Мы сопровождаем вас на всём пути</h3>
                     </div>
                     <div>
                       <button
@@ -97,14 +97,12 @@ export default () => {
                   </div>
                   <dl className="sm:mb-10">
                     <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                      От знакомства до покупки
+                      От консультации до сборки
                     </dt>
                     <dd className="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
                       На первый взгляд этот путь достаточно сложный и
                       рискованный. Наша команда поможет пройти все этапы от А до
-                      Я максимально комфортно. Мы будем сопровождать вас на всём
-                      пути и по итогу поздравим Вас с замечательным
-                      приобретением!
+                      Я максимально комфортно и безопасно. Мы будем сопровождать вас на всех этапах и по итогу поздравим Вас с завершением работ.
                     </dd>
                   </dl>
                   <dl className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 sm:mb-5">

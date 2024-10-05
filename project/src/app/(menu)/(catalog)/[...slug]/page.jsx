@@ -54,7 +54,7 @@ export default async function PageComponent({ params }) {
   return (
     <motion.main
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }} // Исправил анимацию для плавности
+      animate={{ opacity: 1 }}
       className="flex-1 py-3 h-full overflow-y-auto lg:pl-4"
     >
       {isCatalog && <Rubric dataCatalog={data.catalog} />}

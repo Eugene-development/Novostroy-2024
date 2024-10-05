@@ -12,7 +12,7 @@ export default () => {
         data-modal-target="infoModal"
         data-modal-toggle="infoModal"
         type="button"
-        className="hidden md:inline-flex items-center justify-center rounded-lg p-2 text-sm font-medium leading-none text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        className="my-4 inline-flex items-center justify-center rounded-lg p-2 text-sm text-center font-medium leading-none text-gray-500 hover:bg-gray-100 hover:text-gray-900"
       >
         <span className="sr-only"> Info </span>
         <svg
