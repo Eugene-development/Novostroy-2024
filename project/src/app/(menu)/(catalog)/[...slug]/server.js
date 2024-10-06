@@ -26,25 +26,28 @@ const FULLCATALOG = gql`
 `;
 
 const CATALOG = gql`
-  query catalog($slug: String!, $key: UUID!) {
-    catalog(slug: $slug, key: $key) {
-      value
-      slug
-      rubric {
+    query catalog($slug: String!, $key: UUID!) {
+      catalog(slug: $slug, key: $key) {
         value
         slug
-        category {
-          is_active
+        rubric {
           value
           slug
-          product_count
+          category {
+            is_active
+            value
+            slug
+            product_count
+          }
+        }
+        text {
+          value
+        }
+        image {
+          hash
         }
       }
-      text {
-        value
-      }
     }
-  }
 `;
 
 const CATEGORY = gql`

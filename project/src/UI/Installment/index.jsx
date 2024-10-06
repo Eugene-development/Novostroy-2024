@@ -15,7 +15,7 @@ export default function index() {
           </p>
         </div>
       </div>
-      <div className="overflow-hidden bg-white py-24 sm:py-24">
+      <div className="overflow-hidden bg-white pt-24 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
             <div className="lg:pr-4 lg:pt-2">
@@ -65,7 +65,7 @@ export default function index() {
             <img
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/installment.png"
               alt="рассрочка"
-              className="w-[48rem] max-w-none -mt-32 sm:w-[36rem] md:-ml-4 lg:ml-0"
+              className="w-[18rem] max-w-xl -mt-12 sm:w-[36rem] md:-ml-4 lg:ml-0"
               width={2432}
               height={1442}
             />

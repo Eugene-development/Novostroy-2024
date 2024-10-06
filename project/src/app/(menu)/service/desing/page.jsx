@@ -13,36 +13,38 @@ const data = {
   name: "Дизайн-проект",
   features: [
     {
-      name: "Выезд на адрес",
+      name: "Продумаем эргономику",
       description:
-        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+        "Детально проработаем эргономику пространства, чтобы каждый элемент был удобен и функционален в использовании.",
       icon: CloudArrowUpIcon,
     },
     {
-      name: "По телефону",
+      name: "Подберём материалы",
       description:
-        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+        "Мы тщательно подберём качественные материалы, учитывая стиль интерьера, бюджет и долговечность каждого элемента.",
       icon: LockClosedIcon,
     },
     {
-      name: "Через мессенджер",
+      name: "Выберем цвета",
       description:
-        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+        "Поможем вам выбрать цветовую гамму, которая создаст нужное настроение и будет гармонировать с интерьером.",
       icon: ArrowPathIcon,
     },
     {
-      name: "В салоне",
+      name: "Составим дизайн",
       description:
-        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+        "Разработаем уникальный дизайн-проект, учитывая ваши пожелания, стиль, функции и современные тренды в интерьере.",
       icon: FingerPrintIcon,
     },
   ],
 };
 
+const description = "Создаем индивидуальный дизайн-проект, продумывая эргономику, подбор материалов и цветовой палитры, чтобы сделать ваш интерьер функциональным и стильным."
+  
 export default () => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <Service data={data} />;
+      <Service data={data} description={ description }/>;
       <CallToActionPrice />
     </motion.main>
   );

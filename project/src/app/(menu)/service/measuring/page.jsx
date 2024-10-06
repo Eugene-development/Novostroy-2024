@@ -13,36 +13,38 @@ const data = {
   name: "Замер помещения",
   features: [
     {
-      name: "Выезд на адрес",
+      name: "Обмер габаритов",
       description:
-        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+        "Тщательно измерим все габариты помещения, чтобы учесть точные размеры для дальнейшей разработки проекта.",
       icon: CloudArrowUpIcon,
     },
     {
-      name: "По телефону",
+      name: "Обозначим вывод розеток",
       description:
-        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+        "Определим оптимальные места для установки розеток, учитывая удобство использования и расположение техники.",
       icon: LockClosedIcon,
     },
     {
-      name: "Через мессенджер",
+      name: "Просчитаем углы",
       description:
-        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+        "Проведём точные замеры всех углов, чтобы учесть геометрию помещения и избежать возможных ошибок в проекте.",
       icon: ArrowPathIcon,
     },
     {
-      name: "В салоне",
+      name: "Определим влажную точку",
       description:
-        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+        "Укажем расположение влажных зон, таких как санузел или кухня, чтобы грамотно спланировать коммуникации.",
       icon: FingerPrintIcon,
     },
   ],
 };
 
+const description = "Тщательно проводим замеры помещения, включая габариты, углы, розетки и влажные зоны, чтобы обеспечить точность и удобство дальнейшего проекта."
+  
 export default () => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <Service data={data} />;
+      <Service data={data} description={ description }/>;
       <CallToActionMeasuring />
     </motion.main>
   );

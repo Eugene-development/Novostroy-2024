@@ -15,34 +15,36 @@ const data = {
     {
       name: "Выезд на адрес",
       description:
-        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+        "Наш специалист приедет на ваш адрес, чтобы провести консультацию прямо на месте и ответить на все вопросы.",
       icon: CloudArrowUpIcon,
     },
     {
       name: "По телефону",
       description:
-        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+        "Позвоните нам для быстрой консультации. Обсудим ваши вопросы, предоставим полезные рекомендации и идеи.",
       icon: LockClosedIcon,
     },
     {
       name: "Через мессенджер",
       description:
-        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+        "Свяжитесь через мессенджер для получения консультации. Оперативно подскажем варианты решений.",
       icon: ArrowPathIcon,
     },
     {
       name: "В салоне",
       description:
-        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+        "Приезжайте в наш салон для консультации с дизайнером. Мы обсудим детали и покажем возможные материалы.",
       icon: FingerPrintIcon,
     },
   ],
 };
 
+const description = "Обеспечиваем квалифицированную дизайнерскую помощь, будь то выезд на ваш объект, консультация по телефону, в мессенджере или в нашем салоне."
+
 export default () => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <Service data={data} />;
+      <Service data={data} description={ description } />;
       <CallToActionConsultation />
     </motion.main>
   );

@@ -9,7 +9,7 @@ import { BreadCrumbs, OrderInfo, Filter, Button } from "@/UI";
 export default ({ dataCatalog }) => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <section className="bg-gray-50 py-2 antialiased dark:bg-gray-900 md:py-4 rounded-xl">
+      <section className="bg-gray-50/50 py-2 antialiased md:py-4 rounded-xl">
         <div className="mx-auto max-w-screen-xl">
         
         <Button value={"Категории каталога"} />
@@ -40,7 +40,7 @@ export default ({ dataCatalog }) => {
               <div
                 className="mt-6 text-lg leading-8 text-gray-600 space-y-4"
                 dangerouslySetInnerHTML={{
-                  __html: dataCatalog?.text?.value || "",
+                  __html: dataCatalog?.text?.value || "xxx",
                 }}
               ></div>
             </div>
