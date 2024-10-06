@@ -37,11 +37,8 @@ export default function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="Услуги">
           <div className=" flex flex-col mx-auto space-y-4 text-sm">
             <HoveredLink href="/service/consultation">Консультация</HoveredLink>
-            <HoveredLink href="/service/measuring">
-              {" "}
-              Замер помещения
-            </HoveredLink>
-            <HoveredLink href="/service/desing">Проект мебели</HoveredLink>
+            <HoveredLink href="/service/measuring">{" "}Замер помещения</HoveredLink>
+            <HoveredLink href="/service/design">Проект мебели</HoveredLink>
           </div>
         </MenuItem>
         <MenuItemCatalog setActive={setActive} active={active} item="Каталог">
