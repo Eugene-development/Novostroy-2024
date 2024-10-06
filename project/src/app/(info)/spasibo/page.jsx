@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Страница благодарности",
+  description: "Это страница благодарности за отправленную форму",
+  content: "noindex",
+};
+
 export default () => {
   return (
     <div className="bg-white">

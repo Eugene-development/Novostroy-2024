@@ -4,8 +4,9 @@ import * as motion from "framer-motion/client";
 import { Favorites } from "@/UI";
 
 export const metadata = {
-  title: "Избранное",
-  description: "Избранные товары",
+  title: "Новострой | Избранное",
+  description:
+    "На странице отображены позиции, которые вы добавили в раздел Избранное.",
 };
 
 export default () => {
