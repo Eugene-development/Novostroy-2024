@@ -31,20 +31,24 @@ const CATALOG = gql`
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const slug = searchParams.get("slug");
-  const path = req.nextUrl.searchParams.get("slug");
+
+  if (!slug || !NEXT_PUBLIC_KEY || !NEXT_PUBLIC_GRAPHQL) {
+    return new Response("Missing required parameters", { status: 400 });
+  }
+
   const variables = {
     key: NEXT_PUBLIC_KEY,
     slug,
   };
 
   try {
-    if (path) {
-      revalidatePath(path);
-      const data = await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables); // Вызов 'request' из 'graphql-request'
-      return new Response(JSON.stringify(data));
-    }
+    // Очищаем кэш для данного пути
+    revalidatePath(slug);
+    // Выполняем запрос к GraphQL API
+    const data = await request(NEXT_PUBLIC_GRAPHQL, CATALOG, variables);
+    return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
     console.error("Error fetching catalog:", error);
-    return new Response("Error fetching catalog", { status: 500 });
+    return new Response(`Error fetching catalog: ${error.message}`, { status: 500 });
   }
 }
