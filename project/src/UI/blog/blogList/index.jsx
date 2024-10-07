@@ -1,18 +1,18 @@
 const posts = [
   {
     id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
+    title: "Современные цвета мебельных фасадов",
+    href: "/blog/post",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+      "Цвет мебельных фасадов играет ключевую роль в создании атмосферы и стиля любого помещения. От него зависит, как будет восприниматься кухня, гостиная или ванная комната — уютной, стильной или строгой. В последние годы наблюдается...",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
+      "https://zovofficial.com/image/catalog/products/fasadnye-materialy/mdf-2023-2024/fasady-frezerovannye/t649.jpg",
+    date: "16 Марта 2024",
+    datetime: "2024-03-16",
+    category: { title: "Тема - Дизайн", href: "#" },
     author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
+      name: "Евгений Че",
+      role: "Дизайнер",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",

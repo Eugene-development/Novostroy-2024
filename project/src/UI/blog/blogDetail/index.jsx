@@ -4,20 +4,90 @@ import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "./components";
+import { ButtonBack } from "@/UI";
+
+const dummyContent = [
+  {
+    badge: "24 марта 2024",
+    author: "Евгений Че",
+
+    image:
+      "https://zovofficial.com/image/catalog/products/fasadnye-materialy/mdf-2023-2024/fasady-frezerovannye/t649.jpg",
+    description: (
+      <>
+      <h1>Современные цвета мебельных фасадов</h1>
+      
+      <p>Цвет мебельных фасадов играет ключевую роль в создании атмосферы и стиля любого помещения. От него зависит, как будет восприниматься кухня, гостиная или ванная комната — уютной, стильной или строгой. В последние годы наблюдается интересное смещение цветовых трендов в сторону как натуральных, так и насыщенных оттенков. В этой статье мы расскажем о самых актуальных цветах для мебельных фасадов в 2024 году и о том, как их правильно выбрать для вашего интерьера.</p>
+      
+      <h2>Тренд на натуральные и теплые оттенки</h2>
+      
+      <p>Одним из главных трендов является использование природных, спокойных цветов. Такие оттенки создают уют и ощущение гармонии, подчеркивая близость к природе. Вот наиболее популярные оттенки, которые активно применяются в современных интерьерах:</p>
+      
+      <ul>
+        <li><strong>Бежевые и песочные тона</strong>. Эти цвета отлично подходят для небольших помещений, так как визуально расширяют пространство и придают ему мягкость.</li>
+        <li><strong>Зелёные оттенки</strong>, такие как шалфей, оливковый и мох. Зелёный цвет ассоциируется с природой и помогает создать спокойную атмосферу.</li>
+        <li><strong>Древесные текстуры</strong>. Использование натурального дерева или имитации древесных фактур остаётся на пике популярности. Фасады под дуб, орех или сосну добавляют теплоту и натуральность любому интерьеру.</li>
+      </ul>
+      
+      <p>Эти цвета и текстуры идеально подходят для тех, кто ценит минимализм и стремится к созданию уютного пространства без излишней броскости.</p>
+      
+      <h2>Акцентные цвета для смелых решений</h2>
+      
+      <p>Смелые цвета фасадов часто используются для создания ярких акцентов в интерьере. Если вы хотите, чтобы мебель стала ключевым элементом декора, обратите внимание на следующие оттенки:</p>
+      
+      <ul>
+        <li><strong>Глубокий синий</strong>. Этот цвет часто выбирают для кухонь и гостиных, так как он одновременно строгий и элегантный, но при этом добавляет интерьеру глубину.</li>
+        <li><strong>Горчичный и терракотовый</strong>. Тёплые, насыщенные оттенки создают яркие акценты, привлекая внимание и делая пространство более динамичным.</li>
+        <li><strong>Ярко-жёлтый или коралловый</strong>. Такие цвета могут стать отличным решением для смелых интерьеров, где хочется добавить радостные и энергичные ноты.</li>
+      </ul>
+      
+      <p>Акцентные фасады особенно хорошо работают в сочетании с нейтральными стенами и полом, создавая сбалансированное, но при этом стильное пространство.</p>
+      
+      <h2>Монохромные решения и тёмные оттенки</h2>
+      
+      <p>Монохромные и тёмные фасады остаются востребованными среди тех, кто предпочитает строгие и лаконичные интерьеры. Особенно популярны:</p>
+      
+      <ul>
+        <li><strong>Чёрные матовые фасады</strong>. Они придают интерьеру современность и лаконичность. Особенно актуальны в кухнях в стиле минимализм или хай-тек.</li>
+        <li><strong>Серые оттенки</strong>. Серый цвет универсален и отлично сочетается с большинством других оттенков, таких как белый, чёрный или древесные текстуры. Это делает его идеальным выбором для тех, кто ищет баланс между строгим стилем и уютом.</li>
+        <li><strong>Графитовые и антрацитовые оттенки</strong>. Темные цвета, близкие к чёрному, популярны для создания ультрасовременных и стильных интерьеров.</li>
+      </ul>
+      
+      <p>Такие фасады придают интерьеру строгость и элегантность. Однако важно помнить, что тёмные цвета лучше использовать в просторных или хорошо освещённых помещениях, чтобы избежать ощущения тесноты.</p>
+      
+      <h2>Как выбрать цвет фасадов: советы экспертов</h2>
+      
+      <p>Выбирая цвет мебельных фасадов, важно учитывать несколько факторов:</p>
+      
+      <ul>
+        <li><strong>Размер и освещение помещения</strong>. В маленьких и слабо освещённых комнатах лучше избегать тёмных оттенков, чтобы не создавать ощущение замкнутости. Светлые и нейтральные цвета визуально расширяют пространство.</li>
+        <li><strong>Сочетание с другими элементами интерьера</strong>. Цвет фасадов должен гармонично вписываться в общую цветовую гамму комнаты. Если стены и пол выполнены в нейтральных оттенках, фасады могут стать ярким акцентом. В случае насыщенных стен, наоборот, лучше выбирать более сдержанные цвета для фасадов.</li>
+        <li><strong>Личные предпочтения</strong>. Важно учитывать свои собственные вкусы и предпочтения. Мебель должна радовать вас ежедневно, поэтому выбирайте те цвета, которые будут комфортны и приятны вам.</li>
+      </ul>
+      
+      <p>Современные цветовые решения для мебельных фасадов предлагают широкие возможности для самовыражения. Главное — найти баланс между стилем, функциональностью и эстетикой, чтобы ваш интерьер стал отражением вашего вкуса и образа жизни.</p>
+      
+      <h2>Заключение</h2>
+      
+      <p>Цвет мебельных фасадов может кардинально изменить восприятие интерьера. Будь то натуральные, нейтральные или смелые акцентные оттенки — выбор за вами. Важно помнить, что фасады должны не только быть красивыми, но и соответствовать общему стилю вашего дома, создавая гармоничное и уютное пространство.</p>
+      </>
+    ),
+    
+  },
+];
 
 export default function TracingBeamDemo() {
   return (
-    <TracingBeam className="px-6">
+    <TracingBeam className="px-6 my-12">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <span className="bg-black text-white rounded-full text-sm w-fit px-4 py-2 mb-4">
               {item.badge}
-            </h2>
+            </span>
+            <p className="my-4">Автор поста: { item.author }</p>
 
-            <p className="text-xl mb-4">{item.title}</p>
-
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-lg prose prose-lg">
               {item?.image && (
                 <Image
                   src={item.image}
@@ -32,84 +102,8 @@ export default function TracingBeamDemo() {
           </div>
         ))}
       </div>
+      <ButtonBack />
     </TracingBeam>
   );
 }
 
-const dummyContent = [
-  {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
-        </p>
-        <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
-        </p>
-      </>
-    ),
-    badge: "React",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
-        </p>
-      </>
-    ),
-    badge: "Changelog",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-      </>
-    ),
-    badge: "Launch Week",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
