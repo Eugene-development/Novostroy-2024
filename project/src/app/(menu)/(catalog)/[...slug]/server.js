@@ -4,50 +4,49 @@ import { gql, request } from "graphql-request";
 const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } = process.env;
 
 const FULLCATALOG = gql`
-    query FullCatalog {
-      fullcatalog {
+  query FullCatalog {
+    fullcatalog {
+      value
+      rubric {
         value
-        rubric {
-          value
-          slug
-          parentable {
-            ... on Catalog {
-              
-              slug
-            }
-          }
-          category {
-            value
+        slug
+        parentable {
+          ... on Catalog {
             slug
           }
         }
+        category {
+          value
+          slug
+        }
       }
     }
+  }
 `;
 
 const CATALOG = gql`
-    query catalog($slug: String!, $key: UUID!) {
-      catalog(slug: $slug, key: $key) {
+  query catalog($slug: String!, $key: UUID!) {
+    catalog(slug: $slug, key: $key) {
+      value
+      slug
+      rubric {
         value
         slug
-        rubric {
+        category {
+          is_active
           value
           slug
-          category {
-            is_active
-            value
-            slug
-            product_count
-          }
-        }
-        text {
-          value
-        }
-        image {
-          hash
+          product_count
         }
       }
+      text {
+        value
+      }
+      image {
+        hash
+      }
     }
+  }
 `;
 
 const CATEGORY = gql`
@@ -144,7 +143,6 @@ const PRODUCT = gql`
     }
   }
 `;
-
 
 // --- //
 export async function getFullCatalog() {

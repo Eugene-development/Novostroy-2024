@@ -36,18 +36,16 @@ export default ({ dataProduct }) => {
       <Tags tags={dataProduct?.tag} />
 
       <div className="mt-20 sm:gap-4 sm:items-center sm:flex justify-between">
-      
-      <ButtonBack />
-      
-      <div className="mt-4 sm:mt-0">
-      <Link
-        href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
-        className="bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-medium px-3 py-0.5 rounded "
-      >
-        Категория - {dataProduct?.parentable.value}
-      </Link>
-      </div>
-        
+        <ButtonBack />
+
+        <div className="mt-4 sm:mt-0">
+          <Link
+            href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
+            className="bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-medium px-3 py-0.5 rounded "
+          >
+            Категория - {dataProduct?.parentable.value}
+          </Link>
+        </div>
       </div>
     </div>
   );

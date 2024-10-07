@@ -20,7 +20,7 @@ export default function NotFound() {
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
               alt="404 Not Found"
             /> */}
-        
+
           <h1 className="mb-4 text-2xl font-extrabold text-sky-600 dark:text-primary-500">
             404 Not Found
           </h1>
@@ -28,7 +28,7 @@ export default function NotFound() {
             Упс! Ошибочка вышла!
           </p>
           <p className="mb-4 text-sm sm:text-xl text-gray-500 dark:text-gray-400">
-            Этой страницы не существует. <br/> Вернитесь в нужный раздел сайта.
+            Этой страницы не существует. <br /> Вернитесь в нужный раздел сайта.
           </p>
           <ul className="flex justify-center items-center space-x-4 text-gray-500 dark:text-gray-400">
             <li>
@@ -55,7 +55,7 @@ export default function NotFound() {
                 Блог
               </Link>
             </li>
-            
+
             <li>
               <Link
                 href="/action"
@@ -64,8 +64,7 @@ export default function NotFound() {
                 Акции
               </Link>
             </li>
-            
-          </ul> 
+          </ul>
         </div>
       </div>
     </section>

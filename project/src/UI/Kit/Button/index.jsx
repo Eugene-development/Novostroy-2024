@@ -5,13 +5,13 @@ import { useMobileMenuStore } from "@/stores/MobileMenu";
 export default ({ value }) => {
   const { openVisibleMobileCatalog } =
     useMobileMenuStore.visibleMobileCatalog();
-  
+
   const { closeVisibleMobileMenu } = useMobileMenuStore.visibleMobileMenu();
 
   const handleClick = () => {
     closeVisibleMobileMenu();
     openVisibleMobileCatalog();
-  }
+  };
   return (
     <Button
       onClick={openVisibleMobileCatalog}

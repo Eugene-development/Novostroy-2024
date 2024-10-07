@@ -8,7 +8,6 @@ export const metadata = {
   description: "Акции и специальные предложения нашей компании",
 };
 
-
 export default () => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>

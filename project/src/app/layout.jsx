@@ -15,7 +15,6 @@ import {
   PriceForm,
   OrderInfoModal,
   MobileMenu,
-  
 } from "@/UI";
 
 export default function RootLayout({ children }) {

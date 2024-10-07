@@ -1,7 +1,9 @@
-import { notFound } from 'next/navigation';
+import { revalidatePath } from "next/cache";
+import { notFound } from "next/navigation";
 import { Rubric, Category, ProductDetail } from "@/UI";
-import { getCatalog, getCategory, getProduct } from "./server";
 import * as motion from "framer-motion/client";
+export const revalidate = 10;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL; // Базовый URL для запросов
 
 // Общая функция для работы с данными
 async function fetchData(slug) {
@@ -9,26 +11,34 @@ async function fetchData(slug) {
 
   switch (slug.length) {
     case 1:
-      data = await getCatalog(slug[0]);
-      if (!data.catalog) notFound();
-      metaTitle = data.catalog.metaTitle?.value;
-      metaDescription = data.catalog.metaDescription?.value;
+      // Вызов API-роута для каталога
+      const catalogRes = await fetch(`${BASE_URL}/api/catalog?slug=${slug[0]}`);
+      if (!catalogRes.ok) notFound();
+      data = await catalogRes.json();
+      metaTitle = data.catalog?.metaTitle?.value;
+      metaDescription = data.catalog?.metaDescription?.value;
       isCatalog = true;
       break;
 
     case 2:
-      data = await getProduct(slug[1]);
-      if (!data.product) notFound();
-      metaTitle = data.product.metaTitle?.value;
-      metaDescription = data.product.metaDescription?.value;
+      // Вызов API-роута для продукта
+      const productRes = await fetch(`${BASE_URL}/api/product?slug=${slug[1]}`);
+      if (!productRes.ok) notFound();
+      data = await productRes.json();
+      metaTitle = data.product?.metaTitle?.value;
+      metaDescription = data.product?.metaDescription?.value;
       isProduct = true;
       break;
 
     case 3:
-      data = await getCategory(slug[2]);
-      if (!data.category) notFound();
-      metaTitle = data.category.metaTitle?.value;
-      metaDescription = data.category.metaDescription?.value;
+      // Вызов API-роута для категории
+      const categoryRes = await fetch(
+        `${BASE_URL}/api/category?slug=${slug[2]}`,
+      );
+      if (!categoryRes.ok) notFound();
+      data = await categoryRes.json();
+      metaTitle = data.category?.metaTitle?.value;
+      metaDescription = data.category?.metaDescription?.value;
       isCategory = true;
       break;
 
@@ -49,7 +59,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PageComponent({ params }) {
-  const { data, isCatalog, isCategory, isProduct } = await fetchData(params.slug);
+  const { data, isCatalog, isCategory, isProduct } = await fetchData(
+    params.slug,
+  );
 
   return (
     <motion.main

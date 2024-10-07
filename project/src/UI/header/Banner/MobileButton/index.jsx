@@ -3,15 +3,15 @@ import { useMobileMenuStore } from "@/stores/MobileMenu";
 
 export default () => {
   const { openVisibleMobileMenu } = useMobileMenuStore.visibleMobileMenu();
-  
+
   const { closeVisibleMobileCatalog } =
     useMobileMenuStore.visibleMobileCatalog();
-  
+
   const handleClick = () => {
     closeVisibleMobileCatalog();
     openVisibleMobileMenu();
-  }
-  
+  };
+
   return (
     <button
       type="button"

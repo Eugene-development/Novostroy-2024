@@ -19,7 +19,10 @@ export default ({ images }) => {
           className="rounded-lg"
         >
           {images.map((item) => (
-            <SwiperSlide key={item.hash} className=" w-full aspect-w-16 aspect-h-12">
+            <SwiperSlide
+              key={item.hash}
+              className=" w-full aspect-w-16 aspect-h-12"
+            >
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
                 className="h-full w-full  object-cover object-center rounded-lg"

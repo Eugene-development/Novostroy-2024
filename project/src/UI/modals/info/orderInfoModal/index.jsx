@@ -67,7 +67,6 @@ export default () => {
                   </button>
                 </div>
               </div>
-
               {/* Сетка изображений */}
               <div className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-4 sm:mb-5">
                 {["side", "front", "back", "back"].map((view, idx) => (
@@ -83,7 +82,6 @@ export default () => {
                   </div>
                 ))}
               </div>
-
               {/* Текстовое описание */}
               <dl className="sm:mb-10">
                 <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
@@ -94,7 +92,6 @@ export default () => {
                   комфортно и безопасно.
                 </dd>
               </dl>
-
               {/* Этапы процесса */}
               <dl className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 sm:mb-5">
                 {[
@@ -121,7 +118,6 @@ export default () => {
                   </div>
                 ))}
               </dl>
-
               {/* Кнопки действий */}
               <div className="flex flex-col sm:flex-row justify-between pt-4 space-y-3 sm:space-y-0 sm:space-x-4">
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 items-center w-full">
@@ -147,7 +143,8 @@ export default () => {
                 >
                   Закрыть
                 </button>
-              </div>            </div>
+              </div>{" "}
+            </div>
           </div>
         </DialogPanel>
       </div>
