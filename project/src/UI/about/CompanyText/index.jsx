@@ -9,47 +9,37 @@ export default () => {
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Информация о нас
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Мы открыты для рассмотрения деловых предложений о взаимовыгодном
-            сотрудничестве с мебельными компаниями
-          </p>
+          
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+      <div className="mx-auto max-w-7xl px-6 lg:px-16">
+        <div className="mx-auto  lg:mx-0 max-w-6xl">
           {/* <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1> */}
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
+          <div className="mt-10   text-lg leading-8 text-gray-600 ">
             <div>
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+                Наша компания предоставляет профессиональные дизайнерские услуги в сфере мебельной индустрии более 20 лет. За эти годы мы накопили богатый опыт, позволяющий нам создавать уникальные интерьеры, которые удовлетворяют самые разнообразные запросы клиентов.
               </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas.
+              <p className="mt-2">
+                Мы предлагаем дизайнерские решения для любых бюджетов, сохраняя высокое качество и индивидуальный подход. Независимо от размера проекта, наша команда подберет оптимальное решение, отвечающее вашим потребностям и пожеланиям, будь то уютный дом, современный офис или стильное коммерческое пространство.
               </p>
-            </div>
-            <div>
-              <p>
-                Erat pellentesque dictumst ligula porttitor risus eget et eget.
-                Ultricies tellus felis id dignissim eget. Est augue maecenas
-                risus nulla ultrices congue nunc tortor.
+              <p className="mt-2">
+              Наша экспертиза охватывает различные стили — от классики до минимализма, от скандинавского стиля до ар-деко. Мы внимательно следим за мировыми трендами и предлагаем как актуальные, так и вневременные решения, подчеркивающие индивидуальность каждого пространства.
+
               </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+              <p className="mt-2">
+               Мы гордимся сотрудничеством с ведущими производителями мебели, чья продукция соответствует самым строгим стандартам качества. Благодаря этому мы можем гарантировать, что все предметы интерьера, которые мы предлагаем нашим клиентам, долговечны, эстетически привлекательны и функциональны.
               </p>
+              <p className="mt-2">
+                Наша миссия — создать для каждого клиента комфортное и стильное пространство, которое будет радовать многие годы. Мы внимательно слушаем ваши пожелания и воплощаем их в жизнь, предлагая оригинальные решения, которые не только украшают, но и делают жизнь удобнее.
+              </p>
+            
+              <p className="mt-2">
+                Обратившись к нам, вы можете быть уверены в профессионализме и ответственности на каждом этапе работы — от идеи до ее реализации. Мы ценим доверие наших клиентов и всегда стремимся превзойти их ожидания.
+              </p>
+              
             </div>
           </div>
           {/* <div className="mt-10 flex">
