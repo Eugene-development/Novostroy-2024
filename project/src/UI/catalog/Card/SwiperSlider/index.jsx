@@ -22,18 +22,10 @@ export default ({ images }) => {
           className="rounded-lg"
         >
           {images.map((item) => (
-            <SwiperSlide key={item.hash}>
-              {/* <div className='flex h-full w-full items-center justify-center'>
-                                  <Image
-                                      src={image.src}
-                                      alt={image.alt}
-                                      className='block h-full w-full object-cover'
-                                  />
-                              </div> */}
-
+            <SwiperSlide key={item.hash} className=" w-full aspect-w-16 aspect-h-12">
               <Image
-                src={`${process.env.NEXT_PUBLIC_S3}/${item.hash}`}
-                className="items-center justify-center object-contain"
+                src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
+                className="h-full w-full  object-cover object-center rounded-lg"
                 alt="image"
                 width={640}
                 height={320}

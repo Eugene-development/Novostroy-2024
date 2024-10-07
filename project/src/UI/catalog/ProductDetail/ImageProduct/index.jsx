@@ -18,7 +18,7 @@ export default ({ dataProduct }) => {
                 >
                   <span className="absolute inset-0 overflow-hidden rounded-md ">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
+                      src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
                       className="h-full w-full object-cover object-center"
                       alt="image"
                       width={640}
@@ -38,7 +38,7 @@ export default ({ dataProduct }) => {
             {dataProduct.image.map(({ hash }) => (
               <TabPanel key={hash}>
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_S3}/${hash}`}
+                  src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
                   className="h-full w-full  object-cover object-center rounded-lg "
                   alt="image"
                   width={640}
