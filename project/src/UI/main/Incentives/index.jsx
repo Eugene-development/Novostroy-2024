@@ -1,50 +1,37 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+
 const incentives = [
   {
-    name: "Free shipping",
+    name: "Выбор материалов",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
     description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      "Мы сможем предложить практически любой материал, используемый в производстве.",
   },
   {
-    name: "10-year warranty",
+    name: "Выбор цвета",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "Мы поможем определиться с цветовой гаммой подбираемых материалов.",
   },
   {
-    name: "Exchanges",
+    name: "Выбор изготовителя",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "Мы знаем ответ на самый важный вопрос кому доверить изготовление заказа.",
   },
 ];
 
-export default function Example() {
+export default () => {
   return (
-    <div className="bg-gray-50">
+    <div className="rounded-t-3xl  bg-gray-50">
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                We built our business on great customer service
+                Наша компания это ваш помощник в вопросе выбора
               </h2>
               <p className="mt-4 text-gray-500">
                 At the beginning at least, but then we realized we could make a
@@ -54,10 +41,10 @@ export default function Example() {
                 don't actually read it.
               </p>
             </div>
-            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+            <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg"
-                alt=""
+                src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
+                alt="логотип"
                 className="object-cover object-center"
               />
             </div>

@@ -9,8 +9,8 @@ export default () => {
     <>
       <div className="bg-white px-4 py-12 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl sm:text-center">
-          <h2 className="text-3xl md:text-7xl font-bold text-gray-900">
-            Выполненные проекты
+          <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
+            Проекты
           </h2>
           <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
             Ознакомьтесь с выполненными проектами за последнее время.

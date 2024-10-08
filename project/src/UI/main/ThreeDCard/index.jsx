@@ -12,24 +12,28 @@ const data = [
     description:
       "Качественная и стильная мебель от ведущих производств России и Беларуси.",
     href: "/mebel",
+    image: "https://zovofficial.com/image/cache/catalog/products/kuhni/2022/veskona-22/1-1087x890.jpg"
   },
   {
     name: "Техника",
     description:
       "Бытовая техника от передовых брендов Европейских и азиатских стран.",
     href: "/tehnika",
+    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
   },
   {
     name: "Столешницы",
     description:
       "Столешницы и фартуки из акрила, кварца и массива под любой стиль и бюджет.",
     href: "/stoleshnica",
+    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg"
   },
   {
     name: "Сантехника",
     description:
       "Стальные и композитные мойки и смесители, а также комплектующие к ним.",
     href: "/santehnika",
+    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
   },
 ];
 
@@ -49,10 +53,10 @@ export default function ThreeDCardDemo() {
           </div>
         </div>
         <div className="mt-8 px-6 sm:text-center">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900">
+          <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
             Мебель для вашего дома
           </h2>
-          <p className="mx-auto mt-6 text-sm sm:text-lg leading-6 font-bold text-neutral-500">
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
             Мы предлагаем мебель, созданную нашими дизайнерами и изготовленную
             лучшими мебельными фабриками для вашего комфорта.
           </p>
@@ -78,7 +82,7 @@ export default function ThreeDCardDemo() {
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-8 ">
                 <Image
-                  src="https://storage.yandexcloud.net/mine2024/zov/4DCcVnbk5suIuE8pD7yLzC6CUReEjgNJZkD2c32S.png"
+                  src={item.image}
                   height="1000"
                   width="1000"
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "

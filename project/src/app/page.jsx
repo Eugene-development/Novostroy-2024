@@ -1,5 +1,5 @@
 // import { Slider, BGG, ThreeDCard, Parallax, Stage } from "../UI";
-import { Slider, BGG, ThreeDCard, Parallax, Stage } from "@/UI";
+import { Slider, BGG, ThreeDCard, Parallax, Stage, Compare, Incentives } from "@/UI";
 
 export const metadata = {
   title: "Новострой | Купите мебель с нашим дизайном",
@@ -11,8 +11,11 @@ export default function Home() {
   return (
     <>
       <Slider />
+      <Incentives />
       <ThreeDCard />
-      <Parallax />
+      
+      <Compare />
+      {/* <Parallax /> */}
       <Stage />
       <BGG />
     </>

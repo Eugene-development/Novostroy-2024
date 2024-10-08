@@ -50,7 +50,7 @@ export default function Navbar({ className }) {
               setActive={setActive}
               title="Мебель"
               href="/mebel"
-              src="https://storage.yandexcloud.net/mine2024/novostroy/site/mebel.jpg"
+              src="https://zovofficial.com/image/cache/catalog/products/kuhni/2022/veskona-22/1-1087x890.jpg"
               description="Качественная и стильная мебель под любой запрос и бюджет"
             />
             <ProductItem

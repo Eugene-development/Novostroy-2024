@@ -21,6 +21,7 @@ export { default as BGG } from "./main/BGG";
 export { default as Brand } from "./main/Brand";
 export { default as Incentives } from "./main/Incentives";
 export { default as Stage } from "./main/Stage";
+export { default as Compare } from "./main/Compare";
 
 // About
 export { default as Sparkles } from "./about/Sparkles";
