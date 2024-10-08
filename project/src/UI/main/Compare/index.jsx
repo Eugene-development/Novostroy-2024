@@ -5,9 +5,9 @@ export default function CompareDemo() {
   return (
     <div
       className="p-8 border rounded-t-3xl  bg-gray-100  border-neutral-200 ">
-    <div className="my-16 px-6 sm:text-center">
-      <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900">
-        Индивидуальные проекты
+    <div className="my-16  text-center">
+      <h2 className="text-3xl md:text-6xl font-extrabold text-gray-900">
+        Качественная мебель
       </h2>
       
     </div>
