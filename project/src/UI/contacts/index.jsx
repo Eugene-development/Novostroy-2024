@@ -16,7 +16,7 @@ export default () => {
         </div>
       </div>
       <div className="py-16 px-4 mx-auto  max-w-screen-xl sm:py-20 lg:px-6 ">
-        <form
+        {/* <form
           action="#"
           className="grid grid-cols-1 gap-8 p-6 mx-auto mb-16 max-w-screen-lg bg-white rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700 sm:grid-cols-2"
         >
@@ -93,7 +93,7 @@ export default () => {
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
               // placeholder="Leave a comment..."
             ></textarea>
-            {/* <p className="mt-4 text-sm text-gray-500">
+           <p className="mt-4 text-sm text-gray-500">
               By submitting this form you agree to our{" "}
               <a
                 href="#"
@@ -110,7 +110,7 @@ export default () => {
               </a>{" "}
               which explains how we may collect, use and disclose your personal
               information including to third parties.
-            </p> */}
+            </p> 
           </div>
           <button
             type="submit"
@@ -118,7 +118,7 @@ export default () => {
           >
             Отправить
           </button>
-        </form>
+        </form> */}
         <div className="space-y-8 text-center md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0 divide-x ">
           <div className="py-4">
             <div className="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-50 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
@@ -139,7 +139,7 @@ export default () => {
               Почта для коммерческих предложений и иной информации
             </p>
             <a
-              href="mailto:abc@example.com"
+              href="mailto:info@novostroy.org"
               className="font-semibold text-sky-700  hover:underline"
             >
               info@novostroy.org
