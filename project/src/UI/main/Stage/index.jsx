@@ -71,10 +71,10 @@ export default () => {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:mx-0">
-          <h2 className="text-3xl md:text-7xl font-bold text-gray-50">
+          <h2 className="text-4xl md:text-7xl font-bold text-gray-50">
             Наша работа
           </h2>
-          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-300">
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-300">
             Мы будем вас сопровождать на всех этапах проектирования и
             изготовления мебели. От консультации до дня сборки проекта.
           </p>

@@ -53,12 +53,11 @@ export default function ThreeDCardDemo() {
           </div>
         </div>
         <div className="mt-8 px-6 sm:text-center">
-          <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
             Мебель для вашего дома
           </h2>
-          <p className="mx-auto mt-6 text-sm sm:text-lg leading-8 text-gray-600">
-            Мы предлагаем мебель, созданную нашими дизайнерами и изготовленную
-            лучшими мебельными фабриками для вашего комфорта.
+          <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-700">
+            Мы предлагаем комплексное решение. Подберём под проект подходящую бытовую технику, столешницу и мойку.
           </p>
         </div>
       </div>

@@ -35,14 +35,11 @@ export default function ImagesSliderDemo() {
           ваш дом уютнее
         </p>
         <p className="md:hidden px-2 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Наша команда это профессиональные дизайнеры, работающие в лучших
-          мебельных компаниях страны. <br /> Наши услуги бесплатны.
+          Наша команда это профессиональные дизайнеры мебели, работающие в лучших
+          мебельных компаниях.
         </p>
-        <p className="hidden px-1 md:block max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Наша команда это профессиональные дизайнеры, работающие в лучших
-          мебельных компаниях. Мы предложим Вам различные варианты вашего
-          мебельного проекта с оптимальной ценой и отличным качеством исполнения
-          фабрикой. <br /> Наши услуги бесплатны.
+        <p className="hidden md:block px-1 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+          Наша команда это профессиональные дизайнеры мебели. Мы спроектируем для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и время <br /> Наши услуги бесплатны
         </p>
         <button
           onClick={openVisibleFormDesigner}
