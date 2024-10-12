@@ -27,24 +27,27 @@ export default ({ dataCatalog }) => {
           </p> */}
           </div>
         </div>
-        
+
         <section className="relative isolate overflow-hidden bg-gray50/50 px-6 py-12 sm:py-24 lg:px-8">
-              <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.gray.200),white)] opacity-20" />
-              <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray50/50 shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
-              <div className="mx-auto max-w-2xl lg:max-w-5xl">
-              <p className="ml-0.5 text-base font-semibold leading-7 text-gray-600">Рубрика каталога</p>
-              <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-                {dataCatalog?.value}
-              </h1>
-                <figure className="mt-10">
-                  <blockquote className="text-pretty text-xl font-semibold leading-8 text-gray-700 sm:text-lg sm:leading-9">
-                    <div className="*:mt-4" dangerouslySetInnerHTML={{
-                      __html: dataCatalog?.text?.value || "xxx",
-                    }} />
-                      
-                    
-                  </blockquote>
-                  {/* <figcaption className="mt-10">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.gray.200),white)] opacity-20" />
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray50/50 shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+          <div className="mx-auto max-w-2xl lg:max-w-5xl">
+            <p className="ml-0.5 text-base font-semibold leading-7 text-gray-600">
+              Рубрика каталога
+            </p>
+            <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
+              {dataCatalog?.value}
+            </h1>
+            <figure className="mt-10">
+              <blockquote className="text-pretty text-xl font-semibold leading-8 text-gray-700 sm:text-lg sm:leading-9">
+                <div
+                  className="*:mt-4"
+                  dangerouslySetInnerHTML={{
+                    __html: dataCatalog?.text?.value || "xxx",
+                  }}
+                />
+              </blockquote>
+              {/* <figcaption className="mt-10">
                     <img
                       alt=""
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -58,9 +61,9 @@ export default ({ dataCatalog }) => {
                       <div className="text-gray-600">CEO of Workcation</div>
                     </div>
                   </figcaption> */}
-                </figure>
-              </div>
-            </section>
+            </figure>
+          </div>
+        </section>
       </section>
     </motion.main>
   );
