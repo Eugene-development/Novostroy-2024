@@ -41,8 +41,9 @@ export default function index() {
                 <figure className="mt-16 border-l border-gray-200 pl-8 text-gray-600">
                   <blockquote className="text-base leading-7">
                     <p>
-                      “Подать заявку очень просто. Заполните анкету в салоне и получите предварительное
-                      одобрение от наших банков партнёров. Далее выбор за вами.”
+                      “Подать заявку очень просто. Заполните анкету в салоне и
+                      получите предварительное одобрение от наших банков
+                      партнёров. Далее выбор за вами.”
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 flex gap-x-4 text-sm leading-6">

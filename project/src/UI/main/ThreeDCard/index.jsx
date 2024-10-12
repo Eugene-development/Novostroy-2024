@@ -12,28 +12,30 @@ const data = [
     description:
       "Качественная и стильная мебель от ведущих производств России и Беларуси.",
     href: "/mebel",
-    image: "https://zovofficial.com/image/cache/catalog/products/kuhni/2022/veskona-22/1-1087x890.jpg"
+    image:
+      "https://zovofficial.com/image/cache/catalog/products/kuhni/2022/veskona-22/1-1087x890.jpg",
   },
   {
     name: "Техника",
     description:
       "Бытовая техника от передовых брендов Европейских и азиатских стран.",
     href: "/tehnika",
-    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg"
+    image:
+      "https://storage.yandexcloud.net/mine2024/novostroy/site/duhshkaf.jpg",
   },
   {
     name: "Столешницы",
     description:
       "Столешницы и фартуки из акрила, кварца и массива под любой стиль и бюджет.",
     href: "/stoleshnica",
-    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg"
+    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/slab.jpg",
   },
   {
     name: "Сантехника",
     description:
       "Стальные и композитные мойки и смесители, а также комплектующие к ним.",
     href: "/santehnika",
-    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg"
+    image: "https://storage.yandexcloud.net/mine2024/novostroy/site/moyka.jpg",
   },
 ];
 
@@ -45,10 +47,8 @@ export default function ThreeDCardDemo() {
       <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
         <div className="hidden sm:flex sm:mb-8 sm:justify-center">
           <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 whitespace-nowrap">
-            Вы нам ничего {" "}
-            <span className="font-semibold text-sky-600 ">
-              не платите !!!
-            </span>
+            Вы нам ничего{" "}
+            <span className="font-semibold text-sky-600 ">не платите !!!</span>
           </div>
         </div>
         <div className="mt-8 px-6 sm:text-center">
@@ -56,7 +56,8 @@ export default function ThreeDCardDemo() {
             Мебель и не только
           </h2>
           <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-700">
-            Мы предлагаем комплексное решение. Подберём под проект и ваш бюджет подходящую бытовую технику, столешницу и мойку.
+            Мы предлагаем комплексное решение. Подберём под проект и ваш бюджет
+            подходящую бытовую технику, столешницу и мойку.
           </p>
         </div>
       </div>

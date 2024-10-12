@@ -26,7 +26,7 @@ export default function ImagesSliderDemo() {
           y: 0,
         }}
         transition={{
-          duration: 0.6,
+          duration: 2,
         }}
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
@@ -35,11 +35,13 @@ export default function ImagesSliderDemo() {
           ваш дом уютнее
         </p>
         <p className="md:hidden px-2 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Наша команда это профессиональные дизайнеры мебели, работающие в лучших
-          мебельных компаниях.
+          Наша команда это профессиональные дизайнеры мебели, работающие в
+          лучших мебельных компаниях.
         </p>
         <p className="hidden md:block px-1 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Наша команда это профессиональные дизайнеры мебели. Мы спроектируем для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и время <br /> Наши услуги бесплатны
+          Наша команда это профессиональные дизайнеры мебели. Мы спроектируем
+          для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и время{" "}
+          <br /> Наши услуги бесплатны
         </p>
         <button
           onClick={openVisibleFormDesigner}

@@ -77,11 +77,13 @@ export async function GET(req) {
   };
 
   try {
-      revalidatePath(slug);
-      const data = await request(NEXT_PUBLIC_GRAPHQL, CATEGORY, variables);
-      return new Response(JSON.stringify(data));
+    revalidatePath(slug);
+    const data = await request(NEXT_PUBLIC_GRAPHQL, CATEGORY, variables);
+    return new Response(JSON.stringify(data));
   } catch (error) {
     console.error("Error fetching catalog:", error);
-    return new Response(`Error fetching catalog: ${error.message}`, { status: 500 });
+    return new Response(`Error fetching catalog: ${error.message}`, {
+      status: 500,
+    });
   }
 }

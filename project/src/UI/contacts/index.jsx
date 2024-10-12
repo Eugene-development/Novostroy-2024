@@ -95,16 +95,17 @@ export default () => {
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
               // placeholder="Leave a comment..."
             ></textarea>
-           <p className="mt-4 text-sm text-gray-500">
-            
+            <p className="mt-4 text-sm text-gray-500">
               Отправляя эту форму, вы соглашаетесь с нашими условиями и нашей{" "}
               <Link
                 href="/policy"
                 className="text-sky-600 hover:underline dark:text-sky-500"
               >
                 политикой конфиденциальности
-              </Link>{" "},которая объясняет, как мы оберегаем вашу личную информацию, в том числе от третьих лиц.
-            </p> 
+              </Link>{" "}
+              ,которая объясняет, как мы оберегаем вашу личную информацию, в том
+              числе от третьих лиц.
+            </p>
           </div>
           <button
             type="submit"

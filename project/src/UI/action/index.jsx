@@ -66,8 +66,6 @@ export default () => {
       </div>
       <div className="relative overflow-hidden pt-12">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-       
-
           <img
             alt="Акция"
             src="https://storage.yandexcloud.net/mine2024/novostroy/site/actionfoto.png"
