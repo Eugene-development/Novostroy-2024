@@ -41,9 +41,8 @@ export default function index() {
                 <figure className="mt-16 border-l border-gray-200 pl-8 text-gray-600">
                   <blockquote className="text-base leading-7">
                     <p>
-                      “Подать заявку очень просто. Заполните анкету в салоне,
-                      где работают наши дизайнеры и получите предварительное
-                      одобрение от наших банков партнёров.”
+                      “Подать заявку очень просто. Заполните анкету в салоне и получите предварительное
+                      одобрение от наших банков партнёров. Далее выбор за вами.”
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 flex gap-x-4 text-sm leading-6">
@@ -54,7 +53,7 @@ export default function index() {
                     />
                     <div>
                       <span className="font-semibold text-gray-900">
-                        Елисей
+                        Светлана
                       </span>{" "}
                       – Кредитный брокер
                     </div>
@@ -65,7 +64,7 @@ export default function index() {
             <img
               src="https://storage.yandexcloud.net/mine2024/novostroy/site/installment.png"
               alt="рассрочка"
-              className="w-[18rem] max-w-xl -mt-12 sm:w-[36rem] md:-ml-4 lg:ml-0"
+              className="w-[18rem] max-w-xl -mt-12 sm:w-[24rem] md:-ml-4 lg:ml-0"
               width={2432}
               height={1442}
             />
