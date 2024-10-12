@@ -1,45 +1,45 @@
 import {
-  LifebuoyIcon,
-  NewspaperIcon,
-  PhoneIcon,
+  CheckIcon,
 } from "@heroicons/react/20/solid";
+
+import { FadeIn } from "@/func/FadeIn";
 
 const cards = [
   {
     name: "Консультация",
     description:
       "Наш менеджер даст консультацию по материалам и по возможным решениям в проектировании мебели",
-    icon: PhoneIcon,
+    icon: CheckIcon,
   },
   {
     name: "Замер",
     description:
       "Осуществим проектный замер помещения с обозначением углов, коммуникаций и розеток",
-    icon: LifebuoyIcon,
+    icon: CheckIcon,
   },
   {
     name: "Проект",
     description:
       "Дизайнер составит проект мебели с учётом ваших пожеланий, размеров помещения и своего опыта",
-    icon: NewspaperIcon,
+    icon: CheckIcon,
   },
   {
     name: "Договор",
     description:
       "Заключим договор в удобном для Вас салоне, в котором будут указаны все условия выполнения заказа",
-    icon: PhoneIcon,
+    icon: CheckIcon,
   },
   {
     name: "Изготовление",
     description:
       "Фабрика изготовит заказ на высокотехнологичном оборудовании под полным контролем технологов",
-    icon: LifebuoyIcon,
+    icon: CheckIcon,
   },
   {
     name: "Сборка",
     description:
       "Профессиональные сборщики, состоящие в штате компании, качественно выполнят всю работу",
-    icon: NewspaperIcon,
+    icon: CheckIcon,
   },
 ];
 
@@ -83,20 +83,26 @@ export default () => {
           {cards.map((card) => (
             <div
               key={card.name}
-              className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
-            >
-              <card.icon
-                className="h-7 w-5 flex-none text-sky-400"
-                aria-hidden="true"
-              />
-              <div className="leading-7">
-                <h3 className="text-base font-semibold text-white">
-                  {card.name}
-                </h3>
-                <p className="text-sm mt-2 text-gray-300 text-pretty">
-                  {card.description}
-                </p>
-              </div>
+              
+            >    <FadeIn>
+
+            <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
+            <card.icon
+              className="h-7 w-5 flex-none text-sky-400"
+              aria-hidden="true"
+            />
+            <div className="leading-7">
+              <h3 className="text-base font-semibold text-white">
+                {card.name}
+              </h3>
+              <p className="text-sm mt-2 text-gray-300 text-pretty">
+                {card.description}
+              </p>
+            </div>
+            
+            </div>
+             
+              </FadeIn>
             </div>
           ))}
         </div>
