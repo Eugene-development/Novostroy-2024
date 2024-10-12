@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FadeIn } from "@/func/FadeIn";
+
 const incentives = [
   {
     name: "Экономим время",
@@ -81,7 +83,9 @@ export default () => {
           </div>
           <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
             {incentives.map((incentive) => (
-              <div key={incentive.name} className="sm:flex lg:block">
+              <div key={incentive.name}>
+              <FadeIn>
+              <div  className="sm:flex lg:block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -109,6 +113,10 @@ export default () => {
                   </p>
                 </div>
               </div>
+              </FadeIn>
+              
+              </div>
+              
             ))}
           </div>
         </div>
