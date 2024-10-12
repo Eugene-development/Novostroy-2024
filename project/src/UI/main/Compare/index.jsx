@@ -7,7 +7,7 @@ export default function CompareDemo() {
       className="p-8 border rounded-t-3xl  bg-gray-100  border-neutral-200 ">
     <div className="my-16  text-center">
       <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900">
-        Качественная мебель
+        Стильный дизайн мебели
       </h2>
       
     </div>

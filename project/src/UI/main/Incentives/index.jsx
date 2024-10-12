@@ -51,17 +51,20 @@ export default () => {
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
-              <h2 className="sm:mb-4 text-4xl md:text-6xl font-bold text-gray-900">
+              <h2 className="sm:mb-6 text-4xl md:text-6xl font-bold text-gray-900">
                 Вы экономите!
               </h2>
               <p className="md:hidden mt-4 text-gray-700 text-sm sm:text-lg leading-7">
                 Наш опыт и знание рынка позволяют предложить решения, которые максимально соответствуют вашему стилю, бюджету и требованиям к качеству.
               </p>
               <p className="hidden md:block mt-4 text-sm sm:text-lg text-gray-700">
-                Мы помогаем нашим клиентам сделать правильный выбор материалов и производителя мебели. Наш опыт и знание рынка позволяют предложить решения, которые максимально соответствуют вашему стилю, бюджету и требованиям к качеству. Это позволит сэкономить ваши затраты!
+                Наш опыт и знание рынка позволяют предложить решения, которые максимально соответствуют вашему стилю, бюджету и требованиям к качеству.
+              </p>
+              <p className="hidden md:block mt-4 text-sm sm:text-lg text-gray-700">
+                Мы помогаем нашим клиентам сделать правильный выбор материалов и производителя мебели. Это позволит сэкономить ваши затраты!
               </p>
             </div>
-            <div className="mx-8 aspect-h-2 aspect-w-3 overflow-hidden rounded-lg ">
+            <div className="mx-12 aspect-h-2 aspect-w-3 overflow-hidden rounded-lg ">
               <img
                 src="https://storage.yandexcloud.net/brand-logo/novostroy/logomain.png"
                 alt="логотип"

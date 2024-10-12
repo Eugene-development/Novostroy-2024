@@ -54,10 +54,10 @@ export default function ThreeDCardDemo() {
         </div>
         <div className="mt-8 px-6 sm:text-center">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
-            Мебель для вашего дома
+            Мебель и не только
           </h2>
           <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-700">
-            Мы предлагаем комплексное решение. Подберём под проект подходящую бытовую технику, столешницу и мойку.
+            Мы предлагаем комплексное решение. Подберём под проект и ваш бюджет подходящую бытовую технику, столешницу и мойку.
           </p>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function ThreeDCardDemo() {
                   src={item.image}
                   height="1000"
                   width="1000"
-                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
+                  className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl "
                   alt="thumbnail"
                 />
               </CardItem>
