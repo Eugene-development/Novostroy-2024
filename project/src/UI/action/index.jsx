@@ -7,6 +7,8 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
+import { FadeIn } from "@/func/FadeIn";
+
 const features = [
   {
     name: "Бесплатная консультация.",
@@ -25,6 +27,24 @@ const features = [
     description:
       "Осуществим замер помещения с указанием углов, розеток и вывода воды.",
     icon: LockClosedIcon,
+  },
+  {
+    name: "Бесплатный дизайн-проект.",
+    description:
+      "Дизайнер составит предварительный проект мебели в соответствии с замером.",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Техника в подарок.",
+    description:
+      "Предложим вам в подарок каждую пятую позицию бытовой техники, приобретённую у нас.",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Сборка за счёт компании.",
+    description:
+      "Осуществим сборку нашими квалифицированными специалистами и оплатим их работу.",
+    icon: Cog6ToothIcon,
   },
   {
     name: "Бесплатный дизайн-проект.",
@@ -64,20 +84,7 @@ export default () => {
           </p>
         </div>
       </div>
-      <div className="relative overflow-hidden pt-12">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <img
-            alt="Акция"
-            src="https://storage.yandexcloud.net/mine2024/novostroy/site/actionfoto.png"
-            width={2432}
-            height={1442}
-            className="h-[12rem] md:h-[34rem] mb-[-8%] rounded-xl"
-          />
-          <div aria-hidden="true" className="relative">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-          </div>
-        </div>
-      </div>
+      <FadeIn>
       <div className="mx-auto mt-16 max-w-7xl px-4 sm:mt-20 md:mt-24 lg:px-6">
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
@@ -110,6 +117,23 @@ export default () => {
           ))}
         </dl>
       </div>
+      </FadeIn>
+      
+      <div className="relative overflow-hidden pt-12 mt-12">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <img
+            alt="Акция"
+            src="https://storage.yandexcloud.net/mine2024/novostroy/site/actionfoto.png"
+            width={2432}
+            height={1442}
+            className="h-[12rem] md:h-[34rem] mb-[-8%] rounded-xl"
+          />
+          <div aria-hidden="true" className="relative">
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
