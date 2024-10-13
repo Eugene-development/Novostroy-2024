@@ -21,8 +21,8 @@ export default ({ dataProduct }) => {
                       src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
                       className="h-full w-full object-cover object-center"
                       alt="image"
-                      width={640}
-                      height={320}
+                      width={1280}
+                      height={640}
                     />
                   </span>
                   <span
@@ -41,8 +41,8 @@ export default ({ dataProduct }) => {
                   src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
                   className="h-full w-full  object-cover object-center rounded-lg "
                   alt="image"
-                  width={640}
-                  height={320}
+                  width={1280}
+                  height={640}
                 />
               </TabPanel>
             ))}

@@ -47,8 +47,8 @@ export default function ThreeDCardDemo() {
       <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
         <div className="hidden sm:flex sm:mb-8 sm:justify-center">
           <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 whitespace-nowrap">
-            Вы нам ничего{" "}
-            <span className="font-semibold text-sky-600 ">не платите !!!</span>
+            Подберём для вас{" "}
+            <span className="font-semibold text-sky-600 ">бесплатно</span>
           </div>
         </div>
         <div className="mt-8 px-6 sm:text-center">

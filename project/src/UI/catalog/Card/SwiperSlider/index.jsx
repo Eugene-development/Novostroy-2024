@@ -15,25 +15,34 @@ export default ({ images }) => {
           navigation
           pagination={{ type: "fraction" }}
           modules={[Navigation, Pagination]}
-          // onSwiper={swiper => console.log(swiper)}
           className="rounded-lg"
         >
           {images.map((item) => (
             <SwiperSlide
               key={item.hash}
-              className=" w-full aspect-w-16 aspect-h-12"
+              className="w-full aspect-w-16 aspect-h-12"
             >
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
-                className="h-full w-full  object-cover object-center rounded-lg"
+                className="h-full w-full object-cover object-center rounded-lg"
                 alt="image"
-                width={640}
-                height={320}
+                width={1280}
+                height={640}
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+      {/* Глобальные стили для стрелок */}
+      <style jsx global>{`
+        .swiper-button-next, .swiper-button-prev {
+          color: #075985;
+          font-size: 10px;
+        }
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+          color: #0284c7;
+        }
+      `}</style>
     </section>
   );
 };

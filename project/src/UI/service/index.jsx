@@ -2,7 +2,7 @@ export default ({ data, description }) => {
   return (
     <div className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-8xl px-6 lg:px-6">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-3xl lg:text-center">
           <p className="text-base font-semibold leading-7 text-sky-600">
             Услуга компании
           </p>
