@@ -31,14 +31,14 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          <span className="text-4xl md:text-8xl">Мы делаем</span> <br />
-          ваш дом уютнее
+          <span className="text-4xl sm:text-6xl md:text-8xl">Мы делаем <br />
+          ваш дом уютнее</span>
         </p>
-        <p className="md:hidden px-2 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        <p className="md:hidden px-2 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры мебели, работающие в
           лучших мебельных компаниях.
         </p>
-        <p className="hidden md:block px-1 max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        <p className="hidden md:block px-1 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры мебели. Мы спроектируем
           для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и время{" "}
           <br /> Наши услуги бесплатны
@@ -48,7 +48,7 @@ export default function ImagesSliderDemo() {
           className="scale110 mx-4 mt-8 px-8 py-2 sm:py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white  text-center rounded-full relative"
         >
           <span className="text-sm sm:text-lg mt-6">
-            Консультация дизайнера →
+            Консультация с дизайнером →
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
         </button>

@@ -7,10 +7,10 @@ import MobileButton from "./MobileButton";
 export default () => {
   return (
     <>
-      <div className="sticky top-0 hidden md:flex items-center py-1 px-4 sm:px-3.5 bg-gray-900 z-50">
-        <div className=" flex flex-1 justify-start">
+      <div className="sticky top-0 hidden md:flex items-center  px-4 sm:px-3.5 bg-gray-900 z-50">
+        <div className="hidden lg:flex flex-1 justify-start">
           <div className="flex space-x-4 items-center justify-center">
-            <Link href="/about" className="ml-1 text-sm text-gray-50">
+            <Link href="/about" className="ml-1 text-sm text-gray-50 whitespace-nowrap">
               О компании
             </Link>
             <svg
@@ -56,8 +56,8 @@ export default () => {
           </div>
         </div>
 
-        <div className="hidden md:flex flex-1 justify-between ">
-          <div className="hidden 2xl:flex 2xl:flex-1 ">
+        <div className="hidden lg:flex flex-1 justify-between ">
+          <div className="flex flex-1 ">
             <div className="py-1.5 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end items-center ">
               <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6 ">
                 {/*<PhoneIcon
@@ -97,7 +97,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="md:hidden flex px-1.5 py-2 justify-between bg-gray-900 items-center sticky top-0 z-50 opacity-95">
+      <div className="lg:hidden flex px-1.5 py-2 justify-between bg-gray-900 items-center sticky top-0 z-50 opacity-95">
         <Link href="/">
           <span className="sr-only">Novostroy</span>
           <img
