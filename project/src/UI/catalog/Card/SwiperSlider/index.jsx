@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 export default ({ images }) => {
   return (
-    <section className="py-2 w-72 sm:w-full">
+    <section className="py-2 w-80 sm:w-full mx-auto">
       <div className="container">
         <Swiper
           navigation
@@ -20,7 +20,7 @@ export default ({ images }) => {
           {images.map((item) => (
             <SwiperSlide
               key={item.hash}
-              className="w-full aspect-w-16 aspect-h-12"
+              className="w-full h-96 aspect-w-16 aspect-h-12"
             >
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}

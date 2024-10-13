@@ -1,9 +1,7 @@
 "use client";
 import { useFormsStore } from "@/stores/forms";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import SwiperSlider from "./SwiperSlider";
 import FavoriteButton from "./FavoriteButton";
 
@@ -12,7 +10,7 @@ export default ({ dataCategory }) => {
 
   return (
     <>
-      <div className="sm:mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="sm:mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 overflow-hidden">
         {dataCategory?.product.map((item) => (
           <div
             key={item.slug}
@@ -20,12 +18,11 @@ export default ({ dataCategory }) => {
           >
             <div
               id="controls-carousel"
-              className="relative w-full"
+              className="relative w-full overflow-hidden"
               data-carousel="static"
             >
               {/* <!-- Carousel wrapper --> */}
-
-              <div className="relative mb-4 rounded-lg">
+              <div className="mb-4 rounded-lg">
                 <SwiperSlider images={item?.image} />
               </div>
             </div>
@@ -37,7 +34,6 @@ export default ({ dataCategory }) => {
               >
                 {item.value}
               </Link>
-              {/* <p className="mt-2 text-base font-normal text-gray-500 dark:text-gray-400">Apple M3 Octa Core, 23.8inch, RAM 8GB, SSD 256GB, Apple M3 8-Core, macOS Sonoma</p> */}
             </div>
 
             <button
@@ -67,7 +63,7 @@ export default ({ dataCategory }) => {
 
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
-                className="inline-flex mt-4 w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium  text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300"
+                className="inline-flex mt-4 w-full items-center justify-center gap-2 rounded-lg bg-sky-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-sky-800 focus:outline-none focus:ring-4 focus:ring-sky-300"
               >
                 Подробнее
               </Link>
