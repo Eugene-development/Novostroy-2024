@@ -10,7 +10,10 @@ export default () => {
       <div className="sticky top-0 hidden md:flex items-center  px-4 sm:px-3.5 bg-gray-900 z-50">
         <div className="hidden lg:flex flex-1 justify-start">
           <div className="flex space-x-4 items-center justify-center">
-            <Link href="/about" className="ml-1 text-sm text-gray-50 whitespace-nowrap">
+            <Link
+              href="/about"
+              className="ml-1 text-sm text-gray-50 whitespace-nowrap"
+            >
               О компании
             </Link>
             <svg

@@ -35,11 +35,13 @@ export default ({ images }) => {
       </div>
       {/* Глобальные стили для стрелок */}
       <style jsx global>{`
-        .swiper-button-next, .swiper-button-prev {
+        .swiper-button-next,
+        .swiper-button-prev {
           color: #075985;
           font-size: 10px;
         }
-        .swiper-button-next:hover, .swiper-button-prev:hover {
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
           color: #0284c7;
         }
       `}</style>

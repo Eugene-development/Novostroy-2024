@@ -31,8 +31,10 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          <span className="text-4xl sm:text-6xl md:text-8xl">Мы делаем <br />
-          ваш дом уютнее</span>
+          <span className="text-4xl sm:text-6xl md:text-8xl">
+            Мы делаем <br />
+            ваш дом уютнее
+          </span>
         </p>
         <p className="md:hidden px-2 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры мебели, работающие в
