@@ -62,10 +62,10 @@ export default function ThreeDCardDemo() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mt-4 items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mx-24 items-center justify-center">
         {data.map((item) => (
           <CardContainer key={item.name} className="p-8">
-            <CardBody className="bg-gray-50 relative hover:shadow-2xl border-black/[0.1] w-auto sm:w-[28rem] h-auto rounded-xl p-7 border">
+            <CardBody className="bg-gray-50 relative hover:shadow-2xl border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-7 border">
               <CardItem
                 translateZ="50"
                 className="text-2xl font-bold text-neutral-600 "
@@ -79,12 +79,12 @@ export default function ThreeDCardDemo() {
               >
                 {item.description}
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-8 ">
+              <CardItem translateZ="100" className="w-full mt-8 px-8">
                 <Image
                   src={item.image}
                   width={1280}
                   height={640}
-                  className=" h-64 w-full object-fill rounded-xl group-hover/card:shadow-xl "
+                  className=" h-40 sm:h-64 w-full object-cover rounded-xl group-hover/card:shadow-xl "
                   alt="thumbnail"
                 />
               </CardItem>
@@ -93,7 +93,7 @@ export default function ThreeDCardDemo() {
                   translateZ={20}
                   as={Link}
                   href={item.href}
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white whitespace-nowrap"
                 >
                   Подробнее →
                 </CardItem>
@@ -101,7 +101,7 @@ export default function ThreeDCardDemo() {
                   translateZ={20}
                   as="button"
                   onClick={openVisibleFormDesigner}
-                  className=" px-4 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
+                  className=" px-3 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
                   Консультация
                 </CardItem>

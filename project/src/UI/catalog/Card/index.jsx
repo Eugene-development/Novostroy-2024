@@ -29,7 +29,7 @@ export default ({ dataCategory }) => {
 
             <div>
               <Link
-                href={`/product/${item.slug}`}
+                href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
                 className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
               >
                 {item.value}

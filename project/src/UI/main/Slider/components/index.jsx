@@ -66,7 +66,7 @@ export const ImagesSlider = ({
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
-      }, 7000);
+      }, 20000);
     }
 
     return () => {
@@ -127,7 +127,7 @@ export const ImagesSlider = ({
 
       {areImagesLoaded && (
         <AnimatePresence>
-          <motion.img
+          <img
             key={currentIndex}
             src={loadedImages[currentIndex]}
             initial="initial"
@@ -136,6 +136,15 @@ export const ImagesSlider = ({
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center"
           />
+          {/* <motion.img
+            key={currentIndex}
+            src={loadedImages[currentIndex]}
+            initial="initial"
+            animate="visible"
+            exit={direction === "up" ? "upExit" : "downExit"}
+            variants={slideVariants}
+            className="image h-full w-full absolute inset-0 object-cover object-center"
+          /> */}
         </AnimatePresence>
       )}
     </div>
