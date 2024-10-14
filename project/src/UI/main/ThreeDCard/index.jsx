@@ -62,13 +62,13 @@ export default function ThreeDCardDemo() {
         </div>
       </div>
 
-      <div className="md:flex mt-4 items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2  mt-4 items-center justify-center">
         {data.map((item) => (
-          <CardContainer key={item.name} className="mx-4">
-            <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-7 border  ">
+          <CardContainer key={item.name} className="p-8">
+            <CardBody className="bg-gray-50 relative  hover:shadow-2xl  border-black/[0.1] w-auto sm:w-[28rem] h-auto rounded-xl p-7 border  ">
               <CardItem
                 translateZ="50"
-                className="text-2xl font-bold text-neutral-600 dark:text-white"
+                className="text-2xl font-bold text-neutral-600 "
               >
                 {item.name}
               </CardItem>
@@ -79,12 +79,12 @@ export default function ThreeDCardDemo() {
               >
                 {item.description}
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-8 ">
+              <CardItem translateZ="100" className="w-full mt-8 p-12">
                 <Image
                   src={item.image}
-                  height="1000"
-                  width="1000"
-                  className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl "
+                  width={1280}
+                  height={640}
+                  className=" h-64 w-full object-fill rounded-xl group-hover/card:shadow-xl "
                   alt="thumbnail"
                 />
               </CardItem>
