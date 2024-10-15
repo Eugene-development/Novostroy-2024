@@ -31,10 +31,12 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          <div >
-            <span className="text-4xl sm:text-6xl md:text-8xl">Мы делаем</span>  
-            <br/> 
-           <span className="text-3xl sm:text-6xl md:text-8xl">ваш дом уютнее</span>
+          <div>
+            <span className="text-4xl sm:text-6xl md:text-8xl">Мебель</span>
+            <br />
+            <span className="text-3xl sm:text-6xl md:text-8xl">
+              для вашего дома
+            </span>
           </div>
         </p>
         <p className="md:hidden px-2 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
@@ -43,7 +45,8 @@ export default function ImagesSliderDemo() {
         </p>
         <p className="hidden md:block px-1 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры мебели. Мы спроектируем
-          для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и время.
+          для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и
+          время.
           <br /> Для вас наши услуги бесплатны
         </p>
         <button

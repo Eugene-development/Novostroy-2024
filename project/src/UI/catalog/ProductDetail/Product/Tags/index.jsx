@@ -19,7 +19,7 @@ export default ({ tags }) => {
                 id={item.value}
                 className="absolute appearance-none top-2 left-2 peer"
               />
-              <div className="relative flex items-center justify-center gap-4 px-2 py-1 overflow-hidden text-gray-500 hover:bg-gray-100 border border-gray-300 rounded-lg cursor-pointer bg-white peer-checked:bg-sky-50 peer-checked:text-sky-700 peer-checked:border-sky-700 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 dark:peer-checked:bg-sky-900 dark:peer-checked:border-sky-600 dark:peer-checked:text-sky-300 dark:hover:bg-gray-600">
+              <div className="relative flex items-center justify-center gap-4 px-2 py-1 overflow-hidden text-gray-500 hover:bg-gray-100 border border-gray-300 rounded-lg bg-white peer-checked:bg-sky-50 peer-checked:text-sky-700 peer-checked:border-sky-700 ">
                 <p className="text-sm font-medium">{item.value}</p>
               </div>
             </label>

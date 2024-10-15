@@ -48,25 +48,21 @@ const incentives = [
 
 export default () => {
   return (
-    <div className="rounded-t-3xl  bg-gray-50">
+    <div className="rounded-t-3xl bg-gray-50">
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
-              <h2 className="sm:mb-6 text-4xl md:text-6xl font-bold text-gray-900 whitespace-nowrap">
+              <h2 className="sm:mb-6 text-3xl md:text-6xl font-bold text-gray-900 whitespace-nowrap">
                 Подберём фабрику!
               </h2>
-              <p className="md:hidden mt-4 text-gray-700 text-sm sm:text-lg leading-7">
+              <p className="mt-4 text-gray-700 text-sm sm:text-lg leading-6">
                 Наш опыт и знание рынка позволяют предложить решения, которые
                 максимально соответствуют вашему стилю, бюджету и требованиям к
                 качеству.
               </p>
-              <p className="hidden md:block mt-4 text-sm sm:text-lg text-gray-700">
-                Наш опыт и знание рынка позволяют предложить решения, которые
-                максимально соответствуют вашему стилю, бюджету и требованиям к
-                качеству.
-              </p>
-              <p className="hidden md:block mt-4 text-sm sm:text-lg text-gray-700">
+
+              <p className="mt-4 text-gray-700 text-sm sm:text-lg leading-6">
                 Мы помогаем нашим клиентам сделать правильный выбор материалов и
                 производителя мебели. Это позволит сэкономить ваши затраты!
               </p>
