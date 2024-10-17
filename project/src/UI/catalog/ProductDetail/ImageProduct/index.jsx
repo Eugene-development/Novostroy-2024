@@ -10,7 +10,7 @@ export default ({ dataProduct }) => {
         <TabGroup className="flex flex-col-reverse">
           {/* Image selector */}
           <div className="mx-auto mt-6 w-[20rem] sm:w-[40rem] max-w-7xl sm:block ">
-            <TabList className="grid grid-cols-4 gap-4 sm:gap-6">
+            <TabList className="grid grid-cols-4 gap-4 sm:gap-6 ">
               {dataProduct.image.map(({ hash, alt }) => (
                 <Tab
                   key={hash}
@@ -19,7 +19,7 @@ export default ({ dataProduct }) => {
                   <span className="absolute inset-0 overflow-hidden rounded-md ">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
-                      className="h-full w-full object-contain object-center"
+                      className="h-full w-full object-fill object-center"
                       alt={alt}
                       width={1280}
                       height={640}
@@ -34,12 +34,12 @@ export default ({ dataProduct }) => {
             </TabList>
           </div>
 
-          <TabPanels className=" w-full aspect-w-16 aspect-h-12">
+          <TabPanels className=" w-full aspect-w-15 aspect-h-12">
             {dataProduct.image.map(({ hash }) => (
               <TabPanel key={hash}>
                 <Image
                   src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
-                  className="h-full w-full  object-contain object-center rounded-lg "
+                  className=" w-full h-[29rem] object-fill object-center rounded-lg "
                   alt="image"
                   width={1280}
                   height={640}

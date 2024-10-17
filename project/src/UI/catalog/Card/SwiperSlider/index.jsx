@@ -20,11 +20,11 @@ export default ({ images }) => {
           {images.map((item) => (
             <SwiperSlide
               key={item.hash}
-              className="w-full h-96 aspect-w-16 aspect-h-12"
+              className="w-full h-96 aspect-w-15 aspect-h-12"
             >
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
-                className="h-72 w-full object-contain object-center rounded-lg"
+                className=" w-full object-fill object-center rounded-lg"
                 alt={item.alt}
                 width={1280}
                 height={640}
