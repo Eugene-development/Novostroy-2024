@@ -7,6 +7,7 @@ import FavoriteButton from "./FavoriteButton";
 import ConsultationButton from "./ConsultationButton";
 import PriceButton from "./PriceButton";
 import Tags from "./Tags";
+import SupplierLink from "./SupplierLink";
 
 export default ({ dataProduct }) => {
   const parentable = dataProduct.parentable || {};
@@ -20,7 +21,7 @@ export default ({ dataProduct }) => {
       </h1>
       <Stars />
 
-      {/* <Price /> */}
+      {/* <SupplierLink /> */}
       <div className="gap-4 mt-4 md:mt-6 sm:flex sm:items-center lg:flex-col">
         <FavoriteButton dataProduct={dataProduct} />
         <ConsultationButton />

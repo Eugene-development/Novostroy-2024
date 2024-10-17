@@ -18,7 +18,7 @@ export default async ({ children, params }) => {
         <Info />
         {/*  <Badge />  */}
 
-        <div className="max-w-full mx-auto flex w-full h-full relative py-4 px-4">
+        <div className="max-w-full mx-auto flex w-full h-full relative py-1 px-4">
           <SideBar dataCatalog={data.catalog} />
           {children}
         </div>

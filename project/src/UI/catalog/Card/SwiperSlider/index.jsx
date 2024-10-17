@@ -24,7 +24,7 @@ export default ({ images }) => {
             >
               <Image
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
-                className="h-full w-full object-cover object-center rounded-lg"
+                className="h-72 w-full object-contain object-center rounded-lg"
                 alt={item.alt}
                 width={1280}
                 height={640}

@@ -43,19 +43,7 @@ export default () => {
             <div className="tooltip-arrow" data-popper-arrow></div>
           </div>
         </div>
-        {/* <select
-          id="quantity"
-          className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-16 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-sky-500 dark:focus:border-sky-500"
-        >
-          <option selected>0</option>
-          <option value="1" selected>
-            1
-          </option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select> */}
+        
       </form>
     </div>
   );
