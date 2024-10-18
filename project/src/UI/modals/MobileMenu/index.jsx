@@ -199,56 +199,51 @@ export default () => {
                             </div>
                           </Link>
                         ) : (
-                          <div className="-m-1 block flex-1 p-1">
-                            <div
-                              aria-hidden="true"
-                              className="absolute inset-0 group-hover:bg-gray-50"
-                            />
-                            <div className="relative flex min-w-0 flex-1 items-center">
-                              <div className="ml-4 truncate">
-                                <p className="truncate text-sm font-medium text-gray-900">
-                                  {item.name}
-                                </p>
+                          
+                          item.submenu && (
+                            <Menu
+                              as="div"
+                              className="relative inline-block flex-shrink-0 text-left"
+                            >
+                              <MenuButton className="group relative inline-flex h-8 w-8 items-center rounded-full bg-white focus:outline-none">
+                              <div className="ml-3 block flex-1 p-1">
+                              <div
+                                aria-hidden="true"
+                                className="absolute inset-0 "
+                              />
+                              <div className="relative flex min-w-0 flex-1 items-center">
+                                <div className=" truncate">
+                                  <p className="truncate text-sm font-medium text-gray-900">
+                                    {item.name}
+                                  </p>
+                                </div>
                               </div>
-                            </div>
-                          </div>
+                              </div>
+
+                              </MenuButton>
+                              <MenuItems
+                                transition
+                                className="absolute left-4 top-8 z-10 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                              >
+                                <div className="py-1">
+                                  {item.submenu.map((subitem) => (
+                                    <MenuItem key={subitem.name}>
+                                      <Link
+                                        href={subitem.href}
+                                        onClick={closeVisibleMobileMenu}
+                                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                                      >
+                                        {subitem.name}
+                                      </Link>
+                                    </MenuItem>
+                                  ))}
+                                </div>
+                              </MenuItems>
+                            </Menu>
+                          )
+
                         )}
 
-                        {item.submenu && (
-                          <Menu
-                            as="div"
-                            className="relative ml-2 inline-block flex-shrink-0 text-left"
-                          >
-                            <MenuButton className="group relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
-                              <span className="absolute -inset-1.5" />
-                              <span className="sr-only">Open options menu</span>
-                              <span className="flex h-full w-full items-center justify-center rounded-full">
-                                <EllipsisVerticalIcon
-                                  aria-hidden="true"
-                                  className="h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                />
-                              </span>
-                            </MenuButton>
-                            <MenuItems
-                              transition
-                              className="absolute right-9 top-0 z-10 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-                            >
-                              <div className="py-1">
-                                {item.submenu.map((subitem) => (
-                                  <MenuItem key={subitem.name}>
-                                    <Link
-                                      href={subitem.href}
-                                      onClick={closeVisibleMobileMenu}
-                                      className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                                    >
-                                      {subitem.name}
-                                    </Link>
-                                  </MenuItem>
-                                ))}
-                              </div>
-                            </MenuItems>
-                          </Menu>
-                        )}
                       </div>
                     </li>
                   ))}
