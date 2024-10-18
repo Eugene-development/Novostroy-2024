@@ -19,10 +19,10 @@ export default ({ dataProduct }) => {
                   <span className="absolute inset-0 overflow-hidden rounded-md ">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
-                      className="h-full w-full object-fill object-center"
+                      className="w-full h-full object-contain object-center"
                       alt={alt}
                       width={1280}
-                      height={640}
+                      height={9600}
                     />
                   </span>
                   {/* <span
@@ -39,10 +39,10 @@ export default ({ dataProduct }) => {
               <TabPanel key={hash}>
                 <Image
                   src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
-                  className=" w-full h-[29rem] object-fill object-center rounded-lg "
+                  className=" w-full h-full object-fill object-center rounded-lg "
                   alt="image"
                   width={1280}
-                  height={640}
+                  height={960}
                 />
               </TabPanel>
             ))}

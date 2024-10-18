@@ -1,14 +1,13 @@
 export default () => {
   return (
-    <a
-      href="#"
-      className="flex justify-between items-center p-2 my-4 w-full rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 dark:hover-bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
+    <div
+      className="flex justify-between items-center p-2 my-2 w-full rounded-lg bg-gray-50/50 focus:ring-4 focus:ring-gray-200 "
       type="button"
     >
       <span className="sr-only">Информация о дизайнере</span>
       <div className="flex items-center">
         <img
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+          src="https://storage.yandexcloud.net/mine2024/novostroy/site/diz.png"
           className="mr-3 w-8 h-8 rounded-full"
           alt="Bonnie avatar"
         />
@@ -21,6 +20,6 @@ export default () => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
