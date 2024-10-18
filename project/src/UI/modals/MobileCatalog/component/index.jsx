@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react"; // Добавляем useState
+import { useState, useEffect } from "react"; // Добавляем useEffect для установки начального значения
+import { useParams } from "next/navigation"; // Используем useParams вместо useRouter
 
 import {
   Dialog,
@@ -24,7 +25,28 @@ export default ({ dataFullCatalog }) => {
   const { currentVisibleMobileCatalog, closeVisibleMobileCatalog } =
     useMobileMenuStore.visibleMobileCatalog();
 
-  const [selectedIndex, setSelectedIndex] = useState(0); // Состояние для выбранного индекса
+  const params = useParams(); // Получаем параметры маршрута
+  const [selectedIndex, setSelectedIndex] = useState(0); // Начальное состояние
+
+  // Эффект для установки начального значения selectedIndex
+  useEffect(() => {
+    const currentSlug = params?.slug[0]; 
+    console.log("params.slug:", currentSlug); // Логируем params
+  
+    // Проверяем, является ли currentSlug строкой
+    if (typeof currentSlug === "string") {
+      const initialIndex = dataFullCatalog.findIndex((tab) => {
+        console.log("Comparing tab.slug:", tab.slug, "with currentSlug:", currentSlug);
+        return tab.slug && tab.slug.toLowerCase() === currentSlug.toLowerCase();
+      });
+  
+      if (initialIndex !== -1) {
+        setSelectedIndex(initialIndex); // Устанавливаем найденный индекс
+      }
+    } else {
+      console.warn("currentSlug is not a string:", currentSlug); // Логируем предупреждение, если это не строка
+    }
+  }, [params, dataFullCatalog]);
 
   return (
     <Dialog
@@ -81,7 +103,7 @@ export default ({ dataFullCatalog }) => {
                             index === selectedIndex // Проверка, является ли этот элемент выбранным
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1.5 py-1 m-1 text-xs font-medium bg-gray-100 justify-center rounded-lg",
+                            "whitespace-nowrap border-b-2 px-1 py-1 m-1 text-xs font-medium bg-gray-100 justify-center rounded-lg"
                           )}
                         >
                           {tab.value}
@@ -175,7 +197,7 @@ export default ({ dataFullCatalog }) => {
                           )}
                         </div>
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
