@@ -65,7 +65,7 @@ const features = [
     icon: Cog6ToothIcon,
   },
 ];
-debugger;
+// debugger;
 
 export default () => {
   return (

@@ -28,18 +28,18 @@ export default ({ dataCatalog }) => {
           </div>
         </div>
 
-        <section className="relative isolate overflow-hidden bg-gray50/50 px-6 py-12 sm:py-24 lg:px-8">
+        <section className="relative isolate overflow-hidden bg-gray50/50 px-4 py-12 sm:py-24 lg:px-8">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.gray.200),white)] opacity-20" />
           <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray50/50 shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
           <div className="mx-auto max-w-2xl lg:max-w-5xl">
             <p className="ml-0.5 text-base font-semibold leading-7 text-gray-600">
               Рубрика каталога
             </p>
-            <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
+            <h1 className=" text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
               {dataCatalog?.value}
             </h1>
             <figure className="mt-10">
-              <blockquote className="text-pretty text-xl font-semibold leading-8 text-gray-700 sm:text-lg sm:leading-9">
+              <blockquote className="text-pretty  font-semibold leading-8 text-gray-700 text-lg sm:leading-9">
                 <div
                   className="*:mt-4"
                   dangerouslySetInnerHTML={{

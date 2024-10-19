@@ -84,7 +84,7 @@ export default function ThreeDCardDemo() {
                   src={item.image}
                   width={1280}
                   height={640}
-                  className=" h-48 sm:h-[18rem] w-full object-contain sm:object-cover rounded-xl group-hover/card:shadow-xl "
+                  className="h-48 sm:h-[18rem] w-full object-contain sm:object-cover rounded-xl group-hover/card:shadow-xl "
                   alt="thumbnail"
                 />
               </CardItem>
