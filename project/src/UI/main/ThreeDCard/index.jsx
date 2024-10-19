@@ -46,13 +46,13 @@ export default function ThreeDCardDemo() {
     <>
       <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
         <div className="hidden sm:flex sm:mb-8 sm:justify-center">
-          <div className="relative rounded-full font-light tracking-wide px-6 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 whitespace-nowrap">
+          <div className="relative rounded-full font-light  tracking-wide px-6 py-1 text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 whitespace-nowrap">
             Подберём для вас{" "}
             <span className="font-semibold text-sky-600 ">бесплатно</span>
           </div>
         </div>
         <div className="mt-8 px-6 sm:text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
+          <h2 className="text-4xl md:text-7xl font-bold text-gray-900">
             Мебель и не только
           </h2>
           <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-700">

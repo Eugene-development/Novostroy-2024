@@ -53,8 +53,8 @@ export default () => {
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
-              <h2 className="sm:mb-6 text-3xl md:text-6xl font-bold text-gray-900 whitespace-nowrap">
-                Подберём фабрику!
+              <h2 className="sm:mb-6 text-3xl md:text-4xl font-bold text-gray-900 whitespace-nowrap">
+                Сделаем проект и <br className="sm:hidden" /> подберём фабрику
               </h2>
               <p className="mt-4 text-gray-700 text-sm sm:text-lg leading-6">
                 Наш опыт и знание рынка позволяют предложить решения, которые

@@ -199,27 +199,25 @@ export default () => {
                             </div>
                           </Link>
                         ) : (
-                          
                           item.submenu && (
                             <Menu
                               as="div"
                               className="relative inline-block flex-shrink-0 text-left"
                             >
                               <MenuButton className="group relative inline-flex h-8 w-8 items-center rounded-full bg-white focus:outline-none">
-                              <div className="ml-3 block flex-1 p-1">
-                              <div
-                                aria-hidden="true"
-                                className="absolute inset-0 "
-                              />
-                              <div className="relative flex min-w-0 flex-1 items-center">
-                                <div className=" truncate">
-                                  <p className="truncate text-sm font-medium text-gray-900">
-                                    {item.name}
-                                  </p>
+                                <div className="ml-3 block flex-1 p-1">
+                                  <div
+                                    aria-hidden="true"
+                                    className="absolute inset-0 "
+                                  />
+                                  <div className="relative flex min-w-0 flex-1 items-center">
+                                    <div className=" truncate">
+                                      <p className="truncate text-sm font-medium text-gray-900">
+                                        {item.name}
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              </div>
-
                               </MenuButton>
                               <MenuItems
                                 transition
@@ -241,9 +239,7 @@ export default () => {
                               </MenuItems>
                             </Menu>
                           )
-
                         )}
-
                       </div>
                     </li>
                   ))}

@@ -30,16 +30,21 @@ export default ({ dataFullCatalog }) => {
 
   // Эффект для установки начального значения selectedIndex
   useEffect(() => {
-    const currentSlug = params?.slug[0]; 
+    const currentSlug = params?.slug[0];
     console.log("params.slug:", currentSlug); // Логируем params
-  
+
     // Проверяем, является ли currentSlug строкой
     if (typeof currentSlug === "string") {
       const initialIndex = dataFullCatalog.findIndex((tab) => {
-        console.log("Comparing tab.slug:", tab.slug, "with currentSlug:", currentSlug);
+        console.log(
+          "Comparing tab.slug:",
+          tab.slug,
+          "with currentSlug:",
+          currentSlug,
+        );
         return tab.slug && tab.slug.toLowerCase() === currentSlug.toLowerCase();
       });
-  
+
       if (initialIndex !== -1) {
         setSelectedIndex(initialIndex); // Устанавливаем найденный индекс
       }
@@ -103,7 +108,7 @@ export default ({ dataFullCatalog }) => {
                             index === selectedIndex // Проверка, является ли этот элемент выбранным
                               ? "border-sky-500 text-sky-600"
                               : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
-                            "whitespace-nowrap border-b-2 px-1 py-1 m-1 text-xs font-medium bg-gray-100 justify-center rounded-lg"
+                            "whitespace-nowrap border-b-2 px-1 py-1 m-1 text-xs font-medium bg-gray-100 justify-center rounded-lg",
                           )}
                         >
                           {tab.value}
@@ -144,7 +149,10 @@ export default ({ dataFullCatalog }) => {
                             </Link>
                           ) : (
                             item.category && (
-                              <Menu as="div" className="relative ml-2 inline-block flex-shrink-0 text-left">
+                              <Menu
+                                as="div"
+                                className="relative ml-2 inline-block flex-shrink-0 text-left"
+                              >
                                 {/* Оборачиваем весь блок в MenuButton */}
                                 <MenuButton className="group relative inline-flex items-center w-full  rounded-lg bg-white focus:outline-none ">
                                   {/* Весь контент, включая текст и иконку */}
@@ -161,9 +169,8 @@ export default ({ dataFullCatalog }) => {
                                       </div>
                                     </div>
                                   </div>
-                                  
                                 </MenuButton>
-                            
+
                                 <MenuItems
                                   transition
                                   className="absolute left-4 top-8 z-10 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -185,11 +192,9 @@ export default ({ dataFullCatalog }) => {
                               </Menu>
                             )
                           )}
-
-                          
                         </div>
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

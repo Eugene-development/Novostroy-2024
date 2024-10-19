@@ -56,7 +56,8 @@ export default () => {
                 href={`/${item.parentable.parentable.parentable.slug}/${item.parentable.parentable.slug}/${item.parentable.slug}`}
                 className="-ml-3 inline-flex items-center  text-gray-800 text-xs font-medium me-2 px-3 py-1 rounded-full "
               >
-                <span className="font-bold">Каталог: </span>&nbsp;{item.parentable.parentable.value} / {item.parentable.value}
+                <span className="font-bold">Каталог: </span>&nbsp;
+                {item.parentable.parentable.value} / {item.parentable.value}
               </Link>
 
               <span className="my-4 px-2 py-1 block font-medium text-gray-100 bg-gray-700 rounded-lg">

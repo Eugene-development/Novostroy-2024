@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" />
         <script src="//code.jivosite.com/widget/H00b4ne6ss" async></script>
 
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
