@@ -20,7 +20,7 @@ export default ({ dataProduct }) => {
           <OrderInfo />
         </div>
 
-        <section className="sm:mt-4 py-1 bg-white md:py-2 xl:py-8 dark:bg-gray-900 antialiased rounded-lg">
+        <section className="sm:mt-4 py-3 bg-white antialiased rounded-lg">
           <div className="max-w-screen-xl mx-auto">
             <div className="lg:flex justify-between">
               <div className="sm:px-8">

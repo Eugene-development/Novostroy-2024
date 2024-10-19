@@ -45,7 +45,7 @@ export default () => {
               className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
             >
               <Image
-                className="mx-auto mb-4 h-60 dark:hidden md:mb-6 rounded-lg"
+                className="mx-auto object-contain mb-4 h-[20rem] dark:hidden md:mb-6 rounded-lg"
                 src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item?.image[0]?.hash}`}
                 alt={item.value}
                 width={600}

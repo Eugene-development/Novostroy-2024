@@ -34,12 +34,12 @@ export default ({ dataProduct }) => {
             </TabList>
           </div>
 
-          <TabPanels className=" w-full aspect-w-15 aspect-h-12">
+          <TabPanels className=" w-full aspect-w-15 aspect-h-10">
             {dataProduct.image.map(({ hash }) => (
               <TabPanel key={hash}>
                 <Image
                   src={`${process.env.NEXT_PUBLIC_S3}/catalog/${hash}`}
-                  className=" w-full h-full object-fill object-center rounded-lg "
+                  className=" w-full h-full object-contain object-center rounded-lg "
                   alt="image"
                   width={1280}
                   height={960}
