@@ -16,12 +16,12 @@ const navigation = {
     { name: "Техника", href: "/tehnika" },
     { name: "Сантехника", href: "/santehnika" },
   ],
-  company: [
-    { name: "Дизайнер", href: "#" },
-    { name: "Замерщик", href: "#" },
-    { name: "Сборщик", href: "#" },
-    { name: "Водитель", href: "#" },
-  ],
+  // company: [
+  //   { name: "Дизайнер", href: "#" },
+  //   { name: "Замерщик", href: "#" },
+  //   { name: "Сборщик", href: "#" },
+  //   { name: "Водитель", href: "#" },
+  // ],
   legal: [
     { name: "Консультация", method: "openVisibleFormDesigner" },
     { name: "Запись в салон", method: "openVisibleFormSalon" },
@@ -238,8 +238,8 @@ export default () => {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
+            <div className="md:grid md:grid-cols-1 md:gap-8">
+              {/* <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Вакансии
                 </h3>
@@ -255,7 +255,7 @@ export default () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Услуги

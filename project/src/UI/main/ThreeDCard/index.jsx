@@ -57,7 +57,7 @@ export default function ThreeDCardDemo() {
           </h2>
           <p className="mx-auto mt-6 text-sm sm:text-lg leading-7 text-gray-700">
             Мы предлагаем комплексное решение. Подберём под проект и ваш бюджет
-            подходящую бытовую технику, столешницу и мойку.
+            подходящую бытовую технику, столешницу и мойку со смесителем.
           </p>
         </div>
       </div>
@@ -79,12 +79,12 @@ export default function ThreeDCardDemo() {
               >
                 {item.description}
               </CardItem>
-              <CardItem translateZ="100" className="w-full mt-8 px-8">
+              <CardItem translateZ="100" className="w-full mt-8 px-4">
                 <Image
                   src={item.image}
                   width={1280}
                   height={640}
-                  className=" h-40 sm:h-64 w-full object-cover rounded-xl group-hover/card:shadow-xl "
+                  className=" h-48 sm:h-[18rem] w-full object-contain sm:object-cover rounded-xl group-hover/card:shadow-xl "
                   alt="thumbnail"
                 />
               </CardItem>
@@ -93,7 +93,7 @@ export default function ThreeDCardDemo() {
                   translateZ={20}
                   as={Link}
                   href={item.href}
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white whitespace-nowrap"
+                  className="px-4 py-2 rounded-xl text-xs text-sky-800 font-normal whitespace-nowrap"
                 >
                   Подробнее →
                 </CardItem>
@@ -101,7 +101,7 @@ export default function ThreeDCardDemo() {
                   translateZ={20}
                   as="button"
                   onClick={openVisibleFormDesigner}
-                  className=" px-3 py-2 rounded-xl bg-gray-800 dark:bg-white dark:text-black text-white text-xs font-bold"
+                  className=" px-3 py-2 rounded-xl bg-sky-900  text-white text-xs font-bold"
                 >
                   Консультация
                 </CardItem>

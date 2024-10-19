@@ -4,28 +4,34 @@ import { gql, request } from "graphql-request";
 const { NEXT_PUBLIC_GRAPHQL, NEXT_PUBLIC_KEY } = process.env;
 
 const CATALOG = gql`
-  query catalog($slug: String!, $key: UUID!) {
-    catalog(slug: $slug, key: $key) {
-      value
-      slug
-      rubric {
+    query catalog($slug: String!, $key: UUID!) {
+      catalog(slug: $slug, key: $key) {
         value
         slug
-        category {
-          is_active
+        metaTitle {
+          value
+        }
+        metaDescription {
+          value
+        }
+        rubric {
           value
           slug
-          product_count
+          category {
+            is_active
+            value
+            slug
+            product_count
+          }
+        }
+        text {
+          value
+        }
+        image {
+          hash
         }
       }
-      text {
-        value
-      }
-      image {
-        hash
-      }
     }
-  }
 `;
 
 export async function GET(req) {

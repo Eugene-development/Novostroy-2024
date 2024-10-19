@@ -3,20 +3,18 @@ export default () => {
     <div className="bg-white py-12 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl sm:text-center">
-          <h2 className="text-base font-semibold leading-7 text-sky-600">
+          <h1 className="text-base font-semibold leading-7 text-sky-600">
             О компании
-          </h2>
+          </h1>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Информация о нас
           </p>
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-16">
-        <div className="mx-auto  lg:mx-0 max-w-6xl">
-          {/* <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1> */}
-          <div className="mt-10   text-xl leading-8 text-gray-600 ">
+      <div className="mx-auto max-w-5xl px-6 ">
+        <div className="mx-auto lg:mx-0 ">
+          <div className="mt-10 text-lg leading-8 text-gray-600 ">
             <div>
               <p>
                 Наша команда предоставляет профессиональные дизайнерские и
@@ -25,28 +23,28 @@ export default () => {
                 создавать уникальные интерьеры, которые удовлетворяют самые
                 разнообразные запросы клиентов.
               </p>
-              <p className="mt-2">
+              <p className="mt-1.5">
                 Мы предлагаем дизайнерские решения для любых бюджетов, сохраняя
                 высокое качество и индивидуальный подход. Независимо от размера
                 проекта, наша команда подберет оптимальное решение, отвечающее
                 вашим потребностям и пожеланиям, будь то уютный дом, современный
                 офис или коммерческое пространство.
               </p>
-              <p className="mt-2">
+              <p className="mt-1.5">
                 Наша экспертиза охватывает различные стили — от классики до
                 минимализма, от скандинавского стиля до ар-деко. Мы внимательно
                 следим за мировыми трендами и предлагаем как актуальные, так и
                 вневременные решения, подчеркивающие индивидуальность каждого
                 пространства.
               </p>
-              <p className="mt-2">
+              <p className="mt-1.5">
                 Мы гордимся сотрудничеством с ведущими производителями мебели,
                 чья продукция соответствует самым строгим стандартам качества.
                 Благодаря этому мы можем гарантировать, что все предметы
                 интерьера, которые мы предлагаем нашим клиентам, долговечны,
-                эстетически привлекательны и функциональны.
+                привлекательны и функциональны.
               </p>
-              <p className="mt-2">
+              <p className="mt-1.5">
                 Наша миссия — создать для каждого клиента комфортное и стильное
                 пространство, которое будет радовать многие годы. Мы внимательно
                 слушаем ваши пожелания и воплощаем их в жизнь, предлагая
