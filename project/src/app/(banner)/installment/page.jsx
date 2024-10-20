@@ -4,8 +4,8 @@ import * as motion from "framer-motion/client";
 import { Installment } from "@/UI";
 
 export const metadata = {
-  title: "Новострой | Рассрочка",
-  description: "На странице информация об условиях рассрочки.",
+  title: "Новострой | Рассрочка платежа",
+  description: "На странице информация об условиях рассрочки платежа.",
 };
 
 export default function page() {

@@ -5,7 +5,7 @@ import { Action } from "@/UI";
 
 export const metadata = {
   title: "Новострой | Акции",
-  description: "Акции и специальные предложения нашей компании",
+  description: "Акции и специальные предложения нашей компании и наших партнёров",
 };
 
 export default () => {
