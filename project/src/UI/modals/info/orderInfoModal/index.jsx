@@ -38,9 +38,9 @@ export default () => {
           >
             <div className="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5 max-h-[90vh] overflow-y-auto">
               <div className="flex justify-between mb-4 rounded-t sm:mb-5">
-                <div className="text-lg text-gray-900 md:text-xl dark:text-white">
+                <div className="text-xl text-gray-900 md:text-3xl ">
                   <h3 className="font-semibold">
-                    Мы сопровождаем вас на всём пути
+                    Полное сопровождение
                   </h3>
                 </div>
                 <div>
@@ -68,7 +68,7 @@ export default () => {
                 </div>
               </div>
               {/* Сетка изображений */}
-              <div className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-4 sm:mb-5">
+              {/* <div className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-4 sm:mb-5">
                 {["side", "front", "back", "back"].map((view, idx) => (
                   <div
                     key={idx}
@@ -81,7 +81,7 @@ export default () => {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
               {/* Текстовое описание */}
               <dl className="sm:mb-10">
                 <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
