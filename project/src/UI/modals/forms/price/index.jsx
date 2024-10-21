@@ -175,11 +175,11 @@ export default () => {
                                 htmlFor="project"
                                 className="block text-base font-medium leading-6 text-gray-900"
                               >
-                                Посчитать проект:
+                                Узнать цену:
                               </label>
                               <div className="mt-2">
                                 <span>
-                                  {selectedProject || "Проект не выбран"}
+                                  {selectedProject || "Продукт не выбран"}
                                 </span>
                               </div>
                             </div>

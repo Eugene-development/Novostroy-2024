@@ -44,8 +44,8 @@ export default function ThreeDCardDemo() {
 
   return (
     <>
-      <div className="mx-auto max-w-4xl pt-4 sm:pt-8 lg:pt-20">
-        <div className="hidden sm:flex sm:mb-8 sm:justify-center">
+      <div className="mx-auto max-w-4xl pt-8 lg:pt-20">
+        <div className="flex sm:mb-8 ml-6 sm:ml-0 sm:justify-center">
           <div className="relative rounded-full font-light  tracking-wide px-6 py-1 text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 whitespace-nowrap">
             Подберём для вас{" "}
             <span className="font-semibold text-sky-600 ">бесплатно</span>
@@ -62,10 +62,10 @@ export default function ThreeDCardDemo() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mx-24 items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 mx-4 items-center justify-center">
         {data.map((item) => (
           <CardContainer key={item.name} className="p-8">
-            <CardBody className="bg-gray-50 relative hover:shadow-2xl border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-7 border">
+            <CardBody className="bg-gray-50 relative hover:shadow-2xl border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
                 className="text-2xl font-bold text-neutral-600 "
@@ -88,7 +88,7 @@ export default function ThreeDCardDemo() {
                   alt="thumbnail"
                 />
               </CardItem>
-              <div className="flex justify-between items-center mt-10">
+              <div className="flex justify-between items-center mt-10 mx-4">
                 <CardItem
                   translateZ={20}
                   as={Link}
@@ -101,7 +101,7 @@ export default function ThreeDCardDemo() {
                   translateZ={20}
                   as="button"
                   onClick={openVisibleFormDesigner}
-                  className=" px-3 py-2 rounded-xl bg-sky-900  text-white text-xs font-bold"
+                  className="px-4 py-2 rounded-xl bg-gray-700 text-white text-xs font-bold"
                 >
                   Консультация
                 </CardItem>

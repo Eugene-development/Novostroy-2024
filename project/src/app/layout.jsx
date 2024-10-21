@@ -5,7 +5,6 @@
 // });
 import Script from "next/script";
 const GA_TRACKING_ID = "G-LDQHHN5N6W";
-// 87611228
 import "../css/globals.css";
 import {
   Banner,
