@@ -12,6 +12,27 @@ const lastProjects = [
     description: "описание",
     href: "/",
   },
+  {
+    name: "продукт",
+    image:
+      "https://zovrus.ru/files/_cache/product/chr-4479_1.resize1200x1200w.jpg?ec09a444e7bdbea9d295f840415fb01d",
+    description: "описание",
+    href: "/",
+  },
+  {
+    name: "продукт",
+    image:
+      "https://zovrus.ru/files/_cache/product/chr-4479_1.resize1200x1200w.jpg?ec09a444e7bdbea9d295f840415fb01d",
+    description: "описание",
+    href: "/",
+  },
+  {
+    name: "продукт",
+    image:
+      "https://zovrus.ru/files/_cache/product/chr-4479_1.resize1200x1200w.jpg?ec09a444e7bdbea9d295f840415fb01d",
+    description: "описание",
+    href: "/",
+  },
 ];
 
 export default () => {
@@ -29,7 +50,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="flex p-8 mx-auto space-x-16 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 p-8 mx-auto  ">
         {lastProjects.map((item) => (
           <BackgroundGradient
             key={item.name}

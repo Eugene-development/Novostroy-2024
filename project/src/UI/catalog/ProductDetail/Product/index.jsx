@@ -15,8 +15,17 @@ export default ({ dataProduct }) => {
   const parent = parentable.parentable;
 
   return (
-    <div className="w-full lg:max-w-lg sm:mx-8 mt-8 lg:mt-0 shrink-0 p-8  border border-gray-100 rounded-lg bg-gray-50/50 ">
-      <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
+    <div className="w-full lg:max-w-xl  mt-8 lg:mt-0 shrink-0 p-8 border border-gray-100 rounded-lg bg-gray-50/50 ">
+    <div className="mb-4 ">
+      <Link
+        href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
+        className=" hover:text-sky-700 text-gray-800 text-xs font-medium rounded "
+      >
+        {dataProduct?.parentable.parentable.value} / {dataProduct?.parentable.value}
+      </Link>
+    </div>  
+    
+    <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
         {dataProduct?.value}
       </h1>
       <Stars />
@@ -36,17 +45,10 @@ export default ({ dataProduct }) => {
 
       <Tags tags={dataProduct?.tag} />
 
-      <div className="mt-20 sm:gap-4 sm:items-center sm:flex justify-between">
+      <div className="mt-20 sm:gap-4 items-center  ">
         <ButtonBack />
 
-        <div className="mt-4 sm:mt-0">
-          <Link
-            href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
-            className="bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-medium px-3 py-0.5 rounded "
-          >
-            Категория - {dataProduct?.parentable.value}
-          </Link>
-        </div>
+        
       </div>
     </div>
   );

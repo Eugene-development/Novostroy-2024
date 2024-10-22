@@ -13,7 +13,7 @@ export default ({ images }) => {
       <div className="container">
         <Swiper
           navigation
-          pagination={{ type: "fraction" }}
+          // pagination={{ type: "fraction" }}
           modules={[Navigation, Pagination]}
           className="rounded-lg"
         >
