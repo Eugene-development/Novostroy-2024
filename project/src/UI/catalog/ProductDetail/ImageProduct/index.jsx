@@ -34,7 +34,7 @@ export default ({ dataProduct }) => {
             </TabList>
           </div>
 
-          <TabPanels className=" w-full aspect-w-15 aspect-h-10">
+          <TabPanels className=" w-full aspect-w-15 aspect-h-10 scale110">
             {dataProduct.image.map((item) => (
               <TabPanel key={item.hash}>
                 <Image

@@ -50,7 +50,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 p-8 mx-auto  ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 p-8 mx-auto">
         {lastProjects.map((item) => (
           <BackgroundGradient
             key={item.name}
