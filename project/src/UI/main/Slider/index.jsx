@@ -32,7 +32,7 @@ export default function ImagesSliderDemo() {
       >
         <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           <div>
-            <span className="text-4xl sm:text-6xl md:text-8xl">Мебель</span>
+            <span className="text-4xl sm:text-6xl md:text-8xl">Новая мебель</span>
             <br />
             <span className="text-3xl sm:text-6xl md:text-8xl">
               для вашего дома
