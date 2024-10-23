@@ -12,7 +12,7 @@ export default () => {
           <div className="flex space-x-4 items-center justify-center">
             <Link
               href="/about"
-              className="ml-1 text-sm text-gray-50 whitespace-nowrap"
+              className="ml-1 text-sm text-gray-50 hover:text-gray-300  whitespace-nowrap"
             >
               О компании
             </Link>
@@ -23,7 +23,7 @@ export default () => {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            <Link href="/partnership" className="ml-1 text-sm text-gray-50">
+            <Link href="/partnership" className="ml-1 text-sm text-gray-50 hover:text-gray-300">
               Партнёрство
             </Link>
             <svg
@@ -33,7 +33,7 @@ export default () => {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            <Link href="/testimonials" className="ml-1 text-sm text-gray-50">
+            <Link href="/testimonials" className="ml-1 text-sm text-gray-50 hover:text-gray-300">
               Отзывы
             </Link>
             <svg
@@ -43,7 +43,7 @@ export default () => {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            <Link href="/installment" className="ml-1 text-sm text-gray-50">
+            <Link href="/installment" className="ml-1 text-sm text-gray-50 hover:text-gray-300">
               Рассрочка
             </Link>
             <svg
@@ -53,7 +53,7 @@ export default () => {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            <Link href="/contacts" className="ml-1 text-sm text-gray-50">
+            <Link href="/contacts" className="ml-1 text-sm text-gray-50 hover:text-gray-300">
               Контакты
             </Link>
           </div>
