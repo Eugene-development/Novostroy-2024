@@ -23,7 +23,7 @@ export default ({ dataCategory }) => {
               </div>
             </div>
 
-            <div>
+            <div className="h-14">
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
                 className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"

@@ -10,8 +10,8 @@ export default function ImagesSliderDemo() {
 
   const images = [
     "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/cam-1-1600x1472.jpg",
-    "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/cam-2-1763x1600.jpg",
-    "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/2-1600x942.jpg",
+    // "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/cam-2-1763x1600.jpg",
+    // "https://storage.yandexcloud.net/mine2024/novostroy/site/slider/2-1600x942.jpg",
   ];
   // const words = ["комфортнее", "красивее", "удобнее", "приятнее"];
   return (
