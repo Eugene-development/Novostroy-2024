@@ -45,6 +45,7 @@ const CATALOG = gql`
       }
       image {
         hash
+        alt
       }
     }
   }
@@ -72,6 +73,7 @@ const CATEGORY = gql`
         }
         image {
           hash
+          alt
         }
         tag {
           value
@@ -119,6 +121,7 @@ const PRODUCT = gql`
       slug
       image {
         hash
+        alt
       }
       tag {
         value
