@@ -23,10 +23,10 @@ export default ({ dataCategory }) => {
               </div>
             </div>
 
-            <div className="h-12">
+            <div className="h-11">
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
-                className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+                className="text-xl font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
               >
                 {item.value}
               </Link>
@@ -35,7 +35,7 @@ export default ({ dataCategory }) => {
             <button
               type="button"
               onClick={() => openVisibleFormPrice(item.value)}
-              className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline dark:text-sky-600"
+              className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:underline hover:text-sky-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default ({ dataCategory }) => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 text-sky-700 dark:text-sky-500"
+                className="size-5 text-gray-700 hover:text-sky-700"
               >
                 <path
                   strokeLinecap="round"

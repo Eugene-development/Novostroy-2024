@@ -57,7 +57,7 @@ export default ({ dataProduct }) => {
                 >
                   <Image
                     src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
-                    className="w-full h-full object-contain object-center rounded-lg"
+                    className="w-full h-full p-4 object-contain object-center rounded-lg"
                     alt={item.alt}
                     width={1280}
                     height={960}
