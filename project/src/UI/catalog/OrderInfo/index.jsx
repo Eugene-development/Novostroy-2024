@@ -16,7 +16,7 @@ export default () => {
       >
         <span className="sr-only"> Info </span>
         <svg
-          className="me-1 h-4 w-4"
+          className="me-1 size-4 "
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -32,7 +32,7 @@ export default () => {
             d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
         </svg>
-        Как мы помогаем
+        Алгоритм работы
       </button>
     </>
   );
