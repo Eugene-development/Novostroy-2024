@@ -53,7 +53,7 @@ export default function ImagesSliderDemo() {
           className="scale110 mx-4 mt-8 px-8 py-2 sm:py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white  text-center rounded-full relative"
         >
           <span className="text-xs sm:text-lg mt-6">
-            Закажите бесплатный проект мебели →
+            Закажите бесплатный проект и просчёт →
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
         </button>
