@@ -16,7 +16,7 @@ export default ({ dataCatalog }) => {
             <OrderInfo />
           </div>
 
-          <div className="mt:4 mx-auto max-w-2xl lg:mx-0">
+          <div className="-mt-10 mx-auto max-w-2xl lg:mx-0">
             {/* <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             {data}
           </h2> */}
@@ -38,12 +38,12 @@ export default ({ dataCatalog }) => {
             <h1 className=" text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
               {dataCatalog?.value}
             </h1>
-            <figure className="mt-10">
-              <blockquote className="text-pretty font-semibold leading-8 text-gray-700 text-lg sm:leading-9">
+            <figure className="mt-8">
+              <blockquote className="text-pretty font-semibold leading-6 text-gray-700 text-sm sm:text-lg sm:leading-9">
                 <div
                   className="*:mt-4"
                   dangerouslySetInnerHTML={{
-                    __html: dataCatalog?.text?.value || "xxx",
+                    __html: dataCatalog?.text?.value || "Здесь пусто",
                   }}
                 />
               </blockquote>
