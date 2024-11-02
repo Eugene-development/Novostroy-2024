@@ -81,7 +81,7 @@ export default () => {
                           <div className="ml-3 -mt-5 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                              className="rounded-md bg-gray-800 text-red-500 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-white"
                               onClick={() => closeVisibleFormSalon()}
                             >
                               <span className="sr-only">Закрыть панель</span>

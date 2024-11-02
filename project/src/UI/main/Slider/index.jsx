@@ -39,7 +39,7 @@ export default function ImagesSliderDemo() {
             </span>
           </div>
         </p>
-        <p className="md:hidden px-2 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        <p className="md:hidden px-3 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда это профессиональные дизайнеры мебели, работающие в
           лучших мебельных компаниях.
         </p>
@@ -47,14 +47,13 @@ export default function ImagesSliderDemo() {
           Наша команда это профессиональные дизайнеры мебели. Мы спроектируем
           для вас мебель и подберём лучшую фабрику, сэкономив ваш бюджет и
           время.
-          <br /> Для вас наши услуги бесплатны
         </p>
         <button
           onClick={openVisibleFormDesigner}
           className="scale110 mx-4 mt-8 px-8 py-2 sm:py-4 backdrop-blur-sm border bg-sky-300/10 border-sky-500/20 text-white  text-center rounded-full relative"
         >
-          <span className="text-sm sm:text-lg mt-6">
-            Консультация с дизайнером →
+          <span className="text-xs sm:text-lg mt-6">
+            Закажите бесплатный проект мебели →
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-500 to-transparent" />
         </button>

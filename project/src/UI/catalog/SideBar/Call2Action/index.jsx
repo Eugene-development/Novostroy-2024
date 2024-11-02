@@ -14,7 +14,7 @@ export default function index() {
             onClick={openVisibleFormDesigner}
             className="rounded-xl bg-primary-50 hover:bg-primary-100 dark:bg-primary-900 dark:hover:bg-primary-800 p-2.5 flex flex-col items-center justify-center group"
           >
-            <span className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-800 flex items-center justify-center mb-1 group-hover:bg-primary-200  dark:group-hover:bg-primary-700">
+            <span className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-800 flex items-center justify-center mb-1 group-hover:bg-primary-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -29,7 +29,7 @@ export default function index() {
               </svg>
             </span>
             <span className="text-xs text-primary-600 dark:text-primary-300 font-normal">
-              Дизайнер
+              Проект
             </span>
           </div>
         </li>

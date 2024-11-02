@@ -77,12 +77,12 @@ export default () => {
                       <div className="bg-gray-800 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
                           <Dialog.Title className="text-lg font-semibold leading-6 text-white">
-                            Бесплатная консультация дизайнера
+                            Составление и просчёт дизайн проекта
                           </Dialog.Title>
                           <div className="ml-3 -mt-5 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-gray-800 text-red-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                              className="rounded-md bg-gray-800 text-red-500 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-white"
                               onClick={() => closeVisibleFormDesigner()}
                             >
                               <span className="sr-only">Закрыть панель</span>
@@ -249,7 +249,7 @@ export default () => {
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
                                   После отправки формы с Вами свяжется наш
-                                  дизайнер.
+                                  дизайнер. <span className="text-red-700">Услуга бесплатна.</span> 
                                 </span>
                               </p>
                             </div>
