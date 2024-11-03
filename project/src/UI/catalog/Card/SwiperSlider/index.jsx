@@ -37,12 +37,12 @@ export default ({ images }) => {
       <style jsx global>{`
         .swiper-button-next,
         .swiper-button-prev {
-          color: #075985;
+          color: #111827;
           font-size: 10px;
         }
         .swiper-button-next:hover,
         .swiper-button-prev:hover {
-          color: #0284c7;
+          color: #1f2937;
         }
       `}</style>
     </section>

@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
+
+import withBundleAnalyzer from '@next/bundle-analyzer';
+
+const bundleAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+const nextConfig = bundleAnalyzer({
+  images: {
     remotePatterns: [
       {
         protocol: "https",
@@ -40,6 +47,6 @@ const nextConfig = {
       },
     ],
   },
-};
+});
 
 export default nextConfig;

@@ -9,7 +9,7 @@ export default () => {
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Заказать услугу
+            Заказать замер помещения
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-sm sm:text-lg leading-8 text-gray-300">
             После отправки формы с Вами свяжется наш специалист и договориться о

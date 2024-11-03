@@ -59,7 +59,7 @@ export default ({ dataCategory }) => {
 
               <Link
                 href={`/${dataCategory.parentable.parentable.slug}/${item.slug}`}
-                className="inline-flex mt-4 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-sky-500 to-blue-600 hover:from-blue-600 hover:to-sky-500 px-5 py-2.5 text-sm font-medium text-white  focus:outline-none focus:ring-4 focus:ring-sky-300"
+                className="inline-flex mt-4 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-sky-600 to-blue-700 hover:from-blue-600 hover:to-sky-500 px-5 py-2.5 text-sm font-medium text-white  focus:outline-none focus:ring-4 focus:ring-sky-300"
               >
                 Подробнее
               </Link>
