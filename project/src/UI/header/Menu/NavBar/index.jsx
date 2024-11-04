@@ -29,7 +29,7 @@ export default function Navbar({ className }) {
         <Link
           href="/"
           onClick={() => setActive(null)}
-          className="hover:text-sky-900  cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
+          className="hover:text-sky-900 cursor-pointer text-gray-800 text-lg font-medium tracking-wide hover:opacity-[0.9] dark:text-white"
         >
           Главная
         </Link>
