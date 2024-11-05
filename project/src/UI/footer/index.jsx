@@ -4,25 +4,25 @@ import { useFormsStore } from "@/stores/forms";
 import Link from "next/link";
 
 const navigation = {
-  solutions: [
+  information: [
     { name: "О компании", href: "/about" },
     { name: "Партнёрство", href: "/partnership" },
     { name: "Отзывы", href: "/testimonials" },
     { name: "Контакты", href: "/installment" },
   ],
-  support: [
+  production: [
     { name: "Мебель", href: "/mebel" },
     { name: "Столешница", href: "/stoleshnica" },
     { name: "Техника", href: "/tehnika" },
     { name: "Сантехника", href: "/santehnika" },
   ],
-  // company: [
-  //   { name: "Дизайнер", href: "#" },
-  //   { name: "Замерщик", href: "#" },
-  //   { name: "Сборщик", href: "#" },
-  //   { name: "Водитель", href: "#" },
-  // ],
-  legal: [
+  vacancy: [
+    { name: "Дизайнер", href: "#" },
+    { name: "Замерщик", href: "#" },
+    { name: "Сборщик", href: "#" },
+    { name: "Водитель", href: "#" },
+  ],
+  service: [
     { name: "Консультация", method: "openVisibleFormDesigner" },
     { name: "Запись в салон", method: "openVisibleFormSalon" },
     { name: "Заявка на замер", method: "openVisibleFormMeasuring" },
@@ -208,7 +208,7 @@ export default () => {
                   Информация
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.information.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -225,7 +225,7 @@ export default () => {
                   Каталог
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.production.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -238,13 +238,13 @@ export default () => {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-1 md:gap-8">
-              {/* <div>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Вакансии
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.vacancy.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -255,13 +255,13 @@ export default () => {
                     </li>
                   ))}
                 </ul>
-              </div> */}
+              </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">
                   Услуги
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {navigation.service.map((item) => (
                     <li key={item.name}>
                       <button
                         onClick={() => handleButtonClick(methods[item.method])}
