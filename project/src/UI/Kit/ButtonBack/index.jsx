@@ -15,7 +15,7 @@ export default () => {
       className="flex text-sm font-medium text-gray-900 bg-gray-50 hover:bg-gray-200 px-4 py-1 ring-2 ring-gray-200 rounded-lg"
     >
       {" "}
-      <span className="mr-2">Вернуться </span>
+      {/* <span className="mr-2">Вернуться </span> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
