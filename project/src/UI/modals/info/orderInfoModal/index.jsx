@@ -39,9 +39,7 @@ export default () => {
             <div className="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5 max-h-[90vh] overflow-y-auto">
               <div className="flex justify-between mb-4 rounded-t sm:mb-5">
                 <div className="text-xl text-gray-900 md:text-3xl ">
-                  <h3 className="font-semibold">
-                    Полное сопровождение
-                  </h3>
+                  <h3 className="font-semibold">Полное сопровождение</h3>
                 </div>
                 <div>
                   <button

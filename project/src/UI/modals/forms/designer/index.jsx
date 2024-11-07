@@ -249,7 +249,10 @@ export default () => {
                               <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 <span className="mt-2">
                                   После отправки формы с Вами свяжется наш
-                                  дизайнер. <span className="text-red-700">Услуга бесплатна.</span> 
+                                  дизайнер.{" "}
+                                  <span className="text-red-700">
+                                    Услуга бесплатна.
+                                  </span>
                                 </span>
                               </p>
                             </div>

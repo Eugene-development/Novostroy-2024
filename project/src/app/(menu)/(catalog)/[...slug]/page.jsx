@@ -25,8 +25,8 @@ async function fetchData(slug) {
       const productRes = await fetch(`${BASE_URL}/api/product?slug=${slug[1]}`);
       if (!productRes.ok) notFound();
       data = await productRes.json();
-      metaTitle = `${data.product?.value} под ваши пожелания в дизайн-проекте`
-      metaDescription = `${data.product?.value} подбирается с учётом ваших пожеланий, чтобы создать уют и комфорт в соответствии с вашим дизайн-проектом.`
+      metaTitle = `${data.product?.value} под ваши пожелания в дизайн-проекте`;
+      metaDescription = `${data.product?.value} подбирается с учётом ваших пожеланий, чтобы создать уют и комфорт в соответствии с вашим дизайн-проектом.`;
       // metaTitle = data.product?.metaTitle?.value;
       // metaDescription = data.product?.metaDescription?.value;
       isProduct = true;

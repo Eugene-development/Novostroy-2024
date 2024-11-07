@@ -80,8 +80,6 @@ export default function index() {
           </div>
         </li>
       </ul>
-
-
     </div>
   );
 }

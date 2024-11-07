@@ -16,16 +16,17 @@ export default ({ dataProduct }) => {
 
   return (
     <div className="w-full lg:max-w-xl  mt-8 lg:mt-0 shrink-0 p-8 border border-gray-100 rounded-lg bg-gray-50/50 ">
-    <div className="mb-4 ">
-      <Link
-        href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
-        className=" hover:text-sky-700 text-gray-800 text-xs font-medium rounded "
-      >
-        {dataProduct?.parentable.parentable.value} / {dataProduct?.parentable.value}
-      </Link>
-    </div>  
-    
-    <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
+      <div className="mb-4 ">
+        <Link
+          href={`/${grandParent?.slug}/${parent.slug}/${parentable.slug}`}
+          className=" hover:text-sky-700 text-gray-800 text-xs font-medium rounded "
+        >
+          {dataProduct?.parentable.parentable.value} /{" "}
+          {dataProduct?.parentable.value}
+        </Link>
+      </div>
+
+      <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
         {dataProduct?.value}
       </h1>
       <Stars />
@@ -47,8 +48,6 @@ export default ({ dataProduct }) => {
 
       <div className="mt-20 sm:gap-4 items-center  ">
         <ButtonBack />
-
-        
       </div>
     </div>
   );

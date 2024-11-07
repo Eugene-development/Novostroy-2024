@@ -1,12 +1,21 @@
 "use client";
 
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
 import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/24/outline";
 
 export default function ImageModal({ isOpen, setIsOpen, imageSrc }) {
   return (
-    <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-40">
+    <Dialog
+      open={isOpen}
+      onClose={() => setIsOpen(false)}
+      className="relative z-40"
+    >
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -24,7 +33,7 @@ export default function ImageModal({ isOpen, setIsOpen, imageSrc }) {
                 <Image
                   src={imageSrc}
                   alt="Selected image"
-                  width={1920}  // увеличиваем разрешение
+                  width={1920} // увеличиваем разрешение
                   height={1440} // увеличиваем разрешение
                   className="object-contain object-center rounded-lg"
                 />

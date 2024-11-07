@@ -25,7 +25,9 @@ export default ({ dataProduct }) => {
         />
       </svg>
 
-      <p className="text-sm font-medium text-gray-700">Запрос актуальной цены</p>
+      <p className="text-sm font-medium text-gray-700">
+        Запрос актуальной цены
+      </p>
     </button>
   );
 };

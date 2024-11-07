@@ -5,7 +5,8 @@ import { Sparkles, CompanyText } from "@/UI";
 
 export const metadata = {
   title: "Новострой | Информация о компании",
-  description: "На странице вы найдёте общую информацию о нашей компании Новострой.",
+  description:
+    "На странице вы найдёте общую информацию о нашей компании Новострой.",
 };
 
 export default function page() {

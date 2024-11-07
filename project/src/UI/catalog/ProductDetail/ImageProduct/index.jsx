@@ -8,21 +8,25 @@ import ImageModal from "./ImageModal";
 export default ({ dataProduct }) => {
   // Состояние для управления модальным окном
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   // Состояние для текущего пути изображения
   const [currentImage, setCurrentImage] = useState(null);
 
   // Функция для открытия модального окна с текущим изображением
   const openModalWithImage = (imagePath) => {
-    setCurrentImage(imagePath);   // Устанавливаем путь изображения
-    setIsModalOpen(true);         // Открываем модальное окно
+    setCurrentImage(imagePath); // Устанавливаем путь изображения
+    setIsModalOpen(true); // Открываем модальное окно
   };
 
   return (
     <>
       {/* Передаем состояние и путь к изображению в дочерний компонент */}
-      <ImageModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} imageSrc={currentImage} />
-      
+      <ImageModal
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        imageSrc={currentImage}
+      />
+
       <div className="mx-auto max-w-2xl px-1 lg:max-w-8xl">
         <div className="lg:items-start">
           {/* Image gallery */}
@@ -53,7 +57,11 @@ export default ({ dataProduct }) => {
               {dataProduct.image.map((item) => (
                 <TabPanel
                   key={item.hash}
-                  onClick={() => openModalWithImage(`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`)}
+                  onClick={() =>
+                    openModalWithImage(
+                      `${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`,
+                    )
+                  }
                 >
                   <Image
                     src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}

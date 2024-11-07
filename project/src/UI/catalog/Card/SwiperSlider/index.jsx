@@ -1,4 +1,5 @@
-"use client";
+// "use client";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -22,13 +23,15 @@ export default ({ images }) => {
               key={item.hash}
               className="w-full aspect-w-15 aspect-h-12"
             >
-              <Image
-                src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
-                className="w-full object-contain object-center"
-                alt={item.alt}
-                width={1280}
-                height={640}
-              />
+              <Suspense fallback={<p>Загрузка...</p>}>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_S3}/catalog/${item.hash}`}
+                  className="w-full object-contain object-center"
+                  alt={item.alt}
+                  width={1280}
+                  height={640}
+                />
+              </Suspense>
             </SwiperSlide>
           ))}
         </Swiper>
