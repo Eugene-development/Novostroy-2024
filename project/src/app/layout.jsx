@@ -3,9 +3,15 @@
 // const MobileCatalog = dynamic(() => import("@/UI/modals/MobileCatalog"), {
 //   ssr: false, // отключить серверную отрисовку
 // });
+//
 import Script from "next/script";
+import { Suspense } from "react";
+import { Metrika } from "./analytics/yandex";
+
 const GA_TRACKING_ID = "G-LDQHHN5N6W";
+
 import "../css/globals.css";
+
 import {
   Banner,
   Menu,
@@ -19,6 +25,7 @@ import {
 } from "@/UI";
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="ru">
       <head>
@@ -26,7 +33,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" />
         <script src="//code.jivosite.com/widget/H00b4ne6ss" async></script>
 
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
 						(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -52,18 +59,20 @@ export default function RootLayout({ children }) {
               alt=""
             />
           </div>
-        </noscript>
+        </noscript> */}
       </head>
       <body className="font-display">
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
@@ -71,8 +80,14 @@ export default function RootLayout({ children }) {
                       page_path: window.location.pathname,
                     });
                   `,
-          }}
-        />
+              }}
+            />
+            
+            <Suspense>
+              <Metrika />
+            </Suspense>
+          </>
+        )}
         <MobileMenu />
 
         <DesignerForm />

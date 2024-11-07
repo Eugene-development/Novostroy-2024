@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import React, { Suspense } from "react";
 
 import { SideBar, Info, Badge, MobileCatalog } from "@/UI";
 import { getCatalog } from "./server";
@@ -21,7 +20,7 @@ export default async ({ children, params }) => {
 
         <div className="max-w-full mx-auto flex w-full h-full relative py-1 px-4">
           <SideBar dataCatalog={data.catalog} />
-          <Suspense fallback={<p>Загрузка...</p>}>{children}</Suspense>
+          {children}
         </div>
       </div>
     </>

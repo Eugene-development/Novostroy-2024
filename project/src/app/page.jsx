@@ -1,4 +1,3 @@
-// import { Slider, BGG, ThreeDCard, Parallax, Stage } from "../UI";
 import {
   Slider,
   BGG,

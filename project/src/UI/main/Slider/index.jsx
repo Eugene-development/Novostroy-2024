@@ -30,7 +30,7 @@ export default function ImagesSliderDemo() {
         }}
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
-        <p className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
+        <div className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
           <div>
             <span className="text-5xl sm:text-6xl md:text-8xl">
               Новая мебель
@@ -40,7 +40,7 @@ export default function ImagesSliderDemo() {
               для вашего дома
             </span>
           </div>
-        </p>
+        </div>
         <p className="md:hidden px-3 max-w-2xl xl:max-w-4xl text-sm text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наша команда — это опытные дизайнеры, сотрудничающие с ведущими
           мебельными компаниями и поставщиками.
