@@ -39,6 +39,9 @@ export { default as Installment } from "./Installment";
 // Contacts
 export { default as Contacts } from "./contacts";
 
+// Contacts
+export { default as Guarantees } from "./Guarantees";
+
 // Blog
 export { default as BlogList } from "./blog/blogList";
 export { default as BlogDetail } from "./blog/blogDetail";

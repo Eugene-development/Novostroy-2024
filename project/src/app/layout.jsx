@@ -25,7 +25,6 @@ import {
 } from "@/UI";
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="ru">
       <head>
@@ -82,7 +81,7 @@ export default function RootLayout({ children }) {
                   `,
               }}
             />
-            
+
             <Suspense>
               <Metrika />
             </Suspense>

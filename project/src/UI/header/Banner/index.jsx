@@ -68,6 +68,19 @@ export default () => {
             >
               Контакты
             </Link>
+            <svg
+              viewBox="0 0 2 2"
+              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              aria-hidden="true"
+            >
+              <circle cx={1} cy={1} r={1} />
+            </svg>
+            <Link
+              href="/guarantees"
+              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+            >
+              Гарантии
+            </Link>
           </div>
         </div>
 
