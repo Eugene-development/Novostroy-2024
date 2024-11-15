@@ -9,75 +9,75 @@ export default () => {
     <>
       <div className="sticky top-0 hidden md:flex items-center  px-4 sm:px-3.5 bg-gray-900 z-50">
         <div className="hidden lg:flex flex-1 justify-start">
-          <div className="flex space-x-4 items-center justify-center">
+          <div className="flex space-x-3.5 items-center justify-center tracking-wide">
             <Link
               href="/about"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300  whitespace-nowrap"
+              className="text-xs text-gray-50 hover:text-gray-300  whitespace-nowrap"
             >
               О компании
             </Link>
             <svg
               viewBox="0 0 2 2"
-              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              className=" inline h-0.5 w-0.5 fill-current text-sky-500"
               aria-hidden="true"
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
             <Link
               href="/partnership"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+              className="text-xs text-gray-50 hover:text-gray-300"
             >
               Партнёрство
             </Link>
             <svg
               viewBox="0 0 2 2"
-              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              className="inline h-0.5 w-0.5 fill-current text-sky-500"
               aria-hidden="true"
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
             <Link
               href="/testimonials"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+              className="text-xs text-gray-50 hover:text-gray-300"
             >
               Отзывы
             </Link>
             <svg
               viewBox="0 0 2 2"
-              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              className="inline h-0.5 w-0.5 fill-current text-sky-500"
               aria-hidden="true"
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
             <Link
               href="/installment"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+              className="text-xs text-gray-50 hover:text-gray-300"
             >
               Рассрочка
             </Link>
             <svg
               viewBox="0 0 2 2"
-              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              className="inline h-0.5 w-0.5 fill-current text-sky-500"
               aria-hidden="true"
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
             <Link
               href="/contacts"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+              className="text-xs text-gray-50 hover:text-gray-300"
             >
               Контакты
             </Link>
             <svg
               viewBox="0 0 2 2"
-              className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+              className="inline h-0.5 w-0.5 fill-current text-sky-500"
               aria-hidden="true"
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
             <Link
               href="/guarantees"
-              className="ml-1 text-sm text-gray-50 hover:text-gray-300"
+              className="text-xs text-gray-50 hover:text-gray-300"
             >
               Гарантии
             </Link>
@@ -94,26 +94,26 @@ export default () => {
                 />*/}
                 <Link
                   href="tel:+79154000020"
-                  className="text-sm font-normal text-gray-50"
+                  className="text-base font-normal text-gray-50 antialiased tracking-wide"
                 >
                   8 (915) 400-00-20
                 </Link>
               </div>
               <svg
                 viewBox="0 0 2 2"
-                className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+                className="mx-1 inline h-0.5 w-0.5 fill-current text-sky-500"
                 aria-hidden="true"
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
               <div className=" flex items-center justify-center  px-2 xl:px-4 py-1 text-xl font-semibold leading-6 ">
-                <div className=" text-sm font-normal text-gray-50">
+                <div className=" text-base font-normal text-gray-50 antialiased tracking-wide">
                   info@novostroy.org
                 </div>
               </div>
               <svg
                 viewBox="0 0 2 2"
-                className="mx-2 inline h-0.5 w-0.5 fill-current text-sky-500"
+                className="mx-1 inline h-0.5 w-0.5 fill-current text-sky-500"
                 aria-hidden="true"
               >
                 <circle cx={1} cy={1} r={1} />
@@ -145,7 +145,7 @@ export default () => {
           </Link>
         </div>
 
-        <div className="flex divide-x">
+        <div className="flex  divide-x">
           <Favorites />
           <MobileButton />
         </div>

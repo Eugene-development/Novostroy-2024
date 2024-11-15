@@ -8,7 +8,7 @@ export default () => {
   return (
     <Link
       href="/favorites"
-      className="relative isolate px-2 focus-visible:outline-offset-[-4px] z-20"
+      className="relative isolate px-3 focus-visible:outline-offset-[-4px] z-20"
     >
       <span className="sr-only">Избранное</span>
       <svg

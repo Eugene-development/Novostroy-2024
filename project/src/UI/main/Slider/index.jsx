@@ -31,21 +31,23 @@ export default function ImagesSliderDemo() {
         className="-mt-24 z-50 flex flex-col justify-center items-center"
       >
         <div className="font-bold text-3xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4">
-          <div>
+          <h1>
             <span className="text-5xl sm:text-6xl md:text-8xl">Мебель</span>
             <br />
             <span className="text-3xl sm:text-6xl md:text-8xl">
               для вашего дома
             </span>
-          </div>
+          </h1>
         </div>
-        {/* <p className="md:hidden px-3 max-w-2xl xl:max-w-4xl text-sm text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
-          Наша команда — это опытные дизайнеры, сотрудничающие с ведущими
-          мебельными компаниями и поставщиками.
-        </p> */}
-        <p className=" px-8 max-w-2xl xl:max-w-4xl text-sm text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+        
+        
+        <h2 className="md:hidden px-3 max-w-2xl xl:max-w-4xl text-sm text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
+          Бесплатная консультация профессионального дизайнера, замер помещения и дизайн-проект.
+        </h2>
+        
+        <h2 className="hidden md:block px-8 max-w-2xl xl:max-w-4xl text-sm text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Бесплатная консультация, замер и дизайн-проект.
-        </p>
+        </h2>
 
         <p className="hidden md:block mt-4 px-1 max-w-2xl xl:max-w-4xl text-center font-extralight xl:text-lg text-gray-100 tracking-wide">
           Наш профессиональный дизайнер создаст для вас проект мебели по вашим
