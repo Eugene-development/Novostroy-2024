@@ -3,7 +3,7 @@ import { Compare } from "./components";
 
 export default function CompareDemo() {
   return (
-    <div className="p-8 border rounded-t-3xl bg-gray-100  border-neutral-200 ">
+    <div className="p-8 border rounded-t-3xl bg-gray-100 border-neutral-200 ">
       <div className="my-20 text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
           Стильный дизайн мебели
