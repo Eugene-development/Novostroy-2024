@@ -2,3 +2,4 @@
 .env
 # misc
 .DS_Store
+.qodo
